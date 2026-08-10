@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "schematize.org — site institucional (Astro, multi-idioma, SEO-first).",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -11,6 +14,6 @@
     "check": "astro check"
   },
   "dependencies": {
-    "astro": "^5"
+    "astro": "^7"
   }
 }
