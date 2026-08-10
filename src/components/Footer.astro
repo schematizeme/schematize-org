@@ -1,0 +1,53 @@
+---
+// Footer — navegação + ecossistema da casa. Os links pros outros domínios são
+// dofollow de propósito: reforçam a marca como ENTIDADE única (estratégia SEO
+// multi-domínio, sem canonical cruzado). Sem emoji.
+import { t, path, type Locale } from "../lib/i18n";
+interface Props { locale: Locale; }
+const { locale } = Astro.props;
+const year = 2026;
+const nav = [
+  { key: "projects", label: t(locale, "nav.projects") },
+  { key: "research", label: t(locale, "nav.research") },
+];
+const ecosystem = [
+  { href: "https://schematize.net", label: "schematize.net" },
+  { href: "https://blog.schematize.net", label: t(locale, "footer.blog") },
+  { href: "https://github.com/schematizeme", label: "GitHub" },
+  { href: "https://schematize.com.br", label: "schematize.com.br" },
+];
+---
+<footer class="site-footer">
+  <div class="wrap grid cols-3 top">
+    <div>
+      <div class="brand">schematize<span>.org</span></div>
+      <p class="muted">{t(locale, "footer.tagline")}</p>
+    </div>
+    <nav aria-label="Footer">
+      <h3>{t(locale, "footer.explore")}</h3>
+      <ul role="list">
+        {nav.map((n) => (<li><a href={path(locale, n.key)}>{n.label}</a></li>))}
+      </ul>
+    </nav>
+    <nav aria-label="Ecosystem">
+      <h3>{t(locale, "footer.ecosystem")}</h3>
+      <ul role="list">
+        {ecosystem.map((e) => (<li><a href={e.href}>{e.label}</a></li>))}
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap bottom">
+    <span class="muted">© {year} schematize</span>
+    <span class="muted">{t(locale, "footer.made")}</span>
+  </div>
+</footer>
+<style>
+  .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding-block: clamp(2.5rem, 5vw, 4rem) 1.5rem; margin-top: 2rem; }
+  .top { align-items: start; }
+  .brand { font-family: var(--font-disp); font-weight: 700; font-size: 1.1rem; }
+  .brand span { color: var(--muted); font-weight: 500; }
+  .site-footer h3 { font-size: var(--step-1); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-family: var(--font-mono); font-weight: 500; }
+  .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+  .site-footer a { color: var(--ink); font-size: var(--step-1); }
+  .bottom { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; justify-content: space-between; margin-top: 2rem; padding-top: 1.3rem; border-top: 1px solid var(--line); }
+</style>

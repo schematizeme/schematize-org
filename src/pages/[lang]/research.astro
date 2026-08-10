@@ -1,0 +1,61 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
+
+export function getStaticPaths() {
+  return LOCALES.map((l) => ({ params: { lang: l } }));
+}
+const lang = Astro.params.lang as Locale;
+const areas = tx<{ h: string; p: string }[]>(lang, "research.areas.items");
+const principles = tx<{ h: string; p: string }[]>(lang, "research.approach.items");
+---
+<Base
+  locale={lang}
+  slug="research"
+  title={t(lang, "research.meta.title")}
+  description={t(lang, "research.meta.desc")}
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">{t(lang, "research.hero.kicker")}</p>
+      <h1>{t(lang, "research.hero.h1")}</h1>
+      <p class="lede">{t(lang, "research.hero.sub")}</p>
+    </div>
+  </section>
+
+  <section class="surface">
+    <div class="wrap">
+      <h2>{t(lang, "research.areas.title")}</h2>
+      <div class="grid cols-2" style="margin-top:1.8rem">
+        {areas.map((a) => (<div class="card"><h3>{a.h}</h3><p class="muted">{a.p}</p></div>))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "research.approach.title")}</h2>
+      <div class="grid cols-3" style="margin-top:1.8rem">
+        {principles.map((p) => (<div class="card"><h3>{p.h}</h3><p class="muted">{p.p}</p></div>))}
+      </div>
+    </div>
+  </section>
+
+  <section class="surface">
+    <div class="wrap band">
+      <h2>{t(lang, "research.cta.title")}</h2>
+      <p class="lede">{t(lang, "research.cta.p")}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://blog.schematize.net">{t(lang, "footer.blog")}</a>
+        <a class="btn btn-ghost" href={path(lang, "projects")}>{t(lang, "nav.projects")}</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 6rem); }
+  .band { text-align: center; }
+  .band .lede { margin-inline: auto; }
+  .band .cta-row { justify-content: center; }
+</style>

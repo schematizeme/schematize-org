@@ -1,0 +1,29 @@
+# schematize.org
+
+> The open-source and technology-research lab behind schematize. We build tools in
+> the open and share what we learn about engineering with and for AI agents.
+> The commercial home is schematize.net.
+
+## What this is
+schematize.org is informational and institutional: it documents our open-source
+projects and technology research. It is not a store — for products, consulting and
+courses, see schematize.net.
+
+## Open-source projects
+- schematize CLI — installs/versions engineering skills for Claude Code and runs
+  overdev (continuous, unattended development). https://github.com/schematizeme/schematize-cli
+- schematize skills — normative engineering playbooks (engineering, go, rust, web,
+  seo, node, pentest) for Claude Code. https://github.com/schematizeme
+
+## Research areas
+- Reliable AI-agent engineering and orchestration
+- Security of AI-assisted software delivery
+- Standards and tooling that make agent output trustworthy
+
+## Ecosystem
+- schematize.net — commercial (products, consulting, courses)
+- github.com/schematizeme — source code
+- blog.schematize.net — writing and research notes
+
+## Languages
+en (default), pt-BR, es, de, fr, it — URL per language under /<lang>/.

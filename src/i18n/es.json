@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "research": "Investigación",
+    "cta": "Ver código"
+  },
+  "footer": {
+    "tagline": "El laboratorio de código abierto e investigación tecnológica detrás de schematize.",
+    "explore": "Explorar",
+    "ecosystem": "Ecosistema",
+    "blog": "Blog",
+    "made": "Construido en abierto."
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — laboratorio de código abierto e IA",
+      "desc": "schematize.org es el laboratorio de código abierto e investigación tecnológica detrás de schematize: herramientas abiertas e investigación sobre ingeniería con agentes de IA."
+    },
+    "hero": {
+      "kicker": "Código abierto e investigación",
+      "h1": "Ingeniería para agentes de IA, construida en abierto.",
+      "sub": "schematize.org es donde desarrollamos nuestras herramientas de código abierto y compartimos investigación tecnológica sobre cómo construir, asegurar y orquestar agentes de IA que resisten en el mundo real.",
+      "cta1": "Explorar proyectos",
+      "cta2": "Leer la investigación"
+    },
+    "mission": {
+      "kicker": "Misión",
+      "title": "Hacer confiable el software creado por agentes.",
+      "p": "Los agentes de IA pueden escribir mucho código rápido, pero la rapidez no vale nada si no es correcta, segura y mantenible. Construimos las herramientas abiertas y los estándares compartidos que convierten la salida de los agentes en software que realmente puedes ejecutar en producción, y publicamos lo que aprendemos por el camino."
+    },
+    "pillars": {
+      "title": "En qué trabajamos",
+      "items": [
+        { "key": "projects", "h": "Proyectos de código abierto", "p": "El CLI schematize, el catálogo de skills de ingeniería para Claude Code y las herramientas que lo hacen todo reproducible: legibles, bifurcables y libres." },
+        { "key": "research", "h": "Investigación tecnológica", "p": "Cómo hacer ingeniería con agentes de IA de forma fiable y segura: orquestación, estándares, evaluación y la seguridad de la entrega asistida por IA." }
+      ]
+    },
+    "why": {
+      "title": "Cómo trabajamos",
+      "items": [
+        { "h": "Abierto por defecto", "p": "Nuestras herramientas son de código abierto y nuestros hallazgos son públicos. Si importa, puedes leerlo, ejecutarlo y construir sobre ello." },
+        { "h": "Riguroso", "p": "Estándares en lugar de intuiciones: playbooks normativos, pruebas reales y la seguridad tratada como un requisito de primer nivel, no como algo secundario." },
+        { "h": "Práctico", "p": "Investigación que se entrega. Todo lo que publicamos busca cambiar cómo los equipos reales construyen con agentes, no quedarse en un cajón." }
+      ]
+    },
+    "cta": {
+      "title": "Explora el trabajo.",
+      "p": "Todo lo que construimos está en GitHub, y todo lo que aprendemos acaba en el blog.",
+      "button": "Ver en GitHub"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Proyectos de código abierto — schematize.org",
+      "desc": "Proyectos de código abierto del laboratorio schematize: el CLI schematize y el catálogo de skills de ingeniería para Claude Code. Lee el código, bifúrcalo, contribuye."
+    },
+    "hero": {
+      "kicker": "Proyectos",
+      "h1": "Herramientas de código abierto para construir con agentes de IA.",
+      "sub": "Todo lo que construimos para hacer la ingeniería asistida por agentes reproducible y segura: libre para leer, ejecutar y bifurcar."
+    },
+    "list": {
+      "title": "Lo que mantenemos",
+      "items": [
+        { "tag": "CLI · Rust", "h": "schematize", "p": "Una aplicación de línea de comandos Linux-first que instala y versiona skills de ingeniería para Claude Code y ejecuta overdev: desarrollo continuo y desatendido que no se detiene hasta completar el checklist.", "href": "https://github.com/schematizeme/schematize-cli" },
+        { "tag": "Skills · Claude Code", "h": "Skills de ingeniería", "p": "Playbooks normativos para Claude Code — engineering, go, rust, web, seo, node y pentest — cada uno con pisos innegociables de seguridad, pruebas y arquitectura.", "href": "https://github.com/schematizeme" },
+        { "tag": "SEO", "h": "schematize-seo", "p": "Una disciplina completa de SEO como skill: técnico, on-page, contenido, datos estructurados, internacional/multidominio y optimización para respuestas de IA.", "href": "https://github.com/schematizeme/skill-seo" },
+        { "tag": "Security", "h": "schematize-pentest", "p": "AppSec defensivo y red-teaming autorizado como skill: mapeo de la superficie de ataque de endpoints, cobertura OWASP y modelado de amenazas, siempre dentro del alcance.", "href": "https://github.com/schematizeme/skill-pentest" }
+      ]
+    },
+    "cta": {
+      "title": "Lee el código.",
+      "p": "Todo es público. Dale una estrella, bifúrcalo, abre un issue, o usa el CLI schematize para instalarlo en segundos.",
+      "button": "Abrir GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Investigación tecnológica — schematize.org",
+      "desc": "Investigación del laboratorio schematize sobre ingeniería con agentes de IA: orquestación fiable, la seguridad de la entrega asistida por IA y estándares que hacen confiable su salida."
+    },
+    "hero": {
+      "kicker": "Investigación",
+      "h1": "Cómo construir con agentes de IA, y confiar en el resultado.",
+      "sub": "Estudiamos qué hace que la ingeniería asistida por agentes sea fiable y segura, y convertimos las respuestas en herramientas y estándares abiertos que cualquiera puede usar."
+    },
+    "areas": {
+      "title": "Áreas de investigación",
+      "items": [
+        { "h": "Ingeniería de agentes fiable", "p": "Orquestación, descomposición y salvaguardas que mantienen a los agentes de IA centrados en la tarea a lo largo de trabajos largos y de múltiples pasos, sin detenerse antes de tiempo ni desviarse de la especificación." },
+        { "h": "Seguridad de la entrega asistida por IA", "p": "Cómo falla el código escrito por agentes, cómo detectarlo y cómo hacer que lo seguro por diseño sea el valor por defecto: IAM, AppSec y red-teaming autorizado de lo que producen los agentes." },
+        { "h": "Estándares y evaluación", "p": "Qué significa 'bueno' para la salida de un agente y cómo medirlo: playbooks normativos, puertas de calidad y pruebas que demuestran el comportamiento en lugar de intuiciones." },
+        { "h": "Experiencia de desarrollo", "p": "Hacer que el camino correcto sea el camino fácil: herramientas que instalan estándares, los mantienen al día y se apartan del camino del desarrollador." }
+      ]
+    },
+    "approach": {
+      "title": "Nuestro enfoque",
+      "items": [
+        { "h": "En abierto", "p": "Los hallazgos y las herramientas se publican, no se acaparan. La reproducibilidad es el objetivo." },
+        { "h": "Anclado en la práctica", "p": "Investigamos construyendo y entregando: el laboratorio y los productos se alimentan mutuamente." },
+        { "h": "Seguridad primero", "p": "Si no es seguro de ejecutar, no está terminado. El modelado de amenazas y las pruebas son parte del método." }
+      ]
+    },
+    "cta": {
+      "title": "Sigue la investigación.",
+      "p": "Escribimos lo que aprendemos en el blog, y las herramientas llegan a GitHub.",
+      "button": "Leer el blog"
+    }
+  }
+}

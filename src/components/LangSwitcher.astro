@@ -1,0 +1,40 @@
+---
+// LangSwitcher — troca de idioma sem JS (menu <details>), levando à MESMA página
+// no idioma escolhido (path localizado). Alimenta a UX do hreflang.
+import { LOCALES, LOCALE_META, path, type Locale } from "../lib/i18n";
+interface Props { locale: Locale; slug?: string; }
+const { locale, slug = "" } = Astro.props;
+---
+<details class="lang">
+  <summary aria-label="Language" title="Language">
+    {LOCALE_META[locale].native}
+    <span aria-hidden="true" class="chev">▾</span>
+  </summary>
+  <ul role="list">
+    {LOCALES.map((l) => (
+      <li>
+        <a href={path(l, slug)} hreflang={LOCALE_META[l].bcp47} aria-current={l === locale ? "true" : undefined}>
+          {LOCALE_META[l].native}
+        </a>
+      </li>
+    ))}
+  </ul>
+</details>
+<style>
+  .lang { position: relative; }
+  .lang > summary {
+    list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem;
+    font-size: var(--step-1); color: var(--muted); border: 1px solid var(--line);
+    border-radius: 999px; padding: 0.35rem 0.7rem;
+  }
+  .lang > summary::-webkit-details-marker { display: none; }
+  .chev { font-size: 0.7em; }
+  .lang ul {
+    position: absolute; right: 0; margin: 0.4rem 0 0; padding: 0.35rem; list-style: none;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; min-width: 10rem; z-index: 30;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  }
+  .lang li a { display: block; padding: 0.45rem 0.7rem; border-radius: 8px; color: var(--ink); font-size: var(--step-1); }
+  .lang li a:hover { background: var(--surface); text-decoration: none; }
+  .lang li a[aria-current="true"] { color: var(--accent-ink); font-weight: 600; }
+</style>

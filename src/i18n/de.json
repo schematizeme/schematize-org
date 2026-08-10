@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "research": "Forschung",
+    "cta": "Quellcode ansehen"
+  },
+  "footer": {
+    "tagline": "Das Open-Source- und Technologieforschungslabor hinter schematize.",
+    "explore": "Entdecken",
+    "ecosystem": "Ökosystem",
+    "blog": "Blog",
+    "made": "Offen entwickelt."
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — Open-Source- & KI-Engineering-Labor",
+      "desc": "schematize.org ist das Open-Source- und Technologieforschungslabor hinter schematize: offen entwickelte Werkzeuge und Forschung zum Engineering mit KI-Agenten. Entdecken Sie unsere Arbeit."
+    },
+    "hero": {
+      "kicker": "Open Source & Forschung",
+      "h1": "Engineering für KI-Agenten, offen entwickelt.",
+      "sub": "schematize.org ist der Ort, an dem wir unsere Open-Source-Werkzeuge entwickeln und Technologieforschung dazu teilen, wie man KI-Agenten baut, absichert und orchestriert, die im echten Einsatz bestehen.",
+      "cta1": "Projekte entdecken",
+      "cta2": "Forschung lesen"
+    },
+    "mission": {
+      "kicker": "Mission",
+      "title": "Von Agenten gebaute Software vertrauenswürdig machen.",
+      "p": "KI-Agenten können in kurzer Zeit viel Code schreiben — doch Schnelligkeit ist wertlos, wenn der Code nicht korrekt, sicher und wartbar ist. Wir bauen die offenen Werkzeuge und die gemeinsamen Standards, die Agenten-Output in Software verwandeln, die Sie tatsächlich produktiv betreiben können, und veröffentlichen, was wir dabei lernen."
+    },
+    "pillars": {
+      "title": "Woran wir arbeiten",
+      "items": [
+        { "key": "projects", "h": "Open-Source-Projekte", "p": "Das schematize CLI, der Engineering-Skill-Katalog für Claude Code und das Werkzeug, das alles reproduzierbar macht — lesbar, forkbar und frei." },
+        { "key": "research", "h": "Technologieforschung", "p": "Wie man zuverlässig und sicher mit KI-Agenten arbeitet: Orchestrierung, Standards, Evaluierung und die Sicherheit KI-gestützter Auslieferung." }
+      ]
+    },
+    "why": {
+      "title": "Wie wir arbeiten",
+      "items": [
+        { "h": "Offen als Standard", "p": "Unsere Werkzeuge sind Open Source und unsere Ergebnisse sind öffentlich. Wenn es zählt, können Sie es lesen, ausführen und darauf aufbauen." },
+        { "h": "Rigoros", "p": "Standards statt Bauchgefühl: normative Playbooks, echte Tests und Sicherheit als erstklassige Anforderung — kein nachträglicher Gedanke." },
+        { "h": "Praxisnah", "p": "Forschung, die ausgeliefert wird. Alles, was wir veröffentlichen, soll verändern, wie echte Teams mit Agenten bauen — nicht in der Schublade verstauben." }
+      ]
+    },
+    "cta": {
+      "title": "Entdecken Sie die Arbeit.",
+      "p": "Alles, was wir bauen, ist auf GitHub, und alles, was wir lernen, landet im Blog.",
+      "button": "Auf GitHub ansehen"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Open-Source-Projekte — schematize.org",
+      "desc": "Open-Source-Projekte aus dem schematize-Labor: das schematize CLI und der Engineering-Skill-Katalog für Claude Code. Quellcode lesen, forken, mitwirken."
+    },
+    "hero": {
+      "kicker": "Projekte",
+      "h1": "Open-Source-Werkzeuge zum Bauen mit KI-Agenten.",
+      "sub": "Alles, was wir bauen, um Agenten-gestütztes Engineering reproduzierbar und sicher zu machen — frei zum Lesen, Ausführen und Forken."
+    },
+    "list": {
+      "title": "Was wir pflegen",
+      "items": [
+        { "tag": "CLI · Rust", "h": "schematize", "p": "Eine Linux-first Kommandozeilen-App, die Engineering-Skills für Claude Code installiert und versioniert und overdev ausführt — kontinuierliche, unbeaufsichtigte Entwicklung, die nicht anhält, bis die Checkliste abgearbeitet ist.", "href": "https://github.com/schematizeme/schematize-cli" },
+        { "tag": "Skills · Claude Code", "h": "Engineering-Skills", "p": "Normative Playbooks für Claude Code — engineering, go, rust, web, seo, node und pentest — jedes mit nicht verhandelbaren Mindestanforderungen an Sicherheit, Tests und Architektur.", "href": "https://github.com/schematizeme" },
+        { "tag": "SEO", "h": "schematize-seo", "p": "Eine vollständige SEO-Disziplin als Skill: technisch, On-Page, Content, strukturierte Daten, international/Multi-Domain und Optimierung für KI-Antworten.", "href": "https://github.com/schematizeme/skill-seo" },
+        { "tag": "Security", "h": "schematize-pentest", "p": "Defensive AppSec und autorisiertes Red-Teaming als Skill: Kartierung der Angriffsfläche von Endpunkten, OWASP-Abdeckung und Threat Modeling — stets im vereinbarten Rahmen.", "href": "https://github.com/schematizeme/skill-pentest" }
+      ]
+    },
+    "cta": {
+      "title": "Lesen Sie den Quellcode.",
+      "p": "Alles ist öffentlich. Vergeben Sie einen Star, forken Sie es, eröffnen Sie ein Issue — oder nutzen Sie das schematize CLI, um es in Sekunden zu installieren.",
+      "button": "GitHub öffnen"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Technologieforschung — schematize.org",
+      "desc": "Forschung aus dem schematize-Labor zum Engineering mit KI-Agenten: zuverlässige Orchestrierung, die Sicherheit KI-gestützter Auslieferung und Standards, die Agenten-Output vertrauenswürdig machen."
+    },
+    "hero": {
+      "kicker": "Forschung",
+      "h1": "Wie man mit KI-Agenten baut — und dem Ergebnis vertraut.",
+      "sub": "Wir erforschen, was Agenten-gestütztes Engineering zuverlässig und sicher macht, und verwandeln die Antworten in offene Werkzeuge und Standards, die jeder nutzen kann."
+    },
+    "areas": {
+      "title": "Forschungsbereiche",
+      "items": [
+        { "h": "Zuverlässiges Agenten-Engineering", "p": "Orchestrierung, Zerlegung und Leitplanken, die KI-Agenten durch lange, mehrstufige Arbeit auf Kurs halten — ohne vorzeitig anzuhalten oder von der Spezifikation abzuweichen." },
+        { "h": "Sicherheit KI-gestützter Auslieferung", "p": "Wie von Agenten geschriebener Code versagt, wie man das erkennt und wie man Secure-by-Design zum Standard macht: IAM, AppSec und autorisiertes Red-Teaming dessen, was Agenten produzieren." },
+        { "h": "Standards & Evaluierung", "p": "Was 'gut' für Agenten-Output bedeutet und wie man es misst: normative Playbooks, Quality-Gates und Tests, die Verhalten belegen statt auf Bauchgefühl zu setzen." },
+        { "h": "Developer Experience", "p": "Den richtigen Weg zum einfachen Weg machen — Werkzeuge, die Standards installieren, aktuell halten und dem Entwickler nicht im Weg stehen." }
+      ]
+    },
+    "approach": {
+      "title": "Unser Ansatz",
+      "items": [
+        { "h": "Offen", "p": "Ergebnisse und Werkzeuge werden veröffentlicht, nicht gehortet. Reproduzierbarkeit ist der Punkt." },
+        { "h": "In der Praxis verankert", "p": "Wir forschen, indem wir bauen und ausliefern — das Labor und die Produkte befruchten sich gegenseitig." },
+        { "h": "Sicherheit zuerst", "p": "Was nicht sicher auszuführen ist, ist nicht fertig. Threat Modeling und Tests gehören zur Methode." }
+      ]
+    },
+    "cta": {
+      "title": "Verfolgen Sie die Forschung.",
+      "p": "Wir schreiben im Blog auf, was wir lernen, und die Werkzeuge landen auf GitHub.",
+      "button": "Blog lesen"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+---
+// Header (.org) — logo + navegação institucional + troca de idioma + link pro código.
+import LangSwitcher from "./LangSwitcher.astro";
+import { t, path, type Locale } from "../lib/i18n";
+interface Props { locale: Locale; slug?: string; }
+const { locale, slug = "" } = Astro.props;
+const nav = [
+  { key: "projects", label: t(locale, "nav.projects") },
+  { key: "research", label: t(locale, "nav.research") },
+];
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={path(locale, "")}>schematize<span aria-hidden="true">.org</span></a>
+    <nav class="nav" aria-label="Primary">
+      {nav.map((n) => (
+        <a href={path(locale, n.key)} aria-current={slug === n.key ? "page" : undefined}>{n.label}</a>
+      ))}
+    </nav>
+    <div class="actions">
+      <LangSwitcher locale={locale} slug={slug} />
+      <a class="btn btn-primary cta" href="https://github.com/schematizeme">{t(locale, "nav.cta")}</a>
+    </div>
+  </div>
+</header>
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: saturate(140%) blur(10px); border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 1rem; min-height: 60px; }
+  .brand { font-family: var(--font-disp); font-weight: 700; font-size: 1.15rem; color: var(--ink); letter-spacing: -0.02em; }
+  .brand span { color: var(--muted); font-weight: 500; }
+  .brand:hover { text-decoration: none; }
+  .nav { display: flex; gap: 1.1rem; margin-inline: auto; }
+  .nav a { color: var(--muted); font-size: var(--step-1); font-weight: 500; }
+  .nav a:hover, .nav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
+  .actions { display: flex; align-items: center; gap: 0.6rem; }
+  .cta { padding: 0.5rem 0.9rem; }
+  @media (max-width: 720px) {
+    .nav { display: none; }
+    .cta { display: none; }
+  }
+</style>

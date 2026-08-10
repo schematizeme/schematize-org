@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "research": "Research",
+    "cta": "View source"
+  },
+  "footer": {
+    "tagline": "The open-source and technology-research lab behind schematize.",
+    "explore": "Explore",
+    "ecosystem": "Ecosystem",
+    "blog": "Blog",
+    "made": "Built in the open."
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — open-source & AI-engineering research lab",
+      "desc": "schematize.org is the open-source and technology-research lab behind schematize: tools built in the open and research on engineering with AI agents. Explore our work."
+    },
+    "hero": {
+      "kicker": "Open-source & research",
+      "h1": "Engineering for AI agents, built in the open.",
+      "sub": "schematize.org is where we develop our open-source tools and share technology research on how to build, secure and orchestrate AI agents that hold up in the real world.",
+      "cta1": "Explore projects",
+      "cta2": "Read the research"
+    },
+    "mission": {
+      "kicker": "Mission",
+      "title": "Make agent-built software trustworthy.",
+      "p": "AI agents can write a lot of code fast — but fast is worthless if it isn't correct, secure and maintainable. We build the open tools and the shared standards that turn agent output into software you can actually run in production, and we publish what we learn along the way."
+    },
+    "pillars": {
+      "title": "What we work on",
+      "items": [
+        { "key": "projects", "h": "Open-source projects", "p": "The schematize CLI, the engineering skill catalog for Claude Code, and the tooling that makes it all reproducible — all readable, forkable and free." },
+        { "key": "research", "h": "Technology research", "p": "How to engineer with AI agents reliably and securely: orchestration, standards, evaluation and the security of AI-assisted delivery." }
+      ]
+    },
+    "why": {
+      "title": "How we work",
+      "items": [
+        { "h": "Open by default", "p": "Our tools are open-source and our findings are public. If it matters, you can read it, run it and build on it." },
+        { "h": "Rigorous", "p": "Standards over vibes: normative playbooks, real tests, and security treated as a first-class requirement — not an afterthought." },
+        { "h": "Practical", "p": "Research that ships. Everything we publish is meant to change how real teams build with agents, not to sit in a drawer." }
+      ]
+    },
+    "cta": {
+      "title": "Explore the work.",
+      "p": "Everything we build is on GitHub, and everything we learn ends up on the blog.",
+      "button": "View on GitHub"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Open-source projects — schematize.org",
+      "desc": "Open-source projects from the schematize lab: the schematize CLI and the engineering skill catalog for Claude Code. Read the source, fork it, contribute."
+    },
+    "hero": {
+      "kicker": "Projects",
+      "h1": "Open-source tools for building with AI agents.",
+      "sub": "Everything we build to make agent-assisted engineering reproducible and safe — free to read, run and fork."
+    },
+    "list": {
+      "title": "What we maintain",
+      "items": [
+        { "tag": "CLI · Rust", "h": "schematize", "p": "A Linux-first command-line app that installs and versions engineering skills for Claude Code and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.", "href": "https://github.com/schematizeme/schematize-cli" },
+        { "tag": "Skills · Claude Code", "h": "Engineering skills", "p": "Normative playbooks for Claude Code — engineering, go, rust, web, seo, node and pentest — each with non-negotiable floors for security, testing and architecture.", "href": "https://github.com/schematizeme" },
+        { "tag": "SEO", "h": "schematize-seo", "p": "A full SEO discipline as a skill: technical, on-page, content, structured data, international/multi-domain and AI-answer optimization.", "href": "https://github.com/schematizeme/skill-seo" },
+        { "tag": "Security", "h": "schematize-pentest", "p": "Defensive AppSec and authorized red-teaming as a skill: endpoint attack surface mapping, OWASP coverage and threat modeling — always under scope.", "href": "https://github.com/schematizeme/skill-pentest" }
+      ]
+    },
+    "cta": {
+      "title": "Read the source.",
+      "p": "It's all public. Star it, fork it, open an issue — or use the schematize CLI to install it in seconds.",
+      "button": "Open GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Technology research — schematize.org",
+      "desc": "Research from the schematize lab on engineering with AI agents: reliable orchestration, the security of AI-assisted delivery, and standards that make agent output trustworthy."
+    },
+    "hero": {
+      "kicker": "Research",
+      "h1": "How to build with AI agents — and trust the result.",
+      "sub": "We study what makes agent-assisted engineering reliable and secure, and turn the answers into open tools and standards anyone can use."
+    },
+    "areas": {
+      "title": "Research areas",
+      "items": [
+        { "h": "Reliable agent engineering", "p": "Orchestration, decomposition and guardrails that keep AI agents on-task through long, multi-step work — without stopping early or drifting from the spec." },
+        { "h": "Security of AI-assisted delivery", "p": "How agent-written code fails, how to catch it, and how to make secure-by-design the default: IAM, AppSec and authorized red-teaming of what agents produce." },
+        { "h": "Standards & evaluation", "p": "What 'good' means for agent output, and how to measure it: normative playbooks, quality gates and tests that prove behavior instead of vibes." },
+        { "h": "Developer experience", "p": "Making the right way the easy way — tooling that installs standards, keeps them current, and gets out of the developer's way." }
+      ]
+    },
+    "approach": {
+      "title": "Our approach",
+      "items": [
+        { "h": "In the open", "p": "Findings and tools are published, not hoarded. Reproducibility is the point." },
+        { "h": "Grounded in practice", "p": "We research by building and shipping — the lab and the products feed each other." },
+        { "h": "Security-first", "p": "If it isn't safe to run, it isn't done. Threat modeling and testing are part of the method." }
+      ]
+    },
+    "cta": {
+      "title": "Follow the research.",
+      "p": "We write up what we learn on the blog, and the tools land on GitHub.",
+      "button": "Read the blog"
+    }
+  }
+}

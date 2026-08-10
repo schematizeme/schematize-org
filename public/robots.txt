@@ -1,0 +1,6 @@
+# schematize.org — institucional. Indexação liberada; crawlers de IA permitidos
+# (queremos ser citados — ver skill schematize-seo, aio-llmo-geo.md).
+User-agent: *
+Allow: /
+
+Sitemap: https://schematize.org/sitemap.xml

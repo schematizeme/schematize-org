@@ -1,0 +1,16 @@
+{
+  "name": "schematizeorg-front",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "schematize.org — site institucional (Astro, multi-idioma, SEO-first).",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5"
+  }
+}
