@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "项目",
+    "research": "研究",
+    "skills": "技能",
+    "academy": "学院",
+    "login": "登录 / 注册",
+    "cta": "查看源代码"
+  },
+  "footer": {
+    "tagline": "schematize 背后的开源与技术研究实验室。",
+    "explore": "探索",
+    "ecosystem": "生态系统",
+    "blog": "博客",
+    "made": "以开放的方式构建。",
+    "platforms": "平台",
+    "commercial": "商业"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — 开源与 AI 工程研究实验室",
+      "desc": "schematize.org 是 schematize 背后的开源与技术研究实验室：以开放方式构建的工具，以及关于用 AI 智能体进行工程的研究。探索我们的工作。"
+    },
+    "hero": {
+      "kicker": "开源与研究",
+      "h1": "面向 AI 智能体的工程，以开放的方式构建。",
+      "sub": "schematize.org 是我们开发开源工具并分享技术研究的地方，探讨如何构建、保护和编排能够经受真实世界考验的 AI 智能体。",
+      "cta1": "探索项目",
+      "cta2": "阅读研究"
+    },
+    "mission": {
+      "kicker": "使命",
+      "title": "让智能体构建的软件值得信赖。",
+      "p": "AI 智能体可以快速编写大量代码——但如果代码不正确、不安全、不可维护，快就毫无价值。我们构建开放的工具和共享的标准，把智能体的产出变成你真正可以在生产环境中运行的软件，并沿途发布我们的所学。"
+    },
+    "pillars": {
+      "title": "我们的工作方向",
+      "items": [
+        {
+          "key": "projects",
+          "h": "开源项目",
+          "p": "schematize CLI、面向 Claude Code 的工程技能目录，以及让这一切可复现的工具链——全部可读、可 fork、免费。"
+        },
+        {
+          "key": "research",
+          "h": "技术研究",
+          "p": "如何可靠且安全地用 AI 智能体进行工程：编排、标准、评估以及 AI 辅助交付的安全性。"
+        }
+      ]
+    },
+    "why": {
+      "title": "我们如何工作",
+      "items": [
+        {
+          "h": "默认开放",
+          "p": "我们的工具是开源的，我们的发现是公开的。只要重要，你就能阅读它、运行它并在其之上构建。"
+        },
+        {
+          "h": "严谨",
+          "p": "标准胜过感觉：规范化的手册、真实的测试，以及被视为一等要求而非事后补救的安全性。"
+        },
+        {
+          "h": "务实",
+          "p": "能落地的研究。我们发布的一切都旨在改变真实团队使用智能体构建软件的方式，而不是束之高阁。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "探索我们的工作。",
+      "p": "我们构建的一切都在 GitHub 上，我们所学的一切最终都会出现在博客里。",
+      "button": "在 GitHub 上查看"
+    },
+    "platforms": {
+      "kicker": "生态系统",
+      "title": "工作所在之处",
+      "p": "schematize 以开放方式构建的一切，分布在三个地方。",
+      "items": [
+        {
+          "h": "技能",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "让 AI 智能体遵循内部标准的工程技能目录——一条命令即可安装。"
+        },
+        {
+          "h": "研究",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "来自我们技术研究的论文、笔记与发现——边学边发布。"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "开源项目 — schematize.org",
+      "desc": "来自 schematize 实验室的开源项目：schematize CLI 和面向 Claude Code 的工程技能目录。阅读源代码、fork 它、参与贡献。"
+    },
+    "hero": {
+      "kicker": "项目",
+      "h1": "用于构建 AI 智能体的开源工具。",
+      "sub": "我们为让智能体辅助工程可复现且安全而构建的一切——免费阅读、运行与 fork。"
+    },
+    "list": {
+      "title": "我们维护的项目",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "一个以 Linux 为先的命令行应用，为 Claude Code 安装并版本化工程技能，并运行 overdev——持续、无人值守的开发，不到清单完成绝不停止。",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "工程技能",
+          "p": "面向 Claude Code 的规范化手册——engineering、go、rust、web、seo、node 和 pentest——每一个都设有不可妥协的安全、测试与架构底线。",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "作为技能的完整 SEO 学科：技术、页面、内容、结构化数据、国际化/多域名以及 AI 答案优化。",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "作为技能的防御性 AppSec 与授权红队演练：端点攻击面测绘、OWASP 覆盖与威胁建模——始终在授权范围内。",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "阅读源代码。",
+      "p": "一切都是公开的。给它加星、fork 它、提交 issue——或使用 schematize CLI 在几秒内安装。",
+      "button": "打开 GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "技术研究 — schematize.org",
+      "desc": "来自 schematize 实验室、关于用 AI 智能体进行工程的研究：可靠的编排、AI 辅助交付的安全性，以及让智能体产出值得信赖的标准。"
+    },
+    "hero": {
+      "kicker": "研究",
+      "h1": "如何用 AI 智能体进行构建——并信任其结果。",
+      "sub": "我们研究是什么让智能体辅助工程既可靠又安全，并把答案转化为任何人都能使用的开放工具与标准。"
+    },
+    "areas": {
+      "title": "研究领域",
+      "items": [
+        {
+          "h": "可靠的智能体工程",
+          "p": "编排、拆解与护栏，让 AI 智能体在漫长的多步骤工作中保持专注——不提前停止，也不偏离规范。"
+        },
+        {
+          "h": "AI 辅助交付的安全性",
+          "p": "智能体编写的代码如何失败、如何发现问题，以及如何让默认即安全设计成为常态：IAM、AppSec 以及对智能体产出的授权红队演练。"
+        },
+        {
+          "h": "标准与评估",
+          "p": "对智能体产出而言什么才算“好”，以及如何衡量它：规范化手册、质量关卡以及证明行为而非凭感觉的测试。"
+        },
+        {
+          "h": "开发者体验",
+          "p": "让正确的方式成为轻松的方式——安装标准、保持其最新并不妨碍开发者的工具。"
+        }
+      ]
+    },
+    "approach": {
+      "title": "我们的方法",
+      "items": [
+        {
+          "h": "开放",
+          "p": "发现与工具是发布出来的，而非私藏。可复现才是关键。"
+        },
+        {
+          "h": "扎根实践",
+          "p": "我们通过构建与交付来做研究——实验室与产品互相滋养。"
+        },
+        {
+          "h": "安全优先",
+          "p": "如果运行起来不安全，就还没有完成。威胁建模与测试是方法的一部分。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "关注研究进展。",
+      "p": "我们在博客上记录所学，工具则落地在 GitHub。",
+      "button": "阅读博客"
+    }
+  },
+  "common": {
+    "learn_more": "了解更多",
+    "visit": "访问"
+  },
+  "sponsors": {
+    "title": "赞助商"
+  }
+}

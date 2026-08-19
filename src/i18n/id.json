@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "Proyek",
+    "research": "Riset",
+    "skills": "Keterampilan",
+    "academy": "Akademi",
+    "login": "Masuk / Daftar",
+    "cta": "Lihat kode sumber"
+  },
+  "footer": {
+    "tagline": "Lab riset teknologi dan sumber terbuka di balik schematize.",
+    "explore": "Jelajahi",
+    "ecosystem": "Ekosistem",
+    "blog": "Blog",
+    "made": "Dibangun secara terbuka.",
+    "platforms": "Platform",
+    "commercial": "Komersial"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — lab riset sumber terbuka & rekayasa AI",
+      "desc": "schematize.org adalah lab riset teknologi dan sumber terbuka di balik schematize: perkakas yang dibangun secara terbuka dan riset tentang rekayasa dengan agen AI. Jelajahi karya kami."
+    },
+    "hero": {
+      "kicker": "Sumber terbuka & riset",
+      "h1": "Rekayasa untuk agen AI, dibangun secara terbuka.",
+      "sub": "schematize.org adalah tempat kami mengembangkan perkakas sumber terbuka kami dan membagikan riset teknologi tentang cara membangun, mengamankan, dan mengorkestrasi agen AI yang tangguh di dunia nyata.",
+      "cta1": "Jelajahi proyek",
+      "cta2": "Baca riset"
+    },
+    "mission": {
+      "kicker": "Misi",
+      "title": "Menjadikan perangkat lunak buatan agen dapat dipercaya.",
+      "p": "Agen AI bisa menulis banyak kode dengan cepat — tetapi cepat tidak ada artinya jika tidak benar, aman, dan mudah dipelihara. Kami membangun perkakas terbuka dan standar bersama yang mengubah keluaran agen menjadi perangkat lunak yang benar-benar bisa Anda jalankan di produksi, dan kami mempublikasikan apa yang kami pelajari sepanjang jalan."
+    },
+    "pillars": {
+      "title": "Apa yang kami kerjakan",
+      "items": [
+        {
+          "key": "projects",
+          "h": "Proyek sumber terbuka",
+          "p": "schematize CLI, katalog keterampilan rekayasa untuk Claude Code, dan perkakas yang membuat semuanya dapat direproduksi — semuanya dapat dibaca, di-fork, dan gratis."
+        },
+        {
+          "key": "research",
+          "h": "Riset teknologi",
+          "p": "Cara merekayasa dengan agen AI secara andal dan aman: orkestrasi, standar, evaluasi, dan keamanan pengiriman yang dibantu AI."
+        }
+      ]
+    },
+    "why": {
+      "title": "Cara kami bekerja",
+      "items": [
+        {
+          "h": "Terbuka secara bawaan",
+          "p": "Perkakas kami bersifat sumber terbuka dan temuan kami bersifat publik. Jika penting, Anda bisa membacanya, menjalankannya, dan membangun di atasnya."
+        },
+        {
+          "h": "Ketat",
+          "p": "Standar di atas perasaan: panduan normatif, pengujian nyata, dan keamanan yang diperlakukan sebagai persyaratan kelas satu — bukan sekadar renungan belakangan."
+        },
+        {
+          "h": "Praktis",
+          "p": "Riset yang dikirim ke produksi. Semua yang kami publikasikan dimaksudkan untuk mengubah cara tim nyata membangun dengan agen, bukan untuk teronggok di laci."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Jelajahi karyanya.",
+      "p": "Semua yang kami bangun ada di GitHub, dan semua yang kami pelajari berakhir di blog.",
+      "button": "Lihat di GitHub"
+    },
+    "platforms": {
+      "kicker": "Ekosistem",
+      "title": "Tempat karya itu berada",
+      "p": "Semua yang dibangun schematize secara terbuka, ditata di tiga tempat.",
+      "items": [
+        {
+          "h": "Keterampilan",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Katalog keterampilan rekayasa yang membuat agen AI mengikuti standar rumah — dapat dipasang dengan satu perintah."
+        },
+        {
+          "h": "Riset",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Makalah, catatan, dan temuan dari riset teknologi kami — dipublikasikan seiring kami belajar."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Proyek sumber terbuka — schematize.org",
+      "desc": "Proyek sumber terbuka dari lab schematize: schematize CLI dan katalog keterampilan rekayasa untuk Claude Code. Baca kode sumbernya, fork, berkontribusi."
+    },
+    "hero": {
+      "kicker": "Proyek",
+      "h1": "Perkakas sumber terbuka untuk membangun dengan agen AI.",
+      "sub": "Semua yang kami bangun untuk menjadikan rekayasa yang dibantu agen dapat direproduksi dan aman — gratis untuk dibaca, dijalankan, dan di-fork."
+    },
+    "list": {
+      "title": "Apa yang kami pelihara",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Aplikasi baris perintah yang mengutamakan Linux yang memasang dan mengelola versi keterampilan rekayasa untuk Claude Code serta menjalankan overdev — pengembangan berkelanjutan tanpa pengawasan yang tidak berhenti sampai daftar periksa selesai.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Keterampilan rekayasa",
+          "p": "Panduan normatif untuk Claude Code — engineering, go, rust, web, seo, node, dan pentest — masing-masing dengan fondasi yang tak bisa ditawar untuk keamanan, pengujian, dan arsitektur.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Disiplin SEO lengkap sebagai sebuah keterampilan: teknis, on-page, konten, data terstruktur, internasional/multi-domain, dan optimasi jawaban AI.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "AppSec defensif dan red-teaming yang diotorisasi sebagai sebuah keterampilan: pemetaan permukaan serangan endpoint, cakupan OWASP, dan pemodelan ancaman — selalu dalam ruang lingkup.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Baca kode sumbernya.",
+      "p": "Semuanya publik. Beri bintang, fork, buka issue — atau gunakan schematize CLI untuk memasangnya dalam hitungan detik.",
+      "button": "Buka GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Riset teknologi — schematize.org",
+      "desc": "Riset dari lab schematize tentang rekayasa dengan agen AI: orkestrasi yang andal, keamanan pengiriman yang dibantu AI, dan standar yang membuat keluaran agen dapat dipercaya."
+    },
+    "hero": {
+      "kicker": "Riset",
+      "h1": "Cara membangun dengan agen AI — dan memercayai hasilnya.",
+      "sub": "Kami mempelajari apa yang membuat rekayasa yang dibantu agen menjadi andal dan aman, lalu mengubah jawabannya menjadi perkakas dan standar terbuka yang bisa digunakan siapa saja."
+    },
+    "areas": {
+      "title": "Bidang riset",
+      "items": [
+        {
+          "h": "Rekayasa agen yang andal",
+          "p": "Orkestrasi, dekomposisi, dan pagar pengaman yang menjaga agen AI tetap pada tugas sepanjang pekerjaan panjang bertahap — tanpa berhenti terlalu dini atau menyimpang dari spesifikasi."
+        },
+        {
+          "h": "Keamanan pengiriman yang dibantu AI",
+          "p": "Bagaimana kode buatan agen gagal, cara menangkapnya, dan cara menjadikan aman-sejak-desain sebagai bawaan: IAM, AppSec, dan red-teaming yang diotorisasi atas apa yang dihasilkan agen."
+        },
+        {
+          "h": "Standar & evaluasi",
+          "p": "Apa arti 'baik' untuk keluaran agen, dan cara mengukurnya: panduan normatif, gerbang kualitas, dan pengujian yang membuktikan perilaku alih-alih perasaan."
+        },
+        {
+          "h": "Pengalaman pengembang",
+          "p": "Menjadikan cara yang benar sebagai cara yang mudah — perkakas yang memasang standar, menjaganya tetap terkini, dan tidak menghalangi pengembang."
+        }
+      ]
+    },
+    "approach": {
+      "title": "Pendekatan kami",
+      "items": [
+        {
+          "h": "Secara terbuka",
+          "p": "Temuan dan perkakas dipublikasikan, bukan ditimbun. Reproduktibilitas adalah intinya."
+        },
+        {
+          "h": "Berakar pada praktik",
+          "p": "Kami meneliti dengan membangun dan mengirim ke produksi — lab dan produk saling memberi makan."
+        },
+        {
+          "h": "Keamanan lebih dulu",
+          "p": "Jika tidak aman untuk dijalankan, berarti belum selesai. Pemodelan ancaman dan pengujian adalah bagian dari metode."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ikuti risetnya.",
+      "p": "Kami menuliskan apa yang kami pelajari di blog, dan perkakasnya mendarat di GitHub.",
+      "button": "Baca blog"
+    }
+  },
+  "common": {
+    "learn_more": "Pelajari lebih lanjut",
+    "visit": "Kunjungi"
+  },
+  "sponsors": {
+    "title": "Sponsor"
+  }
+}

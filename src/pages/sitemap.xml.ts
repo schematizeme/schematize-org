@@ -3,7 +3,19 @@
 import type { APIRoute } from "astro";
 import { LOCALES, LOCALE_META, DEFAULT_LOCALE, path } from "../lib/i18n";
 
-const SLUGS = ["", "projects", "research"];
+const SLUGS = [
+  "",
+  "projects",
+  "research",
+  "about",
+  "contact",
+  "sitemap",
+  "legal",
+  "legal/terms-of-use",
+  "legal/terms-of-service",
+  "legal/privacy",
+  "legal/cookies",
+];
 const SITE = "https://schematize.org";
 
 export const GET: APIRoute = () => {

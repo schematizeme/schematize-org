@@ -2,6 +2,9 @@
   "nav": {
     "projects": "Projetos",
     "research": "Pesquisa",
+    "skills": "Skills",
+    "academy": "Academy",
+    "login": "Entrar / Criar conta",
     "cta": "Ver o código"
   },
   "footer": {
@@ -9,7 +12,9 @@
     "explore": "Explorar",
     "ecosystem": "Ecossistema",
     "blog": "Blog",
-    "made": "Construído de forma aberta."
+    "made": "Construído de forma aberta.",
+    "platforms": "Plataformas",
+    "commercial": "Comercial"
   },
   "home": {
     "meta": {
@@ -31,22 +36,58 @@
     "pillars": {
       "title": "No que trabalhamos",
       "items": [
-        { "key": "projects", "h": "Projetos open-source", "p": "O CLI schematize, o catálogo de skills de engenharia para o Claude Code e as ferramentas que tornam tudo isso reproduzível — tudo legível, aberto a fork e gratuito." },
-        { "key": "research", "h": "Pesquisa em tecnologia", "p": "Como fazer engenharia com agentes de IA de forma confiável e segura: orquestração, padrões, avaliação e a segurança da entrega assistida por IA." }
+        {
+          "key": "projects",
+          "h": "Projetos open-source",
+          "p": "O CLI schematize, o catálogo de skills de engenharia para o Claude Code e as ferramentas que tornam tudo isso reproduzível — tudo legível, aberto a fork e gratuito."
+        },
+        {
+          "key": "research",
+          "h": "Pesquisa em tecnologia",
+          "p": "Como fazer engenharia com agentes de IA de forma confiável e segura: orquestração, padrões, avaliação e a segurança da entrega assistida por IA."
+        }
       ]
     },
     "why": {
       "title": "Como trabalhamos",
       "items": [
-        { "h": "Aberto por padrão", "p": "Nossas ferramentas são open-source e nossos resultados são públicos. Se importa, você pode ler, rodar e construir em cima." },
-        { "h": "Rigoroso", "p": "Padrões acima de achismo: manuais normativos, testes de verdade e segurança tratada como requisito de primeira classe — não como algo deixado para depois." },
-        { "h": "Prático", "p": "Pesquisa que vira produto. Tudo o que publicamos existe para mudar como equipes reais constroem com agentes, não para ficar na gaveta." }
+        {
+          "h": "Aberto por padrão",
+          "p": "Nossas ferramentas são open-source e nossos resultados são públicos. Se importa, você pode ler, rodar e construir em cima."
+        },
+        {
+          "h": "Rigoroso",
+          "p": "Padrões acima de achismo: manuais normativos, testes de verdade e segurança tratada como requisito de primeira classe — não como algo deixado para depois."
+        },
+        {
+          "h": "Prático",
+          "p": "Pesquisa que vira produto. Tudo o que publicamos existe para mudar como equipes reais constroem com agentes, não para ficar na gaveta."
+        }
       ]
     },
     "cta": {
       "title": "Conheça o trabalho.",
       "p": "Tudo o que construímos está no GitHub, e tudo o que aprendemos acaba no blog.",
       "button": "Ver no GitHub"
+    },
+    "platforms": {
+      "kicker": "O ecossistema",
+      "title": "Onde o trabalho vive",
+      "p": "Tudo que a schematize constrói aberto, organizado em três lugares.",
+      "items": [
+        {
+          "h": "Skills",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "O catálogo de skills de engenharia que fazem os agentes de IA seguirem os padrões da casa — instalável com um comando."
+        },
+        {
+          "h": "Research",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Artigos, notas e achados da nossa pesquisa em tecnologia — publicados conforme aprendemos."
+        }
+      ]
     }
   },
   "projects": {
@@ -62,10 +103,30 @@
     "list": {
       "title": "O que mantemos",
       "items": [
-        { "tag": "CLI · Rust", "h": "schematize", "p": "Um app de linha de comando focado em Linux que instala e versiona skills de engenharia para o Claude Code e roda o overdev — desenvolvimento contínuo e autônomo que não para até o checklist estar concluído.", "href": "https://github.com/schematizeme/schematize-cli" },
-        { "tag": "Skills · Claude Code", "h": "Skills de engenharia", "p": "Manuais normativos para o Claude Code — engineering, go, rust, web, seo, node e pentest — cada um com pisos inegociáveis de segurança, testes e arquitetura.", "href": "https://github.com/schematizeme" },
-        { "tag": "SEO", "h": "schematize-seo", "p": "Uma disciplina completa de SEO como skill: técnico, on-page, conteúdo, dados estruturados, internacional/multi-domínio e otimização para respostas de IA.", "href": "https://github.com/schematizeme/skill-seo" },
-        { "tag": "Security", "h": "schematize-pentest", "p": "AppSec defensivo e red-teaming autorizado como skill: mapeamento da superfície de ataque de endpoints, cobertura OWASP e modelagem de ameaças — sempre dentro do escopo.", "href": "https://github.com/schematizeme/skill-pentest" }
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Um app de linha de comando focado em Linux que instala e versiona skills de engenharia para o Claude Code e roda o overdev — desenvolvimento contínuo e autônomo que não para até o checklist estar concluído.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Skills de engenharia",
+          "p": "Manuais normativos para o Claude Code — engineering, go, rust, web, seo, node e pentest — cada um com pisos inegociáveis de segurança, testes e arquitetura.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Uma disciplina completa de SEO como skill: técnico, on-page, conteúdo, dados estruturados, internacional/multi-domínio e otimização para respostas de IA.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "AppSec defensivo e red-teaming autorizado como skill: mapeamento da superfície de ataque de endpoints, cobertura OWASP e modelagem de ameaças — sempre dentro do escopo.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
       ]
     },
     "cta": {
@@ -87,18 +148,39 @@
     "areas": {
       "title": "Áreas de pesquisa",
       "items": [
-        { "h": "Engenharia confiável de agentes", "p": "Orquestração, decomposição e proteções que mantêm os agentes de IA na tarefa ao longo de trabalhos longos e de várias etapas — sem parar cedo demais nem se desviar da especificação." },
-        { "h": "Segurança da entrega assistida por IA", "p": "Como o código escrito por agentes falha, como detectar isso e como tornar seguro-por-design o padrão: IAM, AppSec e red-teaming autorizado do que os agentes produzem." },
-        { "h": "Padrões e avaliação", "p": "O que significa 'bom' para a saída de um agente, e como medir isso: manuais normativos, portões de qualidade e testes que comprovam comportamento em vez de achismo." },
-        { "h": "Experiência do desenvolvedor", "p": "Tornar o jeito certo o jeito fácil — ferramentas que instalam padrões, os mantêm atualizados e saem do caminho do desenvolvedor." }
+        {
+          "h": "Engenharia confiável de agentes",
+          "p": "Orquestração, decomposição e proteções que mantêm os agentes de IA na tarefa ao longo de trabalhos longos e de várias etapas — sem parar cedo demais nem se desviar da especificação."
+        },
+        {
+          "h": "Segurança da entrega assistida por IA",
+          "p": "Como o código escrito por agentes falha, como detectar isso e como tornar seguro-por-design o padrão: IAM, AppSec e red-teaming autorizado do que os agentes produzem."
+        },
+        {
+          "h": "Padrões e avaliação",
+          "p": "O que significa 'bom' para a saída de um agente, e como medir isso: manuais normativos, portões de qualidade e testes que comprovam comportamento em vez de achismo."
+        },
+        {
+          "h": "Experiência do desenvolvedor",
+          "p": "Tornar o jeito certo o jeito fácil — ferramentas que instalam padrões, os mantêm atualizados e saem do caminho do desenvolvedor."
+        }
       ]
     },
     "approach": {
       "title": "Nossa abordagem",
       "items": [
-        { "h": "De forma aberta", "p": "Resultados e ferramentas são publicados, não guardados. A reprodutibilidade é o ponto." },
-        { "h": "Ancorada na prática", "p": "Pesquisamos construindo e entregando — o laboratório e os produtos se alimentam um do outro." },
-        { "h": "Segurança em primeiro lugar", "p": "Se não é seguro de rodar, não está pronto. Modelagem de ameaças e testes fazem parte do método." }
+        {
+          "h": "De forma aberta",
+          "p": "Resultados e ferramentas são publicados, não guardados. A reprodutibilidade é o ponto."
+        },
+        {
+          "h": "Ancorada na prática",
+          "p": "Pesquisamos construindo e entregando — o laboratório e os produtos se alimentam um do outro."
+        },
+        {
+          "h": "Segurança em primeiro lugar",
+          "p": "Se não é seguro de rodar, não está pronto. Modelagem de ameaças e testes fazem parte do método."
+        }
       ]
     },
     "cta": {
@@ -106,5 +188,12 @@
       "p": "Escrevemos o que aprendemos no blog, e as ferramentas chegam ao GitHub.",
       "button": "Ler o blog"
     }
+  },
+  "common": {
+    "learn_more": "Saiba mais",
+    "visit": "Acessar"
+  },
+  "sponsors": {
+    "title": "Patrocinadores"
   }
 }

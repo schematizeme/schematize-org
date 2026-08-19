@@ -1,0 +1,45 @@
+---
+import Base from "../../layouts/Base.astro";
+import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
+export function getStaticPaths() {
+  return LOCALES.map((l) => ({ params: { lang: l } }));
+}
+const lang = Astro.params.lang as Locale;
+const groups = tx<{ h: string; links: { slug: string; label: string }[] }[]>(lang, "sitemapPage.groups");
+---
+<Base
+  locale={lang}
+  slug="sitemap"
+  crumb={t(lang, "sitemapPage.hero.h1")}
+  title={t(lang, "sitemapPage.meta.title")}
+  description={t(lang, "sitemapPage.meta.desc")}
+>
+  <section class="hero">
+    <div class="wrap wrap-tight">
+      <p class="kicker">{t(lang, "sitemapPage.hero.kicker")}</p>
+      <h1>{t(lang, "sitemapPage.hero.h1")}</h1>
+      <p class="lede">{t(lang, "sitemapPage.hero.sub")}</p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap map-grid">
+      {groups.map((g) => (
+        <nav aria-label={g.h}>
+          <h2>{g.h}</h2>
+          <ul role="list">
+            {g.links.map((n) => (<li><a href={path(lang, n.slug)}>{n.label}</a></li>))}
+          </ul>
+        </nav>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 6rem); }
+  .map-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+  .map-grid h2 { font-size: var(--step1); margin-bottom: 1rem; }
+  .map-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+  .map-grid a { color: var(--ink-2); }
+</style>

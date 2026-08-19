@@ -1,0 +1,71 @@
+---
+// LegalDoc — corpo comum das páginas legais (scaffold institucional). NÃO é
+// aconselhamento jurídico: os pontos que exigem decisão jurídica ficam marcados
+// [REVISAR: advogado] no próprio texto (i18n). Cada documento traz controlador
+// (razão social/CNPJ), contato e data de vigência. JSON-LD: BreadcrumbList (via Base).
+import Base from "../layouts/Base.astro";
+import { t, tx, path, type Locale } from "../lib/i18n";
+interface Props { locale: Locale; slug: string; docKey: string; }
+const { locale, slug, docKey } = Astro.props;
+const base = `legal.docs.${docKey}`;
+const h1 = t(locale, `${base}.h1`);
+const sub = t(locale, `${base}.sub`);
+const sections = tx<{ h: string; p: string }[]>(locale, `${base}.sections`);
+
+const legalName = t(locale, "company.legalName");
+const cnpj = t(locale, "company.cnpj");
+const loc = t(locale, "company.location");
+const email = t(locale, "company.email");
+---
+<Base
+  locale={locale}
+  slug={slug}
+  crumb={h1}
+  title={t(locale, `${base}.meta.title`)}
+  description={t(locale, `${base}.meta.desc`)}
+>
+  <section class="hero">
+    <div class="wrap wrap-tight">
+      <p class="kicker"><a href={path(locale, "legal")}>{t(locale, "nav.legal")}</a></p>
+      <h1>{h1}</h1>
+      <p class="lede">{sub}</p>
+      <p class="disclaimer">{t(locale, "legal.disclaimer")}</p>
+      <p class="muted meta-line">
+        {t(locale, "legal.controllerLabel")}: {legalName} · CNPJ {cnpj} · {loc}
+        <br />
+        {t(locale, "legal.contactLabel")}: <a href={`mailto:${email}`}>{email}</a>
+        <br />
+        {t(locale, "legal.effective")} {t(locale, "legal.effectiveDate")}
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap wrap-tight doc">
+      {sections.map((s) => (
+        <div class="clause">
+          <h2>{s.h}</h2>
+          <p class="muted">{s.p}</p>
+        </div>
+      ))}
+      <p class="back"><a href={path(locale, "legal")}>{t(locale, "legal.backToLegal")}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+  .kicker a { color: var(--accent-ink); }
+  .disclaimer {
+    margin-top: 1.4rem; padding: 0.9rem 1.1rem; border: 1px solid var(--line);
+    border-left: 3px solid var(--accent); border-radius: var(--radius);
+    background: var(--accent-wash); color: var(--ink-2); font-size: var(--step-1); max-width: 66ch;
+  }
+  .meta-line { margin-top: 1.2rem; font-size: var(--step-1); line-height: 1.9; }
+  .doc { padding-block: 0; }
+  .clause { padding-block: 0.4rem 1.2rem; border-top: 1px solid var(--line-2); }
+  .clause:first-child { border-top: 0; }
+  .clause h2 { font-size: var(--step1); margin-bottom: 0.4rem; }
+  .clause p { max-width: 70ch; }
+  .back { margin-top: 2rem; }
+</style>

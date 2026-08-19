@@ -1,0 +1,80 @@
+---
+// LangModal — seletor de idioma em modal (<dialog>), coeso com os outros sites.
+// O quê: leva à MESMA página no idioma escolhido e memoriza a preferência (cookie +
+// localStorage) p/ o carry cross-site (?lang=). Onde: no Header. Degrada sem JS
+// (links reais). A estratégia multi-domínio vive na skill seo.
+import { LOCALES, LOCALE_META, path, type Locale } from "../lib/i18n";
+interface Props { locale: Locale; slug?: string; }
+const { locale, slug = "" } = Astro.props;
+---
+<button type="button" class="lang-trigger" data-lang-open aria-haspopup="dialog" aria-label="Language">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle>
+    <path d="M3 12h18M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9S9.5 5.5 12 3Z" stroke="currentColor" stroke-width="1.6"></path>
+  </svg>
+  <span>{locale.toUpperCase()}</span>
+</button>
+<dialog class="lang-dialog" data-lang-dialog>
+  <div class="lang-dialog-head">
+    <strong>Language / Idioma</strong>
+    <button type="button" class="lang-close" data-lang-close aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+      </svg>
+    </button>
+  </div>
+  <ul class="lang-list" role="list">
+    {LOCALES.map((l) => (
+      <li>
+        <a class="lang-item" href={path(l, slug)} data-lang={l} hreflang={LOCALE_META[l].bcp47} aria-current={l === locale ? "true" : undefined}>
+          <span class="lang-code">{l}</span>
+          <span class="lang-name">{LOCALE_META[l].native}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</dialog>
+<script is:inline>
+  (function () {
+    var open = document.querySelector("[data-lang-open]");
+    var dlg = document.querySelector("[data-lang-dialog]");
+    if (!open || !dlg) return;
+    open.addEventListener("click", function () { dlg.showModal(); });
+    dlg.querySelectorAll("[data-lang-close]").forEach(function (b) {
+      b.addEventListener("click", function () { dlg.close(); });
+    });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.querySelectorAll("[data-lang]").forEach(function (a) {
+      a.addEventListener("click", function () {
+        var code = a.getAttribute("data-lang");
+        try { localStorage.setItem("sz_lang", code); } catch (e) {}
+        document.cookie = "slang=" + code + ";path=/;max-age=31536000;samesite=lax";
+      });
+    });
+  })();
+</script>
+<style>
+  .lang-trigger {
+    display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-sans);
+    font-size: var(--step-1); font-weight: 500; color: var(--ink); background: transparent;
+    border: 1px solid var(--line); border-radius: 999px; padding: 0.38rem 0.75rem; cursor: pointer;
+    transition: border-color 0.18s ease, background 0.18s ease;
+  }
+  .lang-trigger:hover { border-color: var(--faint); background: var(--surface); }
+  .lang-trigger svg { color: var(--muted); }
+  .lang-dialog {
+    border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 0; width: min(420px, 92vw);
+    background: var(--bg); color: var(--ink); box-shadow: var(--shadow-md);
+  }
+  .lang-dialog::backdrop { background: rgba(8, 9, 12, 0.5); backdrop-filter: blur(4px); }
+  .lang-dialog-head { display: flex; align-items: center; gap: 0.6rem; padding: 1rem 1.2rem; border-bottom: 1px solid var(--line); }
+  .lang-dialog-head strong { font-family: var(--font-disp); font-weight: 600; letter-spacing: -0.02em; }
+  .lang-close { margin-left: auto; background: transparent; border: 0; color: var(--muted); cursor: pointer; padding: 0.25rem; border-radius: 8px; display: inline-flex; }
+  .lang-close:hover { color: var(--ink); background: var(--surface); }
+  .lang-list { list-style: none; margin: 0; padding: 0.6rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem; }
+  .lang-item { display: flex; align-items: center; gap: 0.6rem; border-radius: 12px; padding: 0.6rem 0.7rem; color: var(--ink); }
+  .lang-item:hover { background: var(--surface); text-decoration: none; }
+  .lang-item[aria-current="true"] { background: var(--accent-wash); }
+  .lang-code { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--accent-ink); border: 1px solid var(--line); border-radius: 6px; padding: 0.1rem 0.4rem; min-width: 2.2rem; text-align: center; }
+  .lang-name { color: var(--ink-2); }
+</style>

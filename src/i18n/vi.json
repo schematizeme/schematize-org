@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "Dự án",
+    "research": "Nghiên cứu",
+    "skills": "Kỹ năng",
+    "academy": "Học viện",
+    "login": "Đăng nhập / Đăng ký",
+    "cta": "Xem mã nguồn"
+  },
+  "footer": {
+    "tagline": "Phòng thí nghiệm nghiên cứu công nghệ và mã nguồn mở đứng sau schematize.",
+    "explore": "Khám phá",
+    "ecosystem": "Hệ sinh thái",
+    "blog": "Blog",
+    "made": "Được xây dựng công khai.",
+    "platforms": "Nền tảng",
+    "commercial": "Thương mại"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — phòng thí nghiệm nghiên cứu mã nguồn mở & kỹ thuật AI",
+      "desc": "schematize.org là phòng thí nghiệm nghiên cứu công nghệ và mã nguồn mở đứng sau schematize: các công cụ được xây dựng công khai và nghiên cứu về kỹ thuật với các tác nhân AI. Hãy khám phá công việc của chúng tôi."
+    },
+    "hero": {
+      "kicker": "Mã nguồn mở & nghiên cứu",
+      "h1": "Kỹ thuật cho các tác nhân AI, được xây dựng công khai.",
+      "sub": "schematize.org là nơi chúng tôi phát triển các công cụ mã nguồn mở của mình và chia sẻ nghiên cứu công nghệ về cách xây dựng, bảo mật và điều phối các tác nhân AI có thể đứng vững trong thế giới thực.",
+      "cta1": "Khám phá dự án",
+      "cta2": "Đọc nghiên cứu"
+    },
+    "mission": {
+      "kicker": "Sứ mệnh",
+      "title": "Làm cho phần mềm do tác nhân xây dựng trở nên đáng tin cậy.",
+      "p": "Các tác nhân AI có thể viết rất nhiều mã một cách nhanh chóng — nhưng nhanh chóng là vô nghĩa nếu nó không chính xác, an toàn và dễ bảo trì. Chúng tôi xây dựng các công cụ mở và những tiêu chuẩn chung biến đầu ra của tác nhân thành phần mềm bạn thực sự có thể chạy trong môi trường sản xuất, và chúng tôi công bố những gì học được trên chặng đường đó."
+    },
+    "pillars": {
+      "title": "Những gì chúng tôi làm",
+      "items": [
+        {
+          "key": "projects",
+          "h": "Dự án mã nguồn mở",
+          "p": "schematize CLI, danh mục kỹ năng kỹ thuật cho Claude Code, và bộ công cụ giúp mọi thứ đều có thể tái lập — tất cả đều dễ đọc, có thể fork và miễn phí."
+        },
+        {
+          "key": "research",
+          "h": "Nghiên cứu công nghệ",
+          "p": "Cách làm kỹ thuật với các tác nhân AI một cách đáng tin cậy và an toàn: điều phối, tiêu chuẩn, đánh giá và bảo mật của việc phân phối có hỗ trợ AI."
+        }
+      ]
+    },
+    "why": {
+      "title": "Cách chúng tôi làm việc",
+      "items": [
+        {
+          "h": "Mở theo mặc định",
+          "p": "Các công cụ của chúng tôi là mã nguồn mở và các phát hiện của chúng tôi được công khai. Nếu nó quan trọng, bạn có thể đọc, chạy và xây dựng dựa trên nó."
+        },
+        {
+          "h": "Nghiêm ngặt",
+          "p": "Tiêu chuẩn thay vì cảm tính: các sổ tay quy chuẩn, kiểm thử thực sự, và bảo mật được xem là yêu cầu hàng đầu — không phải điều nghĩ đến sau cùng."
+        },
+        {
+          "h": "Thực tiễn",
+          "p": "Nghiên cứu được đưa vào sử dụng. Mọi thứ chúng tôi công bố đều nhằm thay đổi cách các nhóm thực sự xây dựng với tác nhân, chứ không phải để nằm trong ngăn kéo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Khám phá công việc.",
+      "p": "Mọi thứ chúng tôi xây dựng đều trên GitHub, và mọi thứ chúng tôi học được đều xuất hiện trên blog.",
+      "button": "Xem trên GitHub"
+    },
+    "platforms": {
+      "kicker": "Hệ sinh thái",
+      "title": "Nơi công việc tồn tại",
+      "p": "Mọi thứ schematize xây dựng công khai, được tổ chức tại ba nơi.",
+      "items": [
+        {
+          "h": "Kỹ năng",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Danh mục các kỹ năng kỹ thuật giúp các tác nhân AI tuân theo tiêu chuẩn nội bộ — cài đặt chỉ với một lệnh."
+        },
+        {
+          "h": "Nghiên cứu",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Các bài báo, ghi chú và phát hiện từ nghiên cứu công nghệ của chúng tôi — được công bố khi chúng tôi học hỏi."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Dự án mã nguồn mở — schematize.org",
+      "desc": "Các dự án mã nguồn mở từ phòng thí nghiệm schematize: schematize CLI và danh mục kỹ năng kỹ thuật cho Claude Code. Đọc mã nguồn, fork nó, đóng góp."
+    },
+    "hero": {
+      "kicker": "Dự án",
+      "h1": "Các công cụ mã nguồn mở để xây dựng với các tác nhân AI.",
+      "sub": "Mọi thứ chúng tôi xây dựng để làm cho kỹ thuật có hỗ trợ tác nhân trở nên tái lập và an toàn — miễn phí để đọc, chạy và fork."
+    },
+    "list": {
+      "title": "Những gì chúng tôi duy trì",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Một ứng dụng dòng lệnh ưu tiên Linux giúp cài đặt và quản lý phiên bản các kỹ năng kỹ thuật cho Claude Code và chạy overdev — quá trình phát triển liên tục, không giám sát, không dừng lại cho đến khi hoàn thành danh sách kiểm tra.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Kỹ năng kỹ thuật",
+          "p": "Các sổ tay quy chuẩn cho Claude Code — engineering, go, rust, web, seo, node và pentest — mỗi cái đều có những nền tảng không thể thương lượng về bảo mật, kiểm thử và kiến trúc.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Một bộ quy tắc SEO đầy đủ dưới dạng kỹ năng: kỹ thuật, on-page, nội dung, dữ liệu có cấu trúc, quốc tế/đa miền và tối ưu hóa câu trả lời AI.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "AppSec phòng thủ và red-teaming được ủy quyền dưới dạng kỹ năng: lập bản đồ bề mặt tấn công điểm cuối, phạm vi OWASP và mô hình hóa mối đe dọa — luôn trong phạm vi cho phép.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Đọc mã nguồn.",
+      "p": "Tất cả đều công khai. Gắn sao, fork, mở một issue — hoặc dùng schematize CLI để cài đặt trong vài giây.",
+      "button": "Mở GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Nghiên cứu công nghệ — schematize.org",
+      "desc": "Nghiên cứu từ phòng thí nghiệm schematize về kỹ thuật với các tác nhân AI: điều phối đáng tin cậy, bảo mật của việc phân phối có hỗ trợ AI, và các tiêu chuẩn làm cho đầu ra của tác nhân trở nên đáng tin cậy."
+    },
+    "hero": {
+      "kicker": "Nghiên cứu",
+      "h1": "Cách xây dựng với các tác nhân AI — và tin tưởng vào kết quả.",
+      "sub": "Chúng tôi nghiên cứu điều gì làm cho kỹ thuật có hỗ trợ tác nhân trở nên đáng tin cậy và an toàn, rồi biến câu trả lời thành các công cụ và tiêu chuẩn mở mà bất kỳ ai cũng có thể sử dụng."
+    },
+    "areas": {
+      "title": "Lĩnh vực nghiên cứu",
+      "items": [
+        {
+          "h": "Kỹ thuật tác nhân đáng tin cậy",
+          "p": "Điều phối, phân rã và các rào chắn giúp các tác nhân AI bám sát nhiệm vụ qua công việc dài, nhiều bước — mà không dừng lại quá sớm hoặc đi chệch khỏi đặc tả."
+        },
+        {
+          "h": "Bảo mật của việc phân phối có hỗ trợ AI",
+          "p": "Cách mã do tác nhân viết bị lỗi, cách phát hiện nó, và cách biến an toàn từ thiết kế thành mặc định: IAM, AppSec và red-teaming được ủy quyền đối với những gì tác nhân tạo ra."
+        },
+        {
+          "h": "Tiêu chuẩn & đánh giá",
+          "p": "'Tốt' nghĩa là gì đối với đầu ra của tác nhân, và cách đo lường nó: các sổ tay quy chuẩn, cổng chất lượng và kiểm thử chứng minh hành vi thay vì cảm tính."
+        },
+        {
+          "h": "Trải nghiệm nhà phát triển",
+          "p": "Biến cách đúng thành cách dễ — bộ công cụ cài đặt các tiêu chuẩn, giữ chúng luôn cập nhật, và không cản đường nhà phát triển."
+        }
+      ]
+    },
+    "approach": {
+      "title": "Cách tiếp cận của chúng tôi",
+      "items": [
+        {
+          "h": "Công khai",
+          "p": "Các phát hiện và công cụ được công bố, không giữ riêng. Khả năng tái lập chính là điều cốt lõi."
+        },
+        {
+          "h": "Bám sát thực tiễn",
+          "p": "Chúng tôi nghiên cứu bằng cách xây dựng và đưa vào sử dụng — phòng thí nghiệm và các sản phẩm nuôi dưỡng lẫn nhau."
+        },
+        {
+          "h": "Ưu tiên bảo mật",
+          "p": "Nếu chạy nó không an toàn thì chưa hoàn thành. Mô hình hóa mối đe dọa và kiểm thử là một phần của phương pháp."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Theo dõi nghiên cứu.",
+      "p": "Chúng tôi viết lại những gì học được trên blog, và các công cụ xuất hiện trên GitHub.",
+      "button": "Đọc blog"
+    }
+  },
+  "common": {
+    "learn_more": "Tìm hiểu thêm",
+    "visit": "Truy cập"
+  },
+  "sponsors": {
+    "title": "Nhà tài trợ"
+  }
+}

@@ -1,53 +1,97 @@
 ---
-// Footer — navegação + ecossistema da casa. Os links pros outros domínios são
-// dofollow de propósito: reforçam a marca como ENTIDADE única (estratégia SEO
-// multi-domínio, sem canonical cruzado). Sem emoji.
-import { t, path, type Locale } from "../lib/i18n";
+// Footer institucional (.org) — navegação interna + recursos .org válidos + legal +
+// dados fiscais da empresa. Tudo consolidado no schematize.org: sem links cruzados
+// para .net/.me/.com.br (esses domínios agora redirecionam 301 para cá). Sem emoji.
+import { t, tx, path, type Locale } from "../lib/i18n";
 interface Props { locale: Locale; }
 const { locale } = Astro.props;
-const year = 2026;
-const nav = [
-  { key: "projects", label: t(locale, "nav.projects") },
-  { key: "research", label: t(locale, "nav.research") },
+const year = new Date().getFullYear();
+
+// Colunas de navegação — apenas destinos .org válidos e páginas internas.
+const explore = [
+  { href: path(locale, "projects"), label: t(locale, "nav.projects") },
+  { href: path(locale, "research"), label: t(locale, "nav.research") },
 ];
-const ecosystem = [
-  { href: "https://schematize.net", label: "schematize.net" },
-  { href: "https://blog.schematize.net", label: t(locale, "footer.blog") },
-  { href: "https://github.com/schematizeme", label: "GitHub" },
-  { href: "https://schematize.com.br", label: "schematize.com.br" },
+const company = [
+  { href: path(locale, "about"), label: t(locale, "nav.about") },
+  { href: path(locale, "contact"), label: t(locale, "nav.contact") },
 ];
+const resources = [
+  { href: "https://skills.schematize.org", label: "skills.schematize.org" },
+  { href: "https://learn.schematize.org", label: "learn.schematize.org" },
+];
+const legal = [
+  { href: path(locale, "legal"), label: t(locale, "nav.legal") },
+  { href: path(locale, "legal/privacy"), label: t(locale, "legal.docs.privacy.h1") },
+  { href: path(locale, "legal/cookies"), label: t(locale, "legal.docs.cookies.h1") },
+  { href: path(locale, "legal/terms-of-use"), label: t(locale, "legal.docs.termsUse.h1") },
+  { href: path(locale, "legal/terms-of-service"), label: t(locale, "legal.docs.termsService.h1") },
+  { href: path(locale, "sitemap"), label: t(locale, "footer.sitemap") },
+];
+
+// Dados fiscais (fonte única no i18n `company`). O e-mail contábil é o contato
+// fiscal oficial da empresa — mantido mesmo com o domínio .me redirecionando.
+const legalName = t(locale, "company.legalName");
+const cnpj = t(locale, "company.cnpj");
+const location = t(locale, "company.location");
+const email = t(locale, "company.email");
 ---
 <footer class="site-footer">
-  <div class="wrap grid cols-3 top">
-    <div>
+  <div class="wrap cols">
+    <div class="brand-col">
       <div class="brand">schematize<span>.org</span></div>
       <p class="muted">{t(locale, "footer.tagline")}</p>
+      <ul class="eco" role="list">
+        <li><a href="https://github.com/schematizeme">GitHub</a></li>
+      </ul>
     </div>
-    <nav aria-label="Footer">
+    <nav aria-label={t(locale, "footer.explore")}>
       <h3>{t(locale, "footer.explore")}</h3>
       <ul role="list">
-        {nav.map((n) => (<li><a href={path(locale, n.key)}>{n.label}</a></li>))}
+        {explore.map((n) => (<li><a href={n.href}>{n.label}</a></li>))}
       </ul>
     </nav>
-    <nav aria-label="Ecosystem">
-      <h3>{t(locale, "footer.ecosystem")}</h3>
+    <nav aria-label={t(locale, "footer.company")}>
+      <h3>{t(locale, "footer.company")}</h3>
       <ul role="list">
-        {ecosystem.map((e) => (<li><a href={e.href}>{e.label}</a></li>))}
+        {company.map((n) => (<li><a href={n.href}>{n.label}</a></li>))}
+      </ul>
+    </nav>
+    <nav aria-label={t(locale, "footer.resources")}>
+      <h3>{t(locale, "footer.resources")}</h3>
+      <ul role="list">
+        {resources.map((n) => (<li><a href={n.href}>{n.label}</a></li>))}
+      </ul>
+    </nav>
+    <nav aria-label={t(locale, "footer.legal")}>
+      <h3>{t(locale, "footer.legal")}</h3>
+      <ul role="list">
+        {legal.map((n) => (<li><a href={n.href}>{n.label}</a></li>))}
       </ul>
     </nav>
   </div>
   <div class="wrap bottom">
-    <span class="muted">© {year} schematize</span>
+    <p class="legal-line muted">
+      © {year} {legalName} · CNPJ {cnpj} · {location} · <a href={`mailto:${email}`}>{email}</a>
+    </p>
     <span class="muted">{t(locale, "footer.made")}</span>
   </div>
 </footer>
 <style>
-  .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding-block: clamp(2.5rem, 5vw, 4rem) 1.5rem; margin-top: 2rem; }
-  .top { align-items: start; }
-  .brand { font-family: var(--font-disp); font-weight: 700; font-size: 1.1rem; }
-  .brand span { color: var(--muted); font-weight: 500; }
-  .site-footer h3 { font-size: var(--step-1); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-family: var(--font-mono); font-weight: 500; }
-  .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
-  .site-footer a { color: var(--ink); font-size: var(--step-1); }
-  .bottom { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; justify-content: space-between; margin-top: 2rem; padding-top: 1.3rem; border-top: 1px solid var(--line); }
+  .site-footer { border-top: 1px solid var(--line); background: var(--surface); padding-block: clamp(3rem, 6vw, 4.5rem) 1.5rem; margin-top: 2rem; }
+  .cols { display: grid; grid-template-columns: 1.6fr repeat(4, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+  @media (max-width: 900px) { .cols { grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 620px) { .cols { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 420px) { .cols { grid-template-columns: 1fr; } }
+  .brand { font-family: var(--font-disp); font-weight: 600; font-size: 1.12rem; letter-spacing: -0.03em; }
+  .brand span { color: var(--faint); font-weight: 500; }
+  .brand-col .muted { margin-top: 0.6rem; max-width: 34ch; }
+  .eco { list-style: none; padding: 0; margin: 1.1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
+  .eco a { color: var(--muted); font-size: var(--step-1); }
+  .site-footer h3 { font-size: var(--step-1); letter-spacing: -0.01em; color: var(--muted); font-family: var(--font-sans); font-weight: 600; margin: 0 0 0.9rem; }
+  .site-footer nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
+  .site-footer nav a { color: var(--ink-2); font-size: var(--step-1); }
+  .bottom { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; justify-content: space-between; align-items: baseline; margin-top: 2.5rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+  .legal-line { margin: 0; font-size: var(--step-1); max-width: none; }
+  .legal-line a { color: var(--muted); }
 </style>

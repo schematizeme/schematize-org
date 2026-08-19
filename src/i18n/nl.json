@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "Projecten",
+    "research": "Onderzoek",
+    "skills": "Skills",
+    "academy": "Academy",
+    "login": "Inloggen / Registreren",
+    "cta": "Broncode bekijken"
+  },
+  "footer": {
+    "tagline": "Het open-source- en technologieonderzoekslab achter schematize.",
+    "explore": "Ontdekken",
+    "ecosystem": "Ecosysteem",
+    "blog": "Blog",
+    "made": "In de openbaarheid gebouwd.",
+    "platforms": "Platforms",
+    "commercial": "Commercieel"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — open-source- & AI-engineering-onderzoekslab",
+      "desc": "schematize.org is het open-source- en technologieonderzoekslab achter schematize: tools die in de openbaarheid worden gebouwd en onderzoek naar engineering met AI-agents. Ontdek ons werk."
+    },
+    "hero": {
+      "kicker": "Open source & onderzoek",
+      "h1": "Engineering voor AI-agents, in de openbaarheid gebouwd.",
+      "sub": "schematize.org is waar we onze open-sourcetools ontwikkelen en technologieonderzoek delen over hoe je AI-agents bouwt, beveiligt en orkestreert die standhouden in de echte wereld.",
+      "cta1": "Projecten ontdekken",
+      "cta2": "Lees het onderzoek"
+    },
+    "mission": {
+      "kicker": "Missie",
+      "title": "Software die door agents wordt gebouwd betrouwbaar maken.",
+      "p": "AI-agents kunnen snel veel code schrijven — maar snel is waardeloos als het niet correct, veilig en onderhoudbaar is. Wij bouwen de open tools en de gedeelde standaarden die de output van agents omzetten in software die je echt in productie kunt draaien, en we publiceren wat we onderweg leren."
+    },
+    "pillars": {
+      "title": "Waar we aan werken",
+      "items": [
+        {
+          "key": "projects",
+          "h": "Open-sourceprojecten",
+          "p": "De schematize-CLI, de catalogus met engineering-skills voor Claude Code en de tooling die het allemaal reproduceerbaar maakt — allemaal leesbaar, forkbaar en gratis."
+        },
+        {
+          "key": "research",
+          "h": "Technologieonderzoek",
+          "p": "Hoe je betrouwbaar en veilig engineert met AI-agents: orkestratie, standaarden, evaluatie en de beveiliging van AI-ondersteunde levering."
+        }
+      ]
+    },
+    "why": {
+      "title": "Hoe we werken",
+      "items": [
+        {
+          "h": "Open by default",
+          "p": "Onze tools zijn open source en onze bevindingen zijn openbaar. Als het ertoe doet, kun je het lezen, draaien en erop voortbouwen."
+        },
+        {
+          "h": "Rigoureus",
+          "p": "Standaarden boven onderbuikgevoel: normatieve playbooks, echte tests en beveiliging behandeld als een eersteklas eis — niet als bijzaak achteraf."
+        },
+        {
+          "h": "Praktisch",
+          "p": "Onderzoek dat in productie komt. Alles wat we publiceren is bedoeld om te veranderen hoe echte teams met agents bouwen, niet om in een la te belanden."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ontdek het werk.",
+      "p": "Alles wat we bouwen staat op GitHub, en alles wat we leren belandt op de blog.",
+      "button": "Bekijk op GitHub"
+    },
+    "platforms": {
+      "kicker": "Het ecosysteem",
+      "title": "Waar het werk leeft",
+      "p": "Alles wat schematize in de openbaarheid bouwt, verdeeld over drie plekken.",
+      "items": [
+        {
+          "h": "Skills",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "De catalogus met engineering-skills die AI-agents de huisstandaarden laten volgen — te installeren met één commando."
+        },
+        {
+          "h": "Onderzoek",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Papers, notities en bevindingen uit ons technologieonderzoek — gepubliceerd terwijl we leren."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Open-sourceprojecten — schematize.org",
+      "desc": "Open-sourceprojecten van het schematize-lab: de schematize-CLI en de catalogus met engineering-skills voor Claude Code. Lees de broncode, fork het, draag bij."
+    },
+    "hero": {
+      "kicker": "Projecten",
+      "h1": "Open-sourcetools om te bouwen met AI-agents.",
+      "sub": "Alles wat we bouwen om agent-ondersteunde engineering reproduceerbaar en veilig te maken — vrij om te lezen, te draaien en te forken."
+    },
+    "list": {
+      "title": "Wat we onderhouden",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Een Linux-first command-line-app die engineering-skills voor Claude Code installeert en versiebeheer geeft en overdev draait — continue, onbeheerde ontwikkeling die niet stopt tot de checklist af is.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Engineering-skills",
+          "p": "Normatieve playbooks voor Claude Code — engineering, go, rust, web, seo, node en pentest — elk met niet-onderhandelbare ondergrenzen voor beveiliging, testen en architectuur.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Een volledige SEO-discipline als skill: technisch, on-page, content, gestructureerde data, internationale/multi-domeinoptimalisatie en optimalisatie voor AI-antwoorden.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "Defensieve AppSec en geautoriseerde red-teaming als skill: het in kaart brengen van het aanvalsoppervlak van endpoints, OWASP-dekking en threat modeling — altijd binnen scope.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Lees de broncode.",
+      "p": "Het is allemaal openbaar. Geef het een ster, fork het, open een issue — of gebruik de schematize-CLI om het in seconden te installeren.",
+      "button": "GitHub openen"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Technologieonderzoek — schematize.org",
+      "desc": "Onderzoek van het schematize-lab naar engineering met AI-agents: betrouwbare orkestratie, de beveiliging van AI-ondersteunde levering en standaarden die de output van agents betrouwbaar maken."
+    },
+    "hero": {
+      "kicker": "Onderzoek",
+      "h1": "Hoe je bouwt met AI-agents — en het resultaat vertrouwt.",
+      "sub": "We bestuderen wat agent-ondersteunde engineering betrouwbaar en veilig maakt, en zetten de antwoorden om in open tools en standaarden die iedereen kan gebruiken."
+    },
+    "areas": {
+      "title": "Onderzoeksgebieden",
+      "items": [
+        {
+          "h": "Betrouwbare agent-engineering",
+          "p": "Orkestratie, decompositie en guardrails die AI-agents op taak houden tijdens langdurig werk met meerdere stappen — zonder voortijdig te stoppen of af te dwalen van de spec."
+        },
+        {
+          "h": "Beveiliging van AI-ondersteunde levering",
+          "p": "Hoe door agents geschreven code faalt, hoe je het opvangt en hoe je secure-by-design de standaard maakt: IAM, AppSec en geautoriseerde red-teaming van wat agents produceren."
+        },
+        {
+          "h": "Standaarden & evaluatie",
+          "p": "Wat 'goed' betekent voor agent-output en hoe je het meet: normatieve playbooks, quality gates en tests die gedrag bewijzen in plaats van onderbuikgevoel."
+        },
+        {
+          "h": "Ontwikkelaarservaring",
+          "p": "De juiste manier de makkelijke manier maken — tooling die standaarden installeert, ze actueel houdt en de ontwikkelaar niet in de weg zit."
+        }
+      ]
+    },
+    "approach": {
+      "title": "Onze aanpak",
+      "items": [
+        {
+          "h": "In de openbaarheid",
+          "p": "Bevindingen en tools worden gepubliceerd, niet opgepot. Reproduceerbaarheid is het punt."
+        },
+        {
+          "h": "Geworteld in de praktijk",
+          "p": "We onderzoeken door te bouwen en te leveren — het lab en de producten voeden elkaar."
+        },
+        {
+          "h": "Security-first",
+          "p": "Als het niet veilig is om te draaien, is het niet af. Threat modeling en testen zijn onderdeel van de methode."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Volg het onderzoek.",
+      "p": "We schrijven op wat we leren op de blog, en de tools landen op GitHub.",
+      "button": "Lees de blog"
+    }
+  },
+  "common": {
+    "learn_more": "Meer informatie",
+    "visit": "Bezoeken"
+  },
+  "sponsors": {
+    "title": "Sponsors"
+  }
+}

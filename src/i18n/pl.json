@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "Projekty",
+    "research": "Badania",
+    "skills": "Umiejętności",
+    "academy": "Akademia",
+    "login": "Zaloguj się / Zarejestruj się",
+    "cta": "Zobacz kod źródłowy"
+  },
+  "footer": {
+    "tagline": "Laboratorium open source i badań technologicznych stojące za schematize.",
+    "explore": "Przeglądaj",
+    "ecosystem": "Ekosystem",
+    "blog": "Blog",
+    "made": "Tworzone otwarcie.",
+    "platforms": "Platformy",
+    "commercial": "Komercyjne"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — laboratorium open source i inżynierii AI",
+      "desc": "schematize.org to laboratorium open source i badań technologicznych stojące za schematize: narzędzia tworzone otwarcie oraz badania nad inżynierią z agentami AI. Poznaj naszą pracę."
+    },
+    "hero": {
+      "kicker": "Open source i badania",
+      "h1": "Inżynieria dla agentów AI, tworzona otwarcie.",
+      "sub": "schematize.org to miejsce, w którym rozwijamy nasze narzędzia open source i dzielimy się badaniami technologicznymi nad tym, jak budować, zabezpieczać i orkiestrować agentów AI, którzy sprawdzają się w prawdziwym świecie.",
+      "cta1": "Przeglądaj projekty",
+      "cta2": "Przeczytaj badania"
+    },
+    "mission": {
+      "kicker": "Misja",
+      "title": "Uczynić oprogramowanie tworzone przez agentów godnym zaufania.",
+      "p": "Agenci AI potrafią szybko napisać dużo kodu — ale szybkość jest bezwartościowa, jeśli kod nie jest poprawny, bezpieczny i łatwy w utrzymaniu. Budujemy otwarte narzędzia i wspólne standardy, które zamieniają wynik pracy agentów w oprogramowanie, które naprawdę można uruchomić na produkcji, i publikujemy to, czego uczymy się po drodze."
+    },
+    "pillars": {
+      "title": "Nad czym pracujemy",
+      "items": [
+        {
+          "key": "projects",
+          "h": "Projekty open source",
+          "p": "CLI schematize, katalog umiejętności inżynieryjnych dla Claude Code oraz narzędzia, które czynią to wszystko odtwarzalnym — czytelne, gotowe do sforkowania i darmowe."
+        },
+        {
+          "key": "research",
+          "h": "Badania technologiczne",
+          "p": "Jak niezawodnie i bezpiecznie prowadzić inżynierię z agentami AI: orkiestracja, standardy, ewaluacja i bezpieczeństwo dostarczania wspieranego przez AI."
+        }
+      ]
+    },
+    "why": {
+      "title": "Jak pracujemy",
+      "items": [
+        {
+          "h": "Otwartość domyślnie",
+          "p": "Nasze narzędzia są open source, a nasze wnioski są publiczne. Jeśli coś ma znaczenie, możesz to przeczytać, uruchomić i na tym zbudować."
+        },
+        {
+          "h": "Rygor",
+          "p": "Standardy zamiast przeczuć: normatywne podręczniki, prawdziwe testy i bezpieczeństwo traktowane jako wymóg pierwszej kategorii — nie jako coś dodanego na końcu."
+        },
+        {
+          "h": "Praktyczność",
+          "p": "Badania, które trafiają na produkcję. Wszystko, co publikujemy, ma zmieniać sposób, w jaki prawdziwe zespoły budują z agentami, a nie leżeć w szufladzie."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Poznaj naszą pracę.",
+      "p": "Wszystko, co budujemy, jest na GitHub, a wszystko, czego się uczymy, trafia na blog.",
+      "button": "Zobacz na GitHub"
+    },
+    "platforms": {
+      "kicker": "Ekosystem",
+      "title": "Gdzie żyje nasza praca",
+      "p": "Wszystko, co schematize tworzy otwarcie, uporządkowane w trzech miejscach.",
+      "items": [
+        {
+          "h": "Umiejętności",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Katalog umiejętności inżynieryjnych, które sprawiają, że agenci AI przestrzegają standardów domu — instalowalny jedną komendą."
+        },
+        {
+          "h": "Badania",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Artykuły, notatki i wyniki naszych badań technologicznych — publikowane w miarę jak się uczymy."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projekty open source — schematize.org",
+      "desc": "Projekty open source z laboratorium schematize: CLI schematize i katalog umiejętności inżynieryjnych dla Claude Code. Czytaj kod źródłowy, forkuj go, współtwórz."
+    },
+    "hero": {
+      "kicker": "Projekty",
+      "h1": "Narzędzia open source do budowania z agentami AI.",
+      "sub": "Wszystko, co budujemy, aby inżynieria wspierana przez agentów była odtwarzalna i bezpieczna — swobodnie do czytania, uruchamiania i forkowania."
+    },
+    "list": {
+      "title": "Co utrzymujemy",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Aplikacja wiersza poleceń zorientowana na Linux, która instaluje i wersjonuje umiejętności inżynieryjne dla Claude Code oraz uruchamia overdev — ciągły, bezobsługowy rozwój, który nie zatrzymuje się, dopóki lista kontrolna nie zostanie ukończona.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Umiejętności inżynieryjne",
+          "p": "Normatywne podręczniki dla Claude Code — engineering, go, rust, web, seo, node i pentest — każdy z nienegocjowalnymi minimami w zakresie bezpieczeństwa, testowania i architektury.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Pełna dyscyplina SEO w formie umiejętności: techniczna, on-page, treściowa, dane strukturalne, optymalizacja międzynarodowa/wielodomenowa oraz optymalizacja pod odpowiedzi AI.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "Defensywny AppSec i autoryzowany red-teaming w formie umiejętności: mapowanie powierzchni ataku endpointów, pokrycie OWASP i modelowanie zagrożeń — zawsze w ramach zakresu.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Przeczytaj kod źródłowy.",
+      "p": "Wszystko jest publiczne. Daj gwiazdkę, sforkuj, zgłoś issue — albo użyj CLI schematize, aby zainstalować to w kilka sekund.",
+      "button": "Otwórz GitHub"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Badania technologiczne — schematize.org",
+      "desc": "Badania z laboratorium schematize nad inżynierią z agentami AI: niezawodna orkiestracja, bezpieczeństwo dostarczania wspieranego przez AI oraz standardy, które czynią wynik pracy agentów godnym zaufania."
+    },
+    "hero": {
+      "kicker": "Badania",
+      "h1": "Jak budować z agentami AI — i ufać rezultatowi.",
+      "sub": "Badamy, co sprawia, że inżynieria wspierana przez agentów jest niezawodna i bezpieczna, i przekuwamy odpowiedzi w otwarte narzędzia oraz standardy dostępne dla każdego."
+    },
+    "areas": {
+      "title": "Obszary badań",
+      "items": [
+        {
+          "h": "Niezawodna inżynieria agentów",
+          "p": "Orkiestracja, dekompozycja i mechanizmy zabezpieczające, które utrzymują agentów AI przy zadaniu podczas długiej, wieloetapowej pracy — bez przedwczesnego zatrzymywania się ani odchodzenia od specyfikacji."
+        },
+        {
+          "h": "Bezpieczeństwo dostarczania wspieranego przez AI",
+          "p": "Jak zawodzi kod pisany przez agentów, jak to wychwycić i jak uczynić bezpieczeństwo w projekcie domyślnym: IAM, AppSec i autoryzowany red-teaming tego, co tworzą agenci."
+        },
+        {
+          "h": "Standardy i ewaluacja",
+          "p": "Co oznacza „dobry” wynik pracy agentów i jak to zmierzyć: normatywne podręczniki, bramki jakości i testy, które dowodzą zachowania zamiast przeczuć."
+        },
+        {
+          "h": "Doświadczenie programisty",
+          "p": "Sprawić, by właściwa droga była łatwą drogą — narzędzia, które instalują standardy, utrzymują je aktualnymi i nie wchodzą programiście w drogę."
+        }
+      ]
+    },
+    "approach": {
+      "title": "Nasze podejście",
+      "items": [
+        {
+          "h": "Otwarcie",
+          "p": "Wyniki i narzędzia są publikowane, a nie skrywane. Odtwarzalność jest sednem."
+        },
+        {
+          "h": "Osadzone w praktyce",
+          "p": "Badamy, budując i dostarczając — laboratorium i produkty wzajemnie się napędzają."
+        },
+        {
+          "h": "Bezpieczeństwo przede wszystkim",
+          "p": "Jeśli nie jest bezpieczne do uruchomienia, nie jest gotowe. Modelowanie zagrożeń i testowanie są częścią metody."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Śledź badania.",
+      "p": "To, czego się uczymy, opisujemy na blogu, a narzędzia trafiają na GitHub.",
+      "button": "Czytaj blog"
+    }
+  },
+  "common": {
+    "learn_more": "Dowiedz się więcej",
+    "visit": "Odwiedź"
+  },
+  "sponsors": {
+    "title": "Sponsorzy"
+  }
+}

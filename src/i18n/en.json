@@ -2,14 +2,22 @@
   "nav": {
     "projects": "Projects",
     "research": "Research",
+    "about": "About",
+    "contact": "Contact",
+    "legal": "Legal",
+    "skills": "Skills",
+    "academy": "Academy",
+    "login": "Sign in / Sign up",
     "cta": "View source"
   },
   "footer": {
     "tagline": "The open-source and technology-research lab behind schematize.",
     "explore": "Explore",
-    "ecosystem": "Ecosystem",
-    "blog": "Blog",
-    "made": "Built in the open."
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal",
+    "made": "Built in the open.",
+    "sitemap": "Site map"
   },
   "home": {
     "meta": {
@@ -31,22 +39,58 @@
     "pillars": {
       "title": "What we work on",
       "items": [
-        { "key": "projects", "h": "Open-source projects", "p": "The schematize CLI, the engineering skill catalog for Claude Code, and the tooling that makes it all reproducible — all readable, forkable and free." },
-        { "key": "research", "h": "Technology research", "p": "How to engineer with AI agents reliably and securely: orchestration, standards, evaluation and the security of AI-assisted delivery." }
+        {
+          "key": "projects",
+          "h": "Open-source projects",
+          "p": "The schematize CLI, the engineering skill catalog for Claude Code, and the tooling that makes it all reproducible — all readable, forkable and free."
+        },
+        {
+          "key": "research",
+          "h": "Technology research",
+          "p": "How to engineer with AI agents reliably and securely: orchestration, standards, evaluation and the security of AI-assisted delivery."
+        }
       ]
     },
     "why": {
       "title": "How we work",
       "items": [
-        { "h": "Open by default", "p": "Our tools are open-source and our findings are public. If it matters, you can read it, run it and build on it." },
-        { "h": "Rigorous", "p": "Standards over vibes: normative playbooks, real tests, and security treated as a first-class requirement — not an afterthought." },
-        { "h": "Practical", "p": "Research that ships. Everything we publish is meant to change how real teams build with agents, not to sit in a drawer." }
+        {
+          "h": "Open by default",
+          "p": "Our tools are open-source and our findings are public. If it matters, you can read it, run it and build on it."
+        },
+        {
+          "h": "Rigorous",
+          "p": "Standards over vibes: normative playbooks, real tests, and security treated as a first-class requirement — not an afterthought."
+        },
+        {
+          "h": "Practical",
+          "p": "Research that ships. Everything we publish is meant to change how real teams build with agents, not to sit in a drawer."
+        }
       ]
     },
     "cta": {
       "title": "Explore the work.",
       "p": "Everything we build is on GitHub, and everything we learn ends up on the blog.",
       "button": "View on GitHub"
+    },
+    "platforms": {
+      "kicker": "The ecosystem",
+      "title": "Where the work lives",
+      "p": "Everything schematize builds in the open, organized across the ecosystem.",
+      "items": [
+        {
+          "h": "Skills",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "The catalog of engineering skills that make AI agents follow house standards — installable with one command."
+        },
+        {
+          "h": "Research",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Papers, notes and findings from our technology research — published as we learn."
+        }
+      ]
     }
   },
   "projects": {
@@ -62,10 +106,30 @@
     "list": {
       "title": "What we maintain",
       "items": [
-        { "tag": "CLI · Rust", "h": "schematize", "p": "A Linux-first command-line app that installs and versions engineering skills for Claude Code and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.", "href": "https://github.com/schematizeme/schematize-cli" },
-        { "tag": "Skills · Claude Code", "h": "Engineering skills", "p": "Normative playbooks for Claude Code — engineering, go, rust, web, seo, node and pentest — each with non-negotiable floors for security, testing and architecture.", "href": "https://github.com/schematizeme" },
-        { "tag": "SEO", "h": "schematize-seo", "p": "A full SEO discipline as a skill: technical, on-page, content, structured data, international/multi-domain and AI-answer optimization.", "href": "https://github.com/schematizeme/skill-seo" },
-        { "tag": "Security", "h": "schematize-pentest", "p": "Defensive AppSec and authorized red-teaming as a skill: endpoint attack surface mapping, OWASP coverage and threat modeling — always under scope.", "href": "https://github.com/schematizeme/skill-pentest" }
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "A Linux-first command-line app that installs and versions engineering skills for Claude Code and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Engineering skills",
+          "p": "Normative playbooks for Claude Code — engineering, go, rust, web, seo, node and pentest — each with non-negotiable floors for security, testing and architecture.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "A full SEO discipline as a skill: technical, on-page, content, structured data, international/multi-domain and AI-answer optimization.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "Defensive AppSec and authorized red-teaming as a skill: endpoint attack surface mapping, OWASP coverage and threat modeling — always under scope.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
       ]
     },
     "cta": {
@@ -87,18 +151,39 @@
     "areas": {
       "title": "Research areas",
       "items": [
-        { "h": "Reliable agent engineering", "p": "Orchestration, decomposition and guardrails that keep AI agents on-task through long, multi-step work — without stopping early or drifting from the spec." },
-        { "h": "Security of AI-assisted delivery", "p": "How agent-written code fails, how to catch it, and how to make secure-by-design the default: IAM, AppSec and authorized red-teaming of what agents produce." },
-        { "h": "Standards & evaluation", "p": "What 'good' means for agent output, and how to measure it: normative playbooks, quality gates and tests that prove behavior instead of vibes." },
-        { "h": "Developer experience", "p": "Making the right way the easy way — tooling that installs standards, keeps them current, and gets out of the developer's way." }
+        {
+          "h": "Reliable agent engineering",
+          "p": "Orchestration, decomposition and guardrails that keep AI agents on-task through long, multi-step work — without stopping early or drifting from the spec."
+        },
+        {
+          "h": "Security of AI-assisted delivery",
+          "p": "How agent-written code fails, how to catch it, and how to make secure-by-design the default: IAM, AppSec and authorized red-teaming of what agents produce."
+        },
+        {
+          "h": "Standards & evaluation",
+          "p": "What 'good' means for agent output, and how to measure it: normative playbooks, quality gates and tests that prove behavior instead of vibes."
+        },
+        {
+          "h": "Developer experience",
+          "p": "Making the right way the easy way — tooling that installs standards, keeps them current, and gets out of the developer's way."
+        }
       ]
     },
     "approach": {
       "title": "Our approach",
       "items": [
-        { "h": "In the open", "p": "Findings and tools are published, not hoarded. Reproducibility is the point." },
-        { "h": "Grounded in practice", "p": "We research by building and shipping — the lab and the products feed each other." },
-        { "h": "Security-first", "p": "If it isn't safe to run, it isn't done. Threat modeling and testing are part of the method." }
+        {
+          "h": "In the open",
+          "p": "Findings and tools are published, not hoarded. Reproducibility is the point."
+        },
+        {
+          "h": "Grounded in practice",
+          "p": "We research by building and shipping — the lab and the products feed each other."
+        },
+        {
+          "h": "Security-first",
+          "p": "If it isn't safe to run, it isn't done. Threat modeling and testing are part of the method."
+        }
       ]
     },
     "cta": {
@@ -106,5 +191,254 @@
       "p": "We write up what we learn on the blog, and the tools land on GitHub.",
       "button": "Read the blog"
     }
+  },
+  "common": {
+    "learn_more": "Learn more",
+    "visit": "Visit"
+  },
+  "sponsors": {
+    "title": "Sponsors"
+  },
+  "company": {
+    "legalName": "Schematize Ltda - EPP",
+    "tradeName": "Schematize",
+    "cnpj": "53.942.996/0001-10",
+    "founded": "16/02/2024",
+    "foundedISO": "2024-02-16",
+    "status": "Ativa",
+    "cnae": "Consultoria em tecnologia da informação",
+    "location": "São Paulo, SP",
+    "email": "contabil@schematize.me"
+  },
+  "about": {
+    "meta": {
+      "title": "About — schematize.org",
+      "desc": "About Schematize: the company and open-source lab behind schematize.org. Legal name, registration and institutional details."
+    },
+    "hero": {
+      "kicker": "About",
+      "h1": "The lab and the company behind schematize.",
+      "sub": "schematize.org is the open-source and technology-research home of Schematize — a technology company building engineering tools for and with AI agents, in the open."
+    },
+    "who": {
+      "title": "Who we are",
+      "p1": "Schematize is a Brazilian technology company. We build open-source tools and normative engineering standards that make software written with AI agents correct, secure and maintainable — and we publish what we learn along the way.",
+      "p2": "Everything institutional and open-source now lives on a single home: schematize.org. Our source code is public on GitHub, and our tools install through the schematize CLI."
+    },
+    "mission": {
+      "title": "What drives us",
+      "p": "Make agent-built software trustworthy. Fast is worthless if it isn't correct, secure and maintainable — so we turn agent output into software teams can actually run in production."
+    },
+    "facts": {
+      "title": "Company details",
+      "note": "Institutional and registration data of the company that operates schematize.org.",
+      "labels": {
+        "legalName": "Legal name",
+        "tradeName": "Trade name",
+        "cnpj": "CNPJ",
+        "founded": "Founded",
+        "status": "Registration status",
+        "cnae": "Primary activity (CNAE)",
+        "location": "Location",
+        "contact": "Contact"
+      }
+    },
+    "cta": {
+      "title": "Get in touch.",
+      "p": "Questions about the company, the projects or the research? Reach out or read the source.",
+      "button": "Contact"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — schematize.org",
+      "desc": "Get in touch with Schematize: institutional contact channels for the company and the open-source lab behind schematize.org."
+    },
+    "hero": {
+      "kicker": "Contact",
+      "h1": "Talk to us.",
+      "sub": "The best place to reach the work is where it lives. Pick the channel that fits."
+    },
+    "channels": {
+      "title": "Channels",
+      "items": [
+        {
+          "h": "Institutional & administrative",
+          "p": "For company, invoicing and institutional matters, email us directly.",
+          "href": "mailto:contabil@schematize.me",
+          "label": "contabil@schematize.me"
+        },
+        {
+          "h": "Source & issues",
+          "p": "Report bugs, open issues or contribute to the open-source projects on GitHub.",
+          "href": "https://github.com/schematizeme",
+          "label": "github.com/schematizeme"
+        },
+        {
+          "h": "Skills catalog",
+          "p": "Browse and install the engineering skills for Claude Code.",
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
+        }
+      ]
+    },
+    "note": "By contacting us you agree that we process the data you send solely to respond to your request. See the Privacy Policy."
+  },
+  "legal": {
+    "meta": {
+      "title": "Legal — schematize.org",
+      "desc": "Legal center of schematize.org: terms of use, terms of service, privacy policy (LGPD) and cookie policy."
+    },
+    "hero": {
+      "kicker": "Legal",
+      "h1": "Legal center",
+      "sub": "The policies that govern this website and our services. Company data and the effective date are on each document."
+    },
+    "disclaimer": "Working draft — not legal advice. These documents are a structural scaffold under review by counsel and may change before taking effect. [REVISAR: advogado]",
+    "effective": "In effect since",
+    "effectiveDate": "2026-08-19",
+    "controllerLabel": "Data controller",
+    "contactLabel": "Contact",
+    "backToLegal": "Back to Legal center",
+    "index": {
+      "title": "Policies",
+      "items": [
+        {
+          "h": "Terms of Use",
+          "p": "The rules for using this website: intellectual property, conduct and third-party links.",
+          "slug": "legal/terms-of-use"
+        },
+        {
+          "h": "Terms of Service",
+          "p": "The agreement covering our open-source tools and services.",
+          "slug": "legal/terms-of-service"
+        },
+        {
+          "h": "Privacy Policy",
+          "p": "How we handle personal data, under Brazil's LGPD.",
+          "slug": "legal/privacy"
+        },
+        {
+          "h": "Cookie Policy",
+          "p": "The cookies and similar technologies this site uses, and how to manage them.",
+          "slug": "legal/cookies"
+        }
+      ]
+    },
+    "docs": {
+      "termsUse": {
+        "meta": {
+          "title": "Terms of Use — schematize.org",
+          "desc": "Terms of use for the schematize.org website."
+        },
+        "h1": "Terms of Use",
+        "sub": "Rules for using the schematize.org website.",
+        "sections": [
+          { "h": "1. Acceptance", "p": "By accessing schematize.org you agree to these Terms of Use. If you do not agree, please do not use the site." },
+          { "h": "2. What the site offers", "p": "schematize.org is an informational and institutional site that presents our open-source projects and technology research. It is not a store." },
+          { "h": "3. Intellectual property", "p": "The schematize brand and the site content are protected. Our open-source projects are licensed under the terms stated in each repository on GitHub." },
+          { "h": "4. Acceptable use", "p": "You agree not to misuse the site, attempt to disrupt it, or use it for unlawful purposes." },
+          { "h": "5. Third-party links", "p": "The site links to third-party destinations (for example, GitHub). We are not responsible for third-party content." },
+          { "h": "6. Disclaimer and limitation of liability", "p": "The site is provided \"as is\", without warranties. [REVISAR: advogado]" },
+          { "h": "7. Changes", "p": "We may update these terms; the effective date above reflects the current version." },
+          { "h": "8. Governing law and venue", "p": "These terms are governed by the laws of Brazil. [REVISAR: advogado]" }
+        ]
+      },
+      "termsService": {
+        "meta": {
+          "title": "Terms of Service — schematize.org",
+          "desc": "Terms of service for schematize tools and services."
+        },
+        "h1": "Terms of Service",
+        "sub": "The agreement covering our tools and services.",
+        "sections": [
+          { "h": "1. Parties and definitions", "p": "These terms govern the relationship between Schematize and users of our tools and services." },
+          { "h": "2. Scope", "p": "Our open-source tools (such as the schematize CLI and the engineering skills) are provided under their respective open-source licenses on GitHub." },
+          { "h": "3. Accounts", "p": "Where a service requires authentication, it is provided through auth.schematize.org. You are responsible for keeping your credentials secure." },
+          { "h": "4. Fees", "p": "Open-source tools are free. Any paid service is described at the point of contracting. [REVISAR: advogado]" },
+          { "h": "5. Obligations of the parties", "p": "You agree to use the services lawfully; we agree to provide them with reasonable care." },
+          { "h": "6. Suspension and termination", "p": "We may suspend access in case of misuse or security risk." },
+          { "h": "7. Warranties and limitation of liability", "p": "Services are provided \"as is\" to the extent permitted by law. [REVISAR: advogado]" },
+          { "h": "8. Privacy", "p": "Personal data is processed under our Privacy Policy." },
+          { "h": "9. Governing law and venue", "p": "Governed by the laws of Brazil. [REVISAR: advogado]" }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Privacy Policy — schematize.org",
+          "desc": "Privacy policy of schematize.org under Brazil's LGPD: controller, data collected, purpose, legal basis, retention and data-subject rights."
+        },
+        "h1": "Privacy Policy",
+        "sub": "How we handle personal data, under Brazil's General Data Protection Law (LGPD).",
+        "sections": [
+          { "h": "1. Controller", "p": "The data controller is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazil." },
+          { "h": "2. Data Protection Officer (DPO)", "p": "For privacy matters and to exercise your rights, contact contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. Data we collect", "p": "This is an informational site with no login or forms; we collect only minimal technical data needed to serve pages and keep the site secure. If you email us, we process the data you send." },
+          { "h": "4. Purpose", "p": "To deliver and secure the website, and to respond to messages you send us." },
+          { "h": "5. Legal basis", "p": "Legitimate interest to operate and secure the site; consent or execution of a request when you contact us (LGPD art. 7). [REVISAR: advogado]" },
+          { "h": "6. Sharing", "p": "We use infrastructure and hosting providers acting as operators; we do not sell personal data." },
+          { "h": "7. International transfer", "p": "Some providers may process data outside Brazil, with safeguards. [REVISAR: advogado]" },
+          { "h": "8. Retention", "p": "We keep data only for as long as necessary for the purposes above or as required by law." },
+          { "h": "9. Security", "p": "We apply reasonable technical and organizational measures to protect data." },
+          { "h": "10. Your rights", "p": "Under LGPD art. 18 you may request confirmation, access, correction, anonymization, portability, deletion and information on sharing, and revoke consent — by emailing contabil@schematize.me." },
+          { "h": "11. Cookies", "p": "See our Cookie Policy for details on cookies and similar technologies." },
+          { "h": "12. Changes", "p": "We may update this policy; the effective date above reflects the current version." }
+        ]
+      },
+      "cookies": {
+        "meta": {
+          "title": "Cookie Policy — schematize.org",
+          "desc": "Cookie policy of schematize.org: categories of cookies, purposes and how to manage them."
+        },
+        "h1": "Cookie Policy",
+        "sub": "The cookies and similar technologies this site uses.",
+        "sections": [
+          { "h": "1. What cookies are", "p": "Cookies are small files stored on your device that help a site work and remember preferences." },
+          { "h": "2. Categories", "p": "Essential: required for the site to function (for example, remembering your language). Performance/analytics, functional and marketing cookies are only used with your opt-in consent." },
+          { "h": "3. What we use", "p": "This site stores a language preference locally to keep your chosen language. It does not run non-essential analytics or marketing cookies without consent. [REVISAR: negócio]" },
+          { "h": "4. Consent", "p": "Non-essential cookies require opt-in consent; essential cookies run without consent." },
+          { "h": "5. Managing cookies", "p": "You can clear or block cookies in your browser settings; blocking essential storage may affect the site." },
+          { "h": "6. Changes", "p": "We may update this policy; the effective date above reflects the current version." }
+        ]
+      }
+    }
+  },
+  "sitemapPage": {
+    "meta": {
+      "title": "Site map — schematize.org",
+      "desc": "Human-readable map of every public page on schematize.org."
+    },
+    "hero": {
+      "kicker": "Site map",
+      "h1": "Site map",
+      "sub": "Every public page on schematize.org, grouped by section."
+    },
+    "groups": [
+      {
+        "h": "Institutional",
+        "links": [
+          { "slug": "", "label": "Home" },
+          { "slug": "about", "label": "About" },
+          { "slug": "contact", "label": "Contact" }
+        ]
+      },
+      {
+        "h": "Work",
+        "links": [
+          { "slug": "projects", "label": "Projects" },
+          { "slug": "research", "label": "Research" }
+        ]
+      },
+      {
+        "h": "Legal",
+        "links": [
+          { "slug": "legal", "label": "Legal center" },
+          { "slug": "legal/terms-of-use", "label": "Terms of Use" },
+          { "slug": "legal/terms-of-service", "label": "Terms of Service" },
+          { "slug": "legal/privacy", "label": "Privacy Policy" },
+          { "slug": "legal/cookies", "label": "Cookie Policy" }
+        ]
+      }
+    ]
   }
 }

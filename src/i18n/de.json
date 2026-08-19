@@ -2,6 +2,9 @@
   "nav": {
     "projects": "Projekte",
     "research": "Forschung",
+    "skills": "Skills",
+    "academy": "Academy",
+    "login": "Anmelden / Registrieren",
     "cta": "Quellcode ansehen"
   },
   "footer": {
@@ -9,7 +12,9 @@
     "explore": "Entdecken",
     "ecosystem": "Ökosystem",
     "blog": "Blog",
-    "made": "Offen entwickelt."
+    "made": "Offen entwickelt.",
+    "platforms": "Plattformen",
+    "commercial": "Kommerziell"
   },
   "home": {
     "meta": {
@@ -31,22 +36,58 @@
     "pillars": {
       "title": "Woran wir arbeiten",
       "items": [
-        { "key": "projects", "h": "Open-Source-Projekte", "p": "Das schematize CLI, der Engineering-Skill-Katalog für Claude Code und das Werkzeug, das alles reproduzierbar macht — lesbar, forkbar und frei." },
-        { "key": "research", "h": "Technologieforschung", "p": "Wie man zuverlässig und sicher mit KI-Agenten arbeitet: Orchestrierung, Standards, Evaluierung und die Sicherheit KI-gestützter Auslieferung." }
+        {
+          "key": "projects",
+          "h": "Open-Source-Projekte",
+          "p": "Das schematize CLI, der Engineering-Skill-Katalog für Claude Code und das Werkzeug, das alles reproduzierbar macht — lesbar, forkbar und frei."
+        },
+        {
+          "key": "research",
+          "h": "Technologieforschung",
+          "p": "Wie man zuverlässig und sicher mit KI-Agenten arbeitet: Orchestrierung, Standards, Evaluierung und die Sicherheit KI-gestützter Auslieferung."
+        }
       ]
     },
     "why": {
       "title": "Wie wir arbeiten",
       "items": [
-        { "h": "Offen als Standard", "p": "Unsere Werkzeuge sind Open Source und unsere Ergebnisse sind öffentlich. Wenn es zählt, können Sie es lesen, ausführen und darauf aufbauen." },
-        { "h": "Rigoros", "p": "Standards statt Bauchgefühl: normative Playbooks, echte Tests und Sicherheit als erstklassige Anforderung — kein nachträglicher Gedanke." },
-        { "h": "Praxisnah", "p": "Forschung, die ausgeliefert wird. Alles, was wir veröffentlichen, soll verändern, wie echte Teams mit Agenten bauen — nicht in der Schublade verstauben." }
+        {
+          "h": "Offen als Standard",
+          "p": "Unsere Werkzeuge sind Open Source und unsere Ergebnisse sind öffentlich. Wenn es zählt, können Sie es lesen, ausführen und darauf aufbauen."
+        },
+        {
+          "h": "Rigoros",
+          "p": "Standards statt Bauchgefühl: normative Playbooks, echte Tests und Sicherheit als erstklassige Anforderung — kein nachträglicher Gedanke."
+        },
+        {
+          "h": "Praxisnah",
+          "p": "Forschung, die ausgeliefert wird. Alles, was wir veröffentlichen, soll verändern, wie echte Teams mit Agenten bauen — nicht in der Schublade verstauben."
+        }
       ]
     },
     "cta": {
       "title": "Entdecken Sie die Arbeit.",
       "p": "Alles, was wir bauen, ist auf GitHub, und alles, was wir lernen, landet im Blog.",
       "button": "Auf GitHub ansehen"
+    },
+    "platforms": {
+      "kicker": "Das Ökosystem",
+      "title": "Wo die Arbeit lebt",
+      "p": "Alles, was schematize offen entwickelt — auf drei Orte verteilt.",
+      "items": [
+        {
+          "h": "Skills",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Der Katalog von Engineering-Skills, die KI-Agenten an die Hausstandards halten — mit einem Befehl installierbar."
+        },
+        {
+          "h": "Research",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Artikel, Notizen und Erkenntnisse aus unserer Technologieforschung — veröffentlicht, während wir lernen."
+        }
+      ]
     }
   },
   "projects": {
@@ -62,10 +103,30 @@
     "list": {
       "title": "Was wir pflegen",
       "items": [
-        { "tag": "CLI · Rust", "h": "schematize", "p": "Eine Linux-first Kommandozeilen-App, die Engineering-Skills für Claude Code installiert und versioniert und overdev ausführt — kontinuierliche, unbeaufsichtigte Entwicklung, die nicht anhält, bis die Checkliste abgearbeitet ist.", "href": "https://github.com/schematizeme/schematize-cli" },
-        { "tag": "Skills · Claude Code", "h": "Engineering-Skills", "p": "Normative Playbooks für Claude Code — engineering, go, rust, web, seo, node und pentest — jedes mit nicht verhandelbaren Mindestanforderungen an Sicherheit, Tests und Architektur.", "href": "https://github.com/schematizeme" },
-        { "tag": "SEO", "h": "schematize-seo", "p": "Eine vollständige SEO-Disziplin als Skill: technisch, On-Page, Content, strukturierte Daten, international/Multi-Domain und Optimierung für KI-Antworten.", "href": "https://github.com/schematizeme/skill-seo" },
-        { "tag": "Security", "h": "schematize-pentest", "p": "Defensive AppSec und autorisiertes Red-Teaming als Skill: Kartierung der Angriffsfläche von Endpunkten, OWASP-Abdeckung und Threat Modeling — stets im vereinbarten Rahmen.", "href": "https://github.com/schematizeme/skill-pentest" }
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Eine Linux-first Kommandozeilen-App, die Engineering-Skills für Claude Code installiert und versioniert und overdev ausführt — kontinuierliche, unbeaufsichtigte Entwicklung, die nicht anhält, bis die Checkliste abgearbeitet ist.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Engineering-Skills",
+          "p": "Normative Playbooks für Claude Code — engineering, go, rust, web, seo, node und pentest — jedes mit nicht verhandelbaren Mindestanforderungen an Sicherheit, Tests und Architektur.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Eine vollständige SEO-Disziplin als Skill: technisch, On-Page, Content, strukturierte Daten, international/Multi-Domain und Optimierung für KI-Antworten.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "Defensive AppSec und autorisiertes Red-Teaming als Skill: Kartierung der Angriffsfläche von Endpunkten, OWASP-Abdeckung und Threat Modeling — stets im vereinbarten Rahmen.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
       ]
     },
     "cta": {
@@ -87,18 +148,39 @@
     "areas": {
       "title": "Forschungsbereiche",
       "items": [
-        { "h": "Zuverlässiges Agenten-Engineering", "p": "Orchestrierung, Zerlegung und Leitplanken, die KI-Agenten durch lange, mehrstufige Arbeit auf Kurs halten — ohne vorzeitig anzuhalten oder von der Spezifikation abzuweichen." },
-        { "h": "Sicherheit KI-gestützter Auslieferung", "p": "Wie von Agenten geschriebener Code versagt, wie man das erkennt und wie man Secure-by-Design zum Standard macht: IAM, AppSec und autorisiertes Red-Teaming dessen, was Agenten produzieren." },
-        { "h": "Standards & Evaluierung", "p": "Was 'gut' für Agenten-Output bedeutet und wie man es misst: normative Playbooks, Quality-Gates und Tests, die Verhalten belegen statt auf Bauchgefühl zu setzen." },
-        { "h": "Developer Experience", "p": "Den richtigen Weg zum einfachen Weg machen — Werkzeuge, die Standards installieren, aktuell halten und dem Entwickler nicht im Weg stehen." }
+        {
+          "h": "Zuverlässiges Agenten-Engineering",
+          "p": "Orchestrierung, Zerlegung und Leitplanken, die KI-Agenten durch lange, mehrstufige Arbeit auf Kurs halten — ohne vorzeitig anzuhalten oder von der Spezifikation abzuweichen."
+        },
+        {
+          "h": "Sicherheit KI-gestützter Auslieferung",
+          "p": "Wie von Agenten geschriebener Code versagt, wie man das erkennt und wie man Secure-by-Design zum Standard macht: IAM, AppSec und autorisiertes Red-Teaming dessen, was Agenten produzieren."
+        },
+        {
+          "h": "Standards & Evaluierung",
+          "p": "Was 'gut' für Agenten-Output bedeutet und wie man es misst: normative Playbooks, Quality-Gates und Tests, die Verhalten belegen statt auf Bauchgefühl zu setzen."
+        },
+        {
+          "h": "Developer Experience",
+          "p": "Den richtigen Weg zum einfachen Weg machen — Werkzeuge, die Standards installieren, aktuell halten und dem Entwickler nicht im Weg stehen."
+        }
       ]
     },
     "approach": {
       "title": "Unser Ansatz",
       "items": [
-        { "h": "Offen", "p": "Ergebnisse und Werkzeuge werden veröffentlicht, nicht gehortet. Reproduzierbarkeit ist der Punkt." },
-        { "h": "In der Praxis verankert", "p": "Wir forschen, indem wir bauen und ausliefern — das Labor und die Produkte befruchten sich gegenseitig." },
-        { "h": "Sicherheit zuerst", "p": "Was nicht sicher auszuführen ist, ist nicht fertig. Threat Modeling und Tests gehören zur Methode." }
+        {
+          "h": "Offen",
+          "p": "Ergebnisse und Werkzeuge werden veröffentlicht, nicht gehortet. Reproduzierbarkeit ist der Punkt."
+        },
+        {
+          "h": "In der Praxis verankert",
+          "p": "Wir forschen, indem wir bauen und ausliefern — das Labor und die Produkte befruchten sich gegenseitig."
+        },
+        {
+          "h": "Sicherheit zuerst",
+          "p": "Was nicht sicher auszuführen ist, ist nicht fertig. Threat Modeling und Tests gehören zur Methode."
+        }
       ]
     },
     "cta": {
@@ -106,5 +188,12 @@
       "p": "Wir schreiben im Blog auf, was wir lernen, und die Werkzeuge landen auf GitHub.",
       "button": "Blog lesen"
     }
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "visit": "Öffnen"
+  },
+  "sponsors": {
+    "title": "Sponsoren"
   }
 }

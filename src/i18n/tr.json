@@ -1,0 +1,199 @@
+{
+  "nav": {
+    "projects": "Projeler",
+    "research": "Araştırma",
+    "skills": "Yetenekler",
+    "academy": "Akademi",
+    "login": "Giriş yap / Kaydol",
+    "cta": "Kaynağı görüntüle"
+  },
+  "footer": {
+    "tagline": "schematize'ın arkasındaki açık kaynak ve teknoloji araştırma laboratuvarı.",
+    "explore": "Keşfet",
+    "ecosystem": "Ekosistem",
+    "blog": "Blog",
+    "made": "Açık şekilde geliştirildi.",
+    "platforms": "Platformlar",
+    "commercial": "Ticari"
+  },
+  "home": {
+    "meta": {
+      "title": "schematize.org — açık kaynak ve yapay zeka mühendisliği araştırma laboratuvarı",
+      "desc": "schematize.org, schematize'ın arkasındaki açık kaynak ve teknoloji araştırma laboratuvarıdır: açık şekilde geliştirilen araçlar ve yapay zeka ajanlarıyla mühendislik üzerine araştırmalar. Çalışmalarımızı keşfedin."
+    },
+    "hero": {
+      "kicker": "Açık kaynak ve araştırma",
+      "h1": "Yapay zeka ajanları için mühendislik, açık şekilde geliştirildi.",
+      "sub": "schematize.org, açık kaynak araçlarımızı geliştirdiğimiz ve gerçek dünyada dayanıklı yapay zeka ajanlarını nasıl kuracağınız, güvenceye alacağınız ve düzenleyeceğiniz üzerine teknoloji araştırmalarımızı paylaştığımız yerdir.",
+      "cta1": "Projeleri keşfet",
+      "cta2": "Araştırmayı oku"
+    },
+    "mission": {
+      "kicker": "Misyon",
+      "title": "Ajanlarla geliştirilen yazılımı güvenilir kıl.",
+      "p": "Yapay zeka ajanları hızlı bir şekilde çok fazla kod yazabilir — ancak doğru, güvenli ve sürdürülebilir değilse hız değersizdir. Ajan çıktısını gerçekten üretimde çalıştırabileceğiniz bir yazılıma dönüştüren açık araçları ve ortak standartları geliştiriyor, yol boyunca öğrendiklerimizi yayımlıyoruz."
+    },
+    "pillars": {
+      "title": "Üzerinde çalıştıklarımız",
+      "items": [
+        {
+          "key": "projects",
+          "h": "Açık kaynak projeler",
+          "p": "schematize CLI, Claude Code için mühendislik yetenek kataloğu ve bunların tümünü yeniden üretilebilir kılan araçlar — hepsi okunabilir, çatallanabilir ve ücretsiz."
+        },
+        {
+          "key": "research",
+          "h": "Teknoloji araştırması",
+          "p": "Yapay zeka ajanlarıyla güvenilir ve güvenli şekilde nasıl mühendislik yapılır: düzenleme, standartlar, değerlendirme ve yapay zeka destekli teslimatın güvenliği."
+        }
+      ]
+    },
+    "why": {
+      "title": "Nasıl çalışıyoruz",
+      "items": [
+        {
+          "h": "Varsayılan olarak açık",
+          "p": "Araçlarımız açık kaynak, bulgularımız kamuya açıktır. Önemliyse, onu okuyabilir, çalıştırabilir ve üzerine inşa edebilirsiniz."
+        },
+        {
+          "h": "Titiz",
+          "p": "Hisler yerine standartlar: normatif kılavuzlar, gerçek testler ve birinci sınıf bir gereksinim olarak ele alınan güvenlik — sonradan akla gelen bir şey değil."
+        },
+        {
+          "h": "Pratik",
+          "p": "Sonuç veren araştırma. Yayımladığımız her şey, bir çekmecede durmak için değil, gerçek ekiplerin ajanlarla nasıl geliştirdiğini değiştirmek içindir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Çalışmaları keşfet.",
+      "p": "Geliştirdiğimiz her şey GitHub'da, öğrendiğimiz her şey blogda yer alıyor.",
+      "button": "GitHub'da görüntüle"
+    },
+    "platforms": {
+      "kicker": "Ekosistem",
+      "title": "Çalışmaların bulunduğu yer",
+      "p": "schematize'ın açık şekilde geliştirdiği her şey, üç yer arasında düzenlenmiştir.",
+      "items": [
+        {
+          "h": "Yetenekler",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Yapay zeka ajanlarının ev standartlarını izlemesini sağlayan mühendislik yeteneklerinin kataloğu — tek komutla kurulabilir."
+        },
+        {
+          "h": "Araştırma",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Teknoloji araştırmamızdan makaleler, notlar ve bulgular — öğrendikçe yayımlanır."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Açık kaynak projeler — schematize.org",
+      "desc": "schematize laboratuvarından açık kaynak projeler: schematize CLI ve Claude Code için mühendislik yetenek kataloğu. Kaynağı okuyun, çatallayın, katkıda bulunun."
+    },
+    "hero": {
+      "kicker": "Projeler",
+      "h1": "Yapay zeka ajanlarıyla geliştirmek için açık kaynak araçlar.",
+      "sub": "Ajan destekli mühendisliği yeniden üretilebilir ve güvenli kılmak için geliştirdiğimiz her şey — okumak, çalıştırmak ve çatallamak için ücretsiz."
+    },
+    "list": {
+      "title": "Sürdürdüklerimiz",
+      "items": [
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Claude Code için mühendislik yeteneklerini kuran ve sürümleyen, kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme olan overdev'i çalıştıran Linux öncelikli bir komut satırı uygulaması.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Mühendislik yetenekleri",
+          "p": "Claude Code için normatif kılavuzlar — engineering, go, rust, web, seo, node ve pentest — her biri güvenlik, test ve mimari için pazarlıksız zeminlerle.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Bir yetenek olarak eksiksiz bir SEO disiplini: teknik, sayfa içi, içerik, yapılandırılmış veri, uluslararası/çoklu alan adı ve yapay zeka yanıtı optimizasyonu.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "Bir yetenek olarak savunmacı AppSec ve yetkili red-teaming: uç nokta saldırı yüzeyi haritalama, OWASP kapsamı ve tehdit modelleme — her zaman kapsam dahilinde.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Kaynağı oku.",
+      "p": "Tümü herkese açık. Yıldızlayın, çatallayın, bir sorun açın — veya schematize CLI'yi kullanarak saniyeler içinde kurun.",
+      "button": "GitHub'ı aç"
+    }
+  },
+  "research": {
+    "meta": {
+      "title": "Teknoloji araştırması — schematize.org",
+      "desc": "schematize laboratuvarından yapay zeka ajanlarıyla mühendislik üzerine araştırma: güvenilir düzenleme, yapay zeka destekli teslimatın güvenliği ve ajan çıktısını güvenilir kılan standartlar."
+    },
+    "hero": {
+      "kicker": "Araştırma",
+      "h1": "Yapay zeka ajanlarıyla nasıl geliştirilir — ve sonuca nasıl güvenilir.",
+      "sub": "Ajan destekli mühendisliği güvenilir ve güvenli kılan şeyi inceliyor ve yanıtları herkesin kullanabileceği açık araçlara ve standartlara dönüştürüyoruz."
+    },
+    "areas": {
+      "title": "Araştırma alanları",
+      "items": [
+        {
+          "h": "Güvenilir ajan mühendisliği",
+          "p": "Yapay zeka ajanlarını uzun, çok adımlı çalışmalar boyunca görevde tutan düzenleme, ayrıştırma ve koruma önlemleri — erken durmadan veya spesifikasyondan sapmadan."
+        },
+        {
+          "h": "Yapay zeka destekli teslimatın güvenliği",
+          "p": "Ajan tarafından yazılan kod nasıl başarısız olur, nasıl yakalanır ve tasarımdan güvenli olma nasıl varsayılan hale getirilir: IAM, AppSec ve ajanların ürettiklerinin yetkili red-teaming'i."
+        },
+        {
+          "h": "Standartlar ve değerlendirme",
+          "p": "Ajan çıktısı için 'iyi'nin ne anlama geldiği ve nasıl ölçüleceği: normatif kılavuzlar, kalite geçitleri ve hisler yerine davranışı kanıtlayan testler."
+        },
+        {
+          "h": "Geliştirici deneyimi",
+          "p": "Doğru yolu kolay yol yapmak — standartları kuran, güncel tutan ve geliştiricinin yolundan çekilen araçlar."
+        }
+      ]
+    },
+    "approach": {
+      "title": "Yaklaşımımız",
+      "items": [
+        {
+          "h": "Açık şekilde",
+          "p": "Bulgular ve araçlar biriktirilmez, yayımlanır. Mesele yeniden üretilebilirliktir."
+        },
+        {
+          "h": "Uygulamaya dayalı",
+          "p": "Geliştirerek ve sonuç vererek araştırıyoruz — laboratuvar ve ürünler birbirini besliyor."
+        },
+        {
+          "h": "Önce güvenlik",
+          "p": "Çalıştırmak güvenli değilse, tamamlanmış değildir. Tehdit modelleme ve test, yöntemin bir parçasıdır."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Araştırmayı takip et.",
+      "p": "Öğrendiklerimizi blogda yazıyoruz ve araçlar GitHub'a iniyor.",
+      "button": "Blogu oku"
+    }
+  },
+  "common": {
+    "learn_more": "Daha fazla bilgi",
+    "visit": "Ziyaret et"
+  },
+  "sponsors": {
+    "title": "Sponsorlar"
+  }
+}

@@ -6,8 +6,20 @@ export function getStaticPaths() {
   return LOCALES.map((l) => ({ params: { lang: l } }));
 }
 const lang = Astro.params.lang as Locale;
+
+const platforms = tx<{ h: string; p: string; tag: string; url?: string; key?: string }[]>(lang, "home.platforms.items");
 const pillars = tx<{ h: string; p: string; key: string }[]>(lang, "home.pillars.items");
 const why = tx<{ h: string; p: string }[]>(lang, "home.why.items");
+// Patrocinadores — links externos (label = domínio, href = https://<domínio>).
+const sponsors = [
+  "educe.me",
+  "basiliskoffsec.com",
+  "nixen.com.br",
+  "volucer.me",
+  "hextorn.com",
+  "owiew.com",
+  "canverly.com",
+];
 ---
 <Base
   locale={lang}
@@ -16,19 +28,18 @@ const why = tx<{ h: string; p: string }[]>(lang, "home.why.items");
   description={t(lang, "home.meta.desc")}
 >
   <section class="hero">
-    <div class="wrap">
-      <p class="kicker">{t(lang, "home.hero.kicker")}</p>
-      <h1>{t(lang, "home.hero.h1")}</h1>
-      <p class="lede">{t(lang, "home.hero.sub")}</p>
-      <div class="cta-row">
+    <div class="wrap wrap-tight">
+      <h1 class="eyebrow-lift">{t(lang, "home.hero.h1")}</h1>
+      <p class="lede eyebrow-lift">{t(lang, "home.hero.sub")}</p>
+      <div class="cta-row eyebrow-lift">
         <a class="btn btn-primary" href={path(lang, "projects")}>{t(lang, "home.hero.cta1")}</a>
         <a class="btn btn-ghost" href={path(lang, "research")}>{t(lang, "home.hero.cta2")}</a>
       </div>
     </div>
   </section>
 
-  <section class="surface">
-    <div class="wrap">
+  <section class="surface hair">
+    <div class="wrap wrap-tight mission eyebrow-lift">
       <p class="kicker">{t(lang, "home.mission.kicker")}</p>
       <h2>{t(lang, "home.mission.title")}</h2>
       <p class="lede">{t(lang, "home.mission.p")}</p>
@@ -37,29 +48,61 @@ const why = tx<{ h: string; p: string }[]>(lang, "home.why.items");
 
   <section>
     <div class="wrap">
-      <h2>{t(lang, "home.pillars.title")}</h2>
-      <div class="grid cols-2" style="margin-top:1.8rem">
-        {pillars.map((c) => (
-          <a class="card pillar" href={path(lang, c.key)}>
+      <p class="kicker eyebrow-lift">{t(lang, "home.platforms.kicker")}</p>
+      <h2 class="eyebrow-lift">{t(lang, "home.platforms.title")}</h2>
+      <p class="lede eyebrow-lift">{t(lang, "home.platforms.p")}</p>
+      <div class="grid cols-3" style="margin-top:2.4rem">
+        {platforms.map((c) => (
+          <a class="card plat eyebrow-lift" href={c.url ?? path(lang, c.key)}>
+            <span class="tag">{c.tag}</span>
             <h3>{c.h}</h3>
             <p class="muted">{c.p}</p>
+            <span class="more">{t(lang, "common.visit")}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="surface">
+  <section>
     <div class="wrap">
-      <h2>{t(lang, "home.why.title")}</h2>
-      <div class="grid cols-3" style="margin-top:1.8rem">
-        {why.map((w) => (<div class="card"><h3>{w.h}</h3><p class="muted">{w.p}</p></div>))}
+      <h2 class="eyebrow-lift">{t(lang, "home.pillars.title")}</h2>
+      <div class="grid cols-2" style="margin-top:2.2rem">
+        {pillars.map((c) => (
+          <a class="card plat eyebrow-lift" href={path(lang, c.key)}>
+            <h3>{c.h}</h3>
+            <p class="muted">{c.p}</p>
+            <span class="more">{t(lang, "common.learn_more")}</span>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
+  <section class="surface hair">
+    <div class="wrap">
+      <h2 class="eyebrow-lift">{t(lang, "home.why.title")}</h2>
+      <div class="grid cols-3" style="margin-top:2.2rem">
+        {why.map((w) => (<div class="card eyebrow-lift"><h3>{w.h}</h3><p class="muted">{w.p}</p></div>))}
+      </div>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap sponsors eyebrow-lift">
+      <h2 class="sponsors-title">{t(lang, "sponsors.title")}</h2>
+      <ul class="sponsor-grid" role="list">
+        {sponsors.map((d) => (
+          <li>
+            <a class="sponsor" href={`https://${d}`} target="_blank" rel="noopener noreferrer">{d}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <section>
-    <div class="wrap band">
+    <div class="wrap band eyebrow-lift">
       <h2>{t(lang, "home.cta.title")}</h2>
       <p class="lede">{t(lang, "home.cta.p")}</p>
       <div class="cta-row">
@@ -71,11 +114,49 @@ const why = tx<{ h: string; p: string }[]>(lang, "home.why.items");
 </Base>
 
 <style>
-  .hero { padding-block: clamp(3.5rem, 9vw, 7rem); }
-  .hero h1 { max-width: 18ch; }
-  .pillar { display: block; transition: 0.15s; }
-  .pillar:hover { border-color: var(--accent); text-decoration: none; transform: translateY(-2px); }
-  .band { text-align: center; }
+  .hero { padding-block: clamp(4rem, 10vw, 8.5rem); text-align: center; }
+  .hero h1 { margin-inline: auto; max-width: 17ch; }
+  .hero .lede { margin: 1.4rem auto 0; }
+  .hero .cta-row { justify-content: center; margin-top: 2rem; }
+  .mission h2 { max-width: 20ch; }
+  .split { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+  .plat { display: flex; flex-direction: column; gap: 0.2rem; }
+  .plat .tag { align-self: flex-start; margin-bottom: 0.9rem; }
+  .plat .more {
+    margin-top: auto; padding-top: 1.1rem; color: var(--accent-ink); font-weight: 550; font-size: var(--step-1);
+    display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .plat .more::after { content: "\2192"; transition: transform 0.18s ease; }
+  .plat:hover .more::after { transform: translateX(3px); }
+  .svc-list { display: grid; gap: 0.7rem; }
+  .svc {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 1.15rem 1.35rem; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .svc:hover { text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: transparent; }
+  .svc h3 { margin: 0 0 0.25rem; }
+  .svc p { margin: 0; font-size: var(--step-1); }
+  .svc-arrow { color: var(--accent-ink); font-size: 1.2rem; flex: none; }
+  .band { text-align: center; max-width: 640px; margin-inline: auto; }
   .band .lede { margin-inline: auto; }
   .band .cta-row { justify-content: center; }
+  .sponsors { text-align: center; }
+  .sponsors-title { font-size: var(--step2); color: var(--muted); font-weight: 550; margin-bottom: 2rem; }
+  .sponsor-grid {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem 0.9rem;
+  }
+  .sponsor {
+    display: inline-flex; align-items: center; font-family: var(--font-mono);
+    font-size: var(--step-1); color: var(--muted); letter-spacing: -0.01em;
+    border: 1px solid var(--line); border-radius: 999px; padding: 0.5rem 1.05rem;
+    background: var(--card);
+    transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .sponsor:hover {
+    text-decoration: none; color: var(--ink); border-color: transparent;
+    transform: translateY(-2px); box-shadow: var(--shadow-sm);
+  }
 </style>

@@ -2,6 +2,9 @@
   "nav": {
     "projects": "Projets",
     "research": "Recherche",
+    "skills": "Skills",
+    "academy": "Academy",
+    "login": "Se connecter / S'inscrire",
     "cta": "Voir le code source"
   },
   "footer": {
@@ -9,7 +12,9 @@
     "explore": "Explorer",
     "ecosystem": "Écosystème",
     "blog": "Blog",
-    "made": "Construit à ciel ouvert."
+    "made": "Construit à ciel ouvert.",
+    "platforms": "Plateformes",
+    "commercial": "Commercial"
   },
   "home": {
     "meta": {
@@ -31,22 +36,58 @@
     "pillars": {
       "title": "Ce sur quoi nous travaillons",
       "items": [
-        { "key": "projects", "h": "Projets open-source", "p": "Le CLI schematize, le catalogue de skills d'ingénierie pour Claude Code, et l'outillage qui rend tout cela reproductible — le tout lisible, forkable et gratuit." },
-        { "key": "research", "h": "Recherche technologique", "p": "Comment faire de l'ingénierie avec des agents IA de manière fiable et sûre : orchestration, standards, évaluation et sécurité de la livraison assistée par IA." }
+        {
+          "key": "projects",
+          "h": "Projets open-source",
+          "p": "Le CLI schematize, le catalogue de skills d'ingénierie pour Claude Code, et l'outillage qui rend tout cela reproductible — le tout lisible, forkable et gratuit."
+        },
+        {
+          "key": "research",
+          "h": "Recherche technologique",
+          "p": "Comment faire de l'ingénierie avec des agents IA de manière fiable et sûre : orchestration, standards, évaluation et sécurité de la livraison assistée par IA."
+        }
       ]
     },
     "why": {
       "title": "Notre façon de travailler",
       "items": [
-        { "h": "Ouvert par défaut", "p": "Nos outils sont open-source et nos résultats sont publics. Si c'est important, vous pouvez le lire, l'exécuter et construire dessus." },
-        { "h": "Rigoureux", "p": "Des standards plutôt que du ressenti : des playbooks normatifs, de vrais tests, et la sécurité traitée comme une exigence de premier plan — pas comme un ajout de dernière minute." },
-        { "h": "Concret", "p": "De la recherche qui livre. Tout ce que nous publions vise à changer la façon dont les équipes construisent avec des agents, pas à dormir dans un tiroir." }
+        {
+          "h": "Ouvert par défaut",
+          "p": "Nos outils sont open-source et nos résultats sont publics. Si c'est important, vous pouvez le lire, l'exécuter et construire dessus."
+        },
+        {
+          "h": "Rigoureux",
+          "p": "Des standards plutôt que du ressenti : des playbooks normatifs, de vrais tests, et la sécurité traitée comme une exigence de premier plan — pas comme un ajout de dernière minute."
+        },
+        {
+          "h": "Concret",
+          "p": "De la recherche qui livre. Tout ce que nous publions vise à changer la façon dont les équipes construisent avec des agents, pas à dormir dans un tiroir."
+        }
       ]
     },
     "cta": {
       "title": "Découvrez nos travaux.",
       "p": "Tout ce que nous construisons est sur GitHub, et tout ce que nous apprenons finit sur le blog.",
       "button": "Voir sur GitHub"
+    },
+    "platforms": {
+      "kicker": "L'écosystème",
+      "title": "Où vit le travail",
+      "p": "Tout ce que schematize construit en open source, réparti en trois lieux.",
+      "items": [
+        {
+          "h": "Skills",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
+          "p": "Le catalogue de skills d'ingénierie qui font suivre aux agents IA les standards maison — installable en une commande."
+        },
+        {
+          "h": "Research",
+          "tag": "schematize.org/research",
+          "key": "research",
+          "p": "Articles, notes et résultats de notre recherche technologique — publiés au fil de nos apprentissages."
+        }
+      ]
     }
   },
   "projects": {
@@ -62,10 +103,30 @@
     "list": {
       "title": "Ce que nous maintenons",
       "items": [
-        { "tag": "CLI · Rust", "h": "schematize", "p": "Une application en ligne de commande pensée pour Linux qui installe et versionne les skills d'ingénierie pour Claude Code et exécute overdev — un développement continu et autonome qui ne s'arrête pas tant que la checklist n'est pas bouclée.", "href": "https://github.com/schematizeme/schematize-cli" },
-        { "tag": "Skills · Claude Code", "h": "Skills d'ingénierie", "p": "Des playbooks normatifs pour Claude Code — engineering, go, rust, web, seo, node et pentest — chacun avec des seuils non négociables en matière de sécurité, de tests et d'architecture.", "href": "https://github.com/schematizeme" },
-        { "tag": "SEO", "h": "schematize-seo", "p": "Une discipline SEO complète sous forme de skill : technique, on-page, contenu, données structurées, international/multi-domaine et optimisation pour les réponses IA.", "href": "https://github.com/schematizeme/skill-seo" },
-        { "tag": "Security", "h": "schematize-pentest", "p": "AppSec défensif et red-teaming autorisé sous forme de skill : cartographie de la surface d'attaque des endpoints, couverture OWASP et modélisation des menaces — toujours dans le cadre défini.", "href": "https://github.com/schematizeme/skill-pentest" }
+        {
+          "tag": "CLI · Rust",
+          "h": "schematize",
+          "p": "Une application en ligne de commande pensée pour Linux qui installe et versionne les skills d'ingénierie pour Claude Code et exécute overdev — un développement continu et autonome qui ne s'arrête pas tant que la checklist n'est pas bouclée.",
+          "href": "https://github.com/schematizeme/schematize-cli"
+        },
+        {
+          "tag": "Skills · Claude Code",
+          "h": "Skills d'ingénierie",
+          "p": "Des playbooks normatifs pour Claude Code — engineering, go, rust, web, seo, node et pentest — chacun avec des seuils non négociables en matière de sécurité, de tests et d'architecture.",
+          "href": "https://github.com/schematizeme"
+        },
+        {
+          "tag": "SEO",
+          "h": "schematize-seo",
+          "p": "Une discipline SEO complète sous forme de skill : technique, on-page, contenu, données structurées, international/multi-domaine et optimisation pour les réponses IA.",
+          "href": "https://github.com/schematizeme/skill-seo"
+        },
+        {
+          "tag": "Security",
+          "h": "schematize-pentest",
+          "p": "AppSec défensif et red-teaming autorisé sous forme de skill : cartographie de la surface d'attaque des endpoints, couverture OWASP et modélisation des menaces — toujours dans le cadre défini.",
+          "href": "https://github.com/schematizeme/skill-pentest"
+        }
       ]
     },
     "cta": {
@@ -87,18 +148,39 @@
     "areas": {
       "title": "Axes de recherche",
       "items": [
-        { "h": "Ingénierie fiable des agents", "p": "Orchestration, décomposition et garde-fous qui maintiennent les agents IA sur leur tâche tout au long de travaux longs et à plusieurs étapes — sans s'arrêter trop tôt ni dériver du cahier des charges." },
-        { "h": "Sécurité de la livraison assistée par IA", "p": "Comment le code écrit par des agents échoue, comment le détecter, et comment faire du secure-by-design la norme : IAM, AppSec et red-teaming autorisé de ce que produisent les agents." },
-        { "h": "Standards & évaluation", "p": "Ce que « bon » veut dire pour la production des agents, et comment le mesurer : playbooks normatifs, portes de qualité et tests qui prouvent le comportement plutôt que de s'appuyer sur le ressenti." },
-        { "h": "Expérience développeur", "p": "Rendre la bonne façon de faire la plus simple — un outillage qui installe les standards, les maintient à jour et s'efface devant le développeur." }
+        {
+          "h": "Ingénierie fiable des agents",
+          "p": "Orchestration, décomposition et garde-fous qui maintiennent les agents IA sur leur tâche tout au long de travaux longs et à plusieurs étapes — sans s'arrêter trop tôt ni dériver du cahier des charges."
+        },
+        {
+          "h": "Sécurité de la livraison assistée par IA",
+          "p": "Comment le code écrit par des agents échoue, comment le détecter, et comment faire du secure-by-design la norme : IAM, AppSec et red-teaming autorisé de ce que produisent les agents."
+        },
+        {
+          "h": "Standards & évaluation",
+          "p": "Ce que « bon » veut dire pour la production des agents, et comment le mesurer : playbooks normatifs, portes de qualité et tests qui prouvent le comportement plutôt que de s'appuyer sur le ressenti."
+        },
+        {
+          "h": "Expérience développeur",
+          "p": "Rendre la bonne façon de faire la plus simple — un outillage qui installe les standards, les maintient à jour et s'efface devant le développeur."
+        }
       ]
     },
     "approach": {
       "title": "Notre approche",
       "items": [
-        { "h": "À ciel ouvert", "p": "Résultats et outils sont publiés, pas gardés pour soi. La reproductibilité est l'objectif." },
-        { "h": "Ancré dans la pratique", "p": "Nous faisons de la recherche en construisant et en livrant — le laboratoire et les produits se nourrissent mutuellement." },
-        { "h": "La sécurité d'abord", "p": "Si ce n'est pas sûr à exécuter, ce n'est pas terminé. La modélisation des menaces et les tests font partie de la méthode." }
+        {
+          "h": "À ciel ouvert",
+          "p": "Résultats et outils sont publiés, pas gardés pour soi. La reproductibilité est l'objectif."
+        },
+        {
+          "h": "Ancré dans la pratique",
+          "p": "Nous faisons de la recherche en construisant et en livrant — le laboratoire et les produits se nourrissent mutuellement."
+        },
+        {
+          "h": "La sécurité d'abord",
+          "p": "Si ce n'est pas sûr à exécuter, ce n'est pas terminé. La modélisation des menaces et les tests font partie de la méthode."
+        }
       ]
     },
     "cta": {
@@ -106,5 +188,12 @@
       "p": "Nous racontons ce que nous apprenons sur le blog, et les outils arrivent sur GitHub.",
       "button": "Lire le blog"
     }
+  },
+  "common": {
+    "learn_more": "En savoir plus",
+    "visit": "Ouvrir"
+  },
+  "sponsors": {
+    "title": "Sponsors"
   }
 }
