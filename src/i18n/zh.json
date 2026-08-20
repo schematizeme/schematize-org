@@ -2,49 +2,62 @@
   "nav": {
     "projects": "项目",
     "research": "研究",
-    "skills": "技能",
+    "principles": "原则",
+    "about": "关于",
+    "contact": "联系",
+    "legal": "法律",
+    "skills": "Skills",
     "academy": "学院",
     "login": "登录 / 注册",
-    "cta": "查看源代码"
+    "cta": "查看源码",
+    "menu": "菜单"
   },
   "footer": {
     "tagline": "schematize 背后的开源与技术研究实验室。",
     "explore": "探索",
-    "ecosystem": "生态系统",
-    "blog": "博客",
-    "made": "以开放的方式构建。",
-    "platforms": "平台",
-    "commercial": "商业"
+    "company": "公司",
+    "resources": "资源",
+    "legal": "法律",
+    "made": "公开构建。",
+    "sitemap": "站点地图"
   },
   "home": {
     "meta": {
       "title": "schematize.org — 开源与 AI 工程研究实验室",
-      "desc": "schematize.org 是 schematize 背后的开源与技术研究实验室：以开放方式构建的工具，以及关于用 AI 智能体进行工程的研究。探索我们的工作。"
+      "desc": "schematize.org 是 schematize 背后的开源与技术研究实验室：公开构建的工具，以及关于用 AI 智能体做工程的研究。探索我们的工作。"
     },
     "hero": {
       "kicker": "开源与研究",
-      "h1": "面向 AI 智能体的工程，以开放的方式构建。",
-      "sub": "schematize.org 是我们开发开源工具并分享技术研究的地方，探讨如何构建、保护和编排能够经受真实世界考验的 AI 智能体。",
+      "h1": "面向 AI 智能体的工程，公开构建。",
+      "sub": "schematize.org 是我们开发开源工具、分享技术研究的地方——研究如何构建、保护并编排能在真实世界中经得起考验的 AI 智能体。",
       "cta1": "探索项目",
       "cta2": "阅读研究"
     },
     "mission": {
       "kicker": "使命",
       "title": "让智能体构建的软件值得信赖。",
-      "p": "AI 智能体可以快速编写大量代码——但如果代码不正确、不安全、不可维护，快就毫无价值。我们构建开放的工具和共享的标准，把智能体的产出变成你真正可以在生产环境中运行的软件，并沿途发布我们的所学。"
+      "p": "AI 智能体能快速写出大量代码——但如果不正确、不安全、不可维护，快就毫无价值。我们构建开源工具和共享标准，把智能体的产出变成真正能在生产环境运行的软件，并沿途公开我们所学到的一切。"
     },
     "pillars": {
-      "title": "我们的工作方向",
+      "title": "我们的工作",
       "items": [
         {
           "key": "projects",
+          "icon": "package",
           "h": "开源项目",
-          "p": "schematize CLI、面向 Claude Code 的工程技能目录，以及让这一切可复现的工具链——全部可读、可 fork、免费。"
+          "p": "schematize CLI、面向 Claude Code 的工程 skill 目录，以及让这一切可复现的工具链——皆可阅读、可分叉、免费。"
         },
         {
           "key": "research",
+          "icon": "flask-conical",
           "h": "技术研究",
-          "p": "如何可靠且安全地用 AI 智能体进行工程：编排、标准、评估以及 AI 辅助交付的安全性。"
+          "p": "如何可靠、安全地用 AI 智能体做工程：编排、标准、评估，以及 AI 辅助交付的安全。"
+        },
+        {
+          "key": "principles",
+          "icon": "shield-check",
+          "h": "工程标准",
+          "p": "让智能体产出值得信赖的不可妥协底线：安全在服务端决定、用测试证明行为、每次变更都留下审计轨迹。"
         }
       ]
     },
@@ -53,39 +66,49 @@
       "items": [
         {
           "h": "默认开放",
-          "p": "我们的工具是开源的，我们的发现是公开的。只要重要，你就能阅读它、运行它并在其之上构建。"
+          "p": "我们的工具是开源的，我们的发现是公开的。重要的东西，你都能读、能运行、能在其上构建。"
         },
         {
           "h": "严谨",
-          "p": "标准胜过感觉：规范化的手册、真实的测试，以及被视为一等要求而非事后补救的安全性。"
+          "p": "标准优先于感觉：规范化的操作手册、真实的测试，把安全当作一等要求——而非事后补丁。"
         },
         {
           "h": "务实",
-          "p": "能落地的研究。我们发布的一切都旨在改变真实团队使用智能体构建软件的方式，而不是束之高阁。"
+          "p": "能落地的研究。我们发布的一切都旨在改变真实团队用智能体构建的方式，而非束之高阁。"
         }
       ]
     },
     "cta": {
       "title": "探索我们的工作。",
-      "p": "我们构建的一切都在 GitHub 上，我们所学的一切最终都会出现在博客里。",
+      "p": "我们构建的一切都在 GitHub 上，我们学到的一切最终都会写进博客。",
       "button": "在 GitHub 上查看"
     },
     "platforms": {
       "kicker": "生态系统",
       "title": "工作所在之处",
-      "p": "schematize 以开放方式构建的一切，分布在三个地方。",
+      "p": "schematize 公开构建的一切，井然有序地分布在整个生态系统中。",
       "items": [
         {
-          "h": "技能",
+          "h": "Skills",
           "tag": "skills.schematize.org",
           "url": "https://skills.schematize.org",
-          "p": "让 AI 智能体遵循内部标准的工程技能目录——一条命令即可安装。"
+          "icon": "blocks",
+          "p": "让 AI 智能体遵循我们内部标准的工程 skill 目录——一条命令即可安装。"
         },
         {
           "h": "研究",
           "tag": "schematize.org/research",
           "key": "research",
-          "p": "来自我们技术研究的论文、笔记与发现——边学边发布。"
+          "icon": "flask-conical",
+          "p": "来自我们技术研究的论文、笔记与发现——随学随发。"
+        },
+        {
+          "h": "源码",
+          "tag": "github.com/schematizeme",
+          "url": "https://github.com/schematizeme",
+          "icon": "github",
+          "brand": true,
+          "p": "每一个仓库都公开。阅读它、分叉它、提交 issue——或用 schematize CLI 安装它。"
         }
       ]
     }
@@ -93,76 +116,84 @@
   "projects": {
     "meta": {
       "title": "开源项目 — schematize.org",
-      "desc": "来自 schematize 实验室的开源项目：schematize CLI 和面向 Claude Code 的工程技能目录。阅读源代码、fork 它、参与贡献。"
+      "desc": "来自 schematize 实验室的开源项目：schematize CLI 和面向 Claude Code 的工程 skill 目录。阅读源码、分叉它、参与贡献。"
     },
     "hero": {
       "kicker": "项目",
       "h1": "用于构建 AI 智能体的开源工具。",
-      "sub": "我们为让智能体辅助工程可复现且安全而构建的一切——免费阅读、运行与 fork。"
+      "sub": "我们构建的一切，让智能体辅助的工程可复现且安全——可自由阅读、运行与分叉。"
     },
     "list": {
       "title": "我们维护的项目",
       "items": [
         {
           "tag": "CLI · Rust",
+          "icon": "terminal",
           "h": "schematize",
-          "p": "一个以 Linux 为先的命令行应用，为 Claude Code 安装并版本化工程技能，并运行 overdev——持续、无人值守的开发，不到清单完成绝不停止。",
+          "p": "一款以 Linux 为先的命令行应用，安装并管理面向 Claude Code 的工程 skill 版本，并运行 overdev——持续、无人值守的开发，不到清单完成绝不停止。",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
-          "h": "工程技能",
-          "p": "面向 Claude Code 的规范化手册——engineering、go、rust、web、seo、node 和 pentest——每一个都设有不可妥协的安全、测试与架构底线。",
+          "icon": "blocks",
+          "h": "工程 skill",
+          "p": "面向 Claude Code 的规范化操作手册——engineering、go、rust、web、seo、node 和 pentest——每一个都为安全、测试和架构设定了不可妥协的底线。",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
+          "icon": "search",
           "h": "schematize-seo",
-          "p": "作为技能的完整 SEO 学科：技术、页面、内容、结构化数据、国际化/多域名以及 AI 答案优化。",
+          "p": "一整套 SEO 学科作为 skill：技术、页面内、内容、结构化数据、国际化/多域名，以及 AI 回答优化。",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
+          "icon": "shield-check",
           "h": "schematize-pentest",
-          "p": "作为技能的防御性 AppSec 与授权红队演练：端点攻击面测绘、OWASP 覆盖与威胁建模——始终在授权范围内。",
+          "p": "作为 skill 的防御性 AppSec 与授权红队：端点攻击面测绘、OWASP 覆盖与威胁建模——始终在授权范围内。",
           "href": "https://github.com/schematizeme/skill-pentest"
         }
       ]
     },
     "cta": {
-      "title": "阅读源代码。",
-      "p": "一切都是公开的。给它加星、fork 它、提交 issue——或使用 schematize CLI 在几秒内安装。",
+      "title": "阅读源码。",
+      "p": "一切皆公开。给它加星、分叉它、提交 issue——或用 schematize CLI 在几秒内安装它。",
       "button": "打开 GitHub"
     }
   },
   "research": {
     "meta": {
       "title": "技术研究 — schematize.org",
-      "desc": "来自 schematize 实验室、关于用 AI 智能体进行工程的研究：可靠的编排、AI 辅助交付的安全性，以及让智能体产出值得信赖的标准。"
+      "desc": "来自 schematize 实验室关于用 AI 智能体做工程的研究：可靠的编排、AI 辅助交付的安全，以及让智能体产出值得信赖的标准。"
     },
     "hero": {
       "kicker": "研究",
-      "h1": "如何用 AI 智能体进行构建——并信任其结果。",
-      "sub": "我们研究是什么让智能体辅助工程既可靠又安全，并把答案转化为任何人都能使用的开放工具与标准。"
+      "h1": "如何用 AI 智能体构建——并信任其结果。",
+      "sub": "我们研究是什么让智能体辅助的工程可靠且安全，并把答案转化为任何人都能使用的开源工具与标准。"
     },
     "areas": {
-      "title": "研究领域",
+      "title": "研究方向",
       "items": [
         {
+          "icon": "workflow",
           "h": "可靠的智能体工程",
-          "p": "编排、拆解与护栏，让 AI 智能体在漫长的多步骤工作中保持专注——不提前停止，也不偏离规范。"
+          "p": "编排、分解与护栏，让 AI 智能体在漫长的多步骤工作中保持专注——不提前停止，也不偏离规格。"
         },
         {
-          "h": "AI 辅助交付的安全性",
-          "p": "智能体编写的代码如何失败、如何发现问题，以及如何让默认即安全设计成为常态：IAM、AppSec 以及对智能体产出的授权红队演练。"
+          "icon": "shield-check",
+          "h": "AI 辅助交付的安全",
+          "p": "智能体所写的代码如何失效、如何捕捉，以及如何让安全设计成为默认：IAM、AppSec 以及对智能体产出的授权红队。"
         },
         {
+          "icon": "ruler",
           "h": "标准与评估",
-          "p": "对智能体产出而言什么才算“好”，以及如何衡量它：规范化手册、质量关卡以及证明行为而非凭感觉的测试。"
+          "p": "对智能体产出而言“好”意味着什么，以及如何度量它：规范化操作手册、质量门禁，以及用测试证明行为而非凭感觉。"
         },
         {
+          "icon": "heart-handshake",
           "h": "开发者体验",
-          "p": "让正确的方式成为轻松的方式——安装标准、保持其最新并不妨碍开发者的工具。"
+          "p": "让正确之路成为轻松之路——安装标准、保持其更新，并不挡开发者路的工具链。"
         }
       ]
     },
@@ -170,23 +201,82 @@
       "title": "我们的方法",
       "items": [
         {
-          "h": "开放",
-          "p": "发现与工具是发布出来的，而非私藏。可复现才是关键。"
+          "icon": "git-fork",
+          "h": "公开进行",
+          "p": "发现与工具都公开发布，而非私藏。可复现才是关键。"
         },
         {
-          "h": "扎根实践",
-          "p": "我们通过构建与交付来做研究——实验室与产品互相滋养。"
+          "icon": "hammer",
+          "h": "扎根于实践",
+          "p": "我们通过构建与交付来做研究——实验室与产品相互滋养。"
         },
         {
+          "icon": "lock",
           "h": "安全优先",
-          "p": "如果运行起来不安全，就还没有完成。威胁建模与测试是方法的一部分。"
+          "p": "若运行起来不安全，就不算完成。威胁建模与测试是方法的一部分。"
         }
       ]
     },
     "cta": {
-      "title": "关注研究进展。",
-      "p": "我们在博客上记录所学，工具则落地在 GitHub。",
+      "title": "关注研究。",
+      "p": "我们在博客上写下所学，工具则落地到 GitHub。",
       "button": "阅读博客"
+    }
+  },
+  "principles": {
+    "meta": {
+      "title": "原则 — 我们如何构建 — schematize.org",
+      "desc": "schematize 实验室的工程原则：让用 AI 智能体编写的软件正确、安全、可维护的不可妥协底线——安全在服务端决定、用测试证明行为、每次变更都留下审计轨迹、以身份为先的设计。"
+    },
+    "hero": {
+      "kicker": "原则",
+      "h1": "我们如何构建。",
+      "sub": "AI 智能体能快速产出代码，但缺乏纪律的速度只会更快地交付缺陷。这些是我们要求每个项目坚守的不可妥协底线——也是我们的开源 skill 所编码的同一套底线，让智能体默认遵循它们。"
+    },
+    "intro": {
+      "title": "标准优先于感觉",
+      "p": "一条原则只有当机器能检查它时才算数。下面每一条底线都对应到我们工具链中的一个具体门禁——一项测试、一条评审规则、一件必备产物——因此“完成”是被证明的，而非声称的。这正是我们的工程 skill 装入项目中的东西，也是我们的研究不断磨砺的东西。"
+    },
+    "floors": {
+      "title": "不可妥协的底线",
+      "items": [
+        {
+          "icon": "server",
+          "h": "安全在服务端决定",
+          "p": "认证与授权在服务端强制执行，绝不在客户端。密钥永不进入浏览器打包产物。UI 中的检查只是用户体验——真正的决定发生在请求落地之处，针对经过验证的身份。"
+        },
+        {
+          "icon": "flask-conical",
+          "h": "测试证明行为",
+          "p": "测试断言软件做了什么——内容、状态、交互、错误与空路径——而不仅是它渲染出来了。当行为出错时不会失败的覆盖率不是覆盖率。质量门禁像构建失败一样阻止合并。"
+        },
+        {
+          "icon": "archive",
+          "h": "每次变更都留下审计轨迹",
+          "p": "工作在被记录之前都未完成：什么变了、为什么、决定了什么、拒绝了什么。归档是交付物的一部分，而非事后的文书——好让推理在产生它的会话之后依然留存。"
+        },
+        {
+          "icon": "fingerprint",
+          "h": "身份为先",
+          "p": "每个项目都以健壮的 IAM 起步：身份不等于邮箱、访问基于关系并默认多租户、无密码是目标。授权从第一天起就是细粒度的，而非在被攻破后才加装。"
+        },
+        {
+          "icon": "git-fork",
+          "h": "默认开放",
+          "p": "我们的工具是开源的，我们的发现是公开的。重要的东西，你都能读、能运行、能分叉、能在其上构建。可复现才是关键——无法复现的结果只是一种观点。"
+        },
+        {
+          "icon": "rocket",
+          "h": "交付，别私藏",
+          "p": "我们通过构建与交付来做研究；实验室与产品相互滋养。目标是让正确之路成为轻松之路——安装标准、保持其更新、并不挡开发者路的工具链。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "在代码中看见这些底线。",
+      "p": "上述原则被编码为面向 Claude Code 的可安装工程 skill——源码全在 GitHub 上。",
+      "button": "浏览 skills",
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -194,6 +284,260 @@
     "visit": "访问"
   },
   "sponsors": {
-    "title": "赞助商"
+    "title": "赞助者"
+  },
+  "company": {
+    "legalName": "Schematize Ltda - EPP",
+    "tradeName": "Schematize",
+    "cnpj": "53.942.996/0001-10",
+    "founded": "16/02/2024",
+    "foundedISO": "2024-02-16",
+    "status": "Ativa",
+    "cnae": "Consultoria em tecnologia da informação",
+    "location": "São Paulo, SP",
+    "email": "contabil@schematize.me"
+  },
+  "about": {
+    "meta": {
+      "title": "关于 — schematize.org",
+      "desc": "关于 Schematize：schematize.org 背后的公司与开源实验室。法定名称、注册信息与机构详情。"
+    },
+    "hero": {
+      "kicker": "关于",
+      "h1": "schematize 背后的实验室与公司。",
+      "sub": "schematize.org 是 Schematize 的开源与技术研究之家——一家为 AI 智能体、并与 AI 智能体一起、公开构建工程工具的技术公司。"
+    },
+    "who": {
+      "title": "我们是谁",
+      "p1": "Schematize 是一家巴西技术公司。我们构建开源工具与规范化工程标准，让用 AI 智能体编写的软件正确、安全、可维护——并沿途公开我们所学。",
+      "p2": "如今所有机构性与开源内容都汇聚于单一之家：schematize.org。我们的源代码在 GitHub 上公开，我们的工具通过 schematize CLI 安装。"
+    },
+    "mission": {
+      "title": "驱动我们的",
+      "p": "让智能体构建的软件值得信赖。如果不正确、不安全、不可维护，快就毫无价值——所以我们把智能体的产出变成团队真正能在生产环境运行的软件。"
+    },
+    "facts": {
+      "title": "公司信息",
+      "note": "运营 schematize.org 的公司的机构与注册数据。",
+      "labels": {
+        "legalName": "法定名称",
+        "tradeName": "商号",
+        "cnpj": "CNPJ",
+        "founded": "成立日期",
+        "status": "注册状态",
+        "cnae": "主要经营活动（CNAE）",
+        "location": "所在地",
+        "contact": "联系方式"
+      }
+    },
+    "cta": {
+      "title": "联系我们。",
+      "p": "对公司、项目或研究有疑问？联系我们或阅读源码。",
+      "button": "联系"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "联系 — schematize.org",
+      "desc": "联系 Schematize：schematize.org 背后的公司与开源实验室的机构联系渠道。"
+    },
+    "hero": {
+      "kicker": "联系",
+      "h1": "与我们交流。",
+      "sub": "触达这些工作的最佳去处，就是它们所在之处。选择适合你的渠道。"
+    },
+    "channels": {
+      "title": "渠道",
+      "items": [
+        {
+          "icon": "mail",
+          "h": "机构与行政事务",
+          "p": "有关公司、开票与机构事务，请直接发邮件给我们。",
+          "href": "mailto:contabil@schematize.me",
+          "label": "contabil@schematize.me"
+        },
+        {
+          "icon": "github",
+          "brand": true,
+          "h": "源码与 issue",
+          "p": "在 GitHub 上报告缺陷、提交 issue 或为开源项目做贡献。",
+          "href": "https://github.com/schematizeme",
+          "label": "github.com/schematizeme"
+        },
+        {
+          "icon": "shield-alert",
+          "h": "安全与负责任披露",
+          "p": "在我们的某个工具中发现了漏洞？请私下报告，我们会与你一起处理修复与披露。",
+          "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
+          "label": "私下报告"
+        },
+        {
+          "icon": "blocks",
+          "h": "Skills 目录",
+          "p": "浏览并安装面向 Claude Code 的工程 skill。",
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
+        }
+      ]
+    },
+    "note": "联系我们即表示你同意我们仅为回应你的请求而处理你发送的数据。请参阅隐私政策。"
+  },
+  "legal": {
+    "meta": {
+      "title": "法律 — schematize.org",
+      "desc": "schematize.org 的法律中心：使用条款、服务条款、隐私政策（LGPD）与 Cookie 政策。"
+    },
+    "hero": {
+      "kicker": "法律",
+      "h1": "法律中心",
+      "sub": "管辖本网站及我们服务的各项政策。公司数据与生效日期见于每份文件。"
+    },
+    "disclaimer": "工作草稿——非法律意见。这些文件是正在由律师审核的结构性框架，可能在生效前变更。[REVISAR: advogado]",
+    "effective": "生效日期",
+    "effectiveDate": "2026-08-19",
+    "controllerLabel": "数据控制者",
+    "contactLabel": "联系方式",
+    "backToLegal": "返回法律中心",
+    "index": {
+      "title": "政策",
+      "items": [
+        {
+          "h": "使用条款",
+          "p": "使用本网站的规则：知识产权、行为规范与第三方链接。",
+          "slug": "legal/terms-of-use"
+        },
+        {
+          "h": "服务条款",
+          "p": "涵盖我们开源工具与服务的协议。",
+          "slug": "legal/terms-of-service"
+        },
+        {
+          "h": "隐私政策",
+          "p": "我们如何依据巴西 LGPD 处理个人数据。",
+          "slug": "legal/privacy"
+        },
+        {
+          "h": "Cookie 政策",
+          "p": "本站使用的 Cookie 及类似技术，以及如何管理它们。",
+          "slug": "legal/cookies"
+        }
+      ]
+    },
+    "docs": {
+      "termsUse": {
+        "meta": {
+          "title": "使用条款 — schematize.org",
+          "desc": "schematize.org 网站的使用条款。"
+        },
+        "h1": "使用条款",
+        "sub": "使用 schematize.org 网站的规则。",
+        "sections": [
+          { "h": "1. 接受", "p": "访问 schematize.org 即表示你同意本使用条款。若你不同意，请勿使用本站。" },
+          { "h": "2. 本站提供什么", "p": "schematize.org 是一个信息性、机构性网站，展示我们的开源项目与技术研究。它不是商店。" },
+          { "h": "3. 知识产权", "p": "schematize 品牌与本站内容受保护。我们的开源项目按 GitHub 上各仓库所述条款授权。" },
+          { "h": "4. 可接受的使用", "p": "你同意不滥用本站、不试图扰乱本站，也不将其用于非法目的。" },
+          { "h": "5. 第三方链接", "p": "本站链接至第三方目的地（例如 GitHub）。我们不对第三方内容负责。" },
+          { "h": "6. 免责声明与责任限制", "p": "本站按“现状”提供，不作任何担保。[REVISAR: advogado]" },
+          { "h": "7. 变更", "p": "我们可能更新这些条款；上方生效日期反映当前版本。" },
+          { "h": "8. 适用法律与管辖", "p": "这些条款受巴西法律管辖。[REVISAR: advogado]" }
+        ]
+      },
+      "termsService": {
+        "meta": {
+          "title": "服务条款 — schematize.org",
+          "desc": "schematize 工具与服务的服务条款。"
+        },
+        "h1": "服务条款",
+        "sub": "涵盖我们工具与服务的协议。",
+        "sections": [
+          { "h": "1. 当事方与定义", "p": "这些条款管辖 Schematize 与我们工具及服务用户之间的关系。" },
+          { "h": "2. 适用范围", "p": "我们的开源工具（如 schematize CLI 与工程 skill）按其在 GitHub 上各自的开源许可证提供。" },
+          { "h": "3. 账户", "p": "当某项服务需要认证时，将通过 auth.schematize.org 提供。你有责任妥善保管你的凭据。" },
+          { "h": "4. 费用", "p": "开源工具免费。任何付费服务在签约时会予以说明。[REVISAR: advogado]" },
+          { "h": "5. 双方义务", "p": "你同意合法使用服务；我们同意以合理的谨慎提供服务。" },
+          { "h": "6. 暂停与终止", "p": "如遇滥用或安全风险，我们可能暂停访问。" },
+          { "h": "7. 担保与责任限制", "p": "在法律允许的范围内，服务按“现状”提供。[REVISAR: advogado]" },
+          { "h": "8. 隐私", "p": "个人数据依据我们的隐私政策处理。" },
+          { "h": "9. 适用法律与管辖", "p": "受巴西法律管辖。[REVISAR: advogado]" }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "隐私政策 — schematize.org",
+          "desc": "schematize.org 依据巴西 LGPD 的隐私政策：控制者、所收集数据、目的、法律依据、留存与数据主体权利。"
+        },
+        "h1": "隐私政策",
+        "sub": "我们如何依据巴西《通用数据保护法》（LGPD）处理个人数据。",
+        "sections": [
+          { "h": "1. 控制者", "p": "数据控制者为 Schematize Ltda - EPP（CNPJ 53.942.996/0001-10），巴西圣保罗州圣保罗市。" },
+          { "h": "2. 数据保护官（DPO）", "p": "关于隐私事务及行使你的权利，请联系 contabil@schematize.me。[REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. 我们收集的数据", "p": "本站为信息性网站，无登录或表单；我们仅收集提供页面与保持网站安全所需的最少技术数据。若你发邮件给我们，我们会处理你发送的数据。" },
+          { "h": "4. 目的", "p": "用于提供并保护本网站，以及回应你发送给我们的信息。" },
+          { "h": "5. 法律依据", "p": "运营并保护本站的正当利益；当你联系我们时的同意或对请求的执行（LGPD 第 7 条）。[REVISAR: advogado]" },
+          { "h": "6. 共享", "p": "我们使用作为运营者的基础设施与托管服务提供商；我们不出售个人数据。" },
+          { "h": "7. 国际传输", "p": "部分服务提供商可能在巴西境外处理数据，并采取保障措施。[REVISAR: advogado]" },
+          { "h": "8. 留存", "p": "我们仅在为上述目的所必需或法律所要求的期限内保留数据。" },
+          { "h": "9. 安全", "p": "我们采取合理的技术与组织措施来保护数据。" },
+          { "h": "10. 你的权利", "p": "依据 LGPD 第 18 条，你可通过发邮件至 contabil@schematize.me 请求确认、访问、更正、匿名化、可携带、删除及共享信息，并撤回同意。" },
+          { "h": "11. Cookie", "p": "有关 Cookie 及类似技术的详情，请参阅我们的 Cookie 政策。" },
+          { "h": "12. 变更", "p": "我们可能更新本政策；上方生效日期反映当前版本。" }
+        ]
+      },
+      "cookies": {
+        "meta": {
+          "title": "Cookie 政策 — schematize.org",
+          "desc": "schematize.org 的 Cookie 政策：Cookie 类别、目的及如何管理它们。"
+        },
+        "h1": "Cookie 政策",
+        "sub": "本站使用的 Cookie 及类似技术。",
+        "sections": [
+          { "h": "1. 什么是 Cookie", "p": "Cookie 是存储在你设备上的小文件，帮助网站运作并记住偏好设置。" },
+          { "h": "2. 类别", "p": "必要类：网站运作所必需（例如记住你的语言）。性能/分析、功能与营销类 Cookie 仅在你选择加入同意后使用。" },
+          { "h": "3. 我们使用什么", "p": "本站在本地存储一项语言偏好，以保持你所选的语言。未经同意，它不运行非必要的分析或营销 Cookie。[REVISAR: negócio]" },
+          { "h": "4. 同意", "p": "非必要 Cookie 需选择加入同意；必要 Cookie 无需同意即可运行。" },
+          { "h": "5. 管理 Cookie", "p": "你可以在浏览器设置中清除或阻止 Cookie；阻止必要存储可能影响网站。" },
+          { "h": "6. 变更", "p": "我们可能更新本政策；上方生效日期反映当前版本。" }
+        ]
+      }
+    }
+  },
+  "sitemapPage": {
+    "meta": {
+      "title": "站点地图 — schematize.org",
+      "desc": "schematize.org 上每个公开页面的可读地图。"
+    },
+    "hero": {
+      "kicker": "站点地图",
+      "h1": "站点地图",
+      "sub": "schematize.org 上按板块分组的每个公开页面。"
+    },
+    "groups": [
+      {
+        "h": "机构",
+        "links": [
+          { "slug": "", "label": "首页" },
+          { "slug": "about", "label": "关于" },
+          { "slug": "contact", "label": "联系" }
+        ]
+      },
+      {
+        "h": "工作",
+        "links": [
+          { "slug": "projects", "label": "项目" },
+          { "slug": "research", "label": "研究" },
+          { "slug": "principles", "label": "原则" }
+        ]
+      },
+      {
+        "h": "法律",
+        "links": [
+          { "slug": "legal", "label": "法律中心" },
+          { "slug": "legal/terms-of-use", "label": "使用条款" },
+          { "slug": "legal/terms-of-service", "label": "服务条款" },
+          { "slug": "legal/privacy", "label": "隐私政策" },
+          { "slug": "legal/cookies", "label": "Cookie 政策" }
+        ]
+      }
+    ]
   }
 }

@@ -2,35 +2,40 @@
   "nav": {
     "projects": "Projecten",
     "research": "Onderzoek",
+    "principles": "Principes",
+    "about": "Over ons",
+    "contact": "Contact",
+    "legal": "Juridisch",
     "skills": "Skills",
     "academy": "Academy",
     "login": "Inloggen / Registreren",
-    "cta": "Broncode bekijken"
+    "cta": "Broncode bekijken",
+    "menu": "Menu"
   },
   "footer": {
-    "tagline": "Het open-source- en technologieonderzoekslab achter schematize.",
+    "tagline": "Het open-source- en technologie-onderzoekslab achter schematize.",
     "explore": "Ontdekken",
-    "ecosystem": "Ecosysteem",
-    "blog": "Blog",
+    "company": "Bedrijf",
+    "resources": "Bronnen",
+    "legal": "Juridisch",
     "made": "In de openbaarheid gebouwd.",
-    "platforms": "Platforms",
-    "commercial": "Commercieel"
+    "sitemap": "Sitemap"
   },
   "home": {
     "meta": {
-      "title": "schematize.org — open-source- & AI-engineering-onderzoekslab",
-      "desc": "schematize.org is het open-source- en technologieonderzoekslab achter schematize: tools die in de openbaarheid worden gebouwd en onderzoek naar engineering met AI-agents. Ontdek ons werk."
+      "title": "schematize.org — open-source & AI-engineering onderzoekslab",
+      "desc": "schematize.org is het open-source- en technologie-onderzoekslab achter schematize: tools die in de openbaarheid worden gebouwd en onderzoek naar engineering met AI-agents. Ontdek ons werk."
     },
     "hero": {
       "kicker": "Open source & onderzoek",
       "h1": "Engineering voor AI-agents, in de openbaarheid gebouwd.",
-      "sub": "schematize.org is waar we onze open-sourcetools ontwikkelen en technologieonderzoek delen over hoe je AI-agents bouwt, beveiligt en orkestreert die standhouden in de echte wereld.",
+      "sub": "schematize.org is waar we onze open-source tools ontwikkelen en technologie-onderzoek delen over hoe je AI-agents bouwt, beveiligt en orkestreert die het in de echte wereld volhouden.",
       "cta1": "Projecten ontdekken",
-      "cta2": "Lees het onderzoek"
+      "cta2": "Het onderzoek lezen"
     },
     "mission": {
       "kicker": "Missie",
-      "title": "Software die door agents wordt gebouwd betrouwbaar maken.",
+      "title": "Software gebouwd door agents betrouwbaar maken.",
       "p": "AI-agents kunnen snel veel code schrijven — maar snel is waardeloos als het niet correct, veilig en onderhoudbaar is. Wij bouwen de open tools en de gedeelde standaarden die de output van agents omzetten in software die je echt in productie kunt draaien, en we publiceren wat we onderweg leren."
     },
     "pillars": {
@@ -38,13 +43,21 @@
       "items": [
         {
           "key": "projects",
-          "h": "Open-sourceprojecten",
-          "p": "De schematize-CLI, de catalogus met engineering-skills voor Claude Code en de tooling die het allemaal reproduceerbaar maakt — allemaal leesbaar, forkbaar en gratis."
+          "icon": "package",
+          "h": "Open-source projecten",
+          "p": "De schematize-CLI, de catalogus met engineering-skills voor Claude Code en de tooling die het allemaal reproduceerbaar maakt — alles leesbaar, forkbaar en gratis."
         },
         {
           "key": "research",
-          "h": "Technologieonderzoek",
+          "icon": "flask-conical",
+          "h": "Technologie-onderzoek",
           "p": "Hoe je betrouwbaar en veilig engineert met AI-agents: orkestratie, standaarden, evaluatie en de beveiliging van AI-ondersteunde levering."
+        },
+        {
+          "key": "principles",
+          "icon": "shield-check",
+          "h": "Engineering-standaarden",
+          "p": "De niet-onderhandelbare ondergrenzen die de output van agents betrouwbaar maken: beveiliging die server-side wordt beslist, tests die het gedrag bewijzen en een audittrail op elke wijziging."
         }
       ]
     },
@@ -53,15 +66,15 @@
       "items": [
         {
           "h": "Open by default",
-          "p": "Onze tools zijn open source en onze bevindingen zijn openbaar. Als het ertoe doet, kun je het lezen, draaien en erop voortbouwen."
+          "p": "Onze tools zijn open source en onze bevindingen zijn openbaar. Als het ertoe doet, kun je het lezen, uitvoeren en erop voortbouwen."
         },
         {
           "h": "Rigoureus",
-          "p": "Standaarden boven onderbuikgevoel: normatieve playbooks, echte tests en beveiliging behandeld als een eersteklas eis — niet als bijzaak achteraf."
+          "p": "Standaarden boven onderbuikgevoel: normatieve playbooks, echte tests en beveiliging als een eersteklas eis — geen bijzaak achteraf."
         },
         {
           "h": "Praktisch",
-          "p": "Onderzoek dat in productie komt. Alles wat we publiceren is bedoeld om te veranderen hoe echte teams met agents bouwen, niet om in een la te belanden."
+          "p": "Onderzoek dat live gaat. Alles wat we publiceren is bedoeld om te veranderen hoe echte teams met agents bouwen, niet om in een la te blijven liggen."
         }
       ]
     },
@@ -73,71 +86,85 @@
     "platforms": {
       "kicker": "Het ecosysteem",
       "title": "Waar het werk leeft",
-      "p": "Alles wat schematize in de openbaarheid bouwt, verdeeld over drie plekken.",
+      "p": "Alles wat schematize in de openbaarheid bouwt, verdeeld over het ecosysteem.",
       "items": [
         {
           "h": "Skills",
           "tag": "skills.schematize.org",
           "url": "https://skills.schematize.org",
-          "p": "De catalogus met engineering-skills die AI-agents de huisstandaarden laten volgen — te installeren met één commando."
+          "icon": "blocks",
+          "p": "De catalogus met engineering-skills die AI-agents de huisstandaarden laten volgen — met één commando te installeren."
         },
         {
           "h": "Onderzoek",
           "tag": "schematize.org/research",
           "key": "research",
-          "p": "Papers, notities en bevindingen uit ons technologieonderzoek — gepubliceerd terwijl we leren."
+          "icon": "flask-conical",
+          "p": "Artikelen, notities en bevindingen uit ons technologie-onderzoek — gepubliceerd terwijl we leren."
+        },
+        {
+          "h": "Broncode",
+          "tag": "github.com/schematizeme",
+          "url": "https://github.com/schematizeme",
+          "icon": "github",
+          "brand": true,
+          "p": "Elke repository, in de openbaarheid. Lees het, fork het, open een issue — of installeer het met de schematize-CLI."
         }
       ]
     }
   },
   "projects": {
     "meta": {
-      "title": "Open-sourceprojecten — schematize.org",
-      "desc": "Open-sourceprojecten van het schematize-lab: de schematize-CLI en de catalogus met engineering-skills voor Claude Code. Lees de broncode, fork het, draag bij."
+      "title": "Open-source projecten — schematize.org",
+      "desc": "Open-source projecten van het schematize-lab: de schematize-CLI en de catalogus met engineering-skills voor Claude Code. Lees de broncode, fork het, draag bij."
     },
     "hero": {
       "kicker": "Projecten",
-      "h1": "Open-sourcetools om te bouwen met AI-agents.",
-      "sub": "Alles wat we bouwen om agent-ondersteunde engineering reproduceerbaar en veilig te maken — vrij om te lezen, te draaien en te forken."
+      "h1": "Open-source tools om te bouwen met AI-agents.",
+      "sub": "Alles wat we bouwen om agent-ondersteunde engineering reproduceerbaar en veilig te maken — vrij om te lezen, uit te voeren en te forken."
     },
     "list": {
       "title": "Wat we onderhouden",
       "items": [
         {
           "tag": "CLI · Rust",
+          "icon": "terminal",
           "h": "schematize",
-          "p": "Een Linux-first command-line-app die engineering-skills voor Claude Code installeert en versiebeheer geeft en overdev draait — continue, onbeheerde ontwikkeling die niet stopt tot de checklist af is.",
+          "p": "Een Linux-first command-line-app die engineering-skills voor Claude Code installeert en versioneert en overdev uitvoert — continue, onbewaakte ontwikkeling die niet stopt totdat de checklist af is.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
+          "icon": "blocks",
           "h": "Engineering-skills",
           "p": "Normatieve playbooks voor Claude Code — engineering, go, rust, web, seo, node en pentest — elk met niet-onderhandelbare ondergrenzen voor beveiliging, testen en architectuur.",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
+          "icon": "search",
           "h": "schematize-seo",
-          "p": "Een volledige SEO-discipline als skill: technisch, on-page, content, gestructureerde data, internationale/multi-domeinoptimalisatie en optimalisatie voor AI-antwoorden.",
+          "p": "Een volledige SEO-discipline als skill: technisch, on-page, content, gestructureerde data, internationaal/multi-domein en optimalisatie voor AI-antwoorden.",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
+          "icon": "shield-check",
           "h": "schematize-pentest",
-          "p": "Defensieve AppSec en geautoriseerde red-teaming als skill: het in kaart brengen van het aanvalsoppervlak van endpoints, OWASP-dekking en threat modeling — altijd binnen scope.",
+          "p": "Defensieve AppSec en geautoriseerde red teaming als skill: het in kaart brengen van het aanvalsoppervlak van endpoints, OWASP-dekking en threat modeling — altijd binnen scope.",
           "href": "https://github.com/schematizeme/skill-pentest"
         }
       ]
     },
     "cta": {
       "title": "Lees de broncode.",
-      "p": "Het is allemaal openbaar. Geef het een ster, fork het, open een issue — of gebruik de schematize-CLI om het in seconden te installeren.",
+      "p": "Het is allemaal openbaar. Geef het een ster, fork het, open een issue — of gebruik de schematize-CLI om het in enkele seconden te installeren.",
       "button": "GitHub openen"
     }
   },
   "research": {
     "meta": {
-      "title": "Technologieonderzoek — schematize.org",
+      "title": "Technologie-onderzoek — schematize.org",
       "desc": "Onderzoek van het schematize-lab naar engineering met AI-agents: betrouwbare orkestratie, de beveiliging van AI-ondersteunde levering en standaarden die de output van agents betrouwbaar maken."
     },
     "hero": {
@@ -149,20 +176,24 @@
       "title": "Onderzoeksgebieden",
       "items": [
         {
-          "h": "Betrouwbare agent-engineering",
-          "p": "Orkestratie, decompositie en guardrails die AI-agents op taak houden tijdens langdurig werk met meerdere stappen — zonder voortijdig te stoppen of af te dwalen van de spec."
+          "icon": "workflow",
+          "h": "Betrouwbare engineering met agents",
+          "p": "Orkestratie, decompositie en guardrails die AI-agents op koers houden door lang, meerstaps werk — zonder te vroeg te stoppen of af te dwalen van de specificatie."
         },
         {
+          "icon": "shield-check",
           "h": "Beveiliging van AI-ondersteunde levering",
-          "p": "Hoe door agents geschreven code faalt, hoe je het opvangt en hoe je secure-by-design de standaard maakt: IAM, AppSec en geautoriseerde red-teaming van wat agents produceren."
+          "p": "Hoe door agents geschreven code faalt, hoe je het opvangt en hoe je secure-by-design de standaard maakt: IAM, AppSec en geautoriseerde red teaming van wat agents produceren."
         },
         {
+          "icon": "ruler",
           "h": "Standaarden & evaluatie",
-          "p": "Wat 'goed' betekent voor agent-output en hoe je het meet: normatieve playbooks, quality gates en tests die gedrag bewijzen in plaats van onderbuikgevoel."
+          "p": "Wat 'goed' betekent voor de output van agents, en hoe je het meet: normatieve playbooks, quality gates en tests die het gedrag bewijzen in plaats van op gevoel te varen."
         },
         {
-          "h": "Ontwikkelaarservaring",
-          "p": "De juiste manier de makkelijke manier maken — tooling die standaarden installeert, ze actueel houdt en de ontwikkelaar niet in de weg zit."
+          "icon": "heart-handshake",
+          "h": "Developer experience",
+          "p": "De juiste manier de makkelijke manier maken — tooling die standaarden installeert, ze actueel houdt en de developer niet in de weg loopt."
         }
       ]
     },
@@ -170,23 +201,82 @@
       "title": "Onze aanpak",
       "items": [
         {
+          "icon": "git-fork",
           "h": "In de openbaarheid",
-          "p": "Bevindingen en tools worden gepubliceerd, niet opgepot. Reproduceerbaarheid is het punt."
+          "p": "Bevindingen en tools worden gepubliceerd, niet gehamsterd. Reproduceerbaarheid is het doel."
         },
         {
+          "icon": "hammer",
           "h": "Geworteld in de praktijk",
-          "p": "We onderzoeken door te bouwen en te leveren — het lab en de producten voeden elkaar."
+          "p": "We doen onderzoek door te bouwen en te leveren — het lab en de producten voeden elkaar."
         },
         {
-          "h": "Security-first",
-          "p": "Als het niet veilig is om te draaien, is het niet af. Threat modeling en testen zijn onderdeel van de methode."
+          "icon": "lock",
+          "h": "Beveiliging eerst",
+          "p": "Als het niet veilig is om uit te voeren, is het niet af. Threat modeling en testen horen bij de methode."
         }
       ]
     },
     "cta": {
       "title": "Volg het onderzoek.",
-      "p": "We schrijven op wat we leren op de blog, en de tools landen op GitHub.",
+      "p": "We schrijven op wat we leren op de blog, en de tools belanden op GitHub.",
       "button": "Lees de blog"
+    }
+  },
+  "principles": {
+    "meta": {
+      "title": "Principes — hoe we bouwen — schematize.org",
+      "desc": "De engineering-principes van het schematize-lab: niet-onderhandelbare ondergrenzen die software geschreven met AI-agents correct, veilig en onderhoudbaar maken — beveiliging die server-side wordt beslist, tests die het gedrag bewijzen, een audittrail op elke wijziging en een identity-first-ontwerp."
+    },
+    "hero": {
+      "kicker": "Principes",
+      "h1": "Hoe we bouwen.",
+      "sub": "AI-agents kunnen snel code produceren, maar snelheid zonder discipline levert alleen maar sneller bugs op. Dit zijn de niet-onderhandelbare ondergrenzen die we aan elk project stellen — dezelfde ondergrenzen die onze open-source skills coderen zodat agents ze standaard volgen."
+    },
+    "intro": {
+      "title": "Standaarden boven onderbuikgevoel",
+      "p": "Een principe telt alleen als een machine het kan controleren. Elke ondergrens hieronder koppelt aan een concrete gate in onze tooling — een test, een reviewregel, een vereist artefact — zodat 'af' bewezen is, niet beweerd. Dit is wat onze engineering-skills in een project installeren, en wat ons onderzoek blijft aanscherpen."
+    },
+    "floors": {
+      "title": "De niet-onderhandelbare ondergrenzen",
+      "items": [
+        {
+          "icon": "server",
+          "h": "Beveiliging wordt op de server beslist",
+          "p": "Authenticatie en autorisatie worden server-side afgedwongen, nooit in de client. Geheimen bereiken nooit de browserbundel. Een controle in de UI is gebruikerservaring — de echte beslissing gebeurt waar het verzoek binnenkomt, tegen een geverifieerde identiteit."
+        },
+        {
+          "icon": "flask-conical",
+          "h": "Tests bewijzen het gedrag",
+          "p": "Een test stelt vast wat de software doet — content, status, interactie, fout- en lege paden — niet louter dat het gerenderd is. Dekking die niet faalt wanneer het gedrag breekt, is geen dekking. Quality gates blokkeren een merge net zoals een gebroken build dat doet."
+        },
+        {
+          "icon": "archive",
+          "h": "Elke wijziging laat een audittrail achter",
+          "p": "Geen werk is af totdat het is vastgelegd: wat er veranderde, waarom, wat er is beslist en wat is afgewezen. Het archief is onderdeel van het op te leveren werk, geen papierwerk erna — zodat de redenering de sessie overleeft die het voortbracht."
+        },
+        {
+          "icon": "fingerprint",
+          "h": "Identiteit komt eerst",
+          "p": "Elk project begint met robuuste IAM: identiteit is geen e-mail, toegang is relatiegebaseerd en standaard multi-tenant, en passwordless is het doel. Autorisatie is granulair vanaf dag één, niet er achteraf op geschroefd na een inbreuk."
+        },
+        {
+          "icon": "git-fork",
+          "h": "Open by default",
+          "p": "Onze tools zijn open source en onze bevindingen zijn openbaar. Als het ertoe doet, kun je het lezen, uitvoeren, forken en erop voortbouwen. Reproduceerbaarheid is het doel — een resultaat dat je niet kunt reproduceren is een mening."
+        },
+        {
+          "icon": "rocket",
+          "h": "Leveren, niet hamsteren",
+          "p": "We doen onderzoek door te bouwen en te leveren; het lab en de producten voeden elkaar. Het doel is de juiste manier de makkelijke manier te maken — tooling die de standaard installeert, actueel houdt en de developer niet in de weg loopt."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Zie de ondergrenzen in code.",
+      "p": "De principes hierboven zijn gecodeerd als installeerbare engineering-skills voor Claude Code — en de broncode staat allemaal op GitHub.",
+      "button": "Blader door de skills",
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -195,5 +285,259 @@
   },
   "sponsors": {
     "title": "Sponsors"
+  },
+  "company": {
+    "legalName": "Schematize Ltda - EPP",
+    "tradeName": "Schematize",
+    "cnpj": "53.942.996/0001-10",
+    "founded": "16/02/2024",
+    "foundedISO": "2024-02-16",
+    "status": "Ativa",
+    "cnae": "Consultoria em tecnologia da informação",
+    "location": "São Paulo, SP",
+    "email": "contabil@schematize.me"
+  },
+  "about": {
+    "meta": {
+      "title": "Over ons — schematize.org",
+      "desc": "Over Schematize: het bedrijf en open-source lab achter schematize.org. Statutaire naam, registratie en institutionele gegevens."
+    },
+    "hero": {
+      "kicker": "Over ons",
+      "h1": "Het lab en het bedrijf achter schematize.",
+      "sub": "schematize.org is het open-source- en technologie-onderzoekshuis van Schematize — een technologiebedrijf dat engineering-tools bouwt voor en met AI-agents, in de openbaarheid."
+    },
+    "who": {
+      "title": "Wie we zijn",
+      "p1": "Schematize is een Braziliaans technologiebedrijf. We bouwen open-source tools en normatieve engineering-standaarden die software geschreven met AI-agents correct, veilig en onderhoudbaar maken — en we publiceren wat we onderweg leren.",
+      "p2": "Alles wat institutioneel en open source is, woont nu op één plek: schematize.org. Onze broncode is openbaar op GitHub, en onze tools installeren via de schematize-CLI."
+    },
+    "mission": {
+      "title": "Wat ons drijft",
+      "p": "Software gebouwd door agents betrouwbaar maken. Snel is waardeloos als het niet correct, veilig en onderhoudbaar is — dus zetten we de output van agents om in software die teams echt in productie kunnen draaien."
+    },
+    "facts": {
+      "title": "Bedrijfsgegevens",
+      "note": "Institutionele en registratiegegevens van het bedrijf dat schematize.org exploiteert.",
+      "labels": {
+        "legalName": "Statutaire naam",
+        "tradeName": "Handelsnaam",
+        "cnpj": "CNPJ",
+        "founded": "Opgericht",
+        "status": "Registratiestatus",
+        "cnae": "Hoofdactiviteit (CNAE)",
+        "location": "Locatie",
+        "contact": "Contact"
+      }
+    },
+    "cta": {
+      "title": "Neem contact op.",
+      "p": "Vragen over het bedrijf, de projecten of het onderzoek? Neem contact op of lees de broncode.",
+      "button": "Contact"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — schematize.org",
+      "desc": "Neem contact op met Schematize: institutionele contactkanalen van het bedrijf en het open-source lab achter schematize.org."
+    },
+    "hero": {
+      "kicker": "Contact",
+      "h1": "Praat met ons.",
+      "sub": "De beste plek om het werk te bereiken is waar het leeft. Kies het kanaal dat bij je past."
+    },
+    "channels": {
+      "title": "Kanalen",
+      "items": [
+        {
+          "icon": "mail",
+          "h": "Institutioneel & administratief",
+          "p": "Voor bedrijfs-, facturatie- en institutionele zaken kun je ons rechtstreeks e-mailen.",
+          "href": "mailto:contabil@schematize.me",
+          "label": "contabil@schematize.me"
+        },
+        {
+          "icon": "github",
+          "brand": true,
+          "h": "Broncode & issues",
+          "p": "Meld bugs, open issues of draag bij aan de open-source projecten op GitHub.",
+          "href": "https://github.com/schematizeme",
+          "label": "github.com/schematizeme"
+        },
+        {
+          "icon": "shield-alert",
+          "h": "Beveiliging & responsible disclosure",
+          "p": "Een kwetsbaarheid gevonden in een van onze tools? Meld het vertrouwelijk en we werken met je samen aan een fix en de openbaarmaking.",
+          "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
+          "label": "Vertrouwelijk melden"
+        },
+        {
+          "icon": "blocks",
+          "h": "Skills-catalogus",
+          "p": "Blader door en installeer de engineering-skills voor Claude Code.",
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
+        }
+      ]
+    },
+    "note": "Door contact met ons op te nemen, ga je ermee akkoord dat we de gegevens die je verzendt uitsluitend verwerken om op je verzoek te reageren. Zie het Privacybeleid."
+  },
+  "legal": {
+    "meta": {
+      "title": "Juridisch — schematize.org",
+      "desc": "Juridisch centrum van schematize.org: gebruiksvoorwaarden, servicevoorwaarden, privacybeleid (LGPD) en cookiebeleid."
+    },
+    "hero": {
+      "kicker": "Juridisch",
+      "h1": "Juridisch centrum",
+      "sub": "Het beleid dat deze website en onze diensten regelt. De bedrijfsgegevens en de ingangsdatum staan op elk document."
+    },
+    "disclaimer": "Werkversie — geen juridisch advies. Deze documenten zijn een structurele opzet in beoordeling door een advocaat en kunnen wijzigen voordat ze in werking treden. [REVISAR: advogado]",
+    "effective": "Van kracht sinds",
+    "effectiveDate": "2026-08-19",
+    "controllerLabel": "Verwerkingsverantwoordelijke",
+    "contactLabel": "Contact",
+    "backToLegal": "Terug naar juridisch centrum",
+    "index": {
+      "title": "Beleidsdocumenten",
+      "items": [
+        {
+          "h": "Gebruiksvoorwaarden",
+          "p": "De regels voor het gebruik van deze website: intellectueel eigendom, gedrag en links van derden.",
+          "slug": "legal/terms-of-use"
+        },
+        {
+          "h": "Servicevoorwaarden",
+          "p": "De overeenkomst die onze open-source tools en diensten dekt.",
+          "slug": "legal/terms-of-service"
+        },
+        {
+          "h": "Privacybeleid",
+          "p": "Hoe we persoonsgegevens verwerken, onder de Braziliaanse LGPD.",
+          "slug": "legal/privacy"
+        },
+        {
+          "h": "Cookiebeleid",
+          "p": "De cookies en vergelijkbare technologieën die deze site gebruikt, en hoe je ze beheert.",
+          "slug": "legal/cookies"
+        }
+      ]
+    },
+    "docs": {
+      "termsUse": {
+        "meta": {
+          "title": "Gebruiksvoorwaarden — schematize.org",
+          "desc": "Gebruiksvoorwaarden voor de website schematize.org."
+        },
+        "h1": "Gebruiksvoorwaarden",
+        "sub": "Regels voor het gebruik van de website schematize.org.",
+        "sections": [
+          { "h": "1. Aanvaarding", "p": "Door schematize.org te bezoeken ga je akkoord met deze Gebruiksvoorwaarden. Als je niet akkoord gaat, gebruik de site dan niet." },
+          { "h": "2. Wat de site biedt", "p": "schematize.org is een informatieve en institutionele site die onze open-source projecten en technologie-onderzoek presenteert. Het is geen winkel." },
+          { "h": "3. Intellectueel eigendom", "p": "Het merk schematize en de inhoud van de site zijn beschermd. Onze open-source projecten zijn gelicentieerd onder de voorwaarden die in elke repository op GitHub worden vermeld." },
+          { "h": "4. Aanvaardbaar gebruik", "p": "Je gaat ermee akkoord de site niet te misbruiken, niet te proberen deze te verstoren, en deze niet voor onwettige doeleinden te gebruiken." },
+          { "h": "5. Links van derden", "p": "De site linkt naar bestemmingen van derden (bijvoorbeeld GitHub). Wij zijn niet verantwoordelijk voor inhoud van derden." },
+          { "h": "6. Vrijwaring en beperking van aansprakelijkheid", "p": "De site wordt geleverd \"as is\", zonder garanties. [REVISAR: advogado]" },
+          { "h": "7. Wijzigingen", "p": "We kunnen deze voorwaarden bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." },
+          { "h": "8. Toepasselijk recht en bevoegde rechter", "p": "Deze voorwaarden worden beheerst door het recht van Brazilië. [REVISAR: advogado]" }
+        ]
+      },
+      "termsService": {
+        "meta": {
+          "title": "Servicevoorwaarden — schematize.org",
+          "desc": "Servicevoorwaarden voor schematize-tools en -diensten."
+        },
+        "h1": "Servicevoorwaarden",
+        "sub": "De overeenkomst die onze tools en diensten dekt.",
+        "sections": [
+          { "h": "1. Partijen en definities", "p": "Deze voorwaarden regelen de relatie tussen Schematize en gebruikers van onze tools en diensten." },
+          { "h": "2. Reikwijdte", "p": "Onze open-source tools (zoals de schematize-CLI en de engineering-skills) worden geleverd onder hun respectieve open-source licenties op GitHub." },
+          { "h": "3. Accounts", "p": "Waar een dienst authenticatie vereist, wordt deze geleverd via auth.schematize.org. Je bent verantwoordelijk voor het veilig houden van je inloggegevens." },
+          { "h": "4. Kosten", "p": "Open-source tools zijn gratis. Elke betaalde dienst wordt beschreven op het moment van contractering. [REVISAR: advogado]" },
+          { "h": "5. Verplichtingen van de partijen", "p": "Je gaat ermee akkoord de diensten rechtmatig te gebruiken; wij verbinden ons ertoe deze met redelijke zorg te leveren." },
+          { "h": "6. Opschorting en beëindiging", "p": "We kunnen de toegang opschorten in geval van misbruik of een beveiligingsrisico." },
+          { "h": "7. Garanties en beperking van aansprakelijkheid", "p": "Diensten worden geleverd \"as is\" voor zover toegestaan door de wet. [REVISAR: advogado]" },
+          { "h": "8. Privacy", "p": "Persoonsgegevens worden verwerkt onder ons Privacybeleid." },
+          { "h": "9. Toepasselijk recht en bevoegde rechter", "p": "Beheerst door het recht van Brazilië. [REVISAR: advogado]" }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Privacybeleid — schematize.org",
+          "desc": "Privacybeleid van schematize.org onder de Braziliaanse LGPD: verwerkingsverantwoordelijke, verzamelde gegevens, doel, rechtsgrond, bewaring en rechten van betrokkenen."
+        },
+        "h1": "Privacybeleid",
+        "sub": "Hoe we persoonsgegevens verwerken, onder de Braziliaanse algemene wet gegevensbescherming (LGPD).",
+        "sections": [
+          { "h": "1. Verwerkingsverantwoordelijke", "p": "De verwerkingsverantwoordelijke is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazilië." },
+          { "h": "2. Functionaris voor gegevensbescherming (DPO)", "p": "Voor privacyzaken en om je rechten uit te oefenen, neem contact op via contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. Gegevens die we verzamelen", "p": "Dit is een informatieve site zonder login of formulieren; we verzamelen alleen de minimale technische gegevens die nodig zijn om pagina's te serveren en de site veilig te houden. Als je ons e-mailt, verwerken we de gegevens die je verzendt." },
+          { "h": "4. Doel", "p": "Om de website te leveren en te beveiligen, en om te reageren op berichten die je ons stuurt." },
+          { "h": "5. Rechtsgrond", "p": "Gerechtvaardigd belang om de site te exploiteren en te beveiligen; toestemming of uitvoering van een verzoek wanneer je contact met ons opneemt (LGPD art. 7). [REVISAR: advogado]" },
+          { "h": "6. Delen", "p": "We gebruiken infrastructuur- en hostingproviders die optreden als verwerkers; we verkopen geen persoonsgegevens." },
+          { "h": "7. Internationale doorgifte", "p": "Sommige providers kunnen gegevens buiten Brazilië verwerken, met waarborgen. [REVISAR: advogado]" },
+          { "h": "8. Bewaring", "p": "We bewaren gegevens alleen zolang als nodig is voor de bovenstaande doeleinden of zoals wettelijk vereist." },
+          { "h": "9. Beveiliging", "p": "We passen redelijke technische en organisatorische maatregelen toe om gegevens te beschermen." },
+          { "h": "10. Jouw rechten", "p": "Onder LGPD art. 18 kun je bevestiging, inzage, correctie, anonimisering, overdraagbaarheid, verwijdering en informatie over het delen aanvragen, en toestemming intrekken — door te e-mailen naar contabil@schematize.me." },
+          { "h": "11. Cookies", "p": "Zie ons Cookiebeleid voor details over cookies en vergelijkbare technologieën." },
+          { "h": "12. Wijzigingen", "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." }
+        ]
+      },
+      "cookies": {
+        "meta": {
+          "title": "Cookiebeleid — schematize.org",
+          "desc": "Cookiebeleid van schematize.org: categorieën cookies, doeleinden en hoe je ze beheert."
+        },
+        "h1": "Cookiebeleid",
+        "sub": "De cookies en vergelijkbare technologieën die deze site gebruikt.",
+        "sections": [
+          { "h": "1. Wat cookies zijn", "p": "Cookies zijn kleine bestanden die op je apparaat worden opgeslagen en die een site helpen te werken en voorkeuren te onthouden." },
+          { "h": "2. Categorieën", "p": "Essentieel: vereist voor het functioneren van de site (bijvoorbeeld het onthouden van je taal). Prestatie-/analyse-, functionele en marketingcookies worden alleen gebruikt met jouw opt-in-toestemming." },
+          { "h": "3. Wat we gebruiken", "p": "Deze site slaat lokaal een taalvoorkeur op om je gekozen taal te behouden. Ze voert geen niet-essentiële analyse- of marketingcookies uit zonder toestemming. [REVISAR: negócio]" },
+          { "h": "4. Toestemming", "p": "Niet-essentiële cookies vereisen opt-in-toestemming; essentiële cookies draaien zonder toestemming." },
+          { "h": "5. Cookies beheren", "p": "Je kunt cookies wissen of blokkeren in de instellingen van je browser; het blokkeren van essentiële opslag kan de site beïnvloeden." },
+          { "h": "6. Wijzigingen", "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." }
+        ]
+      }
+    }
+  },
+  "sitemapPage": {
+    "meta": {
+      "title": "Sitemap — schematize.org",
+      "desc": "Voor mensen leesbare kaart van elke openbare pagina op schematize.org."
+    },
+    "hero": {
+      "kicker": "Sitemap",
+      "h1": "Sitemap",
+      "sub": "Elke openbare pagina op schematize.org, gegroepeerd per sectie."
+    },
+    "groups": [
+      {
+        "h": "Institutioneel",
+        "links": [
+          { "slug": "", "label": "Home" },
+          { "slug": "about", "label": "Over ons" },
+          { "slug": "contact", "label": "Contact" }
+        ]
+      },
+      {
+        "h": "Werk",
+        "links": [
+          { "slug": "projects", "label": "Projecten" },
+          { "slug": "research", "label": "Onderzoek" },
+          { "slug": "principles", "label": "Principes" }
+        ]
+      },
+      {
+        "h": "Juridisch",
+        "links": [
+          { "slug": "legal", "label": "Juridisch centrum" },
+          { "slug": "legal/terms-of-use", "label": "Gebruiksvoorwaarden" },
+          { "slug": "legal/terms-of-service", "label": "Servicevoorwaarden" },
+          { "slug": "legal/privacy", "label": "Privacybeleid" },
+          { "slug": "legal/cookies", "label": "Cookiebeleid" }
+        ]
+      }
+    ]
   }
 }
