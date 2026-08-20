@@ -5,7 +5,7 @@
 // e o design system (tokens, dark/light, sem emoji). Onde: envolve todas as páginas.
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { alternates, LOCALE_META, DEFAULT_LOCALE, isRtl, t, type Locale } from "../lib/i18n";
+import { alternates, LOCALE_META, DEFAULT_LOCALE, isRtl, t, path, type Locale } from "../lib/i18n";
 
 interface Props {
   locale: Locale;
@@ -141,6 +141,13 @@ const graphs = [org, website, ...pageGraphs, ...jsonld];
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <Header locale={locale} slug={slug} />
+    {slug && (
+      <nav class="crumbs wrap" aria-label="Breadcrumb">
+        <a class="crumb-home" href={path(locale, "")}>schematize<span aria-hidden="true">.org</span></a>
+        <span class="crumb-sep" aria-hidden="true">/</span>
+        <span class="crumb-current" aria-current="page">{crumbName}</span>
+      </nav>
+    )}
     <main id="main">
       <slot />
     </main>
@@ -258,7 +265,26 @@ const graphs = [org, website, ...pageGraphs, ...jsonld];
       }
       .card h3 { margin-top: 0; }
       a.card:hover { text-decoration: none; transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: transparent; }
+      /* Ícone de card (Lucide/Simple Icons via astro-icon) — pastilha de marca. */
+      .card-ico {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 42px; height: 42px; margin-bottom: 1rem; border-radius: 12px;
+        background: var(--accent-wash); color: var(--accent-ink);
+      }
+      .card-ico [data-icon] { width: 22px; height: 22px; }
+      .card:hover .card-ico { color: var(--accent); }
       .muted { color: var(--muted); }
+      /* Breadcrumb: faixa própria abaixo do header (não dentro do nav). */
+      .crumbs {
+        display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.55rem;
+        padding-block: 0.9rem 0; font-size: var(--step-1); color: var(--faint);
+      }
+      .crumbs a { color: var(--muted); }
+      .crumbs a:hover { color: var(--ink); text-decoration: none; }
+      .crumb-home { font-family: var(--font-disp); font-weight: 600; letter-spacing: -0.02em; }
+      .crumb-home span { color: var(--faint); }
+      .crumb-sep { color: var(--faint); opacity: 0.55; }
+      .crumb-current { color: var(--ink-2); }
       .surface { background: var(--surface); }
       .hair { border-top: 1px solid var(--line); }
       .eyebrow-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }

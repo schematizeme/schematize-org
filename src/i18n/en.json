@@ -2,13 +2,15 @@
   "nav": {
     "projects": "Projects",
     "research": "Research",
+    "principles": "Principles",
     "about": "About",
     "contact": "Contact",
     "legal": "Legal",
     "skills": "Skills",
     "academy": "Academy",
     "login": "Sign in / Sign up",
-    "cta": "View source"
+    "cta": "View source",
+    "menu": "Menu"
   },
   "footer": {
     "tagline": "The open-source and technology-research lab behind schematize.",
@@ -41,13 +43,21 @@
       "items": [
         {
           "key": "projects",
+          "icon": "package",
           "h": "Open-source projects",
           "p": "The schematize CLI, the engineering skill catalog for Claude Code, and the tooling that makes it all reproducible — all readable, forkable and free."
         },
         {
           "key": "research",
+          "icon": "flask-conical",
           "h": "Technology research",
           "p": "How to engineer with AI agents reliably and securely: orchestration, standards, evaluation and the security of AI-assisted delivery."
+        },
+        {
+          "key": "principles",
+          "icon": "shield-check",
+          "h": "Engineering standards",
+          "p": "The non-negotiable floors that make agent output trustworthy: security decided server-side, tests that prove behavior, and an audit trail on every change."
         }
       ]
     },
@@ -82,13 +92,23 @@
           "h": "Skills",
           "tag": "skills.schematize.org",
           "url": "https://skills.schematize.org",
+          "icon": "blocks",
           "p": "The catalog of engineering skills that make AI agents follow house standards — installable with one command."
         },
         {
           "h": "Research",
           "tag": "schematize.org/research",
           "key": "research",
+          "icon": "flask-conical",
           "p": "Papers, notes and findings from our technology research — published as we learn."
+        },
+        {
+          "h": "Source",
+          "tag": "github.com/schematizeme",
+          "url": "https://github.com/schematizeme",
+          "icon": "github",
+          "brand": true,
+          "p": "Every repository, in the open. Read it, fork it, open an issue — or install it with the schematize CLI."
         }
       ]
     }
@@ -108,24 +128,28 @@
       "items": [
         {
           "tag": "CLI · Rust",
+          "icon": "terminal",
           "h": "schematize",
           "p": "A Linux-first command-line app that installs and versions engineering skills for Claude Code and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
+          "icon": "blocks",
           "h": "Engineering skills",
           "p": "Normative playbooks for Claude Code — engineering, go, rust, web, seo, node and pentest — each with non-negotiable floors for security, testing and architecture.",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
+          "icon": "search",
           "h": "schematize-seo",
           "p": "A full SEO discipline as a skill: technical, on-page, content, structured data, international/multi-domain and AI-answer optimization.",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
+          "icon": "shield-check",
           "h": "schematize-pentest",
           "p": "Defensive AppSec and authorized red-teaming as a skill: endpoint attack surface mapping, OWASP coverage and threat modeling — always under scope.",
           "href": "https://github.com/schematizeme/skill-pentest"
@@ -152,18 +176,22 @@
       "title": "Research areas",
       "items": [
         {
+          "icon": "workflow",
           "h": "Reliable agent engineering",
           "p": "Orchestration, decomposition and guardrails that keep AI agents on-task through long, multi-step work — without stopping early or drifting from the spec."
         },
         {
+          "icon": "shield-check",
           "h": "Security of AI-assisted delivery",
           "p": "How agent-written code fails, how to catch it, and how to make secure-by-design the default: IAM, AppSec and authorized red-teaming of what agents produce."
         },
         {
+          "icon": "ruler",
           "h": "Standards & evaluation",
           "p": "What 'good' means for agent output, and how to measure it: normative playbooks, quality gates and tests that prove behavior instead of vibes."
         },
         {
+          "icon": "heart-handshake",
           "h": "Developer experience",
           "p": "Making the right way the easy way — tooling that installs standards, keeps them current, and gets out of the developer's way."
         }
@@ -173,14 +201,17 @@
       "title": "Our approach",
       "items": [
         {
+          "icon": "git-fork",
           "h": "In the open",
           "p": "Findings and tools are published, not hoarded. Reproducibility is the point."
         },
         {
+          "icon": "hammer",
           "h": "Grounded in practice",
           "p": "We research by building and shipping — the lab and the products feed each other."
         },
         {
+          "icon": "lock",
           "h": "Security-first",
           "p": "If it isn't safe to run, it isn't done. Threat modeling and testing are part of the method."
         }
@@ -190,6 +221,62 @@
       "title": "Follow the research.",
       "p": "We write up what we learn on the blog, and the tools land on GitHub.",
       "button": "Read the blog"
+    }
+  },
+  "principles": {
+    "meta": {
+      "title": "Principles — how we build — schematize.org",
+      "desc": "The engineering principles of the schematize lab: non-negotiable floors that make software written with AI agents correct, secure and maintainable — security decided server-side, tests that prove behavior, an audit trail on every change, and identity-first design."
+    },
+    "hero": {
+      "kicker": "Principles",
+      "h1": "How we build.",
+      "sub": "AI agents can produce code fast, but speed without discipline just ships bugs faster. These are the non-negotiable floors we hold every project to — the same floors our open-source skills encode so agents follow them by default."
+    },
+    "intro": {
+      "title": "Standards over vibes",
+      "p": "A principle only counts if a machine can check it. Each floor below maps to a concrete gate in our tooling — a test, a review rule, a required artifact — so 'done' is proven, not asserted. This is what our engineering skills install into a project, and what our research keeps sharpening."
+    },
+    "floors": {
+      "title": "The non-negotiable floors",
+      "items": [
+        {
+          "icon": "server",
+          "h": "Security is decided on the server",
+          "p": "Authentication and authorization are enforced server-side, never in the client. Secrets never reach the browser bundle. A check in the UI is user experience — the real decision happens where the request lands, against a verified identity."
+        },
+        {
+          "icon": "flask-conical",
+          "h": "Tests prove behavior",
+          "p": "A test asserts what the software does — content, state, interaction, error and empty paths — not merely that it rendered. Coverage that doesn't fail when the behavior breaks isn't coverage. Quality gates block a merge the same way a broken build does."
+        },
+        {
+          "icon": "archive",
+          "h": "Every change leaves an audit trail",
+          "p": "No work is done until it's recorded: what changed, why, what was decided and what was rejected. The archive is part of the deliverable, not paperwork after it — so the reasoning survives the session that produced it."
+        },
+        {
+          "icon": "fingerprint",
+          "h": "Identity comes first",
+          "p": "Every project starts with robust IAM: identity is not an email, access is relationship-based and multi-tenant by default, and passwordless is the goal. Authorization is granular from day one, not bolted on after a breach."
+        },
+        {
+          "icon": "git-fork",
+          "h": "Open by default",
+          "p": "Our tools are open-source and our findings are public. If it matters, you can read it, run it, fork it and build on it. Reproducibility is the point — a result you can't reproduce is an opinion."
+        },
+        {
+          "icon": "rocket",
+          "h": "Ship, don't hoard",
+          "p": "We research by building and shipping; the lab and the products feed each other. The goal is to make the right way the easy way — tooling that installs the standard, keeps it current, and gets out of the developer's way."
+        }
+      ]
+    },
+    "cta": {
+      "title": "See the floors in code.",
+      "p": "The principles above are encoded as installable engineering skills for Claude Code — and the source is all on GitHub.",
+      "button": "Browse the skills",
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -263,18 +350,29 @@
       "title": "Channels",
       "items": [
         {
+          "icon": "mail",
           "h": "Institutional & administrative",
           "p": "For company, invoicing and institutional matters, email us directly.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
         {
+          "icon": "github",
+          "brand": true,
           "h": "Source & issues",
           "p": "Report bugs, open issues or contribute to the open-source projects on GitHub.",
           "href": "https://github.com/schematizeme",
           "label": "github.com/schematizeme"
         },
         {
+          "icon": "shield-alert",
+          "h": "Security & responsible disclosure",
+          "p": "Found a vulnerability in one of our tools? Report it privately and we'll work with you on a fix and disclosure.",
+          "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
+          "label": "Report privately"
+        },
+        {
+          "icon": "blocks",
           "h": "Skills catalog",
           "p": "Browse and install the engineering skills for Claude Code.",
           "href": "https://skills.schematize.org",
@@ -426,7 +524,8 @@
         "h": "Work",
         "links": [
           { "slug": "projects", "label": "Projects" },
-          { "slug": "research", "label": "Research" }
+          { "slug": "research", "label": "Research" },
+          { "slug": "principles", "label": "Principles" }
         ]
       },
       {

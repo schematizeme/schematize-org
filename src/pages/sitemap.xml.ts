@@ -7,6 +7,7 @@ const SLUGS = [
   "",
   "projects",
   "research",
+  "principles",
   "about",
   "contact",
   "sitemap",

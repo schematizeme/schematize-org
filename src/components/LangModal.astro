@@ -3,24 +3,20 @@
 // O quê: leva à MESMA página no idioma escolhido e memoriza a preferência (cookie +
 // localStorage) p/ o carry cross-site (?lang=). Onde: no Header. Degrada sem JS
 // (links reais). A estratégia multi-domínio vive na skill seo.
+import { Icon } from "astro-icon/components";
 import { LOCALES, LOCALE_META, path, type Locale } from "../lib/i18n";
 interface Props { locale: Locale; slug?: string; }
 const { locale, slug = "" } = Astro.props;
 ---
 <button type="button" class="lang-trigger" data-lang-open aria-haspopup="dialog" aria-label="Language">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"></circle>
-    <path d="M3 12h18M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9S9.5 5.5 12 3Z" stroke="currentColor" stroke-width="1.6"></path>
-  </svg>
+  <Icon name="lucide:globe" width={16} height={16} aria-hidden="true" />
   <span>{locale.toUpperCase()}</span>
 </button>
 <dialog class="lang-dialog" data-lang-dialog>
   <div class="lang-dialog-head">
     <strong>Language / Idioma</strong>
     <button type="button" class="lang-close" data-lang-close aria-label="Close">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-      </svg>
+      <Icon name="lucide:x" width={18} height={18} aria-hidden="true" />
     </button>
   </div>
   <ul class="lang-list" role="list">

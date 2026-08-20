@@ -1,11 +1,13 @@
 ---
 import Base from "../../layouts/Base.astro";
+import { Icon } from "astro-icon/components";
 import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
 export function getStaticPaths() {
   return LOCALES.map((l) => ({ params: { lang: l } }));
 }
 const lang = Astro.params.lang as Locale;
-const items = tx<{ h: string; p: string; href: string; label: string }[]>(lang, "contact.channels.items");
+const items = tx<{ h: string; p: string; href: string; label: string; icon?: string; brand?: boolean }[]>(lang, "contact.channels.items");
+const ico = (name?: string, brand?: boolean) => `${brand ? "simple-icons" : "lucide"}:${name ?? "circle"}`;
 
 // ContactPage — o ContactPoint detalhado vive no Organization (Base), referenciado por @id.
 const contactJsonld = [
@@ -36,9 +38,10 @@ const contactJsonld = [
   <section class="surface hair">
     <div class="wrap">
       <h2>{t(lang, "contact.channels.title")}</h2>
-      <div class="grid cols-3" style="margin-top:1.8rem">
+      <div class="grid cols-2" style="margin-top:1.8rem">
         {items.map((c) => (
           <a class="card" href={c.href}>
+            <span class="card-ico" aria-hidden="true"><Icon name={ico(c.icon, c.brand)} /></span>
             <h3>{c.h}</h3>
             <p class="muted">{c.p}</p>
             <span class="chan">{c.label}</span>

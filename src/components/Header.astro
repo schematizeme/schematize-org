@@ -1,6 +1,9 @@
 ---
 // Header (.org) — logo + navegação institucional + troca de idioma + link pro código.
+// Inerte e idêntico entre páginas (só o aria-current muda). Abaixo de 720px o menu
+// vira um drawer (<details>) com hambúrguer — antes a nav simplesmente sumia.
 import LangModal from "./LangModal.astro";
+import { Icon } from "astro-icon/components";
 import { t, path, type Locale } from "../lib/i18n";
 interface Props { locale: Locale; slug?: string; }
 const { locale, slug = "" } = Astro.props;
@@ -8,6 +11,7 @@ const { locale, slug = "" } = Astro.props;
 const nav = [
   { key: "projects", label: t(locale, "nav.projects") },
   { key: "research", label: t(locale, "nav.research") },
+  { key: "principles", label: t(locale, "nav.principles") },
   { key: "about", label: t(locale, "nav.about") },
 ];
 const product = [
@@ -30,6 +34,21 @@ const product = [
       <LangModal locale={locale} slug={slug} />
       <a class="btn btn-ghost login" href="https://auth.schematize.org" target="_blank" rel="noopener noreferrer">{t(locale, "nav.login")}</a>
       <a class="btn btn-primary cta" href="https://github.com/schematizeme">{t(locale, "nav.cta")}</a>
+      <details class="drawer">
+        <summary aria-label={t(locale, "nav.menu")}>
+          <Icon name="lucide:menu" class="i-open" />
+          <Icon name="lucide:x" class="i-close" />
+        </summary>
+        <div class="drawer-panel">
+          {nav.map((n) => (
+            <a href={path(locale, n.key)} aria-current={slug === n.key ? "page" : undefined}>{n.label}</a>
+          ))}
+          {product.map((n) => (
+            <a href={n.href} target="_blank" rel="noopener noreferrer">{n.label}</a>
+          ))}
+          <a href="https://auth.schematize.org" target="_blank" rel="noopener noreferrer">{t(locale, "nav.login")}</a>
+        </div>
+      </details>
     </div>
   </div>
 </header>
@@ -49,11 +68,34 @@ const product = [
   .actions { display: flex; align-items: center; gap: 0.7rem; }
   .cta { padding: 0.52rem 1.05rem; font-size: var(--step-1); }
   .login { padding: 0.52rem 1.05rem; font-size: var(--step-1); }
+
+  /* Drawer mobile — escondido no desktop. */
+  .drawer { display: none; position: relative; }
+  .drawer summary {
+    list-style: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--line); color: var(--ink);
+  }
+  .drawer summary::-webkit-details-marker { display: none; }
+  .drawer summary [data-icon] { width: 20px; height: 20px; }
+  .drawer summary .i-close { display: none; }
+  .drawer[open] summary .i-open { display: none; }
+  .drawer[open] summary .i-close { display: inline-flex; }
+  .drawer-panel {
+    position: absolute; right: 0; top: calc(100% + 0.55rem); min-width: 220px;
+    display: flex; flex-direction: column; gap: 0.15rem; padding: 0.5rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .drawer-panel a { color: var(--ink-2); font-size: var(--step0); padding: 0.55rem 0.7rem; border-radius: 10px; }
+  .drawer-panel a:hover { background: var(--surface); text-decoration: none; }
+  .drawer-panel a[aria-current="page"] { color: var(--accent-ink); }
+
   @media (max-width: 860px) {
     .login { display: none; }
   }
   @media (max-width: 720px) {
     .nav { display: none; }
     .cta { display: none; }
+    .drawer { display: inline-flex; }
   }
 </style>

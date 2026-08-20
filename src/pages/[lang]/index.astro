@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import { Icon } from "astro-icon/components";
 import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
 
 export function getStaticPaths() {
@@ -7,8 +8,10 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Locale;
 
-const platforms = tx<{ h: string; p: string; tag: string; url?: string; key?: string }[]>(lang, "home.platforms.items");
-const pillars = tx<{ h: string; p: string; key: string }[]>(lang, "home.pillars.items");
+const platforms = tx<{ h: string; p: string; tag: string; url?: string; key?: string; icon?: string; brand?: boolean }[]>(lang, "home.platforms.items");
+const pillars = tx<{ h: string; p: string; key: string; icon?: string }[]>(lang, "home.pillars.items");
+// Nome do ícone: marca (Simple Icons) ou UI (Lucide). Default seguro se faltar.
+const ico = (name?: string, brand?: boolean) => `${brand ? "simple-icons" : "lucide"}:${name ?? "circle"}`;
 const why = tx<{ h: string; p: string }[]>(lang, "home.why.items");
 // Patrocinadores — links externos (label = domínio, href = https://<domínio>).
 const sponsors = [
@@ -54,6 +57,7 @@ const sponsors = [
       <div class="grid cols-3" style="margin-top:2.4rem">
         {platforms.map((c) => (
           <a class="card plat eyebrow-lift" href={c.url ?? path(lang, c.key)}>
+            <span class="card-ico" aria-hidden="true"><Icon name={ico(c.icon, c.brand)} /></span>
             <span class="tag">{c.tag}</span>
             <h3>{c.h}</h3>
             <p class="muted">{c.p}</p>
@@ -67,9 +71,10 @@ const sponsors = [
   <section>
     <div class="wrap">
       <h2 class="eyebrow-lift">{t(lang, "home.pillars.title")}</h2>
-      <div class="grid cols-2" style="margin-top:2.2rem">
+      <div class="grid cols-3" style="margin-top:2.2rem">
         {pillars.map((c) => (
           <a class="card plat eyebrow-lift" href={path(lang, c.key)}>
+            <span class="card-ico" aria-hidden="true"><Icon name={ico(c.icon)} /></span>
             <h3>{c.h}</h3>
             <p class="muted">{c.p}</p>
             <span class="more">{t(lang, "common.learn_more")}</span>

@@ -1,0 +1,67 @@
+---
+import Base from "../../layouts/Base.astro";
+import { Icon } from "astro-icon/components";
+import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
+
+export function getStaticPaths() {
+  return LOCALES.map((l) => ({ params: { lang: l } }));
+}
+const lang = Astro.params.lang as Locale;
+const floors = tx<{ icon?: string; h: string; p: string }[]>(lang, "principles.floors.items");
+const ctaUrl = t(lang, "principles.cta.url");
+---
+<Base
+  locale={lang}
+  slug="principles"
+  title={t(lang, "principles.meta.title")}
+  description={t(lang, "principles.meta.desc")}
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">{t(lang, "principles.hero.kicker")}</p>
+      <h1>{t(lang, "principles.hero.h1")}</h1>
+      <p class="lede">{t(lang, "principles.hero.sub")}</p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap wrap-tight mission">
+      <p class="kicker">{t(lang, "principles.intro.title")}</p>
+      <p class="lede">{t(lang, "principles.intro.p")}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "principles.floors.title")}</h2>
+      <div class="grid cols-2" style="margin-top:2rem">
+        {floors.map((f) => (
+          <div class="card floor">
+            <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${f.icon ?? "circle"}`} /></span>
+            <h3>{f.h}</h3>
+            <p class="muted">{f.p}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap band">
+      <h2>{t(lang, "principles.cta.title")}</h2>
+      <p class="lede">{t(lang, "principles.cta.p")}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href={ctaUrl}>{t(lang, "principles.cta.button")}</a>
+        <a class="btn btn-ghost" href={path(lang, "projects")}>{t(lang, "nav.projects")}</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 6rem); }
+  .mission .lede { margin-top: 0.6rem; }
+  .band { text-align: center; }
+  .band .lede { margin-inline: auto; }
+  .band .cta-row { justify-content: center; }
+</style>
