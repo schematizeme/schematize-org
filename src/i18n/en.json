@@ -1,12 +1,13 @@
 {
   "nav": {
+    "software": "The app",
     "projects": "Projects",
     "research": "Research",
     "principles": "Principles",
     "about": "About",
     "contact": "Contact",
     "legal": "Legal",
-    "skills": "Skills",
+    "catalog": "Skills catalog",
     "academy": "Academy",
     "login": "Sign in / Sign up",
     "cta": "View source",
@@ -89,11 +90,11 @@
       "p": "Everything schematize builds in the open, organized across the ecosystem.",
       "items": [
         {
-          "h": "Skills",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
-          "icon": "blocks",
-          "p": "The catalog of engineering skills that make AI agents follow house standards — installable with one command."
+          "h": "The app",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "The Rust command-line app (desktop app included) that installs and versions skills and runs overdev — install on Linux with one command."
         },
         {
           "h": "Research",
@@ -276,7 +277,85 @@
       "title": "See the floors in code.",
       "p": "The principles above are encoded as installable engineering skills for Claude Code — and the source is all on GitHub.",
       "button": "Browse the skills",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "The app — the schematize CLI — schematize.org",
+      "desc": "schematize is a Rust command-line app (desktop app included) that installs and versions engineering skills for Claude Code and runs overdev. Install on Linux with one command, or download for macOS."
+    },
+    "hero": {
+      "kicker": "The app",
+      "h1": "One CLI for the whole workflow.",
+      "sub": "schematize is a Rust command-line app — desktop app included — that installs and versions engineering skills from a live catalog and runs overdev: continuous, unattended development that doesn't stop until the checklist is done."
+    },
+    "install": {
+      "title": "Install on Linux",
+      "sub": "One command. Debian, Ubuntu and Linux Mint (.deb); openSUSE, Fedora and RHEL (.rpm); or a static binary. It builds from source on the machine — open-source, always matching main.",
+      "terminal": "In a terminal:"
+    },
+    "features": {
+      "title": "What the app does",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Install & version skills",
+          "p": "From a live remote catalog — one command pulls the whole set and keeps it current. New skills appear without reinstalling anything."
+        },
+        {
+          "icon": "monitor",
+          "h": "Desktop app included",
+          "p": "A window to browse, install and update skills — ships prebuilt, no build tools required."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Diagnose your setup, self-update, and see everything at a glance from the CLI."
+        },
+        {
+          "icon": "radar",
+          "h": "Resident agent",
+          "p": "Watches for new skill versions and blog posts and notifies you natively on the desktop."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Downloads",
+      "sub": "Install schematize on macOS or Linux — the desktop app ships with it.",
+      "mac": "macOS · Apple Silicon (.app). Download, unzip and right-click → Open.",
+      "deb": "Debian, Ubuntu, Linux Mint — the .deb (CLI + desktop app).",
+      "rpm": "openSUSE, Fedora, RHEL — the .rpm (CLI + desktop app).",
+      "download": "Download",
+      "releases": "All releases",
+      "unsigned": "The macOS app is not code-signed yet — the OS shows a one-time “unverified” warning on first launch (right-click → Open)."
+    },
+    "how": {
+      "title": "How it works",
+      "sub": "The app reads a live index (catalog.json) on GitHub, so publishing a new skill is just adding an entry — no CLI rebuild.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Install the app",
+          "p": "One command installs the schematize CLI and its desktop app on Linux (.deb / .rpm / binary), or grab the macOS build."
+        },
+        {
+          "icon": "blocks",
+          "h": "Install skills",
+          "p": "Run schematize install --all to pull every skill into .claude/, or install one by slug — browse the catalog at skills.schematize.org."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Stay current",
+          "p": "The resident agent notifies you when a skill or the app updates; schematize upgrade self-updates."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Browse the skills.",
+      "p": "The app installs skills from the open catalog — browse and pick what your project needs.",
+      "button": "Open the catalog",
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +454,8 @@
           "icon": "blocks",
           "h": "Skills catalog",
           "p": "Browse and install the engineering skills for Claude Code.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },
@@ -523,6 +602,7 @@
       {
         "h": "Work",
         "links": [
+          { "slug": "software", "label": "The app" },
           { "slug": "projects", "label": "Projects" },
           { "slug": "research", "label": "Research" },
           { "slug": "principles", "label": "Principles" }

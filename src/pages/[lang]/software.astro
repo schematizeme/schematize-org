@@ -1,0 +1,150 @@
+---
+import Base from "../../layouts/Base.astro";
+import { Icon } from "astro-icon/components";
+import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
+
+export function getStaticPaths() {
+  return LOCALES.map((l) => ({ params: { lang: l } }));
+}
+const lang = Astro.params.lang as Locale;
+const features = tx<{ icon?: string; h: string; p: string }[]>(lang, "software.features.items");
+const steps = tx<{ icon?: string; h: string; p: string }[]>(lang, "software.how.items");
+
+// URLs do app (não-traduzíveis). O one-liner serve o install.sh vivo da main via
+// repo.schematize.org (proxy Caddy). Downloads = assets do release latest.
+const REPO = "https://github.com/schematizeme/schematize-cli";
+const INSTALL = "curl -fsSL https://repo.schematize.org/install.sh | bash";
+const DL = {
+  mac: `${REPO}/releases/latest/download/schematize-macos-arm64-app.zip`,
+  deb: `${REPO}/releases/latest/download/schematize_amd64.deb`,
+  rpm: `${REPO}/releases/latest/download/schematize.x86_64.rpm`,
+  releases: `${REPO}/releases/latest`,
+};
+const ctaUrl = t(lang, "software.cta.url");
+---
+<Base
+  locale={lang}
+  slug="software"
+  title={t(lang, "software.meta.title")}
+  description={t(lang, "software.meta.desc")}
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">{t(lang, "software.hero.kicker")}</p>
+      <h1>{t(lang, "software.hero.h1")}</h1>
+      <p class="lede">{t(lang, "software.hero.sub")}</p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap">
+      <h2>{t(lang, "software.install.title")}</h2>
+      <p class="lede">{t(lang, "software.install.sub")}</p>
+      <p class="step-label">{t(lang, "software.install.terminal")}</p>
+      <div class="cmd">
+        <pre><code>{INSTALL}</code></pre>
+        <button class="copy" type="button" data-copy={INSTALL} aria-label="Copy">
+          <Icon name="lucide:copy" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "software.features.title")}</h2>
+      <div class="grid cols-2" style="margin-top:1.8rem">
+        {features.map((f) => (
+          <div class="card">
+            <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${f.icon ?? "circle"}`} /></span>
+            <h3>{f.h}</h3><p class="muted">{f.p}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap">
+      <h2>{t(lang, "software.downloads.title")}</h2>
+      <p class="lede">{t(lang, "software.downloads.sub")}</p>
+      <div class="grid cols-3" style="margin-top:1.8rem">
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:apple" /></span>
+          <h3>macOS</h3><p class="muted">{t(lang, "software.downloads.mac")}</p>
+          <a class="btn" href={DL.mac}>{t(lang, "software.downloads.download")} · .app</a>
+        </div>
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:debian" /></span>
+          <h3>.deb</h3><p class="muted">{t(lang, "software.downloads.deb")}</p>
+          <a class="btn" href={DL.deb}>{t(lang, "software.downloads.download")} · .deb</a>
+        </div>
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:fedora" /></span>
+          <h3>.rpm</h3><p class="muted">{t(lang, "software.downloads.rpm")}</p>
+          <a class="btn" href={DL.rpm}>{t(lang, "software.downloads.download")} · .rpm</a>
+        </div>
+      </div>
+      <p class="os-line" style="margin-top:1.6rem">
+        <a class="btn btn-ghost" href={DL.releases} target="_blank" rel="noopener noreferrer">{t(lang, "software.downloads.releases")}</a>
+      </p>
+      <p class="muted unsigned">{t(lang, "software.downloads.unsigned")}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "software.how.title")}</h2>
+      <p class="lede">{t(lang, "software.how.sub")}</p>
+      <div class="grid cols-3" style="margin-top:1.8rem">
+        {steps.map((s) => (
+          <div class="card">
+            <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${s.icon ?? "circle"}`} /></span>
+            <h3>{s.h}</h3><p class="muted">{s.p}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap band">
+      <h2>{t(lang, "software.cta.title")}</h2>
+      <p class="lede">{t(lang, "software.cta.p")}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href={ctaUrl}>{t(lang, "software.cta.button")}</a>
+        <a class="btn btn-ghost" href={path(lang, "projects")}>{t(lang, "nav.projects")}</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script is:inline>
+  document.querySelectorAll("[data-copy]").forEach((b) => {
+    b.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(b.getAttribute("data-copy")); b.classList.add("ok"); setTimeout(() => b.classList.remove("ok"), 1200); } catch (e) {}
+    });
+  });
+</script>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 6rem); }
+  .step-label { font-family: var(--font-mono); font-size: var(--step-1); color: var(--muted); margin: 1.4rem 0 0.5rem; }
+  .cmd { position: relative; }
+  .cmd pre { margin: 0; padding-right: 3.2rem; }
+  .copy {
+    position: absolute; top: 0.8rem; inset-inline-end: 0.8rem; display: inline-flex; padding: 0.4rem;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;
+    color: #e8ecf4; cursor: pointer;
+  }
+  .copy:hover { background: rgba(255,255,255,0.16); }
+  .copy.ok { color: var(--ok); }
+  .copy [data-icon] { width: 16px; height: 16px; }
+  .dl { display: flex; flex-direction: column; }
+  .dl .btn { margin-top: auto; align-self: flex-start; }
+  .dl h3 { margin-bottom: 0.4rem; }
+  .unsigned { margin-top: 1.4rem; font-size: var(--step-1); max-width: 66ch; }
+  .band { text-align: center; }
+  .band .lede { margin-inline: auto; }
+  .band .cta-row { justify-content: center; }
+</style>

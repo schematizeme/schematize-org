@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Beceriler",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "Yapay zeka ajanlarının evin standartlarına uymasını sağlayan mühendislik becerileri kataloğu — tek komutla kurulur."
         },
@@ -276,7 +276,7 @@
       "title": "Asgari kuralları kodda görün.",
       "p": "Yukarıdaki ilkeler, Claude Code için kurulabilir mühendislik becerileri olarak kodlanmıştır — ve kaynağın tamamı GitHub'da.",
       "button": "Becerilere göz at",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Beceri kataloğu",
           "p": "Claude Code için mühendislik becerilerine göz atın ve kurun.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

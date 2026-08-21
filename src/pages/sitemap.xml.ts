@@ -5,6 +5,7 @@ import { LOCALES, LOCALE_META, DEFAULT_LOCALE, path } from "../lib/i18n";
 
 const SLUGS = [
   "",
+  "software",
   "projects",
   "research",
   "principles",

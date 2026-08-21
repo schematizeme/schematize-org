@@ -9,13 +9,14 @@ interface Props { locale: Locale; slug?: string; }
 const { locale, slug = "" } = Astro.props;
 // Nav interno (páginas .org) + ecossistema do produto (subdomínios externos).
 const nav = [
+  { key: "software", label: t(locale, "nav.software") },
   { key: "projects", label: t(locale, "nav.projects") },
   { key: "research", label: t(locale, "nav.research") },
   { key: "principles", label: t(locale, "nav.principles") },
   { key: "about", label: t(locale, "nav.about") },
 ];
 const product = [
-  { href: "https://overflow.schematize.org", label: t(locale, "nav.skills") },
+  { href: "https://skills.schematize.org", label: t(locale, "nav.catalog") },
   { href: "https://learn.schematize.org", label: t(locale, "nav.academy") },
 ];
 ---

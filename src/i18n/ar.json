@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "المهارات",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "كتالوج المهارات الهندسية التي تجعل وكلاء الذكاء الاصطناعي يتبعون معايير الدار — قابلة للتثبيت بأمر واحد."
         },
@@ -276,7 +276,7 @@
       "title": "شاهد الحدود في الشيفرة.",
       "p": "المبادئ أعلاه مُرمَّزة كمهارات هندسية قابلة للتثبيت لـ Claude Code — والمصدر كلّه على GitHub.",
       "button": "تصفّح المهارات",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "كتالوج المهارات",
           "p": "تصفّح وثبّت المهارات الهندسية لـ Claude Code.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

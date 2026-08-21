@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "Danh mục các skill kỹ thuật giúp các agent AI tuân theo tiêu chuẩn của nhà — cài đặt chỉ bằng một lệnh."
         },
@@ -276,7 +276,7 @@
       "title": "Xem các mức sàn trong mã.",
       "p": "Các nguyên tắc trên được mã hóa thành các skill kỹ thuật có thể cài đặt cho Claude Code — và mã nguồn đều nằm trên GitHub.",
       "button": "Duyệt các skill",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Danh mục skill",
           "p": "Duyệt và cài đặt các skill kỹ thuật cho Claude Code.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Навыки",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "Каталог инженерных навыков, которые заставляют ИИ-агентов следовать стандартам дома — устанавливается одной командой."
         },
@@ -276,7 +276,7 @@
       "title": "Увидьте минимумы в коде.",
       "p": "Приведённые выше принципы закодированы как устанавливаемые инженерные навыки для Claude Code — и весь исходный код есть на GitHub.",
       "button": "Смотреть навыки",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Каталог навыков",
           "p": "Просматривайте и устанавливайте инженерные навыки для Claude Code.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

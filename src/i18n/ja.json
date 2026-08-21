@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "AIエージェントに社内標準を守らせるエンジニアリング skill のカタログ。ワンコマンドでインストールできます。"
         },
@@ -276,7 +276,7 @@
       "title": "下限をコードで見る。",
       "p": "上記の原則は Claude Code 向けのインストール可能なエンジニアリング skill として符号化されており——ソースはすべて GitHub にあります。",
       "button": "skill を見る",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Skills カタログ",
           "p": "Claude Code 向けエンジニアリング skill を閲覧・インストールできます。",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

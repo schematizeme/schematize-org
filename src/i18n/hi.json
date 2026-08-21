@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "स्किल्स",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "इंजीनियरिंग स्किल्स का कैटलॉग जो एआई एजेंटों से घरेलू मानकों का पालन करवाता है — एक ही कमांड से इंस्टॉल-योग्य।"
         },
@@ -276,7 +276,7 @@
       "title": "सीमाओं को कोड में देखें।",
       "p": "ऊपर के सिद्धांत Claude Code के लिए इंस्टॉल-योग्य इंजीनियरिंग स्किल्स के रूप में एन्कोड हैं — और स्रोत सब GitHub पर है।",
       "button": "स्किल्स ब्राउज़ करें",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "स्किल्स कैटलॉग",
           "p": "Claude Code के लिए इंजीनियरिंग स्किल्स ब्राउज़ और इंस्टॉल करें।",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

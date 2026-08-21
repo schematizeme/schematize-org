@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "让 AI 智能体遵循我们内部标准的工程 skill 目录——一条命令即可安装。"
         },
@@ -276,7 +276,7 @@
       "title": "在代码中看见这些底线。",
       "p": "上述原则被编码为面向 Claude Code 的可安装工程 skill——源码全在 GitHub 上。",
       "button": "浏览 skills",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Skills 目录",
           "p": "浏览并安装面向 Claude Code 的工程 skill。",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

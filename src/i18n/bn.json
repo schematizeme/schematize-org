@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "স্কিল",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "যে ইঞ্জিনিয়ারিং স্কিলের ক্যাটালগ AI এজেন্টকে হাউস মানদণ্ড অনুসরণ করায় — একটি কমান্ডে ইনস্টলযোগ্য।"
         },
@@ -276,7 +276,7 @@
       "title": "কোডে ভিত্তিগুলো দেখুন।",
       "p": "উপরের নীতিমালা Claude Code-এর জন্য ইনস্টলযোগ্য ইঞ্জিনিয়ারিং স্কিল হিসেবে এনকোড করা — এবং সোর্স সবই GitHub-এ।",
       "button": "স্কিল ব্রাউজ করুন",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "স্কিল ক্যাটালগ",
           "p": "Claude Code-এর জন্য ইঞ্জিনিয়ারিং স্কিল ব্রাউজ ও ইনস্টল করুন।",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },

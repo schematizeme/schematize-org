@@ -9,6 +9,7 @@ const year = new Date().getFullYear();
 
 // Colunas de navegação — apenas destinos .org válidos e páginas internas.
 const explore = [
+  { href: path(locale, "software"), label: t(locale, "nav.software") },
   { href: path(locale, "projects"), label: t(locale, "nav.projects") },
   { href: path(locale, "research"), label: t(locale, "nav.research") },
   { href: path(locale, "principles"), label: t(locale, "nav.principles") },
@@ -18,7 +19,7 @@ const company = [
   { href: path(locale, "contact"), label: t(locale, "nav.contact") },
 ];
 const resources = [
-  { href: "https://overflow.schematize.org", label: "overflow.schematize.org" },
+  { href: "https://skills.schematize.org", label: "skills.schematize.org" },
   { href: "https://learn.schematize.org", label: "learn.schematize.org" },
 ];
 const legal = [

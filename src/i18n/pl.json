@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Umiejętności",
-          "tag": "overflow.schematize.org",
-          "url": "https://overflow.schematize.org",
+          "tag": "skills.schematize.org",
+          "url": "https://skills.schematize.org",
           "icon": "blocks",
           "p": "Katalog umiejętności inżynieryjnych, które sprawiają, że agenci AI przestrzegają standardów domu — instalowane jednym poleceniem."
         },
@@ -276,7 +276,7 @@
       "title": "Zobacz minima w kodzie.",
       "p": "Powyższe zasady są zakodowane jako instalowalne umiejętności inżynieryjne dla Claude Code — a całe źródło jest na GitHubie.",
       "button": "Przeglądaj umiejętności",
-      "url": "https://overflow.schematize.org"
+      "url": "https://skills.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Katalog umiejętności",
           "p": "Przeglądaj i instaluj umiejętności inżynieryjne dla Claude Code.",
-          "href": "https://overflow.schematize.org",
-          "label": "overflow.schematize.org"
+          "href": "https://skills.schematize.org",
+          "label": "skills.schematize.org"
         }
       ]
     },
