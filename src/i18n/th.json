@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "สกิล",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "แค็ตตาล็อกสกิลวิศวกรรมที่ทำให้ AI agent ปฏิบัติตามมาตรฐานของบ้าน — ติดตั้งได้ด้วยคำสั่งเดียว"
         },
@@ -276,7 +276,7 @@
       "title": "ดูขั้นต่ำเหล่านี้ในโค้ด",
       "p": "หลักการข้างต้นถูกเข้ารหัสเป็นสกิลวิศวกรรมที่ติดตั้งได้สำหรับ Claude Code — และซอร์สทั้งหมดอยู่บน GitHub",
       "button": "เรียกดูสกิล",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "แค็ตตาล็อกสกิล",
           "p": "เรียกดูและติดตั้งสกิลวิศวกรรมสำหรับ Claude Code",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

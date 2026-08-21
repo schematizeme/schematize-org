@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "Der Katalog von Engineering-Skills, die KI-Agenten dazu bringen, die Hausstandards zu befolgen — mit einem Befehl installierbar."
         },
@@ -276,7 +276,7 @@
       "title": "Sieh die Mindestanforderungen im Code.",
       "p": "Die obigen Prinzipien sind als installierbare Engineering-Skills für Claude Code kodiert — und der Quellcode ist komplett auf GitHub.",
       "button": "Skills durchsuchen",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Skill-Katalog",
           "p": "Durchsuche und installiere die Engineering-Skills für Claude Code.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

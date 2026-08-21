@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "مهارت‌ها",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "کاتالوگ مهارت‌های مهندسی که عامل‌های هوش مصنوعی را وادار می‌کند از استانداردهای خانه پیروی کنند — با یک فرمان قابل‌نصب."
         },
@@ -276,7 +276,7 @@
       "title": "کف‌ها را در کد ببینید.",
       "p": "اصول بالا به‌شکل مهارت‌های مهندسیِ قابل‌نصب برای Claude Code رمزگذاری شده‌اند — و منبع همه روی GitHub است.",
       "button": "مرور مهارت‌ها",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "کاتالوگ مهارت‌ها",
           "p": "مهارت‌های مهندسی برای Claude Code را مرور و نصب کنید.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

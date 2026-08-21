@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "Il catalogo di skill di ingegneria che fanno seguire agli agenti IA gli standard della casa — installabili con un solo comando."
         },
@@ -276,7 +276,7 @@
       "title": "Vedi le soglie nel codice.",
       "p": "I principi qui sopra sono codificati come skill di ingegneria installabili per Claude Code — e il codice sorgente è tutto su GitHub.",
       "button": "Sfoglia le skill",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Catalogo delle skill",
           "p": "Sfoglia e installa le skill di ingegneria per Claude Code.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "AI 에이전트가 사내 표준을 따르게 하는 엔지니어링 skill 카탈로그 — 명령 한 줄로 설치할 수 있습니다."
         },
@@ -276,7 +276,7 @@
       "title": "최소 기준을 코드로 보세요.",
       "p": "위의 원칙들은 Claude Code용으로 설치 가능한 엔지니어링 skill로 코드화되어 있으며 — 소스는 모두 GitHub에 있습니다.",
       "button": "skill 둘러보기",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Skills 카탈로그",
           "p": "Claude Code용 엔지니어링 skill을 둘러보고 설치하세요.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

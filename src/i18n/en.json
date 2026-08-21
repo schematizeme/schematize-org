@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "The catalog of engineering skills that make AI agents follow house standards — installable with one command."
         },
@@ -276,7 +276,7 @@
       "title": "See the floors in code.",
       "p": "The principles above are encoded as installable engineering skills for Claude Code — and the source is all on GitHub.",
       "button": "Browse the skills",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Skills catalog",
           "p": "Browse and install the engineering skills for Claude Code.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },

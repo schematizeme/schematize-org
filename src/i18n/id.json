@@ -90,8 +90,8 @@
       "items": [
         {
           "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
+          "tag": "overflow.schematize.org",
+          "url": "https://overflow.schematize.org",
           "icon": "blocks",
           "p": "Katalog skill rekayasa yang membuat agen AI mengikuti standar rumah — dapat dipasang dengan satu perintah."
         },
@@ -276,7 +276,7 @@
       "title": "Lihat batas dasarnya dalam kode.",
       "p": "Prinsip di atas dikodekan sebagai skill rekayasa yang dapat dipasang untuk Claude Code — dan sumbernya semua ada di GitHub.",
       "button": "Jelajahi skills",
-      "url": "https://skills.schematize.org"
+      "url": "https://overflow.schematize.org"
     }
   },
   "common": {
@@ -375,8 +375,8 @@
           "icon": "blocks",
           "h": "Katalog skills",
           "p": "Telusuri dan pasang skill rekayasa untuk Claude Code.",
-          "href": "https://skills.schematize.org",
-          "label": "skills.schematize.org"
+          "href": "https://overflow.schematize.org",
+          "label": "overflow.schematize.org"
         }
       ]
     },
