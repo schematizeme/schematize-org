@@ -1,12 +1,13 @@
 {
   "nav": {
+    "software": "O app",
     "projects": "Projetos",
     "research": "Pesquisa",
     "principles": "Princípios",
     "about": "Sobre",
     "contact": "Contato",
     "legal": "Jurídico",
-    "skills": "Skills",
+    "catalog": "Catálogo de skills",
     "academy": "Academy",
     "login": "Entrar / Cadastrar",
     "cta": "Ver o código",
@@ -18,17 +19,17 @@
     "company": "Empresa",
     "resources": "Recursos",
     "legal": "Jurídico",
-    "made": "Feito abertamente.",
+    "made": "Construído de forma aberta.",
     "sitemap": "Mapa do site"
   },
   "home": {
     "meta": {
-      "title": "schematize.org — laboratório de código aberto e engenharia com IA",
-      "desc": "A schematize.org é o laboratório de código aberto e pesquisa em tecnologia por trás da schematize: ferramentas construídas abertamente e pesquisa sobre engenharia com agentes de IA. Conheça nosso trabalho."
+      "title": "schematize.org — laboratório de código aberto e pesquisa em engenharia com IA",
+      "desc": "A schematize.org é o laboratório de código aberto e pesquisa em tecnologia por trás da schematize: ferramentas construídas de forma aberta e pesquisa sobre como fazer engenharia com agentes de IA. Explore nosso trabalho."
     },
     "hero": {
-      "kicker": "Código aberto e pesquisa",
-      "h1": "Engenharia para agentes de IA, construída abertamente.",
+      "kicker": "Código aberto & pesquisa",
+      "h1": "Engenharia para agentes de IA, construída de forma aberta.",
       "sub": "A schematize.org é onde desenvolvemos nossas ferramentas de código aberto e compartilhamos pesquisa em tecnologia sobre como construir, proteger e orquestrar agentes de IA que se sustentam no mundo real.",
       "cta1": "Explorar projetos",
       "cta2": "Ler a pesquisa"
@@ -36,7 +37,7 @@
     "mission": {
       "kicker": "Missão",
       "title": "Tornar confiável o software construído por agentes.",
-      "p": "Agentes de IA conseguem escrever muito código rápido — mas rápido não vale nada se não for correto, seguro e sustentável. Construímos as ferramentas abertas e os padrões compartilhados que transformam a saída dos agentes em software que você pode de fato rodar em produção, e publicamos o que aprendemos pelo caminho."
+      "p": "Agentes de IA conseguem escrever muito código rápido — mas rápido não vale nada se não for correto, seguro e sustentável. Construímos as ferramentas abertas e os padrões compartilhados que transformam a saída dos agentes em software que você realmente pode rodar em produção, e publicamos o que aprendemos no caminho."
     },
     "pillars": {
       "title": "No que trabalhamos",
@@ -57,7 +58,7 @@
           "key": "principles",
           "icon": "shield-check",
           "h": "Padrões de engenharia",
-          "p": "Os pisos inegociáveis que tornam confiável a saída dos agentes: segurança decidida no servidor, testes que provam comportamento e uma trilha de auditoria em cada mudança."
+          "p": "Os pisos inegociáveis que tornam confiável a saída dos agentes: segurança decidida no servidor, testes que provam comportamento e um rastro de auditoria em cada mudança."
         }
       ]
     },
@@ -70,37 +71,37 @@
         },
         {
           "h": "Rigoroso",
-          "p": "Padrões acima de achismo: playbooks normativos, testes de verdade e segurança tratada como requisito de primeira classe — não como algo posterior."
+          "p": "Padrões acima de achismo: playbooks normativos, testes de verdade e segurança tratada como requisito de primeira classe — não como algo deixado para depois."
         },
         {
           "h": "Prático",
-          "p": "Pesquisa que vira produto. Tudo que publicamos existe para mudar como times reais constroem com agentes, não para ficar na gaveta."
+          "p": "Pesquisa que entrega. Tudo que publicamos existe para mudar como times reais constroem com agentes, não para ficar numa gaveta."
         }
       ]
     },
     "cta": {
-      "title": "Conheça o trabalho.",
+      "title": "Explore o trabalho.",
       "p": "Tudo que construímos está no GitHub, e tudo que aprendemos acaba no blog.",
       "button": "Ver no GitHub"
     },
     "platforms": {
       "kicker": "O ecossistema",
       "title": "Onde o trabalho vive",
-      "p": "Tudo que a schematize constrói abertamente, organizado pelo ecossistema.",
+      "p": "Tudo que a schematize constrói de forma aberta, organizado por todo o ecossistema.",
       "items": [
         {
-          "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
-          "icon": "blocks",
-          "p": "O catálogo de skills de engenharia que fazem os agentes de IA seguirem os padrões da casa — instaláveis com um comando."
+          "h": "O app",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "O app de linha de comando em Rust (app de desktop incluído) que instala e versiona skills e roda o overdev — instale no Linux com um comando."
         },
         {
           "h": "Pesquisa",
           "tag": "schematize.org/research",
           "key": "research",
           "icon": "flask-conical",
-          "p": "Artigos, notas e achados da nossa pesquisa em tecnologia — publicados à medida que aprendemos."
+          "p": "Artigos, notas e achados da nossa pesquisa em tecnologia — publicados conforme aprendemos."
         },
         {
           "h": "Código",
@@ -108,7 +109,7 @@
           "url": "https://github.com/schematizeme",
           "icon": "github",
           "brand": true,
-          "p": "Todos os repositórios, abertamente. Leia, forke, abra uma issue — ou instale com a CLI schematize."
+          "p": "Todos os repositórios, de forma aberta. Leia, forke, abra uma issue — ou instale com a CLI schematize."
         }
       ]
     }
@@ -130,7 +131,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Um aplicativo de linha de comando Linux-first que instala e versiona skills de engenharia para o Claude Code e roda o overdev — desenvolvimento contínuo e autônomo que não para até o checklist estar concluído.",
+          "p": "Um app de linha de comando Linux-first que instala e versiona skills de engenharia para o Claude Code e roda o overdev — desenvolvimento contínuo e autônomo que não para até o checklist estar concluído.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -158,7 +159,7 @@
     },
     "cta": {
       "title": "Leia o código.",
-      "p": "É tudo público. Dê uma estrela, forke, abra uma issue — ou use a CLI schematize para instalar em segundos.",
+      "p": "Está tudo público. Dê uma star, forke, abra uma issue — ou use a CLI schematize para instalar em segundos.",
       "button": "Abrir o GitHub"
     }
   },
@@ -170,7 +171,7 @@
     "hero": {
       "kicker": "Pesquisa",
       "h1": "Como construir com agentes de IA — e confiar no resultado.",
-      "sub": "Estudamos o que torna a engenharia assistida por agentes confiável e segura, e transformamos as respostas em ferramentas abertas e padrões que qualquer um pode usar."
+      "sub": "Estudamos o que torna a engenharia assistida por agentes confiável e segura, e transformamos as respostas em ferramentas e padrões abertos que qualquer um pode usar."
     },
     "areas": {
       "title": "Áreas de pesquisa",
@@ -178,22 +179,22 @@
         {
           "icon": "workflow",
           "h": "Engenharia confiável com agentes",
-          "p": "Orquestração, decomposição e guardrails que mantêm os agentes de IA no rumo ao longo de trabalhos longos e de várias etapas — sem parar cedo nem desviar da especificação."
+          "p": "Orquestração, decomposição e guardrails que mantêm os agentes de IA na tarefa ao longo de trabalhos longos e de várias etapas — sem parar cedo nem desviar da especificação."
         },
         {
           "icon": "shield-check",
           "h": "Segurança da entrega assistida por IA",
-          "p": "Como o código escrito por agentes falha, como detectar isso e como tornar padrão o seguro-por-desenho: IAM, AppSec e red-teaming autorizado do que os agentes produzem."
+          "p": "Como o código escrito por agentes falha, como detectar isso e como tornar o seguro-por-design o padrão: IAM, AppSec e red-teaming autorizado do que os agentes produzem."
         },
         {
           "icon": "ruler",
-          "h": "Padrões e avaliação",
-          "p": "O que 'bom' significa para a saída dos agentes, e como medir: playbooks normativos, portões de qualidade e testes que provam comportamento em vez de achismo."
+          "h": "Padrões & avaliação",
+          "p": "O que significa 'bom' para a saída dos agentes, e como medir: playbooks normativos, quality gates e testes que provam comportamento em vez de achismo."
         },
         {
           "icon": "heart-handshake",
           "h": "Experiência do desenvolvedor",
-          "p": "Tornar o caminho certo o caminho fácil — ferramental que instala os padrões, os mantém atualizados e sai da frente do desenvolvedor."
+          "p": "Tornar o jeito certo o jeito fácil — ferramental que instala os padrões, os mantém atualizados e sai do caminho do desenvolvedor."
         }
       ]
     },
@@ -202,12 +203,12 @@
       "items": [
         {
           "icon": "git-fork",
-          "h": "Abertamente",
-          "p": "Achados e ferramentas são publicados, não guardados. A reprodutibilidade é o ponto."
+          "h": "De forma aberta",
+          "p": "Achados e ferramentas são publicados, não guardados. A reprodutibilidade é o objetivo."
         },
         {
           "icon": "hammer",
-          "h": "Ancorado na prática",
+          "h": "Ancorada na prática",
           "p": "Pesquisamos construindo e entregando — o laboratório e os produtos se alimentam mutuamente."
         },
         {
@@ -226,16 +227,16 @@
   "principles": {
     "meta": {
       "title": "Princípios — como construímos — schematize.org",
-      "desc": "Os princípios de engenharia do laboratório schematize: pisos inegociáveis que tornam o software escrito com agentes de IA correto, seguro e sustentável — segurança decidida no servidor, testes que provam comportamento, uma trilha de auditoria em cada mudança e desenho com identidade em primeiro lugar."
+      "desc": "Os princípios de engenharia do laboratório schematize: pisos inegociáveis que tornam o software escrito com agentes de IA correto, seguro e sustentável — segurança decidida no servidor, testes que provam comportamento, um rastro de auditoria em cada mudança e design centrado na identidade."
     },
     "hero": {
       "kicker": "Princípios",
       "h1": "Como construímos.",
-      "sub": "Agentes de IA conseguem produzir código rápido, mas velocidade sem disciplina só entrega bugs mais rápido. Estes são os pisos inegociáveis que exigimos de todo projeto — os mesmos pisos que nossas skills de código aberto codificam para que os agentes os sigam por padrão."
+      "sub": "Agentes de IA conseguem produzir código rápido, mas velocidade sem disciplina só entrega bugs mais rápido. Estes são os pisos inegociáveis a que submetemos todo projeto — os mesmos pisos que nossas skills de código aberto codificam para que os agentes os sigam por padrão."
     },
     "intro": {
       "title": "Padrões acima de achismo",
-      "p": "Um princípio só vale se uma máquina puder verificá-lo. Cada piso abaixo mapeia para um portão concreto no nosso ferramental — um teste, uma regra de revisão, um artefato obrigatório — para que 'pronto' seja provado, não afirmado. É isso que nossas skills de engenharia instalam num projeto, e o que nossa pesquisa segue afiando."
+      "p": "Um princípio só conta se uma máquina puder verificá-lo. Cada piso abaixo mapeia para um gate concreto no nosso ferramental — um teste, uma regra de revisão, um artefato obrigatório — para que 'pronto' seja provado, não afirmado. É isso que nossas skills de engenharia instalam num projeto, e o que nossa pesquisa segue afiando."
     },
     "floors": {
       "title": "Os pisos inegociáveis",
@@ -243,39 +244,117 @@
         {
           "icon": "server",
           "h": "A segurança é decidida no servidor",
-          "p": "Autenticação e autorização são aplicadas no servidor, nunca no cliente. Segredos nunca chegam ao bundle do navegador. Uma checagem na UI é experiência do usuário — a decisão real acontece onde a requisição aterrissa, contra uma identidade verificada."
+          "p": "Autenticação e autorização são impostas no servidor, nunca no cliente. Segredos nunca chegam ao bundle do navegador. Uma verificação na UI é experiência do usuário — a decisão real acontece onde a requisição aterrissa, contra uma identidade verificada."
         },
         {
           "icon": "flask-conical",
           "h": "Testes provam comportamento",
-          "p": "Um teste afirma o que o software faz — conteúdo, estado, interação, caminhos de erro e vazios — não apenas que renderizou. Cobertura que não quebra quando o comportamento quebra não é cobertura. Portões de qualidade bloqueiam um merge do mesmo jeito que um build quebrado."
+          "p": "Um teste afirma o que o software faz — conteúdo, estado, interação, caminhos de erro e vazios — não meramente que renderizou. Cobertura que não falha quando o comportamento quebra não é cobertura. Quality gates bloqueiam um merge do mesmo jeito que um build quebrado."
         },
         {
           "icon": "archive",
-          "h": "Toda mudança deixa uma trilha de auditoria",
-          "p": "Nenhum trabalho está pronto enquanto não é registrado: o que mudou, por quê, o que foi decidido e o que foi descartado. O archive é parte da entrega, não papelada depois dela — para que o raciocínio sobreviva à sessão que o produziu."
+          "h": "Toda mudança deixa um rastro de auditoria",
+          "p": "Nenhum trabalho está pronto até ser registrado: o que mudou, por quê, o que foi decidido e o que foi descartado. O archive faz parte da entrega, não é papelada depois dela — para que o raciocínio sobreviva à sessão que o produziu."
         },
         {
           "icon": "fingerprint",
-          "h": "Identidade vem primeiro",
-          "p": "Todo projeto começa com um IAM robusto: identidade não é um e-mail, o acesso é baseado em relacionamento e multi-tenant por padrão, e o passwordless é o objetivo. A autorização é granular desde o primeiro dia, não remendada depois de um vazamento."
+          "h": "A identidade vem primeiro",
+          "p": "Todo projeto começa com IAM robusto: identidade não é um e-mail, o acesso é baseado em relacionamento e multi-tenant por padrão, e o passwordless é a meta. A autorização é granular desde o primeiro dia, não parafusada depois de um vazamento."
         },
         {
           "icon": "git-fork",
           "h": "Aberto por padrão",
-          "p": "Nossas ferramentas são de código aberto e nossos achados são públicos. Se importa, você pode ler, rodar, forkar e construir em cima. A reprodutibilidade é o ponto — um resultado que você não consegue reproduzir é uma opinião."
+          "p": "Nossas ferramentas são de código aberto e nossos achados são públicos. Se importa, você pode ler, rodar, forkar e construir em cima. A reprodutibilidade é o objetivo — um resultado que você não consegue reproduzir é uma opinião."
         },
         {
           "icon": "rocket",
           "h": "Entregue, não acumule",
-          "p": "Pesquisamos construindo e entregando; o laboratório e os produtos se alimentam mutuamente. O objetivo é tornar o caminho certo o caminho fácil — ferramental que instala o padrão, o mantém atualizado e sai da frente do desenvolvedor."
+          "p": "Pesquisamos construindo e entregando; o laboratório e os produtos se alimentam mutuamente. O objetivo é tornar o jeito certo o jeito fácil — ferramental que instala o padrão, o mantém atualizado e sai do caminho do desenvolvedor."
         }
       ]
     },
     "cta": {
       "title": "Veja os pisos em código.",
-      "p": "Os princípios acima são codificados como skills de engenharia instaláveis para o Claude Code — e o código está todo no GitHub.",
+      "p": "Os princípios acima estão codificados como skills de engenharia instaláveis para o Claude Code — e o código está todo no GitHub.",
       "button": "Explorar as skills",
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "O app — a CLI schematize — schematize.org",
+      "desc": "A schematize é um app de linha de comando em Rust (app de desktop incluído) que instala e versiona skills de engenharia para o Claude Code e roda o overdev. Instale no Linux com um comando, ou baixe para macOS."
+    },
+    "hero": {
+      "kicker": "O app",
+      "h1": "Uma CLI para todo o fluxo.",
+      "sub": "A schematize é um app de linha de comando em Rust — app de desktop incluído — que instala e versiona skills de engenharia a partir de um catálogo ao vivo e roda o overdev: desenvolvimento contínuo e autônomo que não para até o checklist estar concluído."
+    },
+    "install": {
+      "title": "Instale no Linux",
+      "sub": "Um comando. Debian, Ubuntu e Linux Mint (.deb); openSUSE, Fedora e RHEL (.rpm); ou um binário estático. Compila a partir do código na máquina — código aberto, sempre em sincronia com a main.",
+      "terminal": "Num terminal:"
+    },
+    "features": {
+      "title": "O que o app faz",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Instalar & versionar skills",
+          "p": "A partir de um catálogo remoto ao vivo — um comando puxa o conjunto inteiro e o mantém atualizado. Novas skills aparecem sem reinstalar nada."
+        },
+        {
+          "icon": "monitor",
+          "h": "App de desktop incluído",
+          "p": "Uma janela para navegar, instalar e atualizar skills — vem pré-compilado, sem necessidade de ferramentas de build."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Diagnostique sua configuração, atualize sozinho e veja tudo num relance a partir da CLI."
+        },
+        {
+          "icon": "radar",
+          "h": "Agente residente",
+          "p": "Fica de olho em novas versões de skills e posts do blog e te notifica nativamente no desktop."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Downloads",
+      "sub": "Instale a schematize no macOS ou Linux — o app de desktop vem junto.",
+      "mac": "macOS · Apple Silicon (.app). Baixe, descompacte e clique com o botão direito → Abrir.",
+      "deb": "Debian, Ubuntu, Linux Mint — o .deb (CLI + app de desktop).",
+      "rpm": "openSUSE, Fedora, RHEL — o .rpm (CLI + app de desktop).",
+      "download": "Baixar",
+      "releases": "Todas as releases",
+      "unsigned": "O app de macOS ainda não é assinado — o sistema mostra um aviso único de “não verificado” na primeira execução (clique com o botão direito → Abrir)."
+    },
+    "how": {
+      "title": "Como funciona",
+      "sub": "O app lê um índice ao vivo (catalog.json) no GitHub, então publicar uma nova skill é apenas adicionar uma entrada — sem recompilar a CLI.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Instale o app",
+          "p": "Um comando instala a CLI schematize e seu app de desktop no Linux (.deb / .rpm / binário), ou pegue o build de macOS."
+        },
+        {
+          "icon": "blocks",
+          "h": "Instale skills",
+          "p": "Rode schematize install --all para puxar todas as skills para o .claude/, ou instale uma por slug — navegue pelo catálogo em skills.schematize.org."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Mantenha-se atualizado",
+          "p": "O agente residente te avisa quando uma skill ou o app é atualizado; o schematize upgrade se atualiza sozinho."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Navegue pelas skills.",
+      "p": "O app instala skills a partir do catálogo aberto — navegue e escolha o que seu projeto precisa.",
+      "button": "Abrir o catálogo",
       "url": "https://skills.schematize.org"
     }
   },
@@ -305,16 +384,16 @@
     "hero": {
       "kicker": "Sobre",
       "h1": "O laboratório e a empresa por trás da schematize.",
-      "sub": "A schematize.org é a casa de código aberto e pesquisa em tecnologia da Schematize — uma empresa de tecnologia que constrói ferramentas de engenharia para e com agentes de IA, abertamente."
+      "sub": "A schematize.org é a casa de código aberto e pesquisa em tecnologia da Schematize — uma empresa de tecnologia que constrói ferramentas de engenharia para e com agentes de IA, de forma aberta."
     },
     "who": {
       "title": "Quem somos",
-      "p1": "A Schematize é uma empresa de tecnologia brasileira. Construímos ferramentas de código aberto e padrões normativos de engenharia que tornam o software escrito com agentes de IA correto, seguro e sustentável — e publicamos o que aprendemos pelo caminho.",
-      "p2": "Tudo o que é institucional e de código aberto agora vive numa única casa: schematize.org. Nosso código-fonte é público no GitHub, e nossas ferramentas se instalam pela CLI schematize."
+      "p1": "A Schematize é uma empresa de tecnologia brasileira. Construímos ferramentas de código aberto e padrões normativos de engenharia que tornam o software escrito com agentes de IA correto, seguro e sustentável — e publicamos o que aprendemos no caminho.",
+      "p2": "Tudo institucional e de código aberto agora vive numa única casa: schematize.org. Nosso código-fonte é público no GitHub, e nossas ferramentas se instalam pela CLI schematize."
     },
     "mission": {
       "title": "O que nos move",
-      "p": "Tornar confiável o software construído por agentes. Rápido não vale nada se não for correto, seguro e sustentável — por isso transformamos a saída dos agentes em software que os times podem de fato rodar em produção."
+      "p": "Tornar confiável o software construído por agentes. Rápido não vale nada se não for correto, seguro e sustentável — por isso transformamos a saída dos agentes em software que times realmente podem rodar em produção."
     },
     "facts": {
       "title": "Dados da empresa",
@@ -331,56 +410,56 @@
       }
     },
     "cta": {
-      "title": "Entre em contato.",
-      "p": "Dúvidas sobre a empresa, os projetos ou a pesquisa? Fale com a gente ou leia o código.",
+      "title": "Fale com a gente.",
+      "p": "Dúvidas sobre a empresa, os projetos ou a pesquisa? Entre em contato ou leia o código.",
       "button": "Contato"
     }
   },
   "contact": {
     "meta": {
       "title": "Contato — schematize.org",
-      "desc": "Fale com a Schematize: canais de contato institucional da empresa e do laboratório de código aberto por trás da schematize.org."
+      "desc": "Entre em contato com a Schematize: canais de contato institucional da empresa e do laboratório de código aberto por trás da schematize.org."
     },
     "hero": {
       "kicker": "Contato",
       "h1": "Fale com a gente.",
-      "sub": "O melhor lugar para chegar ao trabalho é onde ele vive. Escolha o canal que melhor se encaixa."
+      "sub": "O melhor lugar para alcançar o trabalho é onde ele vive. Escolha o canal que combina."
     },
     "channels": {
       "title": "Canais",
       "items": [
         {
           "icon": "mail",
-          "h": "Institucional e administrativo",
-          "p": "Para assuntos da empresa, faturamento e institucionais, mande um e-mail direto.",
+          "h": "Institucional & administrativo",
+          "p": "Para assuntos de empresa, faturamento e institucionais, mande um e-mail direto.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
         {
           "icon": "github",
           "brand": true,
-          "h": "Código e issues",
+          "h": "Código & issues",
           "p": "Reporte bugs, abra issues ou contribua com os projetos de código aberto no GitHub.",
           "href": "https://github.com/schematizeme",
           "label": "github.com/schematizeme"
         },
         {
           "icon": "shield-alert",
-          "h": "Segurança e divulgação responsável",
-          "p": "Encontrou uma vulnerabilidade em uma das nossas ferramentas? Reporte de forma privada e trabalhamos junto na correção e na divulgação.",
+          "h": "Segurança & divulgação responsável",
+          "p": "Encontrou uma vulnerabilidade em uma das nossas ferramentas? Reporte de forma privada e trabalhamos com você numa correção e divulgação.",
           "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
           "label": "Reportar de forma privada"
         },
         {
           "icon": "blocks",
           "h": "Catálogo de skills",
-          "p": "Explore e instale as skills de engenharia para o Claude Code.",
+          "p": "Navegue e instale as skills de engenharia para o Claude Code.",
           "href": "https://skills.schematize.org",
           "label": "skills.schematize.org"
         }
       ]
     },
-    "note": "Ao entrar em contato, você concorda que tratemos os dados que enviar apenas para responder à sua solicitação. Veja a Política de Privacidade."
+    "note": "Ao entrar em contato você concorda que processamos os dados que você enviar exclusivamente para responder à sua solicitação. Veja a Política de Privacidade."
   },
   "legal": {
     "meta": {
@@ -392,12 +471,12 @@
       "h1": "Central jurídica",
       "sub": "As políticas que regem este site e nossos serviços. Os dados da empresa e a data de vigência estão em cada documento."
     },
-    "disclaimer": "Rascunho de trabalho — não é aconselhamento jurídico. Estes documentos são um esqueleto estrutural em revisão por advogado e podem mudar antes de entrar em vigor. [REVISAR: advogado]",
+    "disclaimer": "Rascunho de trabalho — não é aconselhamento jurídico. Estes documentos são um esqueleto estrutural em revisão pelo jurídico e podem mudar antes de entrar em vigor. [REVISAR: advogado]",
     "effective": "Em vigor desde",
     "effectiveDate": "2026-08-19",
-    "controllerLabel": "Controlador dos dados",
+    "controllerLabel": "Controlador de dados",
     "contactLabel": "Contato",
-    "backToLegal": "Voltar à Central jurídica",
+    "backToLegal": "Voltar à central jurídica",
     "index": {
       "title": "Políticas",
       "items": [
@@ -418,7 +497,7 @@
         },
         {
           "h": "Política de Cookies",
-          "p": "Os cookies e tecnologias semelhantes que este site usa, e como gerenciá-los.",
+          "p": "Os cookies e tecnologias similares que este site usa, e como gerenciá-los.",
           "slug": "legal/cookies"
         }
       ]
@@ -434,9 +513,9 @@
         "sections": [
           { "h": "1. Aceitação", "p": "Ao acessar a schematize.org você concorda com estes Termos de Uso. Se não concordar, por favor não use o site." },
           { "h": "2. O que o site oferece", "p": "A schematize.org é um site informativo e institucional que apresenta nossos projetos de código aberto e pesquisa em tecnologia. Não é uma loja." },
-          { "h": "3. Propriedade intelectual", "p": "A marca schematize e o conteúdo do site são protegidos. Nossos projetos de código aberto são licenciados sob os termos indicados em cada repositório no GitHub." },
-          { "h": "4. Uso aceitável", "p": "Você concorda em não fazer mau uso do site, tentar interrompê-lo ou usá-lo para fins ilícitos." },
-          { "h": "5. Links de terceiros", "p": "O site tem links para destinos de terceiros (por exemplo, o GitHub). Não somos responsáveis pelo conteúdo de terceiros." },
+          { "h": "3. Propriedade intelectual", "p": "A marca schematize e o conteúdo do site são protegidos. Nossos projetos de código aberto são licenciados nos termos declarados em cada repositório no GitHub." },
+          { "h": "4. Uso aceitável", "p": "Você concorda em não usar o site indevidamente, tentar interrompê-lo ou usá-lo para fins ilícitos." },
+          { "h": "5. Links de terceiros", "p": "O site remete a destinos de terceiros (por exemplo, GitHub). Não somos responsáveis pelo conteúdo de terceiros." },
           { "h": "6. Isenção e limitação de responsabilidade", "p": "O site é fornecido \"como está\", sem garantias. [REVISAR: advogado]" },
           { "h": "7. Alterações", "p": "Podemos atualizar estes termos; a data de vigência acima reflete a versão atual." },
           { "h": "8. Lei aplicável e foro", "p": "Estes termos são regidos pelas leis do Brasil. [REVISAR: advogado]" }
@@ -450,15 +529,15 @@
         "h1": "Termos de Serviço",
         "sub": "O acordo que cobre nossas ferramentas e serviços.",
         "sections": [
-          { "h": "1. Partes e definições", "p": "Estes termos regem a relação entre a Schematize e os usuários de nossas ferramentas e serviços." },
+          { "h": "1. Partes e definições", "p": "Estes termos regem a relação entre a Schematize e os usuários das nossas ferramentas e serviços." },
           { "h": "2. Escopo", "p": "Nossas ferramentas de código aberto (como a CLI schematize e as skills de engenharia) são fornecidas sob suas respectivas licenças de código aberto no GitHub." },
-          { "h": "3. Contas", "p": "Quando um serviço exige autenticação, ela é fornecida por meio da auth.schematize.org. Você é responsável por manter suas credenciais seguras." },
+          { "h": "3. Contas", "p": "Onde um serviço exige autenticação, ela é fornecida através de auth.schematize.org. Você é responsável por manter suas credenciais seguras." },
           { "h": "4. Tarifas", "p": "Ferramentas de código aberto são gratuitas. Qualquer serviço pago é descrito no momento da contratação. [REVISAR: advogado]" },
           { "h": "5. Obrigações das partes", "p": "Você concorda em usar os serviços de forma lícita; nós concordamos em fornecê-los com cuidado razoável." },
-          { "h": "6. Suspensão e rescisão", "p": "Podemos suspender o acesso em caso de mau uso ou risco de segurança." },
-          { "h": "7. Garantias e limitação de responsabilidade", "p": "Os serviços são fornecidos \"como estão\", na medida permitida por lei. [REVISAR: advogado]" },
-          { "h": "8. Privacidade", "p": "Os dados pessoais são tratados conforme nossa Política de Privacidade." },
-          { "h": "9. Lei aplicável e foro", "p": "Regido pelas leis do Brasil. [REVISAR: advogado]" }
+          { "h": "6. Suspensão e rescisão", "p": "Podemos suspender o acesso em caso de uso indevido ou risco de segurança." },
+          { "h": "7. Garantias e limitação de responsabilidade", "p": "Os serviços são fornecidos \"como estão\" na medida permitida por lei. [REVISAR: advogado]" },
+          { "h": "8. Privacidade", "p": "Os dados pessoais são processados sob nossa Política de Privacidade." },
+          { "h": "9. Lei aplicável e foro", "p": "Regidos pelas leis do Brasil. [REVISAR: advogado]" }
         ]
       },
       "privacy": {
@@ -469,17 +548,17 @@
         "h1": "Política de Privacidade",
         "sub": "Como tratamos dados pessoais, sob a Lei Geral de Proteção de Dados (LGPD) do Brasil.",
         "sections": [
-          { "h": "1. Controlador", "p": "O controlador dos dados é a Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasil." },
-          { "h": "2. Encarregado pelo tratamento de dados (DPO)", "p": "Para assuntos de privacidade e para exercer seus direitos, contate contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Dados que coletamos", "p": "Este é um site informativo, sem login ou formulários; coletamos apenas os dados técnicos mínimos necessários para servir as páginas e manter o site seguro. Se você nos escrever, tratamos os dados que enviar." },
-          { "h": "4. Finalidade", "p": "Entregar e proteger o site, e responder às mensagens que você nos envia." },
+          { "h": "1. Controlador", "p": "O controlador de dados é a Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasil." },
+          { "h": "2. Encarregado de Dados (DPO)", "p": "Para assuntos de privacidade e para exercer seus direitos, entre em contato pelo contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. Dados que coletamos", "p": "Este é um site informativo sem login ou formulários; coletamos apenas dados técnicos mínimos necessários para servir as páginas e manter o site seguro. Se você nos enviar um e-mail, processamos os dados que você enviar." },
+          { "h": "4. Finalidade", "p": "Para entregar e proteger o site, e para responder às mensagens que você nos envia." },
           { "h": "5. Base legal", "p": "Legítimo interesse para operar e proteger o site; consentimento ou execução de uma solicitação quando você entra em contato (LGPD art. 7). [REVISAR: advogado]" },
-          { "h": "6. Compartilhamento", "p": "Usamos provedores de infraestrutura e hospedagem que atuam como operadores; não vendemos dados pessoais." },
-          { "h": "7. Transferência internacional", "p": "Alguns provedores podem tratar dados fora do Brasil, com salvaguardas. [REVISAR: advogado]" },
+          { "h": "6. Compartilhamento", "p": "Usamos provedores de infraestrutura e hospedagem atuando como operadores; não vendemos dados pessoais." },
+          { "h": "7. Transferência internacional", "p": "Alguns provedores podem processar dados fora do Brasil, com salvaguardas. [REVISAR: advogado]" },
           { "h": "8. Retenção", "p": "Mantemos os dados apenas pelo tempo necessário para as finalidades acima ou conforme exigido por lei." },
           { "h": "9. Segurança", "p": "Aplicamos medidas técnicas e organizacionais razoáveis para proteger os dados." },
-          { "h": "10. Seus direitos", "p": "Sob o art. 18 da LGPD você pode solicitar confirmação, acesso, correção, anonimização, portabilidade, exclusão e informações sobre compartilhamento, e revogar o consentimento — escrevendo para contabil@schematize.me." },
-          { "h": "11. Cookies", "p": "Veja nossa Política de Cookies para detalhes sobre cookies e tecnologias semelhantes." },
+          { "h": "10. Seus direitos", "p": "Sob o art. 18 da LGPD você pode solicitar confirmação, acesso, correção, anonimização, portabilidade, eliminação e informação sobre compartilhamento, e revogar o consentimento — pelo e-mail contabil@schematize.me." },
+          { "h": "11. Cookies", "p": "Veja nossa Política de Cookies para detalhes sobre cookies e tecnologias similares." },
           { "h": "12. Alterações", "p": "Podemos atualizar esta política; a data de vigência acima reflete a versão atual." }
         ]
       },
@@ -489,11 +568,11 @@
           "desc": "Política de cookies da schematize.org: categorias de cookies, finalidades e como gerenciá-los."
         },
         "h1": "Política de Cookies",
-        "sub": "Os cookies e tecnologias semelhantes que este site usa.",
+        "sub": "Os cookies e tecnologias similares que este site usa.",
         "sections": [
           { "h": "1. O que são cookies", "p": "Cookies são pequenos arquivos armazenados no seu dispositivo que ajudam um site a funcionar e a lembrar preferências." },
-          { "h": "2. Categorias", "p": "Essenciais: necessários para o site funcionar (por exemplo, lembrar seu idioma). Cookies de desempenho/análise, funcionais e de marketing só são usados com seu consentimento opt-in." },
-          { "h": "3. O que usamos", "p": "Este site armazena localmente uma preferência de idioma para manter o idioma escolhido. Ele não executa cookies de análise ou marketing não essenciais sem consentimento. [REVISAR: negócio]" },
+          { "h": "2. Categorias", "p": "Essenciais: necessários para o site funcionar (por exemplo, lembrar seu idioma). Cookies de desempenho/analytics, funcionais e de marketing só são usados com seu consentimento opt-in." },
+          { "h": "3. O que usamos", "p": "Este site armazena uma preferência de idioma localmente para manter o idioma escolhido. Não roda cookies não essenciais de analytics ou marketing sem consentimento. [REVISAR: negócio]" },
           { "h": "4. Consentimento", "p": "Cookies não essenciais exigem consentimento opt-in; cookies essenciais funcionam sem consentimento." },
           { "h": "5. Gerenciando cookies", "p": "Você pode limpar ou bloquear cookies nas configurações do seu navegador; bloquear o armazenamento essencial pode afetar o site." },
           { "h": "6. Alterações", "p": "Podemos atualizar esta política; a data de vigência acima reflete a versão atual." }
@@ -523,6 +602,7 @@
       {
         "h": "Trabalho",
         "links": [
+          { "slug": "software", "label": "O app" },
           { "slug": "projects", "label": "Projetos" },
           { "slug": "research", "label": "Pesquisa" },
           { "slug": "principles", "label": "Princípios" }

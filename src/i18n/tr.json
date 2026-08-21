@@ -1,12 +1,13 @@
 {
   "nav": {
+    "software": "Uygulama",
     "projects": "Projeler",
     "research": "Araştırma",
     "principles": "İlkeler",
-    "about": "Hakkında",
+    "about": "Hakkımızda",
     "contact": "İletişim",
     "legal": "Yasal",
-    "skills": "Beceriler",
+    "catalog": "Beceri kataloğu",
     "academy": "Akademi",
     "login": "Giriş yap / Kayıt ol",
     "cta": "Kaynağı görüntüle",
@@ -18,46 +19,46 @@
     "company": "Şirket",
     "resources": "Kaynaklar",
     "legal": "Yasal",
-    "made": "Açıkça geliştirildi.",
+    "made": "Açıkça inşa edildi.",
     "sitemap": "Site haritası"
   },
   "home": {
     "meta": {
       "title": "schematize.org — açık kaynak ve yapay zeka mühendisliği araştırma laboratuvarı",
-      "desc": "schematize.org, schematize'ın arkasındaki açık kaynak ve teknoloji araştırma laboratuvarıdır: açıkça geliştirilen araçlar ve yapay zeka ajanlarıyla mühendislik üzerine araştırmalar. Çalışmalarımızı keşfedin."
+      "desc": "schematize.org, schematize'ın arkasındaki açık kaynak ve teknoloji araştırma laboratuvarıdır: açıkça inşa edilen araçlar ve yapay zeka ajanlarıyla mühendislik üzerine araştırmalar. Çalışmalarımızı keşfedin."
     },
     "hero": {
       "kicker": "Açık kaynak ve araştırma",
-      "h1": "Yapay zeka ajanları için mühendislik, açıkça geliştirilir.",
-      "sub": "schematize.org, açık kaynak araçlarımızı geliştirdiğimiz ve gerçek dünyada ayakta kalan yapay zeka ajanlarını nasıl inşa edeceğimiz, güvenli kılacağımız ve orkestre edeceğimiz üzerine teknoloji araştırmalarımızı paylaştığımız yerdir.",
+      "h1": "Yapay zeka ajanları için mühendislik, açıkça inşa edildi.",
+      "sub": "schematize.org, açık kaynak araçlarımızı geliştirdiğimiz ve gerçek dünyada dayanıklı olan yapay zeka ajanlarının nasıl inşa edileceği, güvence altına alınacağı ve orkestre edileceği üzerine teknoloji araştırmalarımızı paylaştığımız yerdir.",
       "cta1": "Projeleri keşfet",
       "cta2": "Araştırmayı oku"
     },
     "mission": {
       "kicker": "Misyon",
-      "title": "Ajanların ürettiği yazılımı güvenilir kılmak.",
-      "p": "Yapay zeka ajanları hızla çok fazla kod yazabilir — ama kod doğru, güvenli ve sürdürülebilir değilse hız değersizdir. Ajan çıktısını gerçekten üretimde çalıştırabileceğiniz yazılıma dönüştüren açık araçları ve ortak standartları geliştiriyor ve yol boyunca öğrendiklerimizi yayımlıyoruz."
+      "title": "Ajanların inşa ettiği yazılımı güvenilir kılmak.",
+      "p": "Yapay zeka ajanları hızlıca çok sayıda kod yazabilir — ama kod doğru, güvenli ve sürdürülebilir değilse hız değersizdir. Ajan çıktısını gerçekten üretimde çalıştırabileceğiniz yazılıma dönüştüren açık araçları ve ortak standartları inşa ediyor, yol boyunca öğrendiklerimizi yayımlıyoruz."
     },
     "pillars": {
-      "title": "Üzerinde çalıştıklarımız",
+      "title": "Neler üzerinde çalışıyoruz",
       "items": [
         {
           "key": "projects",
           "icon": "package",
           "h": "Açık kaynak projeler",
-          "p": "schematize CLI, Claude Code için mühendislik beceri kataloğu ve bunların hepsini yeniden üretilebilir kılan araçlar — okunabilir, çatallanabilir ve ücretsiz."
+          "p": "schematize CLI, Claude Code için mühendislik beceri kataloğu ve tüm bunları yeniden üretilebilir kılan araçlar — hepsi okunabilir, çatallanabilir ve ücretsiz."
         },
         {
           "key": "research",
           "icon": "flask-conical",
           "h": "Teknoloji araştırması",
-          "p": "Yapay zeka ajanlarıyla güvenilir ve güvenli biçimde nasıl mühendislik yapılır: orkestrasyon, standartlar, değerlendirme ve yapay zeka destekli teslimatın güvenliği."
+          "p": "Yapay zeka ajanlarıyla güvenilir ve emniyetli şekilde mühendislik yapmanın yolu: orkestrasyon, standartlar, değerlendirme ve yapay zeka destekli teslimatın güvenliği."
         },
         {
           "key": "principles",
           "icon": "shield-check",
           "h": "Mühendislik standartları",
-          "p": "Ajan çıktısını güvenilir kılan tavizsiz asgari kurallar: sunucu tarafında verilen güvenlik kararları, davranışı kanıtlayan testler ve her değişiklikte bir denetim izi."
+          "p": "Ajan çıktısını güvenilir kılan tavizsiz temeller: güvenliğin sunucuda kararlaştırılması, davranışı kanıtlayan testler ve her değişiklikte bir denetim izi."
         }
       ]
     },
@@ -66,21 +67,21 @@
       "items": [
         {
           "h": "Varsayılan olarak açık",
-          "p": "Araçlarımız açık kaynaktır ve bulgularımız herkese açıktır. Önemliyse okuyabilir, çalıştırabilir ve üzerine inşa edebilirsiniz."
+          "p": "Araçlarımız açık kaynak, bulgularımız kamuya açıktır. Önemliyse, onu okuyabilir, çalıştırabilir ve üzerine inşa edebilirsiniz."
         },
         {
           "h": "Titiz",
-          "p": "Sezgiler yerine standartlar: normatif yönergeler, gerçek testler ve birinci sınıf gereksinim olarak ele alınan güvenlik — sonradan akla gelen bir düşünce değil."
+          "p": "Sezgiler yerine standartlar: normatif başucu kılavuzları, gerçek testler ve sonradan akla gelen bir düşünce değil, birinci sınıf bir gereksinim olarak ele alınan güvenlik."
         },
         {
           "h": "Pratik",
-          "p": "Sahaya çıkan araştırma. Yayımladığımız her şey, gerçek ekiplerin ajanlarla inşa etme biçimini değiştirmek içindir, çekmecede durmak için değil."
+          "p": "Sahaya çıkan araştırma. Yayımladığımız her şey, çekmecede durmak için değil, gerçek ekiplerin ajanlarla nasıl inşa ettiğini değiştirmek içindir."
         }
       ]
     },
     "cta": {
-      "title": "Çalışmaları keşfedin.",
-      "p": "İnşa ettiğimiz her şey GitHub'da, öğrendiğimiz her şey ise blogda.",
+      "title": "Çalışmayı keşfet.",
+      "p": "İnşa ettiğimiz her şey GitHub'da, öğrendiğimiz her şey de blogda son bulur.",
       "button": "GitHub'da görüntüle"
     },
     "platforms": {
@@ -89,18 +90,18 @@
       "p": "schematize'ın açıkça inşa ettiği her şey, ekosistem boyunca düzenlenmiş halde.",
       "items": [
         {
-          "h": "Beceriler",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
-          "icon": "blocks",
-          "p": "Yapay zeka ajanlarının evin standartlarına uymasını sağlayan mühendislik becerileri kataloğu — tek komutla kurulur."
+          "h": "Uygulama",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "Becerileri kuran ve sürümleyen, overdev'i çalıştıran Rust komut satırı uygulaması (masaüstü uygulaması dahil) — Linux'a tek komutla kurun."
         },
         {
           "h": "Araştırma",
           "tag": "schematize.org/research",
           "key": "research",
           "icon": "flask-conical",
-          "p": "Teknoloji araştırmalarımızdan makaleler, notlar ve bulgular — öğrendikçe yayımlanır."
+          "p": "Teknoloji araştırmamızdan makaleler, notlar ve bulgular — öğrendikçe yayımlanır."
         },
         {
           "h": "Kaynak",
@@ -108,7 +109,7 @@
           "url": "https://github.com/schematizeme",
           "icon": "github",
           "brand": true,
-          "p": "Her depo, açıkça. Okuyun, çatallayın, bir issue açın — ya da schematize CLI ile kurun."
+          "p": "Her depo, açıkça. Okuyun, çatallayın, bir sorun açın — ya da schematize CLI ile kurun."
         }
       ]
     }
@@ -121,44 +122,44 @@
     "hero": {
       "kicker": "Projeler",
       "h1": "Yapay zeka ajanlarıyla inşa etmek için açık kaynak araçlar.",
-      "sub": "Ajan destekli mühendisliği yeniden üretilebilir ve güvenli kılmak için inşa ettiğimiz her şey — okumak, çalıştırmak ve çatallamak ücretsiz."
+      "sub": "Ajan destekli mühendisliği yeniden üretilebilir ve güvenli kılmak için inşa ettiğimiz her şey — okumak, çalıştırmak ve çatallamak için özgür."
     },
     "list": {
-      "title": "Sürdürdüklerimiz",
+      "title": "Neyi sürdürüyoruz",
       "items": [
         {
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Claude Code için mühendislik becerilerini kuran ve sürümleyen, ayrıca overdev'i çalıştıran Linux öncelikli bir komut satırı uygulaması — kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme.",
+          "p": "Claude Code için mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran Linux öncelikli bir komut satırı uygulaması — kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
           "icon": "blocks",
           "h": "Mühendislik becerileri",
-          "p": "Claude Code için normatif yönergeler — engineering, go, rust, web, seo, node ve pentest — her biri güvenlik, test ve mimari için tavizsiz asgari kurallara sahip.",
+          "p": "Claude Code için normatif başucu kılavuzları — engineering, go, rust, web, seo, node ve pentest — her biri güvenlik, test ve mimari için tavizsiz temellerle.",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
           "icon": "search",
           "h": "schematize-seo",
-          "p": "Bir beceri olarak eksiksiz bir SEO disiplini: teknik, sayfa içi, içerik, yapılandırılmış veri, uluslararası/çok alan adlı ve yapay zeka yanıtı optimizasyonu.",
+          "p": "Bir beceri olarak eksiksiz bir SEO disiplini: teknik, sayfa içi, içerik, yapılandırılmış veri, uluslararası/çoklu alan adı ve yapay zeka yanıtı optimizasyonu.",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
           "icon": "shield-check",
           "h": "schematize-pentest",
-          "p": "Bir beceri olarak savunmacı AppSec ve yetkili red-teaming: uç nokta saldırı yüzeyi haritalama, OWASP kapsamı ve tehdit modelleme — daima kapsam dahilinde.",
+          "p": "Bir beceri olarak savunmacı AppSec ve yetkili red-teaming: uç nokta saldırı yüzeyi haritalama, OWASP kapsamı ve tehdit modelleme — her zaman kapsam dahilinde.",
           "href": "https://github.com/schematizeme/skill-pentest"
         }
       ]
     },
     "cta": {
-      "title": "Kaynağı okuyun.",
-      "p": "Hepsi herkese açık. Yıldız verin, çatallayın, bir issue açın — ya da saniyeler içinde kurmak için schematize CLI'ı kullanın.",
+      "title": "Kaynağı oku.",
+      "p": "Hepsi kamuya açık. Yıldızlayın, çatallayın, bir sorun açın — ya da saniyeler içinde kurmak için schematize CLI'ı kullanın.",
       "button": "GitHub'ı aç"
     }
   },
@@ -170,7 +171,7 @@
     "hero": {
       "kicker": "Araştırma",
       "h1": "Yapay zeka ajanlarıyla nasıl inşa edilir — ve sonuca nasıl güvenilir.",
-      "sub": "Ajan destekli mühendisliği neyin güvenilir ve güvenli kıldığını inceliyor, yanıtları herkesin kullanabileceği açık araçlara ve standartlara dönüştürüyoruz."
+      "sub": "Ajan destekli mühendisliği güvenilir ve emniyetli kılan şeyi inceliyor, yanıtları herkesin kullanabileceği açık araçlara ve standartlara dönüştürüyoruz."
     },
     "areas": {
       "title": "Araştırma alanları",
@@ -178,17 +179,17 @@
         {
           "icon": "workflow",
           "h": "Güvenilir ajan mühendisliği",
-          "p": "Yapay zeka ajanlarını uzun, çok adımlı çalışma boyunca göreve odaklı tutan orkestrasyon, ayrıştırma ve koruma bantları — erken durmadan veya spesifikasyondan sapmadan."
+          "p": "Yapay zeka ajanlarını uzun, çok adımlı çalışmalar boyunca görevde tutan orkestrasyon, ayrıştırma ve korkuluklar — erken durmadan ya da spesifikasyondan sapmadan."
         },
         {
           "icon": "shield-check",
           "h": "Yapay zeka destekli teslimatın güvenliği",
-          "p": "Ajanların yazdığı kodun nasıl başarısız olduğu, bunun nasıl yakalanacağı ve tasarımdan güvenliğin nasıl varsayılan yapılacağı: IAM, AppSec ve ajanların ürettiklerinin yetkili red-teaming'i."
+          "p": "Ajanların yazdığı kodun nasıl başarısız olduğu, bunun nasıl yakalanacağı ve tasarım gereği güvenliği varsayılan kılmanın yolu: IAM, AppSec ve ajanların ürettiklerinin yetkili red-teaming'i."
         },
         {
           "icon": "ruler",
           "h": "Standartlar ve değerlendirme",
-          "p": "Ajan çıktısı için 'iyi'nin ne anlama geldiği ve nasıl ölçüleceği: normatif yönergeler, kalite kapıları ve sezgi yerine davranışı kanıtlayan testler."
+          "p": "Ajan çıktısı için 'iyi'nin ne anlama geldiği ve bunun nasıl ölçüleceği: normatif başucu kılavuzları, kalite kapıları ve sezgi yerine davranışı kanıtlayan testler."
         },
         {
           "icon": "heart-handshake",
@@ -203,42 +204,42 @@
         {
           "icon": "git-fork",
           "h": "Açıkça",
-          "p": "Bulgular ve araçlar yayımlanır, biriktirilmez. Amaç yeniden üretilebilirliktir."
+          "p": "Bulgular ve araçlar biriktirilmez, yayımlanır. Mesele yeniden üretilebilirliktir."
         },
         {
           "icon": "hammer",
           "h": "Uygulamaya dayalı",
-          "p": "İnşa ederek ve sahaya çıkararak araştırıyoruz — laboratuvar ve ürünler birbirini besler."
+          "p": "İnşa ederek ve sahaya çıkararak araştırırız — laboratuvar ve ürünler birbirini besler."
         },
         {
           "icon": "lock",
           "h": "Önce güvenlik",
-          "p": "Çalıştırması güvenli değilse, bitmiş değildir. Tehdit modelleme ve test, yöntemin bir parçasıdır."
+          "p": "Çalıştırması emniyetli değilse, bitmemiştir. Tehdit modelleme ve test etme yöntemin bir parçasıdır."
         }
       ]
     },
     "cta": {
-      "title": "Araştırmayı takip edin.",
+      "title": "Araştırmayı takip et.",
       "p": "Öğrendiklerimizi blogda yazıyoruz, araçlar da GitHub'a iniyor.",
       "button": "Blogu oku"
     }
   },
   "principles": {
     "meta": {
-      "title": "İlkeler — nasıl inşa ediyoruz — schematize.org",
-      "desc": "schematize laboratuvarının mühendislik ilkeleri: yapay zeka ajanlarıyla yazılan yazılımı doğru, güvenli ve sürdürülebilir kılan tavizsiz asgari kurallar — sunucu tarafında verilen güvenlik kararları, davranışı kanıtlayan testler, her değişiklikte bir denetim izi ve kimlik öncelikli tasarım."
+      "title": "İlkeler — nasıl inşa ederiz — schematize.org",
+      "desc": "schematize laboratuvarının mühendislik ilkeleri: yapay zeka ajanlarıyla yazılan yazılımı doğru, güvenli ve sürdürülebilir kılan tavizsiz temeller — güvenliğin sunucuda kararlaştırılması, davranışı kanıtlayan testler, her değişiklikte bir denetim izi ve kimlik öncelikli tasarım."
     },
     "hero": {
       "kicker": "İlkeler",
-      "h1": "Nasıl inşa ediyoruz.",
-      "sub": "Yapay zeka ajanları hızla kod üretebilir, ancak disiplinsiz hız yalnızca hataları daha hızlı sahaya çıkarır. Bunlar her projede uyduğumuz tavizsiz asgari kurallardır — ajanların varsayılan olarak uyması için açık kaynak becerilerimizin kodladığı aynı kurallar."
+      "h1": "Nasıl inşa ederiz.",
+      "sub": "Yapay zeka ajanları hızlıca kod üretebilir, ama disiplinsiz hız yalnızca hataları daha hızlı sahaya sürer. Bunlar her projeyi tabi tuttuğumuz tavizsiz temellerdir — açık kaynak becerilerimizin, ajanların varsayılan olarak izlemesi için kodladığı aynı temeller."
     },
     "intro": {
       "title": "Sezgiler yerine standartlar",
-      "p": "Bir ilke, ancak bir makine onu denetleyebiliyorsa geçerlidir. Aşağıdaki her asgari kural, araçlarımızdaki somut bir kapıya karşılık gelir — bir test, bir inceleme kuralı, gerekli bir yapıt — böylece 'bitti' iddia edilmez, kanıtlanır. Mühendislik becerilerimizin bir projeye kurduğu ve araştırmamızın bilemeye devam ettiği şey tam da budur."
+      "p": "Bir ilke ancak bir makine onu denetleyebiliyorsa geçerlidir. Aşağıdaki her temel, araçlarımızdaki somut bir kapıya karşılık gelir — bir test, bir inceleme kuralı, gerekli bir yapıt — böylece 'bitti', iddia edilmez, kanıtlanır. İşte mühendislik becerilerimizin bir projeye kurduğu ve araştırmamızın keskinleştirmeyi sürdürdüğü şey budur."
     },
     "floors": {
-      "title": "Tavizsiz asgari kurallar",
+      "title": "Tavizsiz temeller",
       "items": [
         {
           "icon": "server",
@@ -248,34 +249,112 @@
         {
           "icon": "flask-conical",
           "h": "Testler davranışı kanıtlar",
-          "p": "Bir test, yazılımın ne yaptığını doğrular — içerik, durum, etkileşim, hata ve boş yollar — yalnızca render edildiğini değil. Davranış bozulduğunda başarısız olmayan kapsam, kapsam değildir. Kalite kapıları, bozuk bir derleme gibi bir birleştirmeyi engeller."
+          "p": "Bir test, yazılımın ne yaptığını öne sürer — içerik, durum, etkileşim, hata ve boş yollar — yalnızca oluşturulduğunu değil. Davranış bozulduğunda başarısız olmayan kapsam, kapsam değildir. Kalite kapıları, bir birleştirmeyi tıpkı bozuk bir derleme gibi engeller."
         },
         {
           "icon": "archive",
           "h": "Her değişiklik bir denetim izi bırakır",
-          "p": "Kaydedilmeden hiçbir iş bitmiş sayılmaz: neyin değiştiği, neden, neyin kararlaştırıldığı ve neyin reddedildiği. Arşiv, sonradan yapılan bir evrak işi değil, teslimatın bir parçasıdır — böylece gerekçeler, onları üreten oturumdan sağ çıkar."
+          "p": "Kaydedilmeden hiçbir iş bitmiş sayılmaz: neyin değiştiği, neden, neyin kararlaştırıldığı ve neyin reddedildiği. Arşiv, sonrasında yapılan bir evrak işi değil, teslimatın bir parçasıdır — böylece gerekçe, onu üreten oturumdan sonra da yaşar."
         },
         {
           "icon": "fingerprint",
-          "h": "Kimlik önce gelir",
-          "p": "Her proje sağlam bir IAM ile başlar: kimlik bir e-posta değildir, erişim ilişki tabanlı ve varsayılan olarak çok kiracılıdır, parolasızlık ise hedeftir. Yetkilendirme, bir ihlalden sonra eklenmez, ilk günden ayrıntılıdır."
+          "h": "Önce kimlik gelir",
+          "p": "Her proje sağlam bir IAM ile başlar: kimlik bir e-posta değildir, erişim ilişki temellidir ve varsayılan olarak çok kiracılıdır, parolasızlık ise hedeftir. Yetkilendirme, bir ihlalden sonra eklenmiş değil, ilk günden ince tanelidir."
         },
         {
           "icon": "git-fork",
           "h": "Varsayılan olarak açık",
-          "p": "Araçlarımız açık kaynaktır ve bulgularımız herkese açıktır. Önemliyse okuyabilir, çalıştırabilir, çatallayabilir ve üzerine inşa edebilirsiniz. Amaç yeniden üretilebilirliktir — yeniden üretemediğiniz bir sonuç bir görüştür."
+          "p": "Araçlarımız açık kaynak, bulgularımız kamuya açıktır. Önemliyse, onu okuyabilir, çalıştırabilir, çatallayabilir ve üzerine inşa edebilirsiniz. Mesele yeniden üretilebilirliktir — yeniden üretemediğiniz bir sonuç bir görüştür."
         },
         {
           "icon": "rocket",
           "h": "Sahaya çıkar, biriktirme",
-          "p": "İnşa ederek ve sahaya çıkararak araştırıyoruz; laboratuvar ve ürünler birbirini besler. Amaç, doğru yolu kolay yol yapmaktır — standardı kuran, güncel tutan ve geliştiricinin yolundan çekilen araçlar."
+          "p": "İnşa ederek ve sahaya çıkararak araştırırız; laboratuvar ve ürünler birbirini besler. Amaç, doğru yolu kolay yol yapmaktır — standardı kuran, güncel tutan ve geliştiricinin yolundan çekilen araçlar."
         }
       ]
     },
     "cta": {
-      "title": "Asgari kuralları kodda görün.",
+      "title": "Temelleri kodda gör.",
       "p": "Yukarıdaki ilkeler, Claude Code için kurulabilir mühendislik becerileri olarak kodlanmıştır — ve kaynağın tamamı GitHub'da.",
       "button": "Becerilere göz at",
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "Uygulama — schematize CLI — schematize.org",
+      "desc": "schematize, Claude Code için mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran bir Rust komut satırı uygulamasıdır (masaüstü uygulaması dahil). Linux'a tek komutla kurun ya da macOS için indirin."
+    },
+    "hero": {
+      "kicker": "Uygulama",
+      "h1": "Tüm iş akışı için tek bir CLI.",
+      "sub": "schematize, canlı bir katalogdan mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran bir Rust komut satırı uygulamasıdır — masaüstü uygulaması dahil: kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme."
+    },
+    "install": {
+      "title": "Linux'a kurulum",
+      "sub": "Tek komut. Debian, Ubuntu ve Linux Mint (.deb); openSUSE, Fedora ve RHEL (.rpm); ya da statik bir ikili dosya. Makinede kaynaktan derlenir — açık kaynak, her zaman main ile eşleşir.",
+      "terminal": "Bir terminalde:"
+    },
+    "features": {
+      "title": "Uygulama neler yapar",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Becerileri kur ve sürümle",
+          "p": "Canlı bir uzak katalogdan — tek komut tüm seti çeker ve güncel tutar. Yeni beceriler hiçbir şeyi yeniden kurmadan belirir."
+        },
+        {
+          "icon": "monitor",
+          "h": "Masaüstü uygulaması dahil",
+          "p": "Becerilere göz atmak, onları kurmak ve güncellemek için bir pencere — önceden derlenmiş gelir, derleme araçları gerekmez."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Kurulumunuzu teşhis edin, kendini güncelleyin ve her şeyi CLI'dan tek bakışta görün."
+        },
+        {
+          "icon": "radar",
+          "h": "Yerleşik ajan",
+          "p": "Yeni beceri sürümlerini ve blog gönderilerini izler ve sizi masaüstünde yerel olarak bilgilendirir."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "İndirmeler",
+      "sub": "schematize'ı macOS veya Linux'a kurun — masaüstü uygulaması onunla birlikte gelir.",
+      "mac": "macOS · Apple Silicon (.app). İndirin, açın ve sağ tıklayın → Aç.",
+      "deb": "Debian, Ubuntu, Linux Mint — .deb (CLI + masaüstü uygulaması).",
+      "rpm": "openSUSE, Fedora, RHEL — .rpm (CLI + masaüstü uygulaması).",
+      "download": "İndir",
+      "releases": "Tüm sürümler",
+      "unsigned": "macOS uygulaması henüz kod imzalı değil — işletim sistemi ilk açılışta tek seferlik bir “doğrulanmamış” uyarısı gösterir (sağ tıklayın → Aç)."
+    },
+    "how": {
+      "title": "Nasıl çalışır",
+      "sub": "Uygulama, GitHub'daki canlı bir dizini (catalog.json) okur, dolayısıyla yeni bir beceri yayımlamak yalnızca bir giriş eklemektir — CLI yeniden derlemesi yok.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Uygulamayı kur",
+          "p": "Tek komut, schematize CLI'ı ve masaüstü uygulamasını Linux'a kurar (.deb / .rpm / ikili dosya) ya da macOS derlemesini alın."
+        },
+        {
+          "icon": "blocks",
+          "h": "Becerileri kur",
+          "p": "Her beceriyi .claude/ dizinine çekmek için schematize install --all çalıştırın ya da slug ile birini kurun — kataloğa skills.schematize.org adresinden göz atın."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Güncel kal",
+          "p": "Yerleşik ajan, bir beceri veya uygulama güncellendiğinde sizi bilgilendirir; schematize upgrade kendini günceller."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Becerilere göz at.",
+      "p": "Uygulama becerileri açık katalogdan kurar — göz atın ve projenizin ihtiyacı olanı seçin.",
+      "button": "Kataloğu aç",
       "url": "https://skills.schematize.org"
     }
   },
@@ -299,25 +378,25 @@
   },
   "about": {
     "meta": {
-      "title": "Hakkında — schematize.org",
+      "title": "Hakkımızda — schematize.org",
       "desc": "Schematize hakkında: schematize.org'un arkasındaki şirket ve açık kaynak laboratuvarı. Yasal ad, tescil ve kurumsal ayrıntılar."
     },
     "hero": {
-      "kicker": "Hakkında",
+      "kicker": "Hakkımızda",
       "h1": "schematize'ın arkasındaki laboratuvar ve şirket.",
-      "sub": "schematize.org, Schematize'ın açık kaynak ve teknoloji araştırma yuvasıdır — yapay zeka ajanları için ve onlarla birlikte, açıkça mühendislik araçları geliştiren bir teknoloji şirketi."
+      "sub": "schematize.org, Schematize'ın açık kaynak ve teknoloji araştırma evidir — yapay zeka ajanları için ve onlarla birlikte, açıkça mühendislik araçları inşa eden bir teknoloji şirketi."
     },
     "who": {
       "title": "Biz kimiz",
-      "p1": "Schematize, bir Brezilya teknoloji şirketidir. Yapay zeka ajanlarıyla yazılan yazılımı doğru, güvenli ve sürdürülebilir kılan açık kaynak araçlar ve normatif mühendislik standartları geliştiriyor — ve yol boyunca öğrendiklerimizi yayımlıyoruz.",
-      "p2": "Kurumsal ve açık kaynak olan her şey artık tek bir yuvada yaşıyor: schematize.org. Kaynak kodumuz GitHub'da herkese açık ve araçlarımız schematize CLI aracılığıyla kurulur."
+      "p1": "Schematize bir Brezilya teknoloji şirketidir. Yapay zeka ajanlarıyla yazılan yazılımı doğru, güvenli ve sürdürülebilir kılan açık kaynak araçlar ve normatif mühendislik standartları inşa ediyor — ve yol boyunca öğrendiklerimizi yayımlıyoruz.",
+      "p2": "Kurumsal ve açık kaynak olan her şey artık tek bir evde yaşıyor: schematize.org. Kaynak kodumuz GitHub'da kamuya açık, araçlarımız da schematize CLI aracılığıyla kuruluyor."
     },
     "mission": {
-      "title": "Bizi yönlendiren",
-      "p": "Ajanların ürettiği yazılımı güvenilir kılmak. Kod doğru, güvenli ve sürdürülebilir değilse hız değersizdir — bu yüzden ajan çıktısını ekiplerin gerçekten üretimde çalıştırabileceği yazılıma dönüştürüyoruz."
+      "title": "Bizi harekete geçiren",
+      "p": "Ajanların inşa ettiği yazılımı güvenilir kılmak. Kod doğru, güvenli ve sürdürülebilir değilse hız değersizdir — bu yüzden ajan çıktısını ekiplerin gerçekten üretimde çalıştırabileceği yazılıma dönüştürüyoruz."
     },
     "facts": {
-      "title": "Şirket bilgileri",
+      "title": "Şirket ayrıntıları",
       "note": "schematize.org'u işleten şirketin kurumsal ve tescil verileri.",
       "labels": {
         "legalName": "Yasal ad",
@@ -331,7 +410,7 @@
       }
     },
     "cta": {
-      "title": "İletişime geçin.",
+      "title": "İletişime geç.",
       "p": "Şirket, projeler veya araştırma hakkında sorularınız mı var? Bize ulaşın ya da kaynağı okuyun.",
       "button": "İletişim"
     }
@@ -339,11 +418,11 @@
   "contact": {
     "meta": {
       "title": "İletişim — schematize.org",
-      "desc": "Schematize ile iletişime geçin: schematize.org'un arkasındaki şirket ve açık kaynak laboratuvarının kurumsal iletişim kanalları."
+      "desc": "Schematize ile iletişime geçin: schematize.org'un arkasındaki şirket ve açık kaynak laboratuvarı için kurumsal iletişim kanalları."
     },
     "hero": {
       "kicker": "İletişim",
-      "h1": "Bizimle konuşun.",
+      "h1": "Bizimle konuş.",
       "sub": "Çalışmaya ulaşmanın en iyi yeri, onun yaşadığı yerdir. Size uygun kanalı seçin."
     },
     "channels": {
@@ -352,35 +431,35 @@
         {
           "icon": "mail",
           "h": "Kurumsal ve idari",
-          "p": "Şirket, faturalama ve kurumsal konular için doğrudan bize e-posta gönderin.",
+          "p": "Şirket, faturalama ve kurumsal konular için bize doğrudan e-posta gönderin.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
         {
           "icon": "github",
           "brand": true,
-          "h": "Kaynak ve issue'lar",
-          "p": "Hataları bildirin, issue açın veya GitHub'daki açık kaynak projelere katkıda bulunun.",
+          "h": "Kaynak ve sorunlar",
+          "p": "Hataları bildirin, sorun açın ya da GitHub'daki açık kaynak projelere katkıda bulunun.",
           "href": "https://github.com/schematizeme",
           "label": "github.com/schematizeme"
         },
         {
           "icon": "shield-alert",
-          "h": "Güvenlik ve sorumlu ifşa",
-          "p": "Araçlarımızdan birinde bir zafiyet mi buldunuz? Özel olarak bildirin, düzeltme ve ifşa konusunda sizinle birlikte çalışalım.",
+          "h": "Güvenlik ve sorumlu açıklama",
+          "p": "Araçlarımızdan birinde bir güvenlik açığı mı buldunuz? Bunu özel olarak bildirin, düzeltme ve açıklama için sizinle birlikte çalışalım.",
           "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
           "label": "Özel olarak bildir"
         },
         {
           "icon": "blocks",
           "h": "Beceri kataloğu",
-          "p": "Claude Code için mühendislik becerilerine göz atın ve kurun.",
+          "p": "Claude Code için mühendislik becerilerine göz atın ve onları kurun.",
           "href": "https://skills.schematize.org",
           "label": "skills.schematize.org"
         }
       ]
     },
-    "note": "Bizimle iletişime geçerek, gönderdiğiniz verileri yalnızca talebinize yanıt vermek amacıyla işlediğimizi kabul etmiş olursunuz. Gizlilik Politikası'na bakın."
+    "note": "Bizimle iletişime geçerek, gönderdiğiniz verileri yalnızca talebinize yanıt vermek için işlediğimizi kabul edersiniz. Gizlilik Politikası'na bakın."
   },
   "legal": {
     "meta": {
@@ -390,10 +469,10 @@
     "hero": {
       "kicker": "Yasal",
       "h1": "Yasal merkez",
-      "sub": "Bu web sitesini ve hizmetlerimizi düzenleyen politikalar. Şirket bilgileri ve yürürlük tarihi her belgede yer alır."
+      "sub": "Bu web sitesini ve hizmetlerimizi yöneten politikalar. Şirket verileri ve yürürlük tarihi her belgede yer alır."
     },
-    "disclaimer": "Çalışma taslağı — hukuki tavsiye değildir. Bu belgeler, hukuk müşaviri tarafından incelenen yapısal bir iskelettir ve yürürlüğe girmeden önce değişebilir. [REVISAR: advogado]",
-    "effective": "Yürürlük tarihi",
+    "disclaimer": "Çalışma taslağı — hukuki tavsiye değildir. Bu belgeler avukat incelemesindeki yapısal bir iskelettir ve yürürlüğe girmeden önce değişebilir. [REVISAR: advogado]",
+    "effective": "Şu tarihten beri yürürlükte",
     "effectiveDate": "2026-08-19",
     "controllerLabel": "Veri sorumlusu",
     "contactLabel": "İletişim",
@@ -413,12 +492,12 @@
         },
         {
           "h": "Gizlilik Politikası",
-          "p": "Kişisel verileri Brezilya LGPD kapsamında nasıl ele aldığımız.",
+          "p": "Kişisel verileri Brezilya'nın LGPD'si kapsamında nasıl işlediğimiz.",
           "slug": "legal/privacy"
         },
         {
           "h": "Çerez Politikası",
-          "p": "Bu sitenin kullandığı çerezler ve benzeri teknolojiler ile bunların nasıl yönetileceği.",
+          "p": "Bu sitenin kullandığı çerezler ve benzer teknolojiler ve bunları nasıl yöneteceğiniz.",
           "slug": "legal/cookies"
         }
       ]
@@ -434,12 +513,12 @@
         "sections": [
           { "h": "1. Kabul", "p": "schematize.org'a erişerek bu Kullanım Koşulları'nı kabul edersiniz. Kabul etmiyorsanız lütfen siteyi kullanmayın." },
           { "h": "2. Sitenin sunduğu", "p": "schematize.org, açık kaynak projelerimizi ve teknoloji araştırmamızı sunan bilgilendirici ve kurumsal bir sitedir. Bir mağaza değildir." },
-          { "h": "3. Fikri mülkiyet", "p": "schematize markası ve site içeriği korunmaktadır. Açık kaynak projelerimiz, GitHub'daki her deponun belirttiği koşullar altında lisanslanmıştır." },
-          { "h": "4. Kabul edilebilir kullanım", "p": "Siteyi kötüye kullanmamayı, işleyişini bozmaya çalışmamayı veya yasadışı amaçlarla kullanmamayı kabul edersiniz." },
-          { "h": "5. Üçüncü taraf bağlantıları", "p": "Site, üçüncü taraf adreslerine (örneğin GitHub) bağlantı verir. Üçüncü taraf içeriğinden sorumlu değiliz." },
-          { "h": "6. Sorumluluk reddi ve sınırlaması", "p": "Site herhangi bir garanti olmaksızın \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
-          { "h": "7. Değişiklikler", "p": "Bu koşulları güncelleyebiliriz; yukarıdaki yürürlük tarihi mevcut sürümü yansıtır." },
-          { "h": "8. Geçerli hukuk ve yetkili mahkeme", "p": "Bu koşullar Brezilya yasalarına tabidir. [REVISAR: advogado]" }
+          { "h": "3. Fikri mülkiyet", "p": "schematize markası ve site içeriği korunmaktadır. Açık kaynak projelerimiz, GitHub'daki her depoda belirtilen koşullar altında lisanslanmıştır." },
+          { "h": "4. Kabul edilebilir kullanım", "p": "Siteyi kötüye kullanmamayı, işleyişini bozmaya çalışmamayı ya da hukuka aykırı amaçlarla kullanmamayı kabul edersiniz." },
+          { "h": "5. Üçüncü taraf bağlantıları", "p": "Site, üçüncü taraf hedeflere (örneğin GitHub) bağlantı verir. Üçüncü taraf içeriğinden sorumlu değiliz." },
+          { "h": "6. Sorumluluk reddi ve sınırlandırılması", "p": "Site, garanti olmaksızın \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
+          { "h": "7. Değişiklikler", "p": "Bu koşulları güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." },
+          { "h": "8. Uygulanacak hukuk ve yetkili mahkeme", "p": "Bu koşullar Brezilya yasalarına tabidir. [REVISAR: advogado]" }
         ]
       },
       "termsService": {
@@ -450,53 +529,53 @@
         "h1": "Hizmet Koşulları",
         "sub": "Araçlarımızı ve hizmetlerimizi kapsayan sözleşme.",
         "sections": [
-          { "h": "1. Taraflar ve tanımlar", "p": "Bu koşullar, Schematize ile araçlarımızın ve hizmetlerimizin kullanıcıları arasındaki ilişkiyi düzenler." },
-          { "h": "2. Kapsam", "p": "Açık kaynak araçlarımız (schematize CLI ve mühendislik becerileri gibi) GitHub'daki ilgili açık kaynak lisansları kapsamında sunulur." },
-          { "h": "3. Hesaplar", "p": "Bir hizmet kimlik doğrulama gerektirdiğinde, bu auth.schematize.org üzerinden sağlanır. Kimlik bilgilerinizi güvende tutmaktan siz sorumlusunuz." },
-          { "h": "4. Ücretler", "p": "Açık kaynak araçlar ücretsizdir. Ücretli her hizmet, sözleşme anında açıklanır. [REVISAR: advogado]" },
-          { "h": "5. Tarafların yükümlülükleri", "p": "Hizmetleri yasalara uygun kullanmayı kabul edersiniz; biz de bunları makul özenle sunmayı kabul ederiz." },
+          { "h": "1. Taraflar ve tanımlar", "p": "Bu koşullar, Schematize ile araçlarımızın ve hizmetlerimizin kullanıcıları arasındaki ilişkiyi yönetir." },
+          { "h": "2. Kapsam", "p": "Açık kaynak araçlarımız (schematize CLI ve mühendislik becerileri gibi), GitHub'daki ilgili açık kaynak lisansları altında sunulur." },
+          { "h": "3. Hesaplar", "p": "Bir hizmet kimlik doğrulama gerektirdiğinde, bu auth.schematize.org aracılığıyla sağlanır. Kimlik bilgilerinizi güvende tutmaktan siz sorumlusunuz." },
+          { "h": "4. Ücretler", "p": "Açık kaynak araçlar ücretsizdir. Herhangi bir ücretli hizmet, sözleşme yapılırken açıklanır. [REVISAR: advogado]" },
+          { "h": "5. Tarafların yükümlülükleri", "p": "Hizmetleri hukuka uygun kullanmayı kabul edersiniz; biz de bunları makul özenle sunmayı kabul ederiz." },
           { "h": "6. Askıya alma ve fesih", "p": "Kötüye kullanım veya güvenlik riski durumunda erişimi askıya alabiliriz." },
-          { "h": "7. Garantiler ve sorumluluk sınırlaması", "p": "Hizmetler, yasaların izin verdiği ölçüde \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
-          { "h": "8. Gizlilik", "p": "Kişisel veriler, Gizlilik Politikamız kapsamında işlenir." },
-          { "h": "9. Geçerli hukuk ve yetkili mahkeme", "p": "Brezilya yasalarına tabidir. [REVISAR: advogado]" }
+          { "h": "7. Garantiler ve sorumluluk sınırlandırması", "p": "Hizmetler, yasaların izin verdiği ölçüde \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
+          { "h": "8. Gizlilik", "p": "Kişisel veriler Gizlilik Politikamız kapsamında işlenir." },
+          { "h": "9. Uygulanacak hukuk ve yetkili mahkeme", "p": "Brezilya yasalarına tabidir. [REVISAR: advogado]" }
         ]
       },
       "privacy": {
         "meta": {
           "title": "Gizlilik Politikası — schematize.org",
-          "desc": "schematize.org'un Brezilya LGPD kapsamında gizlilik politikası: veri sorumlusu, toplanan veriler, amaç, hukuki dayanak, saklama ve veri sahibi hakları."
+          "desc": "Brezilya'nın LGPD'si kapsamında schematize.org gizlilik politikası: veri sorumlusu, toplanan veriler, amaç, hukuki dayanak, saklama ve veri sahibi hakları."
         },
         "h1": "Gizlilik Politikası",
-        "sub": "Kişisel verileri Brezilya Genel Veri Koruma Yasası (LGPD) kapsamında nasıl ele aldığımız.",
+        "sub": "Kişisel verileri Brezilya'nın Genel Veri Koruma Yasası (LGPD) kapsamında nasıl işlediğimiz.",
         "sections": [
           { "h": "1. Veri sorumlusu", "p": "Veri sorumlusu Schematize Ltda - EPP'dir (CNPJ 53.942.996/0001-10), São Paulo, SP, Brezilya." },
           { "h": "2. Veri Koruma Görevlisi (DPO)", "p": "Gizlilik konuları ve haklarınızı kullanmak için contabil@schematize.me ile iletişime geçin. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Topladığımız veriler", "p": "Bu, giriş veya form içermeyen bilgilendirici bir sitedir; yalnızca sayfaları sunmak ve siteyi güvende tutmak için gereken asgari teknik verileri toplarız. Bize e-posta gönderirseniz, gönderdiğiniz verileri işleriz." },
-          { "h": "4. Amaç", "p": "Web sitesini sunmak ve güvenli kılmak ve bize gönderdiğiniz mesajlara yanıt vermek." },
-          { "h": "5. Hukuki dayanak", "p": "Siteyi işletmek ve güvenli kılmak için meşru menfaat; bizimle iletişime geçtiğinizde rıza veya talebin yerine getirilmesi (LGPD md. 7). [REVISAR: advogado]" },
-          { "h": "6. Paylaşım", "p": "Operatör olarak hareket eden altyapı ve barındırma sağlayıcılarını kullanırız; kişisel veri satmayız." },
-          { "h": "7. Uluslararası aktarım", "p": "Bazı sağlayıcılar verileri güvencelerle Brezilya dışında işleyebilir. [REVISAR: advogado]" },
-          { "h": "8. Saklama", "p": "Verileri yalnızca yukarıdaki amaçlar için gerekli olduğu veya yasaların gerektirdiği süre boyunca saklarız." },
+          { "h": "3. Topladığımız veriler", "p": "Bu, girişi veya formu olmayan bilgilendirici bir sitedir; yalnızca sayfaları sunmak ve siteyi güvende tutmak için gereken asgari teknik verileri toplarız. Bize e-posta gönderirseniz, gönderdiğiniz verileri işleriz." },
+          { "h": "4. Amaç", "p": "Web sitesini sunmak ve güvence altına almak ve gönderdiğiniz mesajlara yanıt vermek." },
+          { "h": "5. Hukuki dayanak", "p": "Siteyi işletmek ve güvence altına almak için meşru menfaat; bizimle iletişime geçtiğinizde onay veya talebin ifası (LGPD md. 7). [REVISAR: advogado]" },
+          { "h": "6. Paylaşım", "p": "İşleyen olarak hareket eden altyapı ve barındırma sağlayıcıları kullanırız; kişisel verileri satmayız." },
+          { "h": "7. Uluslararası aktarım", "p": "Bazı sağlayıcılar verileri, güvencelerle birlikte Brezilya dışında işleyebilir. [REVISAR: advogado]" },
+          { "h": "8. Saklama", "p": "Verileri yalnızca yukarıdaki amaçlar için gerekli olduğu sürece ya da yasanın gerektirdiği ölçüde saklarız." },
           { "h": "9. Güvenlik", "p": "Verileri korumak için makul teknik ve organizasyonel önlemler uygularız." },
-          { "h": "10. Haklarınız", "p": "LGPD md. 18 uyarınca teyit, erişim, düzeltme, anonimleştirme, taşınabilirlik, silme ve paylaşım hakkında bilgi talep edebilir ve rızayı geri çekebilirsiniz — contabil@schematize.me adresine yazarak." },
-          { "h": "11. Çerezler", "p": "Çerezler ve benzeri teknolojiler hakkında ayrıntılar için Çerez Politikamıza bakın." },
-          { "h": "12. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi mevcut sürümü yansıtır." }
+          { "h": "10. Haklarınız", "p": "LGPD md. 18 kapsamında; onay, erişim, düzeltme, anonimleştirme, taşınabilirlik, silme ve paylaşım hakkında bilgi talep edebilir ve onayı geri çekebilirsiniz — contabil@schematize.me adresine e-posta göndererek." },
+          { "h": "11. Çerezler", "p": "Çerezler ve benzer teknolojilerle ilgili ayrıntılar için Çerez Politikamıza bakın." },
+          { "h": "12. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." }
         ]
       },
       "cookies": {
         "meta": {
           "title": "Çerez Politikası — schematize.org",
-          "desc": "schematize.org'un çerez politikası: çerez kategorileri, amaçları ve bunların nasıl yönetileceği."
+          "desc": "schematize.org çerez politikası: çerez kategorileri, amaçları ve bunları nasıl yöneteceğiniz."
         },
         "h1": "Çerez Politikası",
-        "sub": "Bu sitenin kullandığı çerezler ve benzeri teknolojiler.",
+        "sub": "Bu sitenin kullandığı çerezler ve benzer teknolojiler.",
         "sections": [
-          { "h": "1. Çerezler nedir", "p": "Çerezler, cihazınızda depolanan ve bir sitenin çalışmasına ve tercihleri hatırlamasına yardımcı olan küçük dosyalardır." },
-          { "h": "2. Kategoriler", "p": "Zorunlu: sitenin çalışması için gereklidir (örneğin dilinizi hatırlamak). Performans/analitik, işlevsel ve pazarlama çerezleri yalnızca sizin açık rızanızla kullanılır." },
-          { "h": "3. Kullandıklarımız", "p": "Bu site, seçtiğiniz dili korumak için bir dil tercihini yerel olarak depolar. Rıza olmadan zorunlu olmayan analitik veya pazarlama çerezleri çalıştırmaz. [REVISAR: negócio]" },
-          { "h": "4. Rıza", "p": "Zorunlu olmayan çerezler açık rıza gerektirir; zorunlu çerezler rıza olmadan çalışır." },
+          { "h": "1. Çerezler nedir", "p": "Çerezler, bir sitenin çalışmasına ve tercihleri hatırlamasına yardımcı olan, cihazınızda saklanan küçük dosyalardır." },
+          { "h": "2. Kategoriler", "p": "Zorunlu: sitenin çalışması için gereklidir (örneğin dilinizi hatırlamak). Performans/analitik, işlevsel ve pazarlama çerezleri yalnızca opt-in onayınızla kullanılır." },
+          { "h": "3. Neyi kullanıyoruz", "p": "Bu site, seçtiğiniz dili korumak için bir dil tercihini yerel olarak saklar. Onay olmadan zorunlu olmayan analitik veya pazarlama çerezleri çalıştırmaz. [REVISAR: negócio]" },
+          { "h": "4. Onay", "p": "Zorunlu olmayan çerezler opt-in onayı gerektirir; zorunlu çerezler onay olmadan çalışır." },
           { "h": "5. Çerezleri yönetme", "p": "Çerezleri tarayıcı ayarlarınızdan temizleyebilir veya engelleyebilirsiniz; zorunlu depolamayı engellemek siteyi etkileyebilir." },
-          { "h": "6. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi mevcut sürümü yansıtır." }
+          { "h": "6. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." }
         ]
       }
     }
@@ -509,20 +588,21 @@
     "hero": {
       "kicker": "Site haritası",
       "h1": "Site haritası",
-      "sub": "schematize.org'daki tüm genel sayfalar, bölümlere göre gruplanmış."
+      "sub": "schematize.org'daki her genel sayfa, bölümlere göre gruplanmış."
     },
     "groups": [
       {
         "h": "Kurumsal",
         "links": [
           { "slug": "", "label": "Ana sayfa" },
-          { "slug": "about", "label": "Hakkında" },
+          { "slug": "about", "label": "Hakkımızda" },
           { "slug": "contact", "label": "İletişim" }
         ]
       },
       {
         "h": "Çalışma",
         "links": [
+          { "slug": "software", "label": "Uygulama" },
           { "slug": "projects", "label": "Projeler" },
           { "slug": "research", "label": "Araştırma" },
           { "slug": "principles", "label": "İlkeler" }

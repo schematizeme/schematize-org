@@ -1,12 +1,13 @@
 {
   "nav": {
+    "software": "Aplikasi",
     "projects": "Proyek",
     "research": "Riset",
     "principles": "Prinsip",
     "about": "Tentang",
     "contact": "Kontak",
     "legal": "Legal",
-    "skills": "Skills",
+    "catalog": "Katalog Skills",
     "academy": "Academy",
     "login": "Masuk / Daftar",
     "cta": "Lihat sumber",
@@ -24,19 +25,19 @@
   "home": {
     "meta": {
       "title": "schematize.org — lab riset open-source & rekayasa AI",
-      "desc": "schematize.org adalah lab open-source dan riset teknologi di balik schematize: perangkat yang dibangun secara terbuka dan riset tentang rekayasa dengan agen AI. Jelajahi karya kami."
+      "desc": "schematize.org adalah lab open-source dan riset teknologi di balik schematize: perkakas yang dibangun secara terbuka dan riset tentang rekayasa dengan agen AI. Jelajahi karya kami."
     },
     "hero": {
       "kicker": "Open-source & riset",
       "h1": "Rekayasa untuk agen AI, dibangun secara terbuka.",
-      "sub": "schematize.org adalah tempat kami mengembangkan perangkat open-source dan berbagi riset teknologi tentang cara membangun, mengamankan, dan mengorkestrasi agen AI yang tangguh di dunia nyata.",
+      "sub": "schematize.org adalah tempat kami mengembangkan perkakas open-source dan berbagi riset teknologi tentang cara membangun, mengamankan, dan mengorkestrasi agen AI yang tangguh di dunia nyata.",
       "cta1": "Jelajahi proyek",
       "cta2": "Baca riset"
     },
     "mission": {
       "kicker": "Misi",
-      "title": "Menjadikan perangkat lunak buatan agen dapat dipercaya.",
-      "p": "Agen AI dapat menulis banyak kode dengan cepat — tetapi kecepatan tidak berarti jika kode itu tidak benar, aman, dan mudah dipelihara. Kami membangun perangkat terbuka dan standar bersama yang mengubah keluaran agen menjadi perangkat lunak yang benar-benar dapat dijalankan di produksi, dan kami mempublikasikan apa yang kami pelajari sepanjang jalan."
+      "title": "Membuat perangkat lunak buatan agen dapat dipercaya.",
+      "p": "Agen AI dapat menulis banyak kode dengan cepat — tetapi kecepatan tidak berarti jika tidak benar, aman, dan dapat dipelihara. Kami membangun perkakas terbuka dan standar bersama yang mengubah keluaran agen menjadi perangkat lunak yang benar-benar dapat Anda jalankan di produksi, dan kami mempublikasikan apa yang kami pelajari di sepanjang jalan."
     },
     "pillars": {
       "title": "Apa yang kami kerjakan",
@@ -45,7 +46,7 @@
           "key": "projects",
           "icon": "package",
           "h": "Proyek open-source",
-          "p": "CLI schematize, katalog skill rekayasa untuk Claude Code, dan perkakas yang membuat semuanya dapat direproduksi — semua dapat dibaca, di-fork, dan gratis."
+          "p": "schematize CLI, katalog skill rekayasa untuk Claude Code, dan perkakas yang membuat semuanya dapat direproduksi — semuanya dapat dibaca, di-fork, dan gratis."
         },
         {
           "key": "research",
@@ -57,7 +58,7 @@
           "key": "principles",
           "icon": "shield-check",
           "h": "Standar rekayasa",
-          "p": "Batas dasar yang tidak dapat ditawar yang membuat keluaran agen dapat dipercaya: keamanan diputuskan di sisi server, pengujian yang membuktikan perilaku, dan jejak audit pada setiap perubahan."
+          "p": "Fondasi yang tidak dapat ditawar yang membuat keluaran agen dapat dipercaya: keamanan diputuskan di sisi server, pengujian yang membuktikan perilaku, dan jejak audit pada setiap perubahan."
         }
       ]
     },
@@ -65,16 +66,16 @@
       "title": "Cara kami bekerja",
       "items": [
         {
-          "h": "Terbuka secara default",
-          "p": "Perangkat kami open-source dan temuan kami bersifat publik. Jika penting, Anda dapat membacanya, menjalankannya, dan membangun di atasnya."
+          "h": "Terbuka secara bawaan",
+          "p": "Perkakas kami open-source dan temuan kami publik. Jika itu penting, Anda dapat membacanya, menjalankannya, dan membangun di atasnya."
         },
         {
           "h": "Ketat",
-          "p": "Standar di atas perasaan: panduan normatif, pengujian nyata, dan keamanan diperlakukan sebagai persyaratan kelas satu — bukan renungan belakangan."
+          "p": "Standar di atas perasaan: playbook normatif, pengujian nyata, dan keamanan diperlakukan sebagai persyaratan kelas satu — bukan renungan belakangan."
         },
         {
           "h": "Praktis",
-          "p": "Riset yang dikirimkan. Semua yang kami publikasikan dimaksudkan untuk mengubah cara tim nyata membangun dengan agen, bukan sekadar mengendap di laci."
+          "p": "Riset yang dirilis. Semua yang kami publikasikan dimaksudkan untuk mengubah cara tim nyata membangun dengan agen, bukan untuk teronggok di laci."
         }
       ]
     },
@@ -85,15 +86,15 @@
     },
     "platforms": {
       "kicker": "Ekosistem",
-      "title": "Tempat karya kami berada",
-      "p": "Semua yang dibangun schematize secara terbuka, tertata di seluruh ekosistem.",
+      "title": "Tempat karyanya berada",
+      "p": "Semua yang schematize bangun secara terbuka, tersusun di seluruh ekosistem.",
       "items": [
         {
-          "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
-          "icon": "blocks",
-          "p": "Katalog skill rekayasa yang membuat agen AI mengikuti standar rumah — dapat dipasang dengan satu perintah."
+          "h": "Aplikasi",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "Aplikasi baris perintah Rust (aplikasi desktop termasuk) yang memasang dan memberi versi skills serta menjalankan overdev — pasang di Linux dengan satu perintah."
         },
         {
           "h": "Riset",
@@ -108,7 +109,7 @@
           "url": "https://github.com/schematizeme",
           "icon": "github",
           "brand": true,
-          "p": "Setiap repositori, secara terbuka. Baca, fork, buka issue — atau pasang dengan CLI schematize."
+          "p": "Setiap repositori, secara terbuka. Baca, fork, buka issue — atau pasang dengan schematize CLI."
         }
       ]
     }
@@ -116,11 +117,11 @@
   "projects": {
     "meta": {
       "title": "Proyek open-source — schematize.org",
-      "desc": "Proyek open-source dari lab schematize: CLI schematize dan katalog skill rekayasa untuk Claude Code. Baca sumbernya, fork, kontribusi."
+      "desc": "Proyek open-source dari lab schematize: schematize CLI dan katalog skill rekayasa untuk Claude Code. Baca sumbernya, fork, berkontribusi."
     },
     "hero": {
       "kicker": "Proyek",
-      "h1": "Perangkat open-source untuk membangun dengan agen AI.",
+      "h1": "Perkakas open-source untuk membangun dengan agen AI.",
       "sub": "Semua yang kami bangun untuk membuat rekayasa berbantuan agen dapat direproduksi dan aman — gratis untuk dibaca, dijalankan, dan di-fork."
     },
     "list": {
@@ -130,14 +131,14 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Aplikasi baris perintah yang mengutamakan Linux, yang memasang dan mengelola versi skill rekayasa untuk Claude Code serta menjalankan overdev — pengembangan berkelanjutan tanpa pengawasan yang tidak berhenti hingga daftar tugas selesai.",
+          "p": "Aplikasi baris perintah yang mengutamakan Linux yang memasang dan memberi versi skill rekayasa untuk Claude Code serta menjalankan overdev — pengembangan berkelanjutan tanpa pengawasan yang tidak berhenti sampai daftar periksa selesai.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
           "icon": "blocks",
           "h": "Skill rekayasa",
-          "p": "Panduan normatif untuk Claude Code — engineering, go, rust, web, seo, node, dan pentest — masing-masing dengan batas dasar yang tidak dapat ditawar untuk keamanan, pengujian, dan arsitektur.",
+          "p": "Playbook normatif untuk Claude Code — engineering, go, rust, web, seo, node, dan pentest — masing-masing dengan fondasi yang tidak dapat ditawar untuk keamanan, pengujian, dan arsitektur.",
           "href": "https://github.com/schematizeme"
         },
         {
@@ -158,7 +159,7 @@
     },
     "cta": {
       "title": "Baca sumbernya.",
-      "p": "Semuanya publik. Beri bintang, fork, buka issue — atau gunakan CLI schematize untuk memasangnya dalam hitungan detik.",
+      "p": "Semuanya publik. Beri star, fork, buka issue — atau gunakan schematize CLI untuk memasangnya dalam hitungan detik.",
       "button": "Buka GitHub"
     }
   },
@@ -170,7 +171,7 @@
     "hero": {
       "kicker": "Riset",
       "h1": "Cara membangun dengan agen AI — dan memercayai hasilnya.",
-      "sub": "Kami mempelajari apa yang membuat rekayasa berbantuan agen andal dan aman, lalu mengubah jawabannya menjadi perangkat dan standar terbuka yang dapat digunakan siapa saja."
+      "sub": "Kami mempelajari apa yang membuat rekayasa berbantuan agen andal dan aman, dan mengubah jawabannya menjadi perkakas dan standar terbuka yang dapat digunakan siapa saja."
     },
     "areas": {
       "title": "Bidang riset",
@@ -178,22 +179,22 @@
         {
           "icon": "workflow",
           "h": "Rekayasa agen yang andal",
-          "p": "Orkestrasi, dekomposisi, dan pengaman yang menjaga agen AI tetap pada tugas sepanjang pekerjaan yang panjang dan bertahap — tanpa berhenti terlalu dini atau menyimpang dari spesifikasi."
+          "p": "Orkestrasi, dekomposisi, dan pengaman yang menjaga agen AI tetap fokus pada tugas melalui pekerjaan panjang berlangkah banyak — tanpa berhenti terlalu dini atau menyimpang dari spesifikasi."
         },
         {
           "icon": "shield-check",
           "h": "Keamanan pengiriman berbantuan AI",
-          "p": "Bagaimana kode buatan agen gagal, cara menangkapnya, dan cara menjadikan secure-by-design sebagai default: IAM, AppSec, dan red-teaming resmi atas apa yang dihasilkan agen."
+          "p": "Bagaimana kode yang ditulis agen gagal, cara menangkapnya, dan cara menjadikan aman-sejak-desain sebagai bawaan: IAM, AppSec, dan red-teaming resmi atas apa yang diproduksi agen."
         },
         {
           "icon": "ruler",
           "h": "Standar & evaluasi",
-          "p": "Apa arti 'baik' untuk keluaran agen, dan cara mengukurnya: panduan normatif, gerbang mutu, dan pengujian yang membuktikan perilaku alih-alih perasaan."
+          "p": "Apa arti 'baik' untuk keluaran agen, dan cara mengukurnya: playbook normatif, gerbang kualitas, dan pengujian yang membuktikan perilaku alih-alih perasaan."
         },
         {
           "icon": "heart-handshake",
           "h": "Pengalaman pengembang",
-          "p": "Menjadikan cara yang benar sebagai cara yang mudah — perkakas yang memasang standar, menjaganya tetap mutakhir, dan tidak menghalangi jalan pengembang."
+          "p": "Menjadikan cara yang benar sebagai cara yang mudah — perkakas yang memasang standar, menjaganya tetap mutakhir, dan menyingkir dari jalan pengembang."
         }
       ]
     },
@@ -203,42 +204,42 @@
         {
           "icon": "git-fork",
           "h": "Secara terbuka",
-          "p": "Temuan dan perangkat dipublikasikan, bukan ditimbun. Reproduktibilitas adalah intinya."
+          "p": "Temuan dan perkakas dipublikasikan, bukan ditimbun. Reproduktibilitas adalah intinya."
         },
         {
           "icon": "hammer",
           "h": "Berakar pada praktik",
-          "p": "Kami meneliti dengan membangun dan mengirim — lab dan produk saling memberi umpan balik."
+          "p": "Kami meneliti dengan membangun dan merilis — lab dan produk saling menyuburkan."
         },
         {
           "icon": "lock",
-          "h": "Keamanan utama",
-          "p": "Jika belum aman untuk dijalankan, berarti belum selesai. Pemodelan ancaman dan pengujian adalah bagian dari metode."
+          "h": "Keamanan lebih dulu",
+          "p": "Jika tidak aman untuk dijalankan, itu belum selesai. Pemodelan ancaman dan pengujian adalah bagian dari metode."
         }
       ]
     },
     "cta": {
       "title": "Ikuti risetnya.",
-      "p": "Kami menuliskan apa yang kami pelajari di blog, dan perangkatnya mendarat di GitHub.",
+      "p": "Kami menuliskan apa yang kami pelajari di blog, dan perkakasnya mendarat di GitHub.",
       "button": "Baca blog"
     }
   },
   "principles": {
     "meta": {
       "title": "Prinsip — cara kami membangun — schematize.org",
-      "desc": "Prinsip rekayasa lab schematize: batas dasar yang tidak dapat ditawar yang membuat perangkat lunak yang ditulis dengan agen AI benar, aman, dan mudah dipelihara — keamanan diputuskan di sisi server, pengujian yang membuktikan perilaku, jejak audit pada setiap perubahan, dan desain yang mengutamakan identitas."
+      "desc": "Prinsip rekayasa lab schematize: fondasi yang tidak dapat ditawar yang membuat perangkat lunak yang ditulis dengan agen AI benar, aman, dan dapat dipelihara — keamanan diputuskan di sisi server, pengujian yang membuktikan perilaku, jejak audit pada setiap perubahan, dan desain yang mengutamakan identitas."
     },
     "hero": {
       "kicker": "Prinsip",
       "h1": "Cara kami membangun.",
-      "sub": "Agen AI dapat menghasilkan kode dengan cepat, tetapi kecepatan tanpa disiplin hanya mengirim bug lebih cepat. Inilah batas dasar yang tidak dapat ditawar yang kami terapkan pada setiap proyek — batas dasar yang sama yang dikodekan oleh skill open-source kami sehingga agen mengikutinya secara default."
+      "sub": "Agen AI dapat menghasilkan kode dengan cepat, tetapi kecepatan tanpa disiplin hanya merilis bug lebih cepat. Ini adalah fondasi yang tidak dapat ditawar yang kami pegang untuk setiap proyek — fondasi yang sama yang di-encode oleh skill open-source kami sehingga agen mengikutinya secara bawaan."
     },
     "intro": {
       "title": "Standar di atas perasaan",
-      "p": "Sebuah prinsip hanya berarti jika mesin dapat memeriksanya. Setiap batas dasar di bawah ini dipetakan ke gerbang konkret dalam perkakas kami — sebuah pengujian, aturan tinjauan, artefak wajib — sehingga 'selesai' dibuktikan, bukan diklaim. Inilah yang dipasang skill rekayasa kami ke dalam sebuah proyek, dan yang terus dipertajam oleh riset kami."
+      "p": "Sebuah prinsip hanya berarti jika mesin dapat memeriksanya. Setiap fondasi di bawah ini terpetakan ke gerbang konkret dalam perkakas kami — sebuah pengujian, aturan tinjauan, artefak wajib — sehingga 'selesai' dibuktikan, bukan sekadar diklaim. Inilah yang dipasang skill rekayasa kami ke dalam proyek, dan yang terus dipertajam oleh riset kami."
     },
     "floors": {
-      "title": "Batas dasar yang tidak dapat ditawar",
+      "title": "Fondasi yang tidak dapat ditawar",
       "items": [
         {
           "icon": "server",
@@ -248,34 +249,112 @@
         {
           "icon": "flask-conical",
           "h": "Pengujian membuktikan perilaku",
-          "p": "Sebuah pengujian menegaskan apa yang dilakukan perangkat lunak — konten, keadaan, interaksi, jalur galat, dan jalur kosong — bukan sekadar bahwa ia dirender. Cakupan yang tidak gagal ketika perilaku rusak bukanlah cakupan. Gerbang mutu memblokir merge sama seperti build yang rusak."
+          "p": "Sebuah pengujian menegaskan apa yang dilakukan perangkat lunak — konten, keadaan, interaksi, jalur galat dan kosong — bukan sekadar bahwa ia tampil. Cakupan yang tidak gagal saat perilaku rusak bukanlah cakupan. Gerbang kualitas memblokir merge seperti halnya build yang rusak."
         },
         {
           "icon": "archive",
           "h": "Setiap perubahan meninggalkan jejak audit",
-          "p": "Tidak ada pekerjaan yang selesai sampai tercatat: apa yang berubah, mengapa, apa yang diputuskan, dan apa yang ditolak. Arsip adalah bagian dari hasil kerja, bukan urusan administratif setelahnya — sehingga penalarannya bertahan melampaui sesi yang menghasilkannya."
+          "p": "Tidak ada pekerjaan yang selesai sampai dicatat: apa yang berubah, mengapa, apa yang diputuskan, dan apa yang ditolak. Arsip adalah bagian dari hasil, bukan kertas kerja sesudahnya — sehingga penalaran bertahan melampaui sesi yang menghasilkannya."
         },
         {
           "icon": "fingerprint",
           "h": "Identitas didahulukan",
-          "p": "Setiap proyek dimulai dengan IAM yang kokoh: identitas bukanlah email, akses berbasis relasi dan multi-tenant secara default, dan tanpa kata sandi adalah tujuannya. Otorisasi bersifat granular sejak hari pertama, bukan ditambahkan setelah terjadi pelanggaran."
+          "p": "Setiap proyek dimulai dengan IAM yang kokoh: identitas bukan email, akses berbasis relasi dan multi-tenant secara bawaan, dan tanpa kata sandi adalah tujuannya. Otorisasi granular sejak hari pertama, bukan ditambal setelah pelanggaran."
         },
         {
           "icon": "git-fork",
-          "h": "Terbuka secara default",
-          "p": "Perangkat kami open-source dan temuan kami bersifat publik. Jika penting, Anda dapat membacanya, menjalankannya, mem-fork-nya, dan membangun di atasnya. Reproduktibilitas adalah intinya — hasil yang tidak dapat Anda reproduksi hanyalah opini."
+          "h": "Terbuka secara bawaan",
+          "p": "Perkakas kami open-source dan temuan kami publik. Jika itu penting, Anda dapat membacanya, menjalankannya, mem-fork-nya, dan membangun di atasnya. Reproduktibilitas adalah intinya — hasil yang tidak dapat Anda reproduksi hanyalah pendapat."
         },
         {
           "icon": "rocket",
-          "h": "Kirim, jangan timbun",
-          "p": "Kami meneliti dengan membangun dan mengirim; lab dan produk saling memberi umpan balik. Tujuannya adalah menjadikan cara yang benar sebagai cara yang mudah — perkakas yang memasang standar, menjaganya tetap mutakhir, dan tidak menghalangi jalan pengembang."
+          "h": "Rilis, jangan timbun",
+          "p": "Kami meneliti dengan membangun dan merilis; lab dan produk saling menyuburkan. Tujuannya adalah menjadikan cara yang benar sebagai cara yang mudah — perkakas yang memasang standar, menjaganya tetap mutakhir, dan menyingkir dari jalan pengembang."
         }
       ]
     },
     "cta": {
-      "title": "Lihat batas dasarnya dalam kode.",
-      "p": "Prinsip di atas dikodekan sebagai skill rekayasa yang dapat dipasang untuk Claude Code — dan sumbernya semua ada di GitHub.",
-      "button": "Jelajahi skills",
+      "title": "Lihat fondasinya dalam kode.",
+      "p": "Prinsip-prinsip di atas di-encode sebagai skill rekayasa yang dapat dipasang untuk Claude Code — dan sumbernya semua ada di GitHub.",
+      "button": "Telusuri skill",
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "Aplikasi — schematize CLI — schematize.org",
+      "desc": "schematize adalah aplikasi baris perintah Rust (aplikasi desktop termasuk) yang memasang dan memberi versi skill rekayasa untuk Claude Code serta menjalankan overdev. Pasang di Linux dengan satu perintah, atau unduh untuk macOS."
+    },
+    "hero": {
+      "kicker": "Aplikasi",
+      "h1": "Satu CLI untuk seluruh alur kerja.",
+      "sub": "schematize adalah aplikasi baris perintah Rust — aplikasi desktop termasuk — yang memasang dan memberi versi skill rekayasa dari katalog langsung serta menjalankan overdev: pengembangan berkelanjutan tanpa pengawasan yang tidak berhenti sampai daftar periksa selesai."
+    },
+    "install": {
+      "title": "Pasang di Linux",
+      "sub": "Satu perintah. Debian, Ubuntu, dan Linux Mint (.deb); openSUSE, Fedora, dan RHEL (.rpm); atau biner statis. Ia dibangun dari sumber di mesin — open-source, selalu cocok dengan main.",
+      "terminal": "Di terminal:"
+    },
+    "features": {
+      "title": "Apa yang aplikasi lakukan",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Pasang & beri versi skills",
+          "p": "Dari katalog jarak jauh langsung — satu perintah menarik seluruh set dan menjaganya tetap mutakhir. Skill baru muncul tanpa perlu memasang ulang apa pun."
+        },
+        {
+          "icon": "monitor",
+          "h": "Aplikasi desktop termasuk",
+          "p": "Sebuah jendela untuk menjelajah, memasang, dan memperbarui skills — dikirim pra-bangun, tanpa perlu perkakas build."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Diagnosis penyiapan Anda, perbarui sendiri, dan lihat semuanya sekilas dari CLI."
+        },
+        {
+          "icon": "radar",
+          "h": "Agen residen",
+          "p": "Mengawasi versi skill baru dan pos blog dan memberi tahu Anda secara native di desktop."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Unduhan",
+      "sub": "Pasang schematize di macOS atau Linux — aplikasi desktop dikirim bersamanya.",
+      "mac": "macOS · Apple Silicon (.app). Unduh, ekstrak, dan klik kanan → Open.",
+      "deb": "Debian, Ubuntu, Linux Mint — berkas .deb (CLI + aplikasi desktop).",
+      "rpm": "openSUSE, Fedora, RHEL — berkas .rpm (CLI + aplikasi desktop).",
+      "download": "Unduh",
+      "releases": "Semua rilis",
+      "unsigned": "Aplikasi macOS belum ditandatangani kode — OS menampilkan peringatan \"unverified\" sekali saat peluncuran pertama (klik kanan → Open)."
+    },
+    "how": {
+      "title": "Cara kerjanya",
+      "sub": "Aplikasi membaca indeks langsung (catalog.json) di GitHub, jadi mempublikasikan skill baru hanyalah menambahkan sebuah entri — tanpa membangun ulang CLI.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Pasang aplikasi",
+          "p": "Satu perintah memasang schematize CLI dan aplikasi desktopnya di Linux (.deb / .rpm / biner), atau ambil build macOS."
+        },
+        {
+          "icon": "blocks",
+          "h": "Pasang skills",
+          "p": "Jalankan schematize install --all untuk menarik setiap skill ke .claude/, atau pasang satu per slug — jelajahi katalog di skills.schematize.org."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Tetap mutakhir",
+          "p": "Agen residen memberi tahu Anda saat sebuah skill atau aplikasi diperbarui; schematize upgrade memperbarui diri."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Telusuri skill.",
+      "p": "Aplikasi memasang skills dari katalog terbuka — jelajahi dan pilih yang dibutuhkan proyek Anda.",
+      "button": "Buka katalog",
       "url": "https://skills.schematize.org"
     }
   },
@@ -300,31 +379,31 @@
   "about": {
     "meta": {
       "title": "Tentang — schematize.org",
-      "desc": "Tentang Schematize: perusahaan dan lab open-source di balik schematize.org. Nama hukum, pendaftaran, dan detail institusional."
+      "desc": "Tentang Schematize: perusahaan dan lab open-source di balik schematize.org. Nama legal, registrasi, dan detail institusional."
     },
     "hero": {
       "kicker": "Tentang",
       "h1": "Lab dan perusahaan di balik schematize.",
-      "sub": "schematize.org adalah rumah open-source dan riset teknologi Schematize — perusahaan teknologi yang membangun perangkat rekayasa untuk dan bersama agen AI, secara terbuka."
+      "sub": "schematize.org adalah rumah open-source dan riset teknologi dari Schematize — perusahaan teknologi yang membangun perkakas rekayasa untuk dan bersama agen AI, secara terbuka."
     },
     "who": {
       "title": "Siapa kami",
-      "p1": "Schematize adalah perusahaan teknologi asal Brasil. Kami membangun perangkat open-source dan standar rekayasa normatif yang membuat perangkat lunak yang ditulis dengan agen AI benar, aman, dan mudah dipelihara — dan kami mempublikasikan apa yang kami pelajari sepanjang jalan.",
-      "p2": "Semua hal institusional dan open-source kini berada di satu rumah: schematize.org. Kode sumber kami publik di GitHub, dan perangkat kami dipasang melalui CLI schematize."
+      "p1": "Schematize adalah perusahaan teknologi asal Brasil. Kami membangun perkakas open-source dan standar rekayasa normatif yang membuat perangkat lunak yang ditulis dengan agen AI benar, aman, dan dapat dipelihara — dan kami mempublikasikan apa yang kami pelajari di sepanjang jalan.",
+      "p2": "Semua hal institusional dan open-source kini berada di satu rumah: schematize.org. Kode sumber kami publik di GitHub, dan perkakas kami dipasang melalui schematize CLI."
     },
     "mission": {
-      "title": "Apa yang mendorong kami",
-      "p": "Menjadikan perangkat lunak buatan agen dapat dipercaya. Cepat tidak berarti jika tidak benar, aman, dan mudah dipelihara — jadi kami mengubah keluaran agen menjadi perangkat lunak yang benar-benar dapat dijalankan tim di produksi."
+      "title": "Apa yang menggerakkan kami",
+      "p": "Membuat perangkat lunak buatan agen dapat dipercaya. Cepat tidak berarti jika tidak benar, aman, dan dapat dipelihara — jadi kami mengubah keluaran agen menjadi perangkat lunak yang benar-benar dapat dijalankan tim di produksi."
     },
     "facts": {
       "title": "Detail perusahaan",
-      "note": "Data institusional dan pendaftaran perusahaan yang mengoperasikan schematize.org.",
+      "note": "Data institusional dan registrasi perusahaan yang mengoperasikan schematize.org.",
       "labels": {
-        "legalName": "Nama hukum",
+        "legalName": "Nama legal",
         "tradeName": "Nama dagang",
         "cnpj": "CNPJ",
         "founded": "Didirikan",
-        "status": "Status pendaftaran",
+        "status": "Status registrasi",
         "cnae": "Aktivitas utama (CNAE)",
         "location": "Lokasi",
         "contact": "Kontak"
@@ -339,20 +418,20 @@
   "contact": {
     "meta": {
       "title": "Kontak — schematize.org",
-      "desc": "Hubungi Schematize: saluran kontak institusional untuk perusahaan dan lab open-source di balik schematize.org."
+      "desc": "Hubungi Schematize: kanal kontak institusional perusahaan dan lab open-source di balik schematize.org."
     },
     "hero": {
       "kicker": "Kontak",
       "h1": "Bicara dengan kami.",
-      "sub": "Tempat terbaik untuk menjangkau karya kami adalah tempat karya itu berada. Pilih saluran yang sesuai."
+      "sub": "Tempat terbaik untuk menjangkau karyanya adalah tempat ia berada. Pilih kanal yang cocok."
     },
     "channels": {
-      "title": "Saluran",
+      "title": "Kanal",
       "items": [
         {
           "icon": "mail",
           "h": "Institusional & administratif",
-          "p": "Untuk urusan perusahaan, penagihan, dan institusional, kirim email langsung kepada kami.",
+          "p": "Untuk urusan perusahaan, penagihan, dan institusional, kirim email langsung ke kami.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
@@ -366,21 +445,21 @@
         },
         {
           "icon": "shield-alert",
-          "h": "Keamanan & pengungkapan yang bertanggung jawab",
-          "p": "Menemukan kerentanan di salah satu perangkat kami? Laporkan secara privat dan kami akan bekerja sama dengan Anda untuk perbaikan dan pengungkapan.",
+          "h": "Keamanan & pengungkapan bertanggung jawab",
+          "p": "Menemukan kerentanan di salah satu perkakas kami? Laporkan secara privat dan kami akan bekerja bersama Anda untuk perbaikan dan pengungkapan.",
           "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
           "label": "Laporkan secara privat"
         },
         {
           "icon": "blocks",
-          "h": "Katalog skills",
-          "p": "Telusuri dan pasang skill rekayasa untuk Claude Code.",
+          "h": "Katalog Skills",
+          "p": "Jelajahi dan pasang skill rekayasa untuk Claude Code.",
           "href": "https://skills.schematize.org",
           "label": "skills.schematize.org"
         }
       ]
     },
-    "note": "Dengan menghubungi kami, Anda menyetujui bahwa kami memproses data yang Anda kirim semata-mata untuk menanggapi permintaan Anda. Lihat Kebijakan Privasi."
+    "note": "Dengan menghubungi kami, Anda setuju bahwa kami memproses data yang Anda kirim semata-mata untuk menanggapi permintaan Anda. Lihat Kebijakan Privasi."
   },
   "legal": {
     "meta": {
@@ -390,9 +469,9 @@
     "hero": {
       "kicker": "Legal",
       "h1": "Pusat legal",
-      "sub": "Kebijakan yang mengatur situs web ini dan layanan kami. Data perusahaan dan tanggal berlaku ada di setiap dokumen."
+      "sub": "Kebijakan yang mengatur situs ini dan layanan kami. Data perusahaan dan tanggal berlaku ada di setiap dokumen."
     },
-    "disclaimer": "Draf kerja — bukan nasihat hukum. Dokumen ini adalah kerangka struktural yang sedang ditinjau oleh penasihat hukum dan dapat berubah sebelum berlaku. [REVISAR: advogado]",
+    "disclaimer": "Draf kerja — bukan nasihat hukum. Dokumen-dokumen ini adalah rangka struktural yang sedang ditinjau oleh penasihat hukum dan dapat berubah sebelum berlaku. [REVISAR: advogado]",
     "effective": "Berlaku sejak",
     "effectiveDate": "2026-08-19",
     "controllerLabel": "Pengendali data",
@@ -403,22 +482,22 @@
       "items": [
         {
           "h": "Ketentuan Penggunaan",
-          "p": "Aturan penggunaan situs web ini: kekayaan intelektual, perilaku, dan tautan pihak ketiga.",
+          "p": "Aturan penggunaan situs ini: kekayaan intelektual, perilaku, dan tautan pihak ketiga.",
           "slug": "legal/terms-of-use"
         },
         {
           "h": "Ketentuan Layanan",
-          "p": "Perjanjian yang mencakup perangkat dan layanan open-source kami.",
+          "p": "Perjanjian yang mencakup perkakas dan layanan open-source kami.",
           "slug": "legal/terms-of-service"
         },
         {
           "h": "Kebijakan Privasi",
-          "p": "Cara kami menangani data pribadi, berdasarkan LGPD Brasil.",
+          "p": "Cara kami menangani data pribadi, di bawah LGPD Brasil.",
           "slug": "legal/privacy"
         },
         {
           "h": "Kebijakan Cookie",
-          "p": "Cookie dan teknologi serupa yang digunakan situs ini, serta cara mengelolanya.",
+          "p": "Cookie dan teknologi serupa yang digunakan situs ini, dan cara mengelolanya.",
           "slug": "legal/cookies"
         }
       ]
@@ -427,60 +506,60 @@
       "termsUse": {
         "meta": {
           "title": "Ketentuan Penggunaan — schematize.org",
-          "desc": "Ketentuan penggunaan untuk situs web schematize.org."
+          "desc": "Ketentuan penggunaan untuk situs schematize.org."
         },
         "h1": "Ketentuan Penggunaan",
-        "sub": "Aturan penggunaan situs web schematize.org.",
+        "sub": "Aturan penggunaan situs schematize.org.",
         "sections": [
-          { "h": "1. Penerimaan", "p": "Dengan mengakses schematize.org, Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju, mohon jangan menggunakan situs ini." },
-          { "h": "2. Apa yang ditawarkan situs", "p": "schematize.org adalah situs informasional dan institusional yang menyajikan proyek open-source dan riset teknologi kami. Ini bukan toko." },
-          { "h": "3. Kekayaan intelektual", "p": "Merek schematize dan konten situs dilindungi. Proyek open-source kami dilisensikan berdasarkan ketentuan yang dinyatakan pada setiap repositori di GitHub." },
-          { "h": "4. Penggunaan yang dapat diterima", "p": "Anda setuju untuk tidak menyalahgunakan situs, mencoba mengganggunya, atau menggunakannya untuk tujuan yang melanggar hukum." },
-          { "h": "5. Tautan pihak ketiga", "p": "Situs ini menautkan ke tujuan pihak ketiga (misalnya, GitHub). Kami tidak bertanggung jawab atas konten pihak ketiga." },
+          { "h": "1. Penerimaan", "p": "Dengan mengakses schematize.org Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju, mohon jangan gunakan situs." },
+          { "h": "2. Apa yang ditawarkan situs", "p": "schematize.org adalah situs informasi dan institusional yang menampilkan proyek open-source dan riset teknologi kami. Ini bukan toko." },
+          { "h": "3. Kekayaan intelektual", "p": "Merek schematize dan konten situs dilindungi. Proyek open-source kami dilisensikan di bawah ketentuan yang dinyatakan di setiap repositori di GitHub." },
+          { "h": "4. Penggunaan yang dapat diterima", "p": "Anda setuju untuk tidak menyalahgunakan situs, tidak mencoba mengganggunya, atau menggunakannya untuk tujuan melawan hukum." },
+          { "h": "5. Tautan pihak ketiga", "p": "Situs menautkan ke tujuan pihak ketiga (misalnya, GitHub). Kami tidak bertanggung jawab atas konten pihak ketiga." },
           { "h": "6. Penafian dan pembatasan tanggung jawab", "p": "Situs disediakan \"sebagaimana adanya\", tanpa jaminan. [REVISAR: advogado]" },
-          { "h": "7. Perubahan", "p": "Kami dapat memperbarui ketentuan ini; tanggal berlaku di atas mencerminkan versi terkini." },
+          { "h": "7. Perubahan", "p": "Kami dapat memperbarui ketentuan ini; tanggal berlaku di atas mencerminkan versi saat ini." },
           { "h": "8. Hukum yang berlaku dan yurisdiksi", "p": "Ketentuan ini diatur oleh hukum Brasil. [REVISAR: advogado]" }
         ]
       },
       "termsService": {
         "meta": {
           "title": "Ketentuan Layanan — schematize.org",
-          "desc": "Ketentuan layanan untuk perangkat dan layanan schematize."
+          "desc": "Ketentuan layanan untuk perkakas dan layanan schematize."
         },
         "h1": "Ketentuan Layanan",
-        "sub": "Perjanjian yang mencakup perangkat dan layanan kami.",
+        "sub": "Perjanjian yang mencakup perkakas dan layanan kami.",
         "sections": [
-          { "h": "1. Para pihak dan definisi", "p": "Ketentuan ini mengatur hubungan antara Schematize dan pengguna perangkat serta layanan kami." },
-          { "h": "2. Ruang lingkup", "p": "Perangkat open-source kami (seperti CLI schematize dan skill rekayasa) disediakan berdasarkan lisensi open-source masing-masing di GitHub." },
-          { "h": "3. Akun", "p": "Di mana suatu layanan memerlukan autentikasi, layanan itu disediakan melalui auth.schematize.org. Anda bertanggung jawab menjaga kredensial Anda tetap aman." },
-          { "h": "4. Biaya", "p": "Perangkat open-source gratis. Setiap layanan berbayar dijelaskan pada saat kontrak. [REVISAR: advogado]" },
+          { "h": "1. Pihak dan definisi", "p": "Ketentuan ini mengatur hubungan antara Schematize dan pengguna perkakas dan layanan kami." },
+          { "h": "2. Lingkup", "p": "Perkakas open-source kami (seperti schematize CLI dan skill rekayasa) disediakan di bawah lisensi open-source masing-masing di GitHub." },
+          { "h": "3. Akun", "p": "Di mana sebuah layanan memerlukan autentikasi, ia disediakan melalui auth.schematize.org. Anda bertanggung jawab menjaga kredensial Anda tetap aman." },
+          { "h": "4. Biaya", "p": "Perkakas open-source gratis. Setiap layanan berbayar dijelaskan pada saat kontrak. [REVISAR: advogado]" },
           { "h": "5. Kewajiban para pihak", "p": "Anda setuju menggunakan layanan secara sah; kami setuju menyediakannya dengan kehati-hatian yang wajar." },
-          { "h": "6. Penangguhan dan penghentian", "p": "Kami dapat menangguhkan akses jika terjadi penyalahgunaan atau risiko keamanan." },
+          { "h": "6. Penangguhan dan pengakhiran", "p": "Kami dapat menangguhkan akses jika terjadi penyalahgunaan atau risiko keamanan." },
           { "h": "7. Jaminan dan pembatasan tanggung jawab", "p": "Layanan disediakan \"sebagaimana adanya\" sejauh diizinkan oleh hukum. [REVISAR: advogado]" },
-          { "h": "8. Privasi", "p": "Data pribadi diproses berdasarkan Kebijakan Privasi kami." },
+          { "h": "8. Privasi", "p": "Data pribadi diproses di bawah Kebijakan Privasi kami." },
           { "h": "9. Hukum yang berlaku dan yurisdiksi", "p": "Diatur oleh hukum Brasil. [REVISAR: advogado]" }
         ]
       },
       "privacy": {
         "meta": {
           "title": "Kebijakan Privasi — schematize.org",
-          "desc": "Kebijakan privasi schematize.org berdasarkan LGPD Brasil: pengendali, data yang dikumpulkan, tujuan, dasar hukum, retensi, dan hak subjek data."
+          "desc": "Kebijakan privasi schematize.org di bawah LGPD Brasil: pengendali, data yang dikumpulkan, tujuan, dasar hukum, retensi, dan hak subjek data."
         },
         "h1": "Kebijakan Privasi",
-        "sub": "Cara kami menangani data pribadi, berdasarkan Undang-Undang Perlindungan Data Umum Brasil (LGPD).",
+        "sub": "Cara kami menangani data pribadi, di bawah Undang-Undang Perlindungan Data Umum Brasil (LGPD).",
         "sections": [
           { "h": "1. Pengendali", "p": "Pengendali data adalah Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasil." },
-          { "h": "2. Petugas Perlindungan Data (DPO)", "p": "Untuk urusan privasi dan untuk menggunakan hak Anda, hubungi contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Data yang kami kumpulkan", "p": "Ini adalah situs informasional tanpa login atau formulir; kami hanya mengumpulkan data teknis minimal yang diperlukan untuk menyajikan halaman dan menjaga keamanan situs. Jika Anda mengirim email kepada kami, kami memproses data yang Anda kirim." },
-          { "h": "4. Tujuan", "p": "Untuk menyampaikan dan mengamankan situs web, serta menanggapi pesan yang Anda kirim kepada kami." },
-          { "h": "5. Dasar hukum", "p": "Kepentingan yang sah untuk mengoperasikan dan mengamankan situs; persetujuan atau pelaksanaan permintaan ketika Anda menghubungi kami (LGPD pasal 7). [REVISAR: advogado]" },
+          { "h": "2. Petugas Perlindungan Data (DPO)", "p": "Untuk urusan privasi dan menggunakan hak Anda, hubungi contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. Data yang kami kumpulkan", "p": "Ini adalah situs informasi tanpa login atau formulir; kami hanya mengumpulkan data teknis minimal yang diperlukan untuk menyajikan halaman dan menjaga situs tetap aman. Jika Anda mengirim email kepada kami, kami memproses data yang Anda kirim." },
+          { "h": "4. Tujuan", "p": "Untuk menyampaikan dan mengamankan situs, dan untuk menanggapi pesan yang Anda kirim kepada kami." },
+          { "h": "5. Dasar hukum", "p": "Kepentingan sah untuk mengoperasikan dan mengamankan situs; persetujuan atau pelaksanaan sebuah permintaan saat Anda menghubungi kami (LGPD art. 7). [REVISAR: advogado]" },
           { "h": "6. Berbagi", "p": "Kami menggunakan penyedia infrastruktur dan hosting yang bertindak sebagai operator; kami tidak menjual data pribadi." },
           { "h": "7. Transfer internasional", "p": "Beberapa penyedia mungkin memproses data di luar Brasil, dengan pengamanan. [REVISAR: advogado]" },
           { "h": "8. Retensi", "p": "Kami menyimpan data hanya selama diperlukan untuk tujuan di atas atau sebagaimana diwajibkan oleh hukum." },
-          { "h": "9. Keamanan", "p": "Kami menerapkan langkah teknis dan organisasi yang wajar untuk melindungi data." },
-          { "h": "10. Hak Anda", "p": "Berdasarkan LGPD pasal 18, Anda dapat meminta konfirmasi, akses, koreksi, anonimisasi, portabilitas, penghapusan, dan informasi tentang berbagi, serta mencabut persetujuan — dengan mengirim email ke contabil@schematize.me." },
+          { "h": "9. Keamanan", "p": "Kami menerapkan langkah-langkah teknis dan organisasional yang wajar untuk melindungi data." },
+          { "h": "10. Hak Anda", "p": "Di bawah LGPD art. 18 Anda dapat meminta konfirmasi, akses, koreksi, anonimisasi, portabilitas, penghapusan, dan informasi tentang berbagi, serta mencabut persetujuan — dengan mengirim email ke contabil@schematize.me." },
           { "h": "11. Cookie", "p": "Lihat Kebijakan Cookie kami untuk detail tentang cookie dan teknologi serupa." },
-          { "h": "12. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi terkini." }
+          { "h": "12. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini." }
         ]
       },
       "cookies": {
@@ -491,12 +570,12 @@
         "h1": "Kebijakan Cookie",
         "sub": "Cookie dan teknologi serupa yang digunakan situs ini.",
         "sections": [
-          { "h": "1. Apa itu cookie", "p": "Cookie adalah berkas kecil yang disimpan di perangkat Anda yang membantu situs berfungsi dan mengingat preferensi." },
+          { "h": "1. Apa itu cookie", "p": "Cookie adalah berkas kecil yang disimpan di perangkat Anda yang membantu situs bekerja dan mengingat preferensi." },
           { "h": "2. Kategori", "p": "Esensial: diperlukan agar situs berfungsi (misalnya, mengingat bahasa Anda). Cookie kinerja/analitik, fungsional, dan pemasaran hanya digunakan dengan persetujuan opt-in Anda." },
-          { "h": "3. Apa yang kami gunakan", "p": "Situs ini menyimpan preferensi bahasa secara lokal untuk mempertahankan bahasa yang Anda pilih. Situs ini tidak menjalankan cookie analitik atau pemasaran non-esensial tanpa persetujuan. [REVISAR: negócio]" },
+          { "h": "3. Apa yang kami gunakan", "p": "Situs ini menyimpan preferensi bahasa secara lokal untuk mempertahankan bahasa pilihan Anda. Ia tidak menjalankan cookie analitik atau pemasaran non-esensial tanpa persetujuan. [REVISAR: negócio]" },
           { "h": "4. Persetujuan", "p": "Cookie non-esensial memerlukan persetujuan opt-in; cookie esensial berjalan tanpa persetujuan." },
-          { "h": "5. Mengelola cookie", "p": "Anda dapat menghapus atau memblokir cookie di pengaturan browser Anda; memblokir penyimpanan esensial dapat memengaruhi situs." },
-          { "h": "6. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi terkini." }
+          { "h": "5. Mengelola cookie", "p": "Anda dapat menghapus atau memblokir cookie di pengaturan peramban Anda; memblokir penyimpanan esensial dapat memengaruhi situs." },
+          { "h": "6. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini." }
         ]
       }
     }
@@ -504,7 +583,7 @@
   "sitemapPage": {
     "meta": {
       "title": "Peta situs — schematize.org",
-      "desc": "Peta yang mudah dibaca dari setiap halaman publik di schematize.org."
+      "desc": "Peta yang dapat dibaca manusia dari setiap halaman publik di schematize.org."
     },
     "hero": {
       "kicker": "Peta situs",
@@ -523,6 +602,7 @@
       {
         "h": "Karya",
         "links": [
+          { "slug": "software", "label": "Aplikasi" },
           { "slug": "projects", "label": "Proyek" },
           { "slug": "research", "label": "Riset" },
           { "slug": "principles", "label": "Prinsip" }

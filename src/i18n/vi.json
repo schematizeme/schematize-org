@@ -1,13 +1,14 @@
 {
   "nav": {
+    "software": "Ứng dụng",
     "projects": "Dự án",
     "research": "Nghiên cứu",
     "principles": "Nguyên tắc",
     "about": "Giới thiệu",
     "contact": "Liên hệ",
     "legal": "Pháp lý",
-    "skills": "Skills",
-    "academy": "Academy",
+    "catalog": "Danh mục Skills",
+    "academy": "Học viện",
     "login": "Đăng nhập / Đăng ký",
     "cta": "Xem mã nguồn",
     "menu": "Menu"
@@ -24,40 +25,40 @@
   "home": {
     "meta": {
       "title": "schematize.org — phòng lab nghiên cứu mã nguồn mở & kỹ thuật AI",
-      "desc": "schematize.org là phòng lab mã nguồn mở và nghiên cứu công nghệ đứng sau schematize: các công cụ xây dựng công khai và nghiên cứu về kỹ thuật với các agent AI. Khám phá công việc của chúng tôi."
+      "desc": "schematize.org là phòng lab mã nguồn mở và nghiên cứu công nghệ đứng sau schematize: công cụ được xây dựng công khai và nghiên cứu về kỹ thuật với các tác nhân AI. Khám phá công việc của chúng tôi."
     },
     "hero": {
       "kicker": "Mã nguồn mở & nghiên cứu",
-      "h1": "Kỹ thuật cho các agent AI, xây dựng công khai.",
-      "sub": "schematize.org là nơi chúng tôi phát triển các công cụ mã nguồn mở và chia sẻ nghiên cứu công nghệ về cách xây dựng, bảo mật và điều phối các agent AI trụ vững được trong thực tế.",
+      "h1": "Kỹ thuật cho các tác nhân AI, xây dựng công khai.",
+      "sub": "schematize.org là nơi chúng tôi phát triển các công cụ mã nguồn mở và chia sẻ nghiên cứu công nghệ về cách xây dựng, bảo mật và điều phối các tác nhân AI đủ vững vàng trong thực tế.",
       "cta1": "Khám phá dự án",
       "cta2": "Đọc nghiên cứu"
     },
     "mission": {
       "kicker": "Sứ mệnh",
-      "title": "Làm cho phần mềm do agent tạo ra trở nên đáng tin cậy.",
-      "p": "Các agent AI có thể viết rất nhiều mã nhanh chóng — nhưng nhanh chẳng có giá trị gì nếu nó không đúng, không an toàn và không thể bảo trì. Chúng tôi xây dựng các công cụ mở và các tiêu chuẩn chung biến đầu ra của agent thành phần mềm bạn thực sự có thể vận hành trong production, và chúng tôi công bố những gì mình học được trên hành trình đó."
+      "title": "Làm cho phần mềm do tác nhân xây dựng trở nên đáng tin cậy.",
+      "p": "Các tác nhân AI có thể viết rất nhiều mã một cách nhanh chóng — nhưng nhanh chóng là vô nghĩa nếu nó không chính xác, an toàn và dễ bảo trì. Chúng tôi xây dựng các công cụ mở và tiêu chuẩn chung biến đầu ra của tác nhân thành phần mềm bạn thực sự có thể chạy trong sản xuất, và công bố những gì chúng tôi học được trên đường đi."
     },
     "pillars": {
-      "title": "Chúng tôi làm gì",
+      "title": "Những gì chúng tôi làm",
       "items": [
         {
           "key": "projects",
           "icon": "package",
           "h": "Dự án mã nguồn mở",
-          "p": "schematize CLI, danh mục skill kỹ thuật cho Claude Code, và bộ công cụ khiến tất cả có thể tái lập — đều dễ đọc, có thể fork và miễn phí."
+          "p": "schematize CLI, danh mục skill kỹ thuật cho Claude Code, và bộ công cụ giúp mọi thứ tái lập được — tất cả đều đọc được, fork được và miễn phí."
         },
         {
           "key": "research",
           "icon": "flask-conical",
           "h": "Nghiên cứu công nghệ",
-          "p": "Cách kỹ thuật với các agent AI một cách đáng tin cậy và an toàn: điều phối, tiêu chuẩn, đánh giá và bảo mật của quá trình bàn giao có AI hỗ trợ."
+          "p": "Cách làm kỹ thuật với các tác nhân AI một cách đáng tin cậy và an toàn: điều phối, tiêu chuẩn, đánh giá và bảo mật của việc giao hàng có AI hỗ trợ."
         },
         {
           "key": "principles",
           "icon": "shield-check",
           "h": "Tiêu chuẩn kỹ thuật",
-          "p": "Những mức sàn không thể thương lượng khiến đầu ra của agent trở nên đáng tin cậy: bảo mật quyết định phía máy chủ, các bài kiểm thử chứng minh hành vi, và một dấu vết kiểm toán trên mọi thay đổi."
+          "p": "Những nền tảng không thể thương lượng khiến đầu ra của tác nhân đáng tin cậy: bảo mật quyết định ở phía máy chủ, kiểm thử chứng minh hành vi, và dấu vết kiểm toán trên mọi thay đổi."
         }
       ]
     },
@@ -65,42 +66,42 @@
       "title": "Cách chúng tôi làm việc",
       "items": [
         {
-          "h": "Mặc định là mở",
-          "p": "Công cụ của chúng tôi là mã nguồn mở và các phát hiện của chúng tôi là công khai. Nếu điều đó quan trọng, bạn có thể đọc nó, chạy nó và xây dựng dựa trên nó."
+          "h": "Mở theo mặc định",
+          "p": "Công cụ của chúng tôi là mã nguồn mở và các phát hiện của chúng tôi là công khai. Nếu nó quan trọng, bạn có thể đọc, chạy và xây dựng trên nó."
         },
         {
           "h": "Nghiêm ngặt",
-          "p": "Tiêu chuẩn hơn cảm tính: các playbook quy chuẩn, các bài kiểm thử thật, và bảo mật được xem là yêu cầu hạng nhất — không phải điều nghĩ đến sau cùng."
+          "p": "Tiêu chuẩn hơn cảm tính: sổ tay quy phạm, kiểm thử thực sự, và bảo mật được coi là yêu cầu hạng nhất — không phải là suy nghĩ sau."
         },
         {
           "h": "Thực tiễn",
-          "p": "Nghiên cứu được đưa vào sử dụng. Mọi thứ chúng tôi công bố đều nhằm thay đổi cách các đội ngũ thực sự xây dựng với agent, không phải để nằm trong ngăn kéo."
+          "p": "Nghiên cứu được triển khai. Mọi thứ chúng tôi công bố đều nhằm thay đổi cách các nhóm thực sự xây dựng với tác nhân, chứ không phải để nằm trong ngăn kéo."
         }
       ]
     },
     "cta": {
       "title": "Khám phá công việc.",
-      "p": "Mọi thứ chúng tôi xây dựng đều nằm trên GitHub, và mọi thứ chúng tôi học được đều xuất hiện trên blog.",
+      "p": "Mọi thứ chúng tôi xây dựng đều ở trên GitHub, và mọi thứ chúng tôi học được đều kết thúc trên blog.",
       "button": "Xem trên GitHub"
     },
     "platforms": {
       "kicker": "Hệ sinh thái",
       "title": "Nơi công việc tồn tại",
-      "p": "Mọi thứ schematize xây dựng công khai, được tổ chức khắp hệ sinh thái.",
+      "p": "Mọi thứ schematize xây dựng công khai, được tổ chức trong toàn hệ sinh thái.",
       "items": [
         {
-          "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
-          "icon": "blocks",
-          "p": "Danh mục các skill kỹ thuật giúp các agent AI tuân theo tiêu chuẩn của nhà — cài đặt chỉ bằng một lệnh."
+          "h": "Ứng dụng",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "Ứng dụng dòng lệnh Rust (kèm ứng dụng máy tính để bàn) cài đặt và quản lý phiên bản skills và chạy overdev — cài trên Linux bằng một lệnh."
         },
         {
           "h": "Nghiên cứu",
           "tag": "schematize.org/research",
           "key": "research",
           "icon": "flask-conical",
-          "p": "Các bài viết, ghi chú và phát hiện từ nghiên cứu công nghệ của chúng tôi — công bố khi chúng tôi học được."
+          "p": "Bài viết, ghi chú và phát hiện từ nghiên cứu công nghệ của chúng tôi — công bố khi chúng tôi học được."
         },
         {
           "h": "Mã nguồn",
@@ -108,7 +109,7 @@
           "url": "https://github.com/schematizeme",
           "icon": "github",
           "brand": true,
-          "p": "Mọi kho lưu trữ, công khai. Đọc nó, fork nó, mở một issue — hoặc cài đặt nó bằng schematize CLI."
+          "p": "Mọi kho lưu trữ, công khai. Đọc nó, fork nó, mở một issue — hoặc cài đặt bằng schematize CLI."
         }
       ]
     }
@@ -116,12 +117,12 @@
   "projects": {
     "meta": {
       "title": "Dự án mã nguồn mở — schematize.org",
-      "desc": "Các dự án mã nguồn mở từ phòng lab schematize: schematize CLI và danh mục skill kỹ thuật cho Claude Code. Đọc mã nguồn, fork nó, đóng góp."
+      "desc": "Các dự án mã nguồn mở từ phòng lab schematize: schematize CLI và danh mục skill kỹ thuật cho Claude Code. Đọc mã nguồn, fork, đóng góp."
     },
     "hero": {
       "kicker": "Dự án",
-      "h1": "Công cụ mã nguồn mở để xây dựng với các agent AI.",
-      "sub": "Mọi thứ chúng tôi xây dựng để làm cho kỹ thuật có agent hỗ trợ trở nên tái lập được và an toàn — miễn phí để đọc, chạy và fork."
+      "h1": "Công cụ mã nguồn mở để xây dựng với các tác nhân AI.",
+      "sub": "Mọi thứ chúng tôi xây dựng để làm cho kỹ thuật có tác nhân hỗ trợ trở nên tái lập được và an toàn — miễn phí để đọc, chạy và fork."
     },
     "list": {
       "title": "Những gì chúng tôi duy trì",
@@ -130,70 +131,70 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Một ứng dụng dòng lệnh ưu tiên Linux, cài đặt và quản lý phiên bản các skill kỹ thuật cho Claude Code và chạy overdev — phát triển liên tục, không cần giám sát, không dừng lại cho đến khi checklist hoàn thành.",
+          "p": "Một ứng dụng dòng lệnh ưu tiên Linux, cài đặt và quản lý phiên bản các skill kỹ thuật cho Claude Code và chạy overdev — phát triển liên tục, không cần giám sát, không dừng cho đến khi danh sách kiểm tra hoàn thành.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
           "tag": "Skills · Claude Code",
           "icon": "blocks",
-          "h": "Các skill kỹ thuật",
-          "p": "Các playbook quy chuẩn cho Claude Code — engineering, go, rust, web, seo, node và pentest — mỗi cái có những mức sàn không thể thương lượng về bảo mật, kiểm thử và kiến trúc.",
+          "h": "Skills kỹ thuật",
+          "p": "Sổ tay quy phạm cho Claude Code — engineering, go, rust, web, seo, node và pentest — mỗi cái với nền tảng không thể thương lượng về bảo mật, kiểm thử và kiến trúc.",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
           "icon": "search",
           "h": "schematize-seo",
-          "p": "Một bộ môn SEO đầy đủ dưới dạng skill: kỹ thuật, on-page, nội dung, dữ liệu có cấu trúc, quốc tế/đa tên miền và tối ưu cho câu trả lời của AI.",
+          "p": "Một môn học SEO đầy đủ dưới dạng skill: kỹ thuật, on-page, nội dung, dữ liệu có cấu trúc, quốc tế/đa miền và tối ưu hóa câu trả lời AI.",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
           "icon": "shield-check",
           "h": "schematize-pentest",
-          "p": "AppSec phòng thủ và red-teaming được ủy quyền dưới dạng skill: lập bản đồ bề mặt tấn công của endpoint, độ phủ OWASP và mô hình hóa mối đe dọa — luôn trong phạm vi.",
+          "p": "AppSec phòng thủ và red-teaming được ủy quyền dưới dạng skill: lập bản đồ bề mặt tấn công endpoint, phủ OWASP và mô hình hóa mối đe dọa — luôn trong phạm vi.",
           "href": "https://github.com/schematizeme/skill-pentest"
         }
       ]
     },
     "cta": {
       "title": "Đọc mã nguồn.",
-      "p": "Tất cả đều công khai. Gắn sao, fork, mở một issue — hoặc dùng schematize CLI để cài đặt trong vài giây.",
+      "p": "Tất cả đều công khai. Star nó, fork nó, mở một issue — hoặc dùng schematize CLI để cài đặt trong vài giây.",
       "button": "Mở GitHub"
     }
   },
   "research": {
     "meta": {
       "title": "Nghiên cứu công nghệ — schematize.org",
-      "desc": "Nghiên cứu từ phòng lab schematize về kỹ thuật với các agent AI: điều phối đáng tin cậy, bảo mật của quá trình bàn giao có AI hỗ trợ, và các tiêu chuẩn khiến đầu ra của agent trở nên đáng tin cậy."
+      "desc": "Nghiên cứu từ phòng lab schematize về kỹ thuật với các tác nhân AI: điều phối đáng tin cậy, bảo mật của việc giao hàng có AI hỗ trợ, và các tiêu chuẩn khiến đầu ra của tác nhân đáng tin cậy."
     },
     "hero": {
       "kicker": "Nghiên cứu",
-      "h1": "Cách xây dựng với các agent AI — và tin tưởng kết quả.",
-      "sub": "Chúng tôi nghiên cứu điều gì khiến kỹ thuật có agent hỗ trợ trở nên đáng tin cậy và an toàn, rồi biến các câu trả lời thành công cụ mở và tiêu chuẩn mà ai cũng có thể dùng."
+      "h1": "Cách xây dựng với các tác nhân AI — và tin tưởng kết quả.",
+      "sub": "Chúng tôi nghiên cứu điều gì làm cho kỹ thuật có tác nhân hỗ trợ đáng tin cậy và an toàn, và biến các câu trả lời thành công cụ và tiêu chuẩn mở mà ai cũng có thể dùng."
     },
     "areas": {
-      "title": "Các lĩnh vực nghiên cứu",
+      "title": "Lĩnh vực nghiên cứu",
       "items": [
         {
           "icon": "workflow",
-          "h": "Kỹ thuật agent đáng tin cậy",
-          "p": "Điều phối, phân rã và rào chắn giữ cho các agent AI đúng nhiệm vụ suốt công việc dài, nhiều bước — mà không dừng sớm hay đi lệch khỏi đặc tả."
+          "h": "Kỹ thuật tác nhân đáng tin cậy",
+          "p": "Điều phối, phân rã và rào chắn giữ cho các tác nhân AI đúng nhiệm vụ suốt công việc dài, nhiều bước — mà không dừng sớm hay lệch khỏi đặc tả."
         },
         {
           "icon": "shield-check",
-          "h": "Bảo mật của quá trình bàn giao có AI hỗ trợ",
-          "p": "Cách mã do agent viết ra thất bại, cách phát hiện nó, và cách biến an-toàn-theo-thiết-kế thành mặc định: IAM, AppSec và red-teaming được ủy quyền với những gì agent tạo ra."
+          "h": "Bảo mật của việc giao hàng có AI hỗ trợ",
+          "p": "Cách mã do tác nhân viết thất bại, cách phát hiện nó, và cách làm cho an-toàn-từ-thiết-kế trở thành mặc định: IAM, AppSec và red-teaming được ủy quyền với những gì tác nhân tạo ra."
         },
         {
           "icon": "ruler",
           "h": "Tiêu chuẩn & đánh giá",
-          "p": "'Tốt' nghĩa là gì đối với đầu ra của agent, và cách đo lường nó: các playbook quy chuẩn, các cổng chất lượng và các bài kiểm thử chứng minh hành vi thay vì cảm tính."
+          "p": "'Tốt' nghĩa là gì đối với đầu ra của tác nhân, và cách đo lường nó: sổ tay quy phạm, cổng chất lượng và kiểm thử chứng minh hành vi thay vì cảm tính."
         },
         {
           "icon": "heart-handshake",
-          "h": "Trải nghiệm của lập trình viên",
-          "p": "Làm cho cách đúng thành cách dễ — bộ công cụ cài đặt tiêu chuẩn, giữ chúng luôn cập nhật, và tránh khỏi lối đi của lập trình viên."
+          "h": "Trải nghiệm nhà phát triển",
+          "p": "Biến cách đúng thành cách dễ — công cụ cài đặt các tiêu chuẩn, giữ chúng luôn mới, và nhường đường cho nhà phát triển."
         }
       ]
     },
@@ -203,79 +204,157 @@
         {
           "icon": "git-fork",
           "h": "Công khai",
-          "p": "Các phát hiện và công cụ được công bố, không giữ khư khư. Khả năng tái lập là điểm cốt lõi."
+          "p": "Các phát hiện và công cụ được công bố, không giữ riêng. Khả năng tái lập là điều cốt lõi."
         },
         {
           "icon": "hammer",
-          "h": "Gắn với thực tiễn",
-          "p": "Chúng tôi nghiên cứu bằng cách xây dựng và đưa vào sử dụng — phòng lab và sản phẩm nuôi dưỡng lẫn nhau."
+          "h": "Bắt nguồn từ thực tiễn",
+          "p": "Chúng tôi nghiên cứu bằng cách xây dựng và triển khai — phòng lab và sản phẩm nuôi dưỡng lẫn nhau."
         },
         {
           "icon": "lock",
-          "h": "Bảo mật là trên hết",
-          "p": "Nếu chạy chưa an toàn thì chưa xong. Mô hình hóa mối đe dọa và kiểm thử là một phần của phương pháp."
+          "h": "Bảo mật trước hết",
+          "p": "Nếu chạy không an toàn thì chưa xong. Mô hình hóa mối đe dọa và kiểm thử là một phần của phương pháp."
         }
       ]
     },
     "cta": {
       "title": "Theo dõi nghiên cứu.",
-      "p": "Chúng tôi viết lại những gì mình học được trên blog, và các công cụ xuất hiện trên GitHub.",
+      "p": "Chúng tôi viết lại những gì học được trên blog, và các công cụ đáp xuống GitHub.",
       "button": "Đọc blog"
     }
   },
   "principles": {
     "meta": {
       "title": "Nguyên tắc — cách chúng tôi xây dựng — schematize.org",
-      "desc": "Các nguyên tắc kỹ thuật của phòng lab schematize: những mức sàn không thể thương lượng khiến phần mềm viết bằng các agent AI trở nên đúng, an toàn và có thể bảo trì — bảo mật quyết định phía máy chủ, các bài kiểm thử chứng minh hành vi, một dấu vết kiểm toán trên mọi thay đổi, và thiết kế ưu tiên danh tính."
+      "desc": "Các nguyên tắc kỹ thuật của phòng lab schematize: những nền tảng không thể thương lượng khiến phần mềm viết bằng các tác nhân AI trở nên chính xác, an toàn và dễ bảo trì — bảo mật quyết định ở phía máy chủ, kiểm thử chứng minh hành vi, dấu vết kiểm toán trên mọi thay đổi, và thiết kế ưu tiên danh tính."
     },
     "hero": {
       "kicker": "Nguyên tắc",
       "h1": "Cách chúng tôi xây dựng.",
-      "sub": "Các agent AI có thể tạo mã nhanh, nhưng tốc độ thiếu kỷ luật chỉ giúp phát hành lỗi nhanh hơn. Đây là những mức sàn không thể thương lượng mà chúng tôi áp cho mọi dự án — chính những mức sàn mà các skill mã nguồn mở của chúng tôi mã hóa để agent tuân theo theo mặc định."
+      "sub": "Các tác nhân AI có thể tạo mã nhanh chóng, nhưng tốc độ thiếu kỷ luật chỉ giao lỗi nhanh hơn. Đây là những nền tảng không thể thương lượng mà chúng tôi giữ cho mọi dự án — cùng những nền tảng mà các skill mã nguồn mở của chúng tôi mã hóa để tác nhân tuân theo theo mặc định."
     },
     "intro": {
       "title": "Tiêu chuẩn hơn cảm tính",
-      "p": "Một nguyên tắc chỉ có giá trị nếu một cỗ máy có thể kiểm tra nó. Mỗi mức sàn dưới đây ánh xạ tới một cổng cụ thể trong bộ công cụ của chúng tôi — một bài kiểm thử, một quy tắc review, một tạo phẩm bắt buộc — để 'hoàn thành' được chứng minh, không phải khẳng định suông. Đây là những gì các skill kỹ thuật của chúng tôi cài đặt vào một dự án, và là những gì nghiên cứu của chúng tôi tiếp tục mài giũa."
+      "p": "Một nguyên tắc chỉ có giá trị nếu máy móc có thể kiểm tra nó. Mỗi nền tảng bên dưới ánh xạ tới một cổng cụ thể trong công cụ của chúng tôi — một bài kiểm thử, một quy tắc rà soát, một hiện vật bắt buộc — để 'hoàn thành' được chứng minh, chứ không phải khẳng định. Đây là những gì các skill kỹ thuật của chúng tôi cài đặt vào một dự án, và là những gì nghiên cứu của chúng tôi tiếp tục mài sắc."
     },
     "floors": {
-      "title": "Những mức sàn không thể thương lượng",
+      "title": "Những nền tảng không thể thương lượng",
       "items": [
         {
           "icon": "server",
           "h": "Bảo mật được quyết định trên máy chủ",
-          "p": "Xác thực và phân quyền được thực thi phía máy chủ, không bao giờ ở phía client. Bí mật không bao giờ tới được bundle của trình duyệt. Một kiểm tra trong giao diện là trải nghiệm người dùng — quyết định thực sự diễn ra tại nơi yêu cầu đến, dựa trên một danh tính đã được xác minh."
+          "p": "Xác thực và ủy quyền được thực thi ở phía máy chủ, không bao giờ ở phía máy khách. Bí mật không bao giờ đến gói trình duyệt. Một kiểm tra trong UI là trải nghiệm người dùng — quyết định thực sự diễn ra ở nơi yêu cầu đến, đối chiếu với một danh tính đã xác minh."
         },
         {
           "icon": "flask-conical",
           "h": "Kiểm thử chứng minh hành vi",
-          "p": "Một bài kiểm thử khẳng định phần mềm làm gì — nội dung, trạng thái, tương tác, đường lỗi và đường rỗng — chứ không chỉ rằng nó đã render. Độ phủ mà không thất bại khi hành vi hỏng thì không phải là độ phủ. Các cổng chất lượng chặn một merge y như một build hỏng vẫn làm."
+          "p": "Một bài kiểm thử khẳng định phần mềm làm gì — nội dung, trạng thái, tương tác, đường lỗi và đường rỗng — không chỉ là nó đã render. Độ phủ mà không thất bại khi hành vi hỏng thì không phải độ phủ. Cổng chất lượng chặn một lần merge giống như một bản build hỏng."
         },
         {
           "icon": "archive",
-          "h": "Mọi thay đổi để lại một dấu vết kiểm toán",
-          "p": "Không có công việc nào xong cho đến khi được ghi lại: điều gì đã thay đổi, tại sao, điều gì được quyết định và điều gì bị bác bỏ. Archive là một phần của sản phẩm bàn giao, không phải thủ tục giấy tờ sau đó — để lý lẽ sống sót qua phiên làm việc đã tạo ra nó."
+          "h": "Mọi thay đổi để lại dấu vết kiểm toán",
+          "p": "Không công việc nào xong cho đến khi được ghi lại: cái gì thay đổi, tại sao, cái gì được quyết định và cái gì bị từ chối. Kho lưu trữ là một phần của sản phẩm giao, không phải giấy tờ làm sau — để lý lẽ sống lâu hơn phiên làm việc đã tạo ra nó."
         },
         {
           "icon": "fingerprint",
           "h": "Danh tính đến trước",
-          "p": "Mọi dự án bắt đầu với IAM vững chắc: danh tính không phải là một email, quyền truy cập dựa trên quan hệ và đa tenant theo mặc định, và không mật khẩu là mục tiêu. Phân quyền chi tiết từ ngày đầu tiên, không phải chắp vá sau một vụ xâm phạm."
+          "p": "Mọi dự án bắt đầu với IAM vững chắc: danh tính không phải là email, quyền truy cập dựa trên mối quan hệ và đa-người-thuê theo mặc định, và không mật khẩu là mục tiêu. Ủy quyền chi tiết từ ngày đầu, không phải chắp vá sau một vụ vi phạm."
         },
         {
           "icon": "git-fork",
-          "h": "Mặc định là mở",
-          "p": "Công cụ của chúng tôi là mã nguồn mở và các phát hiện của chúng tôi là công khai. Nếu điều đó quan trọng, bạn có thể đọc nó, chạy nó, fork nó và xây dựng dựa trên nó. Khả năng tái lập là điểm cốt lõi — một kết quả bạn không thể tái lập chỉ là một ý kiến."
+          "h": "Mở theo mặc định",
+          "p": "Công cụ của chúng tôi là mã nguồn mở và các phát hiện của chúng tôi là công khai. Nếu nó quan trọng, bạn có thể đọc, chạy, fork và xây dựng trên nó. Khả năng tái lập là điều cốt lõi — một kết quả bạn không thể tái lập chỉ là một ý kiến."
         },
         {
           "icon": "rocket",
-          "h": "Đưa vào sử dụng, đừng tích trữ",
-          "p": "Chúng tôi nghiên cứu bằng cách xây dựng và đưa vào sử dụng; phòng lab và sản phẩm nuôi dưỡng lẫn nhau. Mục tiêu là làm cho cách đúng thành cách dễ — bộ công cụ cài đặt tiêu chuẩn, giữ nó luôn cập nhật, và tránh khỏi lối đi của lập trình viên."
+          "h": "Giao hàng, đừng giữ riêng",
+          "p": "Chúng tôi nghiên cứu bằng cách xây dựng và triển khai; phòng lab và sản phẩm nuôi dưỡng lẫn nhau. Mục tiêu là biến cách đúng thành cách dễ — công cụ cài đặt tiêu chuẩn, giữ nó luôn mới, và nhường đường cho nhà phát triển."
         }
       ]
     },
     "cta": {
-      "title": "Xem các mức sàn trong mã.",
-      "p": "Các nguyên tắc trên được mã hóa thành các skill kỹ thuật có thể cài đặt cho Claude Code — và mã nguồn đều nằm trên GitHub.",
+      "title": "Xem các nền tảng trong mã.",
+      "p": "Các nguyên tắc trên được mã hóa thành các skill kỹ thuật cài đặt được cho Claude Code — và mã nguồn đều ở trên GitHub.",
       "button": "Duyệt các skill",
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "Ứng dụng — schematize CLI — schematize.org",
+      "desc": "schematize là một ứng dụng dòng lệnh Rust (kèm ứng dụng máy tính để bàn) cài đặt và quản lý phiên bản các skill kỹ thuật cho Claude Code và chạy overdev. Cài trên Linux bằng một lệnh, hoặc tải về cho macOS."
+    },
+    "hero": {
+      "kicker": "Ứng dụng",
+      "h1": "Một CLI cho toàn bộ quy trình.",
+      "sub": "schematize là một ứng dụng dòng lệnh Rust — kèm ứng dụng máy tính để bàn — cài đặt và quản lý phiên bản các skill kỹ thuật từ một danh mục trực tiếp và chạy overdev: phát triển liên tục, không cần giám sát, không dừng cho đến khi danh sách kiểm tra hoàn thành."
+    },
+    "install": {
+      "title": "Cài đặt trên Linux",
+      "sub": "Một lệnh. Debian, Ubuntu và Linux Mint (.deb); openSUSE, Fedora và RHEL (.rpm); hoặc một tệp nhị phân tĩnh. Nó build từ mã nguồn trên máy — mã nguồn mở, luôn khớp với main.",
+      "terminal": "Trong một terminal:"
+    },
+    "features": {
+      "title": "Ứng dụng làm gì",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Cài đặt & quản lý phiên bản skills",
+          "p": "Từ một danh mục từ xa trực tiếp — một lệnh kéo toàn bộ bộ và giữ nó luôn mới. Skill mới xuất hiện mà không cần cài lại bất cứ thứ gì."
+        },
+        {
+          "icon": "monitor",
+          "h": "Kèm ứng dụng máy tính để bàn",
+          "p": "Một cửa sổ để duyệt, cài đặt và cập nhật skills — được dựng sẵn, không cần công cụ build."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Chẩn đoán thiết lập của bạn, tự cập nhật, và xem mọi thứ trong nháy mắt từ CLI."
+        },
+        {
+          "icon": "radar",
+          "h": "Tác nhân thường trú",
+          "p": "Theo dõi các phiên bản skill mới và bài blog và thông báo cho bạn một cách bản địa trên máy tính để bàn."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Tải về",
+      "sub": "Cài đặt schematize trên macOS hoặc Linux — ứng dụng máy tính để bàn đi kèm.",
+      "mac": "macOS · Apple Silicon (.app). Tải về, giải nén và nhấp chuột phải → Open.",
+      "deb": "Debian, Ubuntu, Linux Mint — tệp .deb (CLI + ứng dụng máy tính để bàn).",
+      "rpm": "openSUSE, Fedora, RHEL — tệp .rpm (CLI + ứng dụng máy tính để bàn).",
+      "download": "Tải về",
+      "releases": "Tất cả các bản phát hành",
+      "unsigned": "Ứng dụng macOS chưa được ký mã — hệ điều hành hiển thị cảnh báo \"unverified\" một lần khi khởi chạy lần đầu (nhấp chuột phải → Open)."
+    },
+    "how": {
+      "title": "Cách nó hoạt động",
+      "sub": "Ứng dụng đọc một chỉ mục trực tiếp (catalog.json) trên GitHub, nên việc công bố một skill mới chỉ là thêm một mục — không cần build lại CLI.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Cài đặt ứng dụng",
+          "p": "Một lệnh cài đặt schematize CLI và ứng dụng máy tính để bàn của nó trên Linux (.deb / .rpm / nhị phân), hoặc lấy bản build macOS."
+        },
+        {
+          "icon": "blocks",
+          "h": "Cài đặt skills",
+          "p": "Chạy schematize install --all để kéo mọi skill vào .claude/, hoặc cài từng cái theo slug — duyệt danh mục tại skills.schematize.org."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Luôn cập nhật",
+          "p": "Tác nhân thường trú thông báo cho bạn khi một skill hoặc ứng dụng cập nhật; schematize upgrade tự cập nhật."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Duyệt các skill.",
+      "p": "Ứng dụng cài đặt skills từ danh mục mở — duyệt và chọn những gì dự án của bạn cần.",
+      "button": "Mở danh mục",
       "url": "https://skills.schematize.org"
     }
   },
@@ -300,31 +379,31 @@
   "about": {
     "meta": {
       "title": "Giới thiệu — schematize.org",
-      "desc": "Về Schematize: công ty và phòng lab mã nguồn mở đứng sau schematize.org. Tên pháp lý, đăng ký và thông tin định chế."
+      "desc": "Về Schematize: công ty và phòng lab mã nguồn mở đứng sau schematize.org. Tên pháp lý, đăng ký và thông tin thể chế."
     },
     "hero": {
       "kicker": "Giới thiệu",
       "h1": "Phòng lab và công ty đứng sau schematize.",
-      "sub": "schematize.org là ngôi nhà mã nguồn mở và nghiên cứu công nghệ của Schematize — một công ty công nghệ xây dựng các công cụ kỹ thuật cho và cùng với các agent AI, một cách công khai."
+      "sub": "schematize.org là ngôi nhà mã nguồn mở và nghiên cứu công nghệ của Schematize — một công ty công nghệ xây dựng các công cụ kỹ thuật cho và cùng với các tác nhân AI, một cách công khai."
     },
     "who": {
       "title": "Chúng tôi là ai",
-      "p1": "Schematize là một công ty công nghệ của Brazil. Chúng tôi xây dựng các công cụ mã nguồn mở và các tiêu chuẩn kỹ thuật quy chuẩn khiến phần mềm viết bằng các agent AI trở nên đúng, an toàn và có thể bảo trì — và chúng tôi công bố những gì mình học được trên hành trình đó.",
-      "p2": "Mọi thứ về định chế và mã nguồn mở giờ đây sống ở một ngôi nhà duy nhất: schematize.org. Mã nguồn của chúng tôi công khai trên GitHub, và các công cụ của chúng tôi cài đặt qua schematize CLI."
+      "p1": "Schematize là một công ty công nghệ Brazil. Chúng tôi xây dựng các công cụ mã nguồn mở và tiêu chuẩn kỹ thuật quy phạm khiến phần mềm viết bằng các tác nhân AI trở nên chính xác, an toàn và dễ bảo trì — và công bố những gì chúng tôi học được trên đường đi.",
+      "p2": "Mọi thứ về thể chế và mã nguồn mở giờ đây nằm trong một ngôi nhà duy nhất: schematize.org. Mã nguồn của chúng tôi công khai trên GitHub, và các công cụ của chúng tôi cài đặt qua schematize CLI."
     },
     "mission": {
       "title": "Điều thúc đẩy chúng tôi",
-      "p": "Làm cho phần mềm do agent tạo ra trở nên đáng tin cậy. Nhanh chẳng có giá trị gì nếu nó không đúng, không an toàn và không thể bảo trì — nên chúng tôi biến đầu ra của agent thành phần mềm mà các đội ngũ thực sự có thể vận hành trong production."
+      "p": "Làm cho phần mềm do tác nhân xây dựng trở nên đáng tin cậy. Nhanh chóng là vô nghĩa nếu nó không chính xác, an toàn và dễ bảo trì — nên chúng tôi biến đầu ra của tác nhân thành phần mềm các nhóm thực sự có thể chạy trong sản xuất."
     },
     "facts": {
-      "title": "Thông tin công ty",
-      "note": "Dữ liệu định chế và đăng ký của công ty vận hành schematize.org.",
+      "title": "Chi tiết công ty",
+      "note": "Dữ liệu thể chế và đăng ký của công ty vận hành schematize.org.",
       "labels": {
         "legalName": "Tên pháp lý",
         "tradeName": "Tên thương mại",
         "cnpj": "CNPJ",
         "founded": "Thành lập",
-        "status": "Tình trạng đăng ký",
+        "status": "Trạng thái đăng ký",
         "cnae": "Hoạt động chính (CNAE)",
         "location": "Địa điểm",
         "contact": "Liên hệ"
@@ -332,27 +411,27 @@
     },
     "cta": {
       "title": "Liên hệ với chúng tôi.",
-      "p": "Có câu hỏi về công ty, các dự án hoặc nghiên cứu? Hãy liên hệ hoặc đọc mã nguồn.",
+      "p": "Có câu hỏi về công ty, các dự án hay nghiên cứu? Hãy liên hệ hoặc đọc mã nguồn.",
       "button": "Liên hệ"
     }
   },
   "contact": {
     "meta": {
       "title": "Liên hệ — schematize.org",
-      "desc": "Liên hệ với Schematize: các kênh liên hệ định chế của công ty và phòng lab mã nguồn mở đứng sau schematize.org."
+      "desc": "Liên hệ với Schematize: các kênh liên hệ thể chế của công ty và phòng lab mã nguồn mở đứng sau schematize.org."
     },
     "hero": {
       "kicker": "Liên hệ",
       "h1": "Trò chuyện với chúng tôi.",
-      "sub": "Nơi tốt nhất để tiếp cận công việc là nơi nó tồn tại. Hãy chọn kênh phù hợp."
+      "sub": "Nơi tốt nhất để tiếp cận công việc là nơi nó tồn tại. Chọn kênh phù hợp với bạn."
     },
     "channels": {
       "title": "Các kênh",
       "items": [
         {
           "icon": "mail",
-          "h": "Định chế & hành chính",
-          "p": "Với các vấn đề về công ty, hóa đơn và định chế, hãy gửi email trực tiếp cho chúng tôi.",
+          "h": "Thể chế & hành chính",
+          "p": "Đối với các vấn đề công ty, hóa đơn và thể chế, hãy email trực tiếp cho chúng tôi.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
@@ -360,39 +439,39 @@
           "icon": "github",
           "brand": true,
           "h": "Mã nguồn & issue",
-          "p": "Báo lỗi, mở issue hoặc đóng góp cho các dự án mã nguồn mở trên GitHub.",
+          "p": "Báo cáo lỗi, mở issue hoặc đóng góp cho các dự án mã nguồn mở trên GitHub.",
           "href": "https://github.com/schematizeme",
           "label": "github.com/schematizeme"
         },
         {
           "icon": "shield-alert",
           "h": "Bảo mật & tiết lộ có trách nhiệm",
-          "p": "Phát hiện một lỗ hổng trong một công cụ của chúng tôi? Hãy báo cáo riêng tư và chúng tôi sẽ cùng bạn xử lý bản vá và việc tiết lộ.",
+          "p": "Tìm thấy lỗ hổng trong một công cụ của chúng tôi? Báo cáo riêng tư và chúng tôi sẽ làm việc với bạn về bản vá và việc tiết lộ.",
           "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
           "label": "Báo cáo riêng tư"
         },
         {
           "icon": "blocks",
-          "h": "Danh mục skill",
+          "h": "Danh mục Skills",
           "p": "Duyệt và cài đặt các skill kỹ thuật cho Claude Code.",
           "href": "https://skills.schematize.org",
           "label": "skills.schematize.org"
         }
       ]
     },
-    "note": "Bằng việc liên hệ với chúng tôi, bạn đồng ý rằng chúng tôi xử lý dữ liệu bạn gửi chỉ để phản hồi yêu cầu của bạn. Xem Chính sách Bảo mật."
+    "note": "Khi liên hệ với chúng tôi, bạn đồng ý rằng chúng tôi xử lý dữ liệu bạn gửi chỉ để trả lời yêu cầu của bạn. Xem Chính sách quyền riêng tư."
   },
   "legal": {
     "meta": {
       "title": "Pháp lý — schematize.org",
-      "desc": "Trung tâm pháp lý của schematize.org: điều khoản sử dụng, điều khoản dịch vụ, chính sách bảo mật (LGPD) và chính sách cookie."
+      "desc": "Trung tâm pháp lý của schematize.org: điều khoản sử dụng, điều khoản dịch vụ, chính sách quyền riêng tư (LGPD) và chính sách cookie."
     },
     "hero": {
       "kicker": "Pháp lý",
       "h1": "Trung tâm pháp lý",
-      "sub": "Các chính sách quản lý website này và các dịch vụ của chúng tôi. Dữ liệu công ty và ngày hiệu lực nằm trên từng tài liệu."
+      "sub": "Các chính sách chi phối website này và các dịch vụ của chúng tôi. Dữ liệu công ty và ngày có hiệu lực có trong mỗi tài liệu."
     },
-    "disclaimer": "Bản thảo đang thực hiện — không phải tư vấn pháp lý. Các tài liệu này là một khung cấu trúc đang được luật sư xem xét và có thể thay đổi trước khi có hiệu lực. [REVISAR: advogado]",
+    "disclaimer": "Bản nháp đang làm việc — không phải tư vấn pháp lý. Các tài liệu này là một khung cấu trúc đang được luật sư rà soát và có thể thay đổi trước khi có hiệu lực. [REVISAR: advogado]",
     "effective": "Có hiệu lực từ",
     "effectiveDate": "2026-08-19",
     "controllerLabel": "Bên kiểm soát dữ liệu",
@@ -402,22 +481,22 @@
       "title": "Các chính sách",
       "items": [
         {
-          "h": "Điều khoản Sử dụng",
+          "h": "Điều khoản sử dụng",
           "p": "Các quy tắc sử dụng website này: sở hữu trí tuệ, ứng xử và liên kết bên thứ ba.",
           "slug": "legal/terms-of-use"
         },
         {
-          "h": "Điều khoản Dịch vụ",
-          "p": "Thỏa thuận bao trùm các công cụ và dịch vụ mã nguồn mở của chúng tôi.",
+          "h": "Điều khoản dịch vụ",
+          "p": "Thỏa thuận bao gồm các công cụ và dịch vụ mã nguồn mở của chúng tôi.",
           "slug": "legal/terms-of-service"
         },
         {
-          "h": "Chính sách Bảo mật",
+          "h": "Chính sách quyền riêng tư",
           "p": "Cách chúng tôi xử lý dữ liệu cá nhân, theo LGPD của Brazil.",
           "slug": "legal/privacy"
         },
         {
-          "h": "Chính sách Cookie",
+          "h": "Chính sách cookie",
           "p": "Các cookie và công nghệ tương tự mà trang này sử dụng, và cách quản lý chúng.",
           "slug": "legal/cookies"
         }
@@ -426,77 +505,77 @@
     "docs": {
       "termsUse": {
         "meta": {
-          "title": "Điều khoản Sử dụng — schematize.org",
+          "title": "Điều khoản sử dụng — schematize.org",
           "desc": "Điều khoản sử dụng cho website schematize.org."
         },
-        "h1": "Điều khoản Sử dụng",
+        "h1": "Điều khoản sử dụng",
         "sub": "Các quy tắc sử dụng website schematize.org.",
         "sections": [
-          { "h": "1. Chấp nhận", "p": "Bằng việc truy cập schematize.org, bạn đồng ý với các Điều khoản Sử dụng này. Nếu bạn không đồng ý, xin đừng sử dụng trang." },
-          { "h": "2. Trang cung cấp những gì", "p": "schematize.org là một trang thông tin và định chế trình bày các dự án mã nguồn mở và nghiên cứu công nghệ của chúng tôi. Nó không phải là một cửa hàng." },
-          { "h": "3. Sở hữu trí tuệ", "p": "Thương hiệu schematize và nội dung trang được bảo hộ. Các dự án mã nguồn mở của chúng tôi được cấp phép theo các điều khoản nêu trong từng kho lưu trữ trên GitHub." },
-          { "h": "4. Sử dụng chấp nhận được", "p": "Bạn đồng ý không lạm dụng trang, không tìm cách làm gián đoạn nó, hoặc dùng nó cho các mục đích bất hợp pháp." },
-          { "h": "5. Liên kết bên thứ ba", "p": "Trang liên kết tới các đích của bên thứ ba (ví dụ, GitHub). Chúng tôi không chịu trách nhiệm về nội dung của bên thứ ba." },
+          { "h": "1. Chấp nhận", "p": "Bằng cách truy cập schematize.org bạn đồng ý với các Điều khoản sử dụng này. Nếu bạn không đồng ý, vui lòng không sử dụng trang." },
+          { "h": "2. Trang cung cấp gì", "p": "schematize.org là một trang thông tin và thể chế trình bày các dự án mã nguồn mở và nghiên cứu công nghệ của chúng tôi. Đây không phải là một cửa hàng." },
+          { "h": "3. Sở hữu trí tuệ", "p": "Thương hiệu schematize và nội dung trang được bảo vệ. Các dự án mã nguồn mở của chúng tôi được cấp phép theo các điều khoản nêu trong mỗi kho lưu trữ trên GitHub." },
+          { "h": "4. Sử dụng chấp nhận được", "p": "Bạn đồng ý không lạm dụng trang, không cố gắng làm gián đoạn nó, hay sử dụng cho mục đích trái pháp luật." },
+          { "h": "5. Liên kết bên thứ ba", "p": "Trang liên kết tới các điểm đến bên thứ ba (ví dụ, GitHub). Chúng tôi không chịu trách nhiệm về nội dung bên thứ ba." },
           { "h": "6. Tuyên bố miễn trừ và giới hạn trách nhiệm", "p": "Trang được cung cấp \"nguyên trạng\", không có bảo đảm. [REVISAR: advogado]" },
-          { "h": "7. Thay đổi", "p": "Chúng tôi có thể cập nhật các điều khoản này; ngày hiệu lực ở trên phản ánh phiên bản hiện tại." },
-          { "h": "8. Luật điều chỉnh và nơi giải quyết tranh chấp", "p": "Các điều khoản này được điều chỉnh bởi luật pháp Brazil. [REVISAR: advogado]" }
+          { "h": "7. Thay đổi", "p": "Chúng tôi có thể cập nhật các điều khoản này; ngày có hiệu lực ở trên phản ánh phiên bản hiện tại." },
+          { "h": "8. Luật điều chỉnh và thẩm quyền", "p": "Các điều khoản này chịu sự điều chỉnh của luật pháp Brazil. [REVISAR: advogado]" }
         ]
       },
       "termsService": {
         "meta": {
-          "title": "Điều khoản Dịch vụ — schematize.org",
+          "title": "Điều khoản dịch vụ — schematize.org",
           "desc": "Điều khoản dịch vụ cho các công cụ và dịch vụ schematize."
         },
-        "h1": "Điều khoản Dịch vụ",
-        "sub": "Thỏa thuận bao trùm các công cụ và dịch vụ của chúng tôi.",
+        "h1": "Điều khoản dịch vụ",
+        "sub": "Thỏa thuận bao gồm các công cụ và dịch vụ của chúng tôi.",
         "sections": [
-          { "h": "1. Các bên và định nghĩa", "p": "Các điều khoản này điều chỉnh mối quan hệ giữa Schematize và người dùng các công cụ và dịch vụ của chúng tôi." },
-          { "h": "2. Phạm vi", "p": "Các công cụ mã nguồn mở của chúng tôi (như schematize CLI và các skill kỹ thuật) được cung cấp theo các giấy phép mã nguồn mở tương ứng trên GitHub." },
-          { "h": "3. Tài khoản", "p": "Khi một dịch vụ yêu cầu xác thực, nó được cung cấp qua auth.schematize.org. Bạn có trách nhiệm giữ an toàn cho thông tin đăng nhập của mình." },
-          { "h": "4. Phí", "p": "Các công cụ mã nguồn mở là miễn phí. Bất kỳ dịch vụ trả phí nào cũng được mô tả tại thời điểm ký kết. [REVISAR: advogado]" },
+          { "h": "1. Các bên và định nghĩa", "p": "Các điều khoản này chi phối mối quan hệ giữa Schematize và người dùng các công cụ và dịch vụ của chúng tôi." },
+          { "h": "2. Phạm vi", "p": "Các công cụ mã nguồn mở của chúng tôi (như schematize CLI và các skill kỹ thuật) được cung cấp theo giấy phép mã nguồn mở tương ứng trên GitHub." },
+          { "h": "3. Tài khoản", "p": "Nơi một dịch vụ yêu cầu xác thực, nó được cung cấp qua auth.schematize.org. Bạn chịu trách nhiệm giữ an toàn thông tin đăng nhập của mình." },
+          { "h": "4. Phí", "p": "Các công cụ mã nguồn mở là miễn phí. Bất kỳ dịch vụ trả phí nào được mô tả tại thời điểm ký kết. [REVISAR: advogado]" },
           { "h": "5. Nghĩa vụ của các bên", "p": "Bạn đồng ý sử dụng các dịch vụ một cách hợp pháp; chúng tôi đồng ý cung cấp chúng với sự cẩn trọng hợp lý." },
           { "h": "6. Đình chỉ và chấm dứt", "p": "Chúng tôi có thể đình chỉ quyền truy cập trong trường hợp lạm dụng hoặc rủi ro bảo mật." },
           { "h": "7. Bảo đảm và giới hạn trách nhiệm", "p": "Các dịch vụ được cung cấp \"nguyên trạng\" trong phạm vi luật pháp cho phép. [REVISAR: advogado]" },
-          { "h": "8. Quyền riêng tư", "p": "Dữ liệu cá nhân được xử lý theo Chính sách Bảo mật của chúng tôi." },
-          { "h": "9. Luật điều chỉnh và nơi giải quyết tranh chấp", "p": "Được điều chỉnh bởi luật pháp Brazil. [REVISAR: advogado]" }
+          { "h": "8. Quyền riêng tư", "p": "Dữ liệu cá nhân được xử lý theo Chính sách quyền riêng tư của chúng tôi." },
+          { "h": "9. Luật điều chỉnh và thẩm quyền", "p": "Chịu sự điều chỉnh của luật pháp Brazil. [REVISAR: advogado]" }
         ]
       },
       "privacy": {
         "meta": {
-          "title": "Chính sách Bảo mật — schematize.org",
-          "desc": "Chính sách bảo mật của schematize.org theo LGPD của Brazil: bên kiểm soát, dữ liệu thu thập, mục đích, cơ sở pháp lý, thời gian lưu trữ và quyền của chủ thể dữ liệu."
+          "title": "Chính sách quyền riêng tư — schematize.org",
+          "desc": "Chính sách quyền riêng tư của schematize.org theo LGPD của Brazil: bên kiểm soát, dữ liệu thu thập, mục đích, cơ sở pháp lý, thời gian lưu giữ và quyền của chủ thể dữ liệu."
         },
-        "h1": "Chính sách Bảo mật",
-        "sub": "Cách chúng tôi xử lý dữ liệu cá nhân, theo Luật Bảo vệ Dữ liệu Tổng quát của Brazil (LGPD).",
+        "h1": "Chính sách quyền riêng tư",
+        "sub": "Cách chúng tôi xử lý dữ liệu cá nhân, theo Luật Bảo vệ Dữ liệu Chung của Brazil (LGPD).",
         "sections": [
           { "h": "1. Bên kiểm soát", "p": "Bên kiểm soát dữ liệu là Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazil." },
-          { "h": "2. Nhân viên Bảo vệ Dữ liệu (DPO)", "p": "Với các vấn đề về quyền riêng tư và để thực hiện các quyền của bạn, hãy liên hệ contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Dữ liệu chúng tôi thu thập", "p": "Đây là một trang thông tin không có đăng nhập hay biểu mẫu; chúng tôi chỉ thu thập dữ liệu kỹ thuật tối thiểu cần thiết để phục vụ các trang và giữ trang an toàn. Nếu bạn gửi email cho chúng tôi, chúng tôi xử lý dữ liệu bạn gửi." },
-          { "h": "4. Mục đích", "p": "Để cung cấp và bảo vệ website, và để phản hồi các thông điệp bạn gửi cho chúng tôi." },
-          { "h": "5. Cơ sở pháp lý", "p": "Lợi ích chính đáng để vận hành và bảo vệ trang; sự đồng ý hoặc thực hiện một yêu cầu khi bạn liên hệ với chúng tôi (LGPD điều 7). [REVISAR: advogado]" },
-          { "h": "6. Chia sẻ", "p": "Chúng tôi sử dụng các nhà cung cấp hạ tầng và lưu trữ đóng vai trò là bên xử lý; chúng tôi không bán dữ liệu cá nhân." },
+          { "h": "2. Cán bộ Bảo vệ Dữ liệu (DPO)", "p": "Đối với các vấn đề quyền riêng tư và để thực hiện quyền của bạn, liên hệ contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
+          { "h": "3. Dữ liệu chúng tôi thu thập", "p": "Đây là một trang thông tin không có đăng nhập hay biểu mẫu; chúng tôi chỉ thu thập dữ liệu kỹ thuật tối thiểu cần thiết để phục vụ các trang và giữ an toàn cho trang. Nếu bạn email cho chúng tôi, chúng tôi xử lý dữ liệu bạn gửi." },
+          { "h": "4. Mục đích", "p": "Để cung cấp và bảo mật website, và để trả lời các tin nhắn bạn gửi cho chúng tôi." },
+          { "h": "5. Cơ sở pháp lý", "p": "Lợi ích hợp pháp để vận hành và bảo mật trang; sự đồng ý hoặc thực hiện một yêu cầu khi bạn liên hệ với chúng tôi (LGPD art. 7). [REVISAR: advogado]" },
+          { "h": "6. Chia sẻ", "p": "Chúng tôi sử dụng các nhà cung cấp hạ tầng và lưu trữ hoạt động như các bên xử lý; chúng tôi không bán dữ liệu cá nhân." },
           { "h": "7. Chuyển giao quốc tế", "p": "Một số nhà cung cấp có thể xử lý dữ liệu bên ngoài Brazil, với các biện pháp bảo vệ. [REVISAR: advogado]" },
-          { "h": "8. Lưu trữ", "p": "Chúng tôi chỉ giữ dữ liệu trong khoảng thời gian cần thiết cho các mục đích nêu trên hoặc theo yêu cầu của luật pháp." },
+          { "h": "8. Lưu giữ", "p": "Chúng tôi chỉ giữ dữ liệu trong thời gian cần thiết cho các mục đích trên hoặc theo yêu cầu của pháp luật." },
           { "h": "9. Bảo mật", "p": "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức hợp lý để bảo vệ dữ liệu." },
-          { "h": "10. Quyền của bạn", "p": "Theo LGPD điều 18, bạn có thể yêu cầu xác nhận, truy cập, chỉnh sửa, ẩn danh hóa, di chuyển, xóa và thông tin về việc chia sẻ, và rút lại sự đồng ý — bằng cách gửi email tới contabil@schematize.me." },
-          { "h": "11. Cookie", "p": "Xem Chính sách Cookie của chúng tôi để biết chi tiết về cookie và các công nghệ tương tự." },
-          { "h": "12. Thay đổi", "p": "Chúng tôi có thể cập nhật chính sách này; ngày hiệu lực ở trên phản ánh phiên bản hiện tại." }
+          { "h": "10. Quyền của bạn", "p": "Theo LGPD art. 18 bạn có thể yêu cầu xác nhận, truy cập, chỉnh sửa, ẩn danh, chuyển giao, xóa và thông tin về việc chia sẻ, và thu hồi sự đồng ý — bằng cách email tới contabil@schematize.me." },
+          { "h": "11. Cookie", "p": "Xem Chính sách cookie của chúng tôi để biết chi tiết về cookie và các công nghệ tương tự." },
+          { "h": "12. Thay đổi", "p": "Chúng tôi có thể cập nhật chính sách này; ngày có hiệu lực ở trên phản ánh phiên bản hiện tại." }
         ]
       },
       "cookies": {
         "meta": {
-          "title": "Chính sách Cookie — schematize.org",
+          "title": "Chính sách cookie — schematize.org",
           "desc": "Chính sách cookie của schematize.org: các loại cookie, mục đích và cách quản lý chúng."
         },
-        "h1": "Chính sách Cookie",
+        "h1": "Chính sách cookie",
         "sub": "Các cookie và công nghệ tương tự mà trang này sử dụng.",
         "sections": [
           { "h": "1. Cookie là gì", "p": "Cookie là các tệp nhỏ được lưu trên thiết bị của bạn giúp một trang hoạt động và ghi nhớ các tùy chọn." },
-          { "h": "2. Các loại", "p": "Thiết yếu: cần thiết để trang hoạt động (ví dụ, ghi nhớ ngôn ngữ của bạn). Cookie hiệu năng/phân tích, chức năng và tiếp thị chỉ được sử dụng khi bạn đồng ý tham gia." },
-          { "h": "3. Những gì chúng tôi sử dụng", "p": "Trang này lưu một tùy chọn ngôn ngữ cục bộ để giữ ngôn ngữ bạn đã chọn. Nó không chạy các cookie phân tích hoặc tiếp thị không thiết yếu mà không có sự đồng ý. [REVISAR: negócio]" },
-          { "h": "4. Sự đồng ý", "p": "Cookie không thiết yếu cần sự đồng ý tham gia; cookie thiết yếu chạy mà không cần sự đồng ý." },
-          { "h": "5. Quản lý cookie", "p": "Bạn có thể xóa hoặc chặn cookie trong cài đặt trình duyệt của mình; chặn lưu trữ thiết yếu có thể ảnh hưởng đến trang." },
-          { "h": "6. Thay đổi", "p": "Chúng tôi có thể cập nhật chính sách này; ngày hiệu lực ở trên phản ánh phiên bản hiện tại." }
+          { "h": "2. Các loại", "p": "Thiết yếu: cần thiết để trang hoạt động (ví dụ, ghi nhớ ngôn ngữ của bạn). Cookie hiệu suất/phân tích, chức năng và tiếp thị chỉ được sử dụng khi bạn đồng ý opt-in." },
+          { "h": "3. Chúng tôi sử dụng gì", "p": "Trang này lưu một tùy chọn ngôn ngữ cục bộ để giữ ngôn ngữ bạn chọn. Nó không chạy cookie phân tích hoặc tiếp thị không thiết yếu mà không có sự đồng ý. [REVISAR: negócio]" },
+          { "h": "4. Đồng ý", "p": "Cookie không thiết yếu yêu cầu sự đồng ý opt-in; cookie thiết yếu chạy mà không cần đồng ý." },
+          { "h": "5. Quản lý cookie", "p": "Bạn có thể xóa hoặc chặn cookie trong cài đặt trình duyệt của mình; việc chặn lưu trữ thiết yếu có thể ảnh hưởng đến trang." },
+          { "h": "6. Thay đổi", "p": "Chúng tôi có thể cập nhật chính sách này; ngày có hiệu lực ở trên phản ánh phiên bản hiện tại." }
         ]
       }
     }
@@ -504,16 +583,16 @@
   "sitemapPage": {
     "meta": {
       "title": "Sơ đồ trang — schematize.org",
-      "desc": "Bản đồ dễ đọc của mọi trang công khai trên schematize.org."
+      "desc": "Bản đồ dễ đọc cho con người của mọi trang công khai trên schematize.org."
     },
     "hero": {
       "kicker": "Sơ đồ trang",
       "h1": "Sơ đồ trang",
-      "sub": "Mọi trang công khai trên schematize.org, nhóm theo mục."
+      "sub": "Mọi trang công khai trên schematize.org, được nhóm theo mục."
     },
     "groups": [
       {
-        "h": "Định chế",
+        "h": "Thể chế",
         "links": [
           { "slug": "", "label": "Trang chủ" },
           { "slug": "about", "label": "Giới thiệu" },
@@ -523,6 +602,7 @@
       {
         "h": "Công việc",
         "links": [
+          { "slug": "software", "label": "Ứng dụng" },
           { "slug": "projects", "label": "Dự án" },
           { "slug": "research", "label": "Nghiên cứu" },
           { "slug": "principles", "label": "Nguyên tắc" }
@@ -532,10 +612,10 @@
         "h": "Pháp lý",
         "links": [
           { "slug": "legal", "label": "Trung tâm pháp lý" },
-          { "slug": "legal/terms-of-use", "label": "Điều khoản Sử dụng" },
-          { "slug": "legal/terms-of-service", "label": "Điều khoản Dịch vụ" },
-          { "slug": "legal/privacy", "label": "Chính sách Bảo mật" },
-          { "slug": "legal/cookies", "label": "Chính sách Cookie" }
+          { "slug": "legal/terms-of-use", "label": "Điều khoản sử dụng" },
+          { "slug": "legal/terms-of-service", "label": "Điều khoản dịch vụ" },
+          { "slug": "legal/privacy", "label": "Chính sách quyền riêng tư" },
+          { "slug": "legal/cookies", "label": "Chính sách cookie" }
         ]
       }
     ]

@@ -1,12 +1,13 @@
 {
   "nav": {
+    "software": "Die App",
     "projects": "Projekte",
     "research": "Forschung",
     "principles": "Prinzipien",
     "about": "Über uns",
     "contact": "Kontakt",
     "legal": "Rechtliches",
-    "skills": "Skills",
+    "catalog": "Skills-Katalog",
     "academy": "Academy",
     "login": "Anmelden / Registrieren",
     "cta": "Quellcode ansehen",
@@ -23,8 +24,8 @@
   },
   "home": {
     "meta": {
-      "title": "schematize.org — Open-Source- und KI-Engineering-Forschungslabor",
-      "desc": "schematize.org ist das Open-Source- und Technologieforschungslabor hinter schematize: offen entwickelte Werkzeuge und Forschung zum Engineering mit KI-Agenten. Entdecke unsere Arbeit."
+      "title": "schematize.org — Labor für Open Source & KI-Engineering-Forschung",
+      "desc": "schematize.org ist das Open-Source- und Technologieforschungslabor hinter schematize: offen entwickelte Werkzeuge und Forschung darüber, wie man mit KI-Agenten Engineering betreibt. Entdecke unsere Arbeit."
     },
     "hero": {
       "kicker": "Open Source & Forschung",
@@ -36,7 +37,7 @@
     "mission": {
       "kicker": "Mission",
       "title": "Von Agenten gebaute Software vertrauenswürdig machen.",
-      "p": "KI-Agenten können viel Code schnell schreiben — aber schnell ist wertlos, wenn es nicht korrekt, sicher und wartbar ist. Wir bauen die offenen Werkzeuge und die gemeinsamen Standards, die aus Agenten-Output Software machen, die man tatsächlich in Produktion betreiben kann, und wir veröffentlichen, was wir dabei lernen."
+      "p": "KI-Agenten können viel Code schnell schreiben — aber schnell ist wertlos, wenn er nicht korrekt, sicher und wartbar ist. Wir bauen die offenen Werkzeuge und die gemeinsamen Standards, die aus Agenten-Output Software machen, die man tatsächlich in Produktion betreiben kann, und wir veröffentlichen, was wir dabei lernen."
     },
     "pillars": {
       "title": "Woran wir arbeiten",
@@ -45,7 +46,7 @@
           "key": "projects",
           "icon": "package",
           "h": "Open-Source-Projekte",
-          "p": "Die schematize-CLI, der Engineering-Skill-Katalog für Claude Code und das Werkzeug, das alles reproduzierbar macht — lesbar, forkbar und frei."
+          "p": "Die schematize-CLI, der Engineering-Skill-Katalog für Claude Code und das Werkzeug, das alles reproduzierbar macht — alles lesbar, forkbar und frei."
         },
         {
           "key": "research",
@@ -57,7 +58,7 @@
           "key": "principles",
           "icon": "shield-check",
           "h": "Engineering-Standards",
-          "p": "Die nicht verhandelbaren Mindestanforderungen, die Agenten-Output vertrauenswürdig machen: serverseitig entschiedene Sicherheit, Tests, die das Verhalten beweisen, und ein Prüfpfad bei jeder Änderung."
+          "p": "Die nicht verhandelbaren Mindeststandards, die Agenten-Output vertrauenswürdig machen: Sicherheit serverseitig entschieden, Tests, die Verhalten beweisen, und ein Audit-Trail bei jeder Änderung."
         }
       ]
     },
@@ -65,12 +66,12 @@
       "title": "Wie wir arbeiten",
       "items": [
         {
-          "h": "Standardmäßig offen",
+          "h": "Offen als Standard",
           "p": "Unsere Werkzeuge sind Open Source und unsere Erkenntnisse sind öffentlich. Wenn es zählt, kannst du es lesen, ausführen und darauf aufbauen."
         },
         {
-          "h": "Gründlich",
-          "p": "Standards statt Bauchgefühl: normative Playbooks, echte Tests und Sicherheit als erstklassige Anforderung — nicht als Nachgedanke."
+          "h": "Rigoros",
+          "p": "Standards statt Bauchgefühl: normative Playbooks, echte Tests und Sicherheit als erstklassige Anforderung behandelt — nicht als nachträglicher Gedanke."
         },
         {
           "h": "Praxisnah",
@@ -89,11 +90,11 @@
       "p": "Alles, was schematize offen entwickelt, über das Ökosystem hinweg organisiert.",
       "items": [
         {
-          "h": "Skills",
-          "tag": "skills.schematize.org",
-          "url": "https://skills.schematize.org",
-          "icon": "blocks",
-          "p": "Der Katalog von Engineering-Skills, die KI-Agenten dazu bringen, die Hausstandards zu befolgen — mit einem Befehl installierbar."
+          "h": "Die App",
+          "tag": "schematize CLI",
+          "key": "software",
+          "icon": "terminal",
+          "p": "Die Kommandozeilen-App in Rust (Desktop-App inklusive), die Skills installiert und versioniert und overdev ausführt — auf Linux mit einem Befehl installieren."
         },
         {
           "h": "Forschung",
@@ -137,35 +138,35 @@
           "tag": "Skills · Claude Code",
           "icon": "blocks",
           "h": "Engineering-Skills",
-          "p": "Normative Playbooks für Claude Code — engineering, go, rust, web, seo, node und pentest — jeweils mit nicht verhandelbaren Mindestanforderungen für Sicherheit, Tests und Architektur.",
+          "p": "Normative Playbooks für Claude Code — engineering, go, rust, web, seo, node und pentest — jeder mit nicht verhandelbaren Mindeststandards für Sicherheit, Tests und Architektur.",
           "href": "https://github.com/schematizeme"
         },
         {
           "tag": "SEO",
           "icon": "search",
           "h": "schematize-seo",
-          "p": "Eine vollständige SEO-Disziplin als Skill: technisch, On-Page, Inhalt, strukturierte Daten, international/Multi-Domain und Optimierung für KI-Antworten.",
+          "p": "Eine vollständige SEO-Disziplin als Skill: technisch, On-Page, Content, strukturierte Daten, international/Multi-Domain und Optimierung für KI-Antworten.",
           "href": "https://github.com/schematizeme/skill-seo"
         },
         {
           "tag": "Security",
           "icon": "shield-check",
           "h": "schematize-pentest",
-          "p": "Defensives AppSec und autorisiertes Red-Teaming als Skill: Kartierung der Angriffsfläche von Endpunkten, OWASP-Abdeckung und Bedrohungsmodellierung — stets im Rahmen des Umfangs.",
+          "p": "Defensive AppSec und autorisiertes Red-Teaming als Skill: Kartierung der Angriffsfläche von Endpoints, OWASP-Abdeckung und Threat Modeling — stets im Rahmen.",
           "href": "https://github.com/schematizeme/skill-pentest"
         }
       ]
     },
     "cta": {
       "title": "Lies den Quellcode.",
-      "p": "Alles ist öffentlich. Vergib einen Stern, forke es, öffne ein Issue — oder nutze die schematize-CLI, um es in Sekunden zu installieren.",
+      "p": "Alles ist öffentlich. Gib einen Stern, forke es, öffne ein Issue — oder nutze die schematize-CLI, um es in Sekunden zu installieren.",
       "button": "GitHub öffnen"
     }
   },
   "research": {
     "meta": {
       "title": "Technologieforschung — schematize.org",
-      "desc": "Forschung aus dem schematize-Labor zum Engineering mit KI-Agenten: zuverlässige Orchestrierung, die Sicherheit KI-gestützter Auslieferung und Standards, die Agenten-Output vertrauenswürdig machen."
+      "desc": "Forschung aus dem schematize-Labor über Engineering mit KI-Agenten: zuverlässige Orchestrierung, die Sicherheit KI-gestützter Auslieferung und Standards, die Agenten-Output vertrauenswürdig machen."
     },
     "hero": {
       "kicker": "Forschung",
@@ -178,7 +179,7 @@
         {
           "icon": "workflow",
           "h": "Zuverlässiges Agenten-Engineering",
-          "p": "Orchestrierung, Zerlegung und Guardrails, die KI-Agenten über lange, mehrstufige Arbeit bei der Sache halten — ohne früh aufzuhören oder von der Spezifikation abzuweichen."
+          "p": "Orchestrierung, Zerlegung und Guardrails, die KI-Agenten über lange, mehrstufige Arbeit auf Kurs halten — ohne früh zu stoppen oder von der Spezifikation abzudriften."
         },
         {
           "icon": "shield-check",
@@ -188,11 +189,11 @@
         {
           "icon": "ruler",
           "h": "Standards & Evaluation",
-          "p": "Was 'gut' für Agenten-Output bedeutet und wie man es misst: normative Playbooks, Qualitäts-Gates und Tests, die das Verhalten beweisen statt Bauchgefühl."
+          "p": "Was 'gut' für Agenten-Output bedeutet und wie man es misst: normative Playbooks, Quality Gates und Tests, die Verhalten beweisen statt Bauchgefühl."
         },
         {
           "icon": "heart-handshake",
-          "h": "Entwicklererfahrung",
+          "h": "Developer Experience",
           "p": "Den richtigen Weg zum einfachen Weg machen — Werkzeuge, die Standards installieren, sie aktuell halten und dem Entwickler aus dem Weg gehen."
         }
       ]
@@ -213,7 +214,7 @@
         {
           "icon": "lock",
           "h": "Sicherheit zuerst",
-          "p": "Wenn es nicht sicher auszuführen ist, ist es nicht fertig. Bedrohungsmodellierung und Tests sind Teil der Methode."
+          "p": "Wenn es nicht sicher ausführbar ist, ist es nicht fertig. Threat Modeling und Tests sind Teil der Methode."
         }
       ]
     },
@@ -226,43 +227,43 @@
   "principles": {
     "meta": {
       "title": "Prinzipien — wie wir bauen — schematize.org",
-      "desc": "Die Engineering-Prinzipien des schematize-Labors: nicht verhandelbare Mindestanforderungen, die mit KI-Agenten geschriebene Software korrekt, sicher und wartbar machen — serverseitig entschiedene Sicherheit, Tests, die das Verhalten beweisen, ein Prüfpfad bei jeder Änderung und ein Design mit Identität zuerst."
+      "desc": "Die Engineering-Prinzipien des schematize-Labors: nicht verhandelbare Mindeststandards, die mit KI-Agenten geschriebene Software korrekt, sicher und wartbar machen — Sicherheit serverseitig entschieden, Tests, die Verhalten beweisen, ein Audit-Trail bei jeder Änderung und identitätszentriertes Design."
     },
     "hero": {
       "kicker": "Prinzipien",
       "h1": "Wie wir bauen.",
-      "sub": "KI-Agenten können Code schnell produzieren, aber Geschwindigkeit ohne Disziplin liefert nur schneller Bugs aus. Dies sind die nicht verhandelbaren Mindestanforderungen, an die wir jedes Projekt halten — dieselben Mindestanforderungen, die unsere Open-Source-Skills kodieren, damit Agenten sie standardmäßig befolgen."
+      "sub": "KI-Agenten können Code schnell produzieren, aber Geschwindigkeit ohne Disziplin liefert nur Bugs schneller. Das sind die nicht verhandelbaren Mindeststandards, an die wir jedes Projekt halten — dieselben Standards, die unsere Open-Source-Skills kodieren, damit Agenten ihnen standardmäßig folgen."
     },
     "intro": {
       "title": "Standards statt Bauchgefühl",
-      "p": "Ein Prinzip zählt nur, wenn eine Maschine es prüfen kann. Jede Mindestanforderung unten entspricht einem konkreten Gate in unseren Werkzeugen — einem Test, einer Review-Regel, einem erforderlichen Artefakt — damit 'fertig' bewiesen und nicht nur behauptet wird. Genau das installieren unsere Engineering-Skills in ein Projekt, und genau das schärft unsere Forschung weiter."
+      "p": "Ein Prinzip zählt nur, wenn eine Maschine es prüfen kann. Jeder Mindeststandard unten bildet ein konkretes Gate in unseren Werkzeugen ab — einen Test, eine Review-Regel, ein erforderliches Artefakt — damit 'fertig' bewiesen und nicht behauptet ist. Das ist es, was unsere Engineering-Skills in ein Projekt installieren, und was unsere Forschung weiter schärft."
     },
     "floors": {
-      "title": "Die nicht verhandelbaren Mindestanforderungen",
+      "title": "Die nicht verhandelbaren Mindeststandards",
       "items": [
         {
           "icon": "server",
           "h": "Sicherheit wird auf dem Server entschieden",
-          "p": "Authentifizierung und Autorisierung werden serverseitig durchgesetzt, nie im Client. Geheimnisse erreichen nie das Browser-Bundle. Eine Prüfung in der UI ist Benutzererfahrung — die eigentliche Entscheidung fällt dort, wo die Anfrage ankommt, gegen eine verifizierte Identität."
+          "p": "Authentifizierung und Autorisierung werden serverseitig durchgesetzt, nie im Client. Secrets erreichen nie das Browser-Bundle. Eine Prüfung in der UI ist User Experience — die echte Entscheidung fällt dort, wo die Anfrage landet, gegen eine verifizierte Identität."
         },
         {
           "icon": "flask-conical",
-          "h": "Tests beweisen das Verhalten",
-          "p": "Ein Test behauptet, was die Software tut — Inhalt, Zustand, Interaktion, Fehler- und Leerpfade — nicht nur, dass sie gerendert hat. Abdeckung, die nicht fehlschlägt, wenn das Verhalten bricht, ist keine Abdeckung. Qualitäts-Gates blockieren einen Merge genauso wie ein defekter Build."
+          "h": "Tests beweisen Verhalten",
+          "p": "Ein Test behauptet, was die Software tut — Inhalt, Zustand, Interaktion, Fehler- und Leerpfade — nicht bloß, dass sie gerendert hat. Abdeckung, die nicht fehlschlägt, wenn das Verhalten bricht, ist keine Abdeckung. Quality Gates blockieren einen Merge genauso wie ein kaputter Build."
         },
         {
           "icon": "archive",
-          "h": "Jede Änderung hinterlässt einen Prüfpfad",
-          "p": "Keine Arbeit ist fertig, bevor sie festgehalten ist: was sich änderte, warum, was entschieden und was verworfen wurde. Das Archive ist Teil des Ergebnisses, kein Papierkram danach — damit die Argumentation die Sitzung überdauert, die sie hervorbrachte."
+          "h": "Jede Änderung hinterlässt einen Audit-Trail",
+          "p": "Keine Arbeit ist fertig, bis sie festgehalten ist: was sich geändert hat, warum, was entschieden und was verworfen wurde. Das Archive ist Teil der Auslieferung, kein Papierkram danach — damit die Begründung die Sitzung überlebt, die sie hervorgebracht hat."
         },
         {
           "icon": "fingerprint",
-          "h": "Identität kommt zuerst",
-          "p": "Jedes Projekt beginnt mit robustem IAM: Identität ist keine E-Mail, Zugriff ist beziehungsbasiert und standardmäßig mandantenfähig, und passwortlos ist das Ziel. Autorisierung ist von Tag eins an granular, nicht nach einem Vorfall nachgerüstet."
+          "h": "Identität zuerst",
+          "p": "Jedes Projekt beginnt mit robustem IAM: Identität ist keine E-Mail, Zugriff ist beziehungsbasiert und standardmäßig mandantenfähig, und passwortlos ist das Ziel. Autorisierung ist granular vom ersten Tag an, nicht nach einem Vorfall angeschraubt."
         },
         {
           "icon": "git-fork",
-          "h": "Standardmäßig offen",
+          "h": "Offen als Standard",
           "p": "Unsere Werkzeuge sind Open Source und unsere Erkenntnisse sind öffentlich. Wenn es zählt, kannst du es lesen, ausführen, forken und darauf aufbauen. Reproduzierbarkeit ist der Punkt — ein Ergebnis, das du nicht reproduzieren kannst, ist eine Meinung."
         },
         {
@@ -273,9 +274,87 @@
       ]
     },
     "cta": {
-      "title": "Sieh die Mindestanforderungen im Code.",
-      "p": "Die obigen Prinzipien sind als installierbare Engineering-Skills für Claude Code kodiert — und der Quellcode ist komplett auf GitHub.",
-      "button": "Skills durchsuchen",
+      "title": "Sieh die Mindeststandards im Code.",
+      "p": "Die Prinzipien oben sind als installierbare Engineering-Skills für Claude Code kodiert — und der Quellcode ist komplett auf GitHub.",
+      "button": "Die Skills durchsuchen",
+      "url": "https://skills.schematize.org"
+    }
+  },
+  "software": {
+    "meta": {
+      "title": "Die App — die schematize-CLI — schematize.org",
+      "desc": "schematize ist eine Kommandozeilen-App in Rust (Desktop-App inklusive), die Engineering-Skills für Claude Code installiert und versioniert und overdev ausführt. Auf Linux mit einem Befehl installieren oder für macOS herunterladen."
+    },
+    "hero": {
+      "kicker": "Die App",
+      "h1": "Eine CLI für den gesamten Workflow.",
+      "sub": "schematize ist eine Kommandozeilen-App in Rust — Desktop-App inklusive —, die Engineering-Skills aus einem Live-Katalog installiert und versioniert und overdev ausführt: kontinuierliche, unbeaufsichtigte Entwicklung, die nicht stoppt, bis die Checkliste erledigt ist."
+    },
+    "install": {
+      "title": "Auf Linux installieren",
+      "sub": "Ein Befehl. Debian, Ubuntu und Linux Mint (.deb); openSUSE, Fedora und RHEL (.rpm); oder ein statisches Binary. Es baut aus dem Quellcode auf der Maschine — Open Source, stets deckungsgleich mit main.",
+      "terminal": "In einem Terminal:"
+    },
+    "features": {
+      "title": "Was die App tut",
+      "items": [
+        {
+          "icon": "package",
+          "h": "Skills installieren & versionieren",
+          "p": "Aus einem Live-Remote-Katalog — ein Befehl holt das ganze Set und hält es aktuell. Neue Skills erscheinen, ohne etwas neu zu installieren."
+        },
+        {
+          "icon": "monitor",
+          "h": "Desktop-App inklusive",
+          "p": "Ein Fenster, um Skills zu durchsuchen, zu installieren und zu aktualisieren — vorgebaut ausgeliefert, keine Build-Werkzeuge nötig."
+        },
+        {
+          "icon": "stethoscope",
+          "h": "doctor · upgrade · status",
+          "p": "Diagnostiziere dein Setup, aktualisiere dich selbst und sieh alles auf einen Blick aus der CLI."
+        },
+        {
+          "icon": "radar",
+          "h": "Residenter Agent",
+          "p": "Achtet auf neue Skill-Versionen und Blog-Beiträge und benachrichtigt dich nativ auf dem Desktop."
+        }
+      ]
+    },
+    "downloads": {
+      "title": "Downloads",
+      "sub": "Installiere schematize auf macOS oder Linux — die Desktop-App kommt mit.",
+      "mac": "macOS · Apple Silicon (.app). Herunterladen, entpacken und Rechtsklick → Öffnen.",
+      "deb": "Debian, Ubuntu, Linux Mint — das .deb (CLI + Desktop-App).",
+      "rpm": "openSUSE, Fedora, RHEL — das .rpm (CLI + Desktop-App).",
+      "download": "Herunterladen",
+      "releases": "Alle Releases",
+      "unsigned": "Die macOS-App ist noch nicht code-signiert — das System zeigt beim ersten Start eine einmalige „nicht verifiziert“-Warnung (Rechtsklick → Öffnen)."
+    },
+    "how": {
+      "title": "Wie es funktioniert",
+      "sub": "Die App liest einen Live-Index (catalog.json) auf GitHub, also ist das Veröffentlichen einer neuen Skill nur das Hinzufügen eines Eintrags — kein CLI-Rebuild.",
+      "items": [
+        {
+          "icon": "download",
+          "h": "Installiere die App",
+          "p": "Ein Befehl installiert die schematize-CLI und ihre Desktop-App auf Linux (.deb / .rpm / Binary), oder hol dir den macOS-Build."
+        },
+        {
+          "icon": "blocks",
+          "h": "Installiere Skills",
+          "p": "Führe schematize install --all aus, um jede Skill in .claude/ zu holen, oder installiere eine per Slug — durchsuche den Katalog auf skills.schematize.org."
+        },
+        {
+          "icon": "refresh-cw",
+          "h": "Bleib aktuell",
+          "p": "Der residente Agent benachrichtigt dich, wenn eine Skill oder die App aktualisiert wird; schematize upgrade aktualisiert sich selbst."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Durchsuche die Skills.",
+      "p": "Die App installiert Skills aus dem offenen Katalog — durchsuche ihn und wähle, was dein Projekt braucht.",
+      "button": "Den Katalog öffnen",
       "url": "https://skills.schematize.org"
     }
   },
@@ -310,7 +389,7 @@
     "who": {
       "title": "Wer wir sind",
       "p1": "Schematize ist ein brasilianisches Technologieunternehmen. Wir bauen Open-Source-Werkzeuge und normative Engineering-Standards, die mit KI-Agenten geschriebene Software korrekt, sicher und wartbar machen — und wir veröffentlichen, was wir dabei lernen.",
-      "p2": "Alles Institutionelle und Open-Source lebt jetzt an einem einzigen Ort: schematize.org. Unser Quellcode ist öffentlich auf GitHub, und unsere Werkzeuge werden über die schematize-CLI installiert."
+      "p2": "Alles Institutionelle und Open-Source lebt jetzt an einem einzigen Ort: schematize.org. Unser Quellcode ist öffentlich auf GitHub, und unsere Werkzeuge installieren sich über die schematize-CLI."
     },
     "mission": {
       "title": "Was uns antreibt",
@@ -332,7 +411,7 @@
     },
     "cta": {
       "title": "Nimm Kontakt auf.",
-      "p": "Fragen zum Unternehmen, den Projekten oder der Forschung? Schreib uns oder lies den Quellcode.",
+      "p": "Fragen zum Unternehmen, zu den Projekten oder zur Forschung? Melde dich oder lies den Quellcode.",
       "button": "Kontakt"
     }
   },
@@ -344,7 +423,7 @@
     "hero": {
       "kicker": "Kontakt",
       "h1": "Sprich mit uns.",
-      "sub": "Der beste Ort, um die Arbeit zu erreichen, ist dort, wo sie lebt. Wähle den Kanal, der passt."
+      "sub": "Der beste Ort, um die Arbeit zu erreichen, ist dort, wo sie lebt. Wähle den passenden Kanal."
     },
     "channels": {
       "title": "Kanäle",
@@ -352,7 +431,7 @@
         {
           "icon": "mail",
           "h": "Institutionell & administrativ",
-          "p": "Für Unternehmens-, Abrechnungs- und institutionelle Angelegenheiten schreib uns direkt eine E-Mail.",
+          "p": "Für Unternehmens-, Rechnungs- und institutionelle Anliegen schreib uns direkt eine E-Mail.",
           "href": "mailto:contabil@schematize.me",
           "label": "contabil@schematize.me"
         },
@@ -366,21 +445,21 @@
         },
         {
           "icon": "shield-alert",
-          "h": "Sicherheit & verantwortungsvolle Offenlegung",
-          "p": "Eine Schwachstelle in einem unserer Werkzeuge gefunden? Melde sie privat, und wir arbeiten mit dir an einer Behebung und Offenlegung.",
+          "h": "Sicherheit & Responsible Disclosure",
+          "p": "Eine Schwachstelle in einem unserer Werkzeuge gefunden? Melde sie vertraulich und wir arbeiten mit dir an einer Behebung und Offenlegung.",
           "href": "mailto:contabil@schematize.me?subject=Security%20disclosure",
-          "label": "Privat melden"
+          "label": "Vertraulich melden"
         },
         {
           "icon": "blocks",
-          "h": "Skill-Katalog",
+          "h": "Skills-Katalog",
           "p": "Durchsuche und installiere die Engineering-Skills für Claude Code.",
           "href": "https://skills.schematize.org",
           "label": "skills.schematize.org"
         }
       ]
     },
-    "note": "Indem du Kontakt aufnimmst, erklärst du dich damit einverstanden, dass wir die übermittelten Daten ausschließlich zur Beantwortung deiner Anfrage verarbeiten. Siehe die Datenschutzerklärung."
+    "note": "Indem du uns kontaktierst, stimmst du zu, dass wir die von dir gesendeten Daten ausschließlich zur Beantwortung deiner Anfrage verarbeiten. Siehe die Datenschutzerklärung."
   },
   "legal": {
     "meta": {
@@ -390,9 +469,9 @@
     "hero": {
       "kicker": "Rechtliches",
       "h1": "Rechtszentrum",
-      "sub": "Die Richtlinien, die diese Website und unsere Dienste regeln. Die Unternehmensdaten und das Datum des Inkrafttretens stehen in jedem Dokument."
+      "sub": "Die Richtlinien, die diese Website und unsere Dienste regeln. Die Unternehmensdaten und das Gültigkeitsdatum stehen in jedem Dokument."
     },
-    "disclaimer": "Arbeitsentwurf — keine Rechtsberatung. Diese Dokumente sind ein strukturelles Gerüst in Prüfung durch Rechtsberater und können sich vor dem Inkrafttreten ändern. [REVISAR: advogado]",
+    "disclaimer": "Arbeitsentwurf — keine Rechtsberatung. Diese Dokumente sind ein struktureller Rahmen in Prüfung durch die Rechtsberatung und können sich vor Inkrafttreten ändern. [REVISAR: advogado]",
     "effective": "In Kraft seit",
     "effectiveDate": "2026-08-19",
     "controllerLabel": "Verantwortlicher",
@@ -403,22 +482,22 @@
       "items": [
         {
           "h": "Nutzungsbedingungen",
-          "p": "Die Regeln für die Nutzung dieser Website: geistiges Eigentum, Verhalten und Links Dritter.",
+          "p": "Die Regeln zur Nutzung dieser Website: geistiges Eigentum, Verhalten und Links Dritter.",
           "slug": "legal/terms-of-use"
         },
         {
           "h": "Servicebedingungen",
-          "p": "Die Vereinbarung, die unsere Open-Source-Werkzeuge und -Dienste abdeckt.",
+          "p": "Die Vereinbarung über unsere Open-Source-Werkzeuge und -Dienste.",
           "slug": "legal/terms-of-service"
         },
         {
           "h": "Datenschutzerklärung",
-          "p": "Wie wir personenbezogene Daten verarbeiten, nach Brasiliens LGPD.",
+          "p": "Wie wir personenbezogene Daten behandeln, nach Brasiliens LGPD.",
           "slug": "legal/privacy"
         },
         {
           "h": "Cookie-Richtlinie",
-          "p": "Die Cookies und ähnlichen Technologien, die diese Website verwendet, und wie man sie verwaltet.",
+          "p": "Die Cookies und ähnlichen Technologien, die diese Website nutzt, und wie man sie verwaltet.",
           "slug": "legal/cookies"
         }
       ]
@@ -427,19 +506,19 @@
       "termsUse": {
         "meta": {
           "title": "Nutzungsbedingungen — schematize.org",
-          "desc": "Nutzungsbedingungen der Website schematize.org."
+          "desc": "Nutzungsbedingungen für die Website schematize.org."
         },
         "h1": "Nutzungsbedingungen",
-        "sub": "Regeln für die Nutzung der Website schematize.org.",
+        "sub": "Regeln zur Nutzung der Website schematize.org.",
         "sections": [
-          { "h": "1. Annahme", "p": "Mit dem Zugriff auf schematize.org stimmst du diesen Nutzungsbedingungen zu. Wenn du nicht einverstanden bist, nutze die Website bitte nicht." },
+          { "h": "1. Annahme", "p": "Mit dem Zugriff auf schematize.org stimmst du diesen Nutzungsbedingungen zu. Wenn du nicht zustimmst, nutze die Website bitte nicht." },
           { "h": "2. Was die Website bietet", "p": "schematize.org ist eine informative und institutionelle Website, die unsere Open-Source-Projekte und Technologieforschung vorstellt. Es ist kein Shop." },
-          { "h": "3. Geistiges Eigentum", "p": "Die Marke schematize und die Website-Inhalte sind geschützt. Unsere Open-Source-Projekte sind unter den in jedem Repository auf GitHub angegebenen Bedingungen lizenziert." },
-          { "h": "4. Zulässige Nutzung", "p": "Du stimmst zu, die Website nicht zu missbrauchen, sie nicht zu stören und sie nicht für rechtswidrige Zwecke zu nutzen." },
-          { "h": "5. Links Dritter", "p": "Die Website verlinkt auf Ziele Dritter (zum Beispiel GitHub). Für die Inhalte Dritter sind wir nicht verantwortlich." },
-          { "h": "6. Haftungsausschluss und Haftungsbeschränkung", "p": "Die Website wird \"wie besehen\" ohne Gewährleistungen bereitgestellt. [REVISAR: advogado]" },
-          { "h": "7. Änderungen", "p": "Wir können diese Bedingungen aktualisieren; das obige Datum des Inkrafttretens spiegelt die aktuelle Version wider." },
-          { "h": "8. Anwendbares Recht und Gerichtsstand", "p": "Diese Bedingungen unterliegen dem Recht Brasiliens. [REVISAR: advogado]" }
+          { "h": "3. Geistiges Eigentum", "p": "Die Marke schematize und der Inhalt der Website sind geschützt. Unsere Open-Source-Projekte sind zu den in jedem Repository auf GitHub angegebenen Bedingungen lizenziert." },
+          { "h": "4. Zulässige Nutzung", "p": "Du stimmst zu, die Website nicht zu missbrauchen, nicht zu versuchen, sie zu stören, und sie nicht für rechtswidrige Zwecke zu nutzen." },
+          { "h": "5. Links Dritter", "p": "Die Website verlinkt auf Ziele Dritter (zum Beispiel GitHub). Für Inhalte Dritter sind wir nicht verantwortlich." },
+          { "h": "6. Haftungsausschluss und Haftungsbeschränkung", "p": "Die Website wird \"wie besehen\" bereitgestellt, ohne Gewährleistungen. [REVISAR: advogado]" },
+          { "h": "7. Änderungen", "p": "Wir können diese Bedingungen aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." },
+          { "h": "8. Anwendbares Recht und Gerichtsstand", "p": "Diese Bedingungen unterliegen den Gesetzen Brasiliens. [REVISAR: advogado]" }
         ]
       },
       "termsService": {
@@ -448,39 +527,39 @@
           "desc": "Servicebedingungen für schematize-Werkzeuge und -Dienste."
         },
         "h1": "Servicebedingungen",
-        "sub": "Die Vereinbarung, die unsere Werkzeuge und Dienste abdeckt.",
+        "sub": "Die Vereinbarung über unsere Werkzeuge und Dienste.",
         "sections": [
           { "h": "1. Parteien und Definitionen", "p": "Diese Bedingungen regeln das Verhältnis zwischen Schematize und den Nutzern unserer Werkzeuge und Dienste." },
-          { "h": "2. Geltungsbereich", "p": "Unsere Open-Source-Werkzeuge (wie die schematize-CLI und die Engineering-Skills) werden unter ihren jeweiligen Open-Source-Lizenzen auf GitHub bereitgestellt." },
-          { "h": "3. Konten", "p": "Wenn ein Dienst eine Authentifizierung erfordert, wird sie über auth.schematize.org bereitgestellt. Du bist dafür verantwortlich, deine Zugangsdaten sicher zu halten." },
-          { "h": "4. Gebühren", "p": "Open-Source-Werkzeuge sind kostenlos. Jeder kostenpflichtige Dienst wird zum Zeitpunkt des Vertragsabschlusses beschrieben. [REVISAR: advogado]" },
+          { "h": "2. Umfang", "p": "Unsere Open-Source-Werkzeuge (wie die schematize-CLI und die Engineering-Skills) werden unter ihren jeweiligen Open-Source-Lizenzen auf GitHub bereitgestellt." },
+          { "h": "3. Konten", "p": "Wo ein Dienst Authentifizierung erfordert, wird sie über auth.schematize.org bereitgestellt. Du bist dafür verantwortlich, deine Zugangsdaten sicher zu halten." },
+          { "h": "4. Entgelte", "p": "Open-Source-Werkzeuge sind kostenlos. Jeder kostenpflichtige Dienst wird zum Zeitpunkt der Beauftragung beschrieben. [REVISAR: advogado]" },
           { "h": "5. Pflichten der Parteien", "p": "Du stimmst zu, die Dienste rechtmäßig zu nutzen; wir stimmen zu, sie mit angemessener Sorgfalt bereitzustellen." },
-          { "h": "6. Aussetzung und Kündigung", "p": "Wir können den Zugang bei Missbrauch oder Sicherheitsrisiko aussetzen." },
-          { "h": "7. Gewährleistungen und Haftungsbeschränkung", "p": "Die Dienste werden \"wie besehen\" im gesetzlich zulässigen Umfang bereitgestellt. [REVISAR: advogado]" },
+          { "h": "6. Sperrung und Kündigung", "p": "Wir können den Zugang bei Missbrauch oder Sicherheitsrisiko sperren." },
+          { "h": "7. Gewährleistungen und Haftungsbeschränkung", "p": "Die Dienste werden im gesetzlich zulässigen Umfang \"wie besehen\" bereitgestellt. [REVISAR: advogado]" },
           { "h": "8. Datenschutz", "p": "Personenbezogene Daten werden gemäß unserer Datenschutzerklärung verarbeitet." },
-          { "h": "9. Anwendbares Recht und Gerichtsstand", "p": "Unterliegt dem Recht Brasiliens. [REVISAR: advogado]" }
+          { "h": "9. Anwendbares Recht und Gerichtsstand", "p": "Es gelten die Gesetze Brasiliens. [REVISAR: advogado]" }
         ]
       },
       "privacy": {
         "meta": {
           "title": "Datenschutzerklärung — schematize.org",
-          "desc": "Datenschutzerklärung von schematize.org nach Brasiliens LGPD: Verantwortlicher, erhobene Daten, Zweck, Rechtsgrundlage, Aufbewahrung und Rechte der Betroffenen."
+          "desc": "Datenschutzerklärung von schematize.org nach Brasiliens LGPD: Verantwortlicher, erhobene Daten, Zweck, Rechtsgrundlage, Aufbewahrung und Betroffenenrechte."
         },
         "h1": "Datenschutzerklärung",
-        "sub": "Wie wir personenbezogene Daten verarbeiten, nach Brasiliens Allgemeinem Datenschutzgesetz (LGPD).",
+        "sub": "Wie wir personenbezogene Daten behandeln, nach Brasiliens Allgemeinem Datenschutzgesetz (LGPD).",
         "sections": [
-          { "h": "1. Verantwortlicher", "p": "Der für die Daten Verantwortliche ist Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasilien." },
+          { "h": "1. Verantwortlicher", "p": "Der für die Datenverarbeitung Verantwortliche ist Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasilien." },
           { "h": "2. Datenschutzbeauftragter (DPO)", "p": "Für Datenschutzangelegenheiten und zur Ausübung deiner Rechte kontaktiere contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Daten, die wir erheben", "p": "Dies ist eine informative Website ohne Login oder Formulare; wir erheben nur die minimalen technischen Daten, die zum Ausliefern der Seiten und zur Sicherheit der Website nötig sind. Wenn du uns eine E-Mail schreibst, verarbeiten wir die von dir gesendeten Daten." },
-          { "h": "4. Zweck", "p": "Die Website bereitzustellen und abzusichern und auf die Nachrichten zu antworten, die du uns sendest." },
-          { "h": "5. Rechtsgrundlage", "p": "Berechtigtes Interesse zum Betrieb und zur Absicherung der Website; Einwilligung oder Erfüllung einer Anfrage, wenn du Kontakt aufnimmst (LGPD Art. 7). [REVISAR: advogado]" },
+          { "h": "3. Daten, die wir erheben", "p": "Dies ist eine informative Website ohne Login oder Formulare; wir erheben nur die minimalen technischen Daten, die nötig sind, um Seiten auszuliefern und die Website sicher zu halten. Wenn du uns eine E-Mail schreibst, verarbeiten wir die von dir gesendeten Daten." },
+          { "h": "4. Zweck", "p": "Um die Website auszuliefern und abzusichern und um auf Nachrichten zu antworten, die du uns sendest." },
+          { "h": "5. Rechtsgrundlage", "p": "Berechtigtes Interesse am Betrieb und der Absicherung der Website; Einwilligung oder Erfüllung einer Anfrage, wenn du uns kontaktierst (LGPD Art. 7). [REVISAR: advogado]" },
           { "h": "6. Weitergabe", "p": "Wir nutzen Infrastruktur- und Hosting-Anbieter, die als Auftragsverarbeiter handeln; wir verkaufen keine personenbezogenen Daten." },
           { "h": "7. Internationale Übermittlung", "p": "Einige Anbieter können Daten außerhalb Brasiliens verarbeiten, mit Schutzmaßnahmen. [REVISAR: advogado]" },
           { "h": "8. Aufbewahrung", "p": "Wir bewahren Daten nur so lange auf, wie es für die oben genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben." },
-          { "h": "9. Sicherheit", "p": "Wir wenden angemessene technische und organisatorische Maßnahmen zum Schutz der Daten an." },
-          { "h": "10. Deine Rechte", "p": "Nach LGPD Art. 18 kannst du Bestätigung, Auskunft, Berichtigung, Anonymisierung, Übertragbarkeit, Löschung und Informationen zur Weitergabe verlangen sowie die Einwilligung widerrufen — per E-Mail an contabil@schematize.me." },
-          { "h": "11. Cookies", "p": "Siehe unsere Cookie-Richtlinie für Einzelheiten zu Cookies und ähnlichen Technologien." },
-          { "h": "12. Änderungen", "p": "Wir können diese Richtlinie aktualisieren; das obige Datum des Inkrafttretens spiegelt die aktuelle Version wider." }
+          { "h": "9. Sicherheit", "p": "Wir wenden angemessene technische und organisatorische Maßnahmen an, um Daten zu schützen." },
+          { "h": "10. Deine Rechte", "p": "Nach LGPD Art. 18 kannst du Bestätigung, Auskunft, Berichtigung, Anonymisierung, Portabilität, Löschung und Informationen über die Weitergabe verlangen und die Einwilligung widerrufen — per E-Mail an contabil@schematize.me." },
+          { "h": "11. Cookies", "p": "Siehe unsere Cookie-Richtlinie für Details zu Cookies und ähnlichen Technologien." },
+          { "h": "12. Änderungen", "p": "Wir können diese Erklärung aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." }
         ]
       },
       "cookies": {
@@ -489,14 +568,14 @@
           "desc": "Cookie-Richtlinie von schematize.org: Cookie-Kategorien, Zwecke und wie man sie verwaltet."
         },
         "h1": "Cookie-Richtlinie",
-        "sub": "Die Cookies und ähnlichen Technologien, die diese Website verwendet.",
+        "sub": "Die Cookies und ähnlichen Technologien, die diese Website nutzt.",
         "sections": [
-          { "h": "1. Was Cookies sind", "p": "Cookies sind kleine Dateien, die auf deinem Gerät gespeichert werden und helfen, dass eine Website funktioniert und sich Einstellungen merkt." },
-          { "h": "2. Kategorien", "p": "Essenziell: erforderlich, damit die Website funktioniert (zum Beispiel, sich deine Sprache zu merken). Leistungs-/Analyse-, funktionale und Marketing-Cookies werden nur mit deiner Opt-in-Einwilligung verwendet." },
-          { "h": "3. Was wir verwenden", "p": "Diese Website speichert eine Spracheinstellung lokal, um deine gewählte Sprache beizubehalten. Sie führt keine nicht-essenziellen Analyse- oder Marketing-Cookies ohne Einwilligung aus. [REVISAR: negócio]" },
+          { "h": "1. Was Cookies sind", "p": "Cookies sind kleine Dateien, die auf deinem Gerät gespeichert werden und einer Website helfen, zu funktionieren und Einstellungen zu merken." },
+          { "h": "2. Kategorien", "p": "Essenziell: erforderlich, damit die Website funktioniert (zum Beispiel deine Sprache zu merken). Performance-/Analyse-, funktionale und Marketing-Cookies werden nur mit deiner Opt-in-Einwilligung verwendet." },
+          { "h": "3. Was wir verwenden", "p": "Diese Website speichert eine Spracheinstellung lokal, um deine gewählte Sprache beizubehalten. Sie führt ohne Einwilligung keine nicht-essenziellen Analyse- oder Marketing-Cookies aus. [REVISAR: negócio]" },
           { "h": "4. Einwilligung", "p": "Nicht-essenzielle Cookies erfordern eine Opt-in-Einwilligung; essenzielle Cookies laufen ohne Einwilligung." },
-          { "h": "5. Cookies verwalten", "p": "Du kannst Cookies in den Einstellungen deines Browsers löschen oder blockieren; das Blockieren essenzieller Speicherung kann die Website beeinträchtigen." },
-          { "h": "6. Änderungen", "p": "Wir können diese Richtlinie aktualisieren; das obige Datum des Inkrafttretens spiegelt die aktuelle Version wider." }
+          { "h": "5. Cookies verwalten", "p": "Du kannst Cookies in deinen Browser-Einstellungen löschen oder blockieren; das Blockieren essenziellen Speichers kann die Website beeinträchtigen." },
+          { "h": "6. Änderungen", "p": "Wir können diese Richtlinie aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." }
         ]
       }
     }
@@ -504,12 +583,12 @@
   "sitemapPage": {
     "meta": {
       "title": "Sitemap — schematize.org",
-      "desc": "Lesbare Übersicht aller öffentlichen Seiten von schematize.org."
+      "desc": "Menschenlesbare Karte aller öffentlichen Seiten auf schematize.org."
     },
     "hero": {
       "kicker": "Sitemap",
       "h1": "Sitemap",
-      "sub": "Alle öffentlichen Seiten von schematize.org, nach Bereich gruppiert."
+      "sub": "Alle öffentlichen Seiten auf schematize.org, nach Bereich gruppiert."
     },
     "groups": [
       {
@@ -523,6 +602,7 @@
       {
         "h": "Arbeit",
         "links": [
+          { "slug": "software", "label": "Die App" },
           { "slug": "projects", "label": "Projekte" },
           { "slug": "research", "label": "Forschung" },
           { "slug": "principles", "label": "Prinzipien" }
