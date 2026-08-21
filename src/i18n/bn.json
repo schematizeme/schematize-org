@@ -85,31 +85,30 @@
       "button": "GitHub-এ দেখুন"
     },
     "platforms": {
-      "kicker": "ইকোসিস্টেম",
-      "title": "কাজটি যেখানে থাকে",
-      "p": "schematize উন্মুক্তভাবে যা কিছু তৈরি করে, ইকোসিস্টেম জুড়ে সংগঠিত।",
+      "kicker": "পণ্য",
+      "title": "আমরা যা তৈরি করি",
+      "p": "schematize পণ্যধারা — যে অ্যাপ AI দিয়ে সফটওয়্যার তৈরি করে, যে Academy তা শেখায়, এবং যে আক্রমণাত্মক-নিরাপত্তা অংশীদার তা সুদৃঢ় করে।",
       "items": [
         {
-          "h": "অ্যাপ",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "অ্যাপ",
           "key": "software",
           "icon": "terminal",
-          "p": "Rust কমান্ড-লাইন অ্যাপ (ডেস্কটপ অ্যাপ অন্তর্ভুক্ত) যা skills ইনস্টল ও সংস্করণ করে এবং overdev চালায় — একটি কমান্ডে Linux-এ ইনস্টল করুন।"
+          "p": "AI দিয়ে আপনি কীভাবে সফটওয়্যার তৈরি করেন তা অপ্টিমাইজ ও স্বয়ংক্রিয় করার অ্যাপ।"
         },
         {
-          "h": "গবেষণা",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "আমাদের প্রযুক্তি-গবেষণা থেকে পেপার, নোট ও ফলাফল — শেখার সাথে সাথে প্রকাশিত।"
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "নিরাপদে অ্যাপ্লিকেশন ডেভেলপ ও vibe-code করা শিখুন।"
         },
         {
-          "h": "সোর্স",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "প্রতিটি রিপোজিটরি, উন্মুক্তভাবে। পড়ুন, ফর্ক করুন, একটি issue খুলুন — অথবা schematize CLI দিয়ে ইনস্টল করুন।"
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "ওয়েবসাইটের জন্য pentest পরামর্শ ও টুলিং।"
         }
       ]
     }

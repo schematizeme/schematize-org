@@ -85,31 +85,30 @@
       "button": "在 GitHub 上查看"
     },
     "platforms": {
-      "kicker": "生态系统",
-      "title": "工作在哪里",
-      "p": "schematize 公开构建的一切，围绕生态系统组织起来。",
+      "kicker": "产品",
+      "title": "我们打造什么",
+      "p": "schematize 产品线——用 AI 构建软件的应用、教你使用它的 Academy，以及为其加固的攻击性安全伙伴。",
       "items": [
         {
-          "h": "应用程序",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "应用",
           "key": "software",
           "icon": "terminal",
-          "p": "这款 Rust 命令行应用（含桌面应用）用于安装并管理技能版本、运行 overdev——在 Linux 上一条命令即可安装。"
+          "p": "用于优化并自动化你用 AI 构建软件方式的应用。"
         },
         {
-          "h": "研究",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "来自我们技术研究的论文、笔记与发现——边学边发布。"
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "学习安全地开发与 vibe-code 应用。"
         },
         {
-          "h": "源代码",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "每一个代码库,皆公开可见。阅读它、分叉它、提个 issue——或用 schematize CLI 安装它。"
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "面向网站的 pentest 咨询与工具。"
         }
       ]
     }

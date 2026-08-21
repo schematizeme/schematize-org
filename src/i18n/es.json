@@ -85,31 +85,30 @@
       "button": "Ver en GitHub"
     },
     "platforms": {
-      "kicker": "El ecosistema",
-      "title": "Dónde vive el trabajo",
-      "p": "Todo lo que schematize construye de forma abierta, organizado a lo largo del ecosistema.",
+      "kicker": "Productos",
+      "title": "Lo que construimos",
+      "p": "La línea de productos schematize — la app que construye software con IA, la academia que lo enseña y el socio de seguridad ofensiva que lo blinda.",
       "items": [
         {
-          "h": "La app",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "La app",
           "key": "software",
           "icon": "terminal",
-          "p": "La app de línea de comandos en Rust (app de escritorio incluida) que instala y versiona skills y ejecuta el overdev — instálala en Linux con un comando."
+          "p": "La app para optimizar y automatizar cómo construyes software con IA."
         },
         {
-          "h": "Investigación",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Artículos, notas y hallazgos de nuestra investigación en tecnología — publicados a medida que aprendemos."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Aprende a desarrollar y vibecodear aplicaciones de forma segura."
         },
         {
-          "h": "Código",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Todos los repositorios, de forma abierta. Léelo, forkéalo, abre un issue — o instálalo con la CLI schematize."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Consultoría y herramientas de pentest para sitios web."
         }
       ]
     }

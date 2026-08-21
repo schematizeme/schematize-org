@@ -85,31 +85,30 @@
       "button": "عرض على GitHub"
     },
     "platforms": {
-      "kicker": "المنظومة",
-      "title": "أين يعيش العمل",
-      "p": "كل ما تبنيه schematize في العلن، منظّماً عبر المنظومة.",
+      "kicker": "المنتجات",
+      "title": "ما نبنيه",
+      "p": "خط منتجات schematize — التطبيق الذي يبني البرمجيات بالذكاء الاصطناعي، وAcademy التي تُعلّمه، وشريك الأمن الهجومي الذي يحصّنه.",
       "items": [
         {
-          "h": "التطبيق",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "التطبيق",
           "key": "software",
           "icon": "terminal",
-          "p": "تطبيق سطر الأوامر المكتوب بلغة Rust (مع تطبيق سطح مكتب مضمّن) الذي يثبّت المهارات ويدير إصداراتها ويشغّل overdev — ثبّته على Linux بأمر واحد."
+          "p": "التطبيق لتحسين وأتمتة طريقة بنائك للبرمجيات بالذكاء الاصطناعي."
         },
         {
-          "h": "الأبحاث",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "أوراق وملاحظات ونتائج من أبحاثنا التقنية — تُنشَر كلما تعلّمنا."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "تعلّم تطوير التطبيقات وبرمجتها بأسلوب vibe-code بأمان."
         },
         {
-          "h": "المصدر",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "كل مستودع، في العلن. اقرأه، انسخه، افتح مشكلة — أو ثبّته باستخدام schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "استشارات وأدوات pentest للمواقع الإلكترونية."
         }
       ]
     }

@@ -85,31 +85,30 @@
       "button": "Lihat di GitHub"
     },
     "platforms": {
-      "kicker": "Ekosistem",
-      "title": "Tempat karyanya berada",
-      "p": "Semua yang schematize bangun secara terbuka, tersusun di seluruh ekosistem.",
+      "kicker": "Produk",
+      "title": "Apa yang kami bangun",
+      "p": "Lini produk schematize — aplikasi yang membangun perangkat lunak dengan AI, Academy yang mengajarkannya, dan mitra keamanan ofensif yang memperkuatnya.",
       "items": [
         {
-          "h": "Aplikasi",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "Aplikasi",
           "key": "software",
           "icon": "terminal",
-          "p": "Aplikasi baris perintah Rust (aplikasi desktop termasuk) yang memasang dan memberi versi skills serta menjalankan overdev — pasang di Linux dengan satu perintah."
+          "p": "Aplikasi untuk mengoptimalkan dan mengotomatiskan cara Anda membangun perangkat lunak dengan AI."
         },
         {
-          "h": "Riset",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Makalah, catatan, dan temuan dari riset teknologi kami — dipublikasikan seiring kami belajar."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Pelajari cara mengembangkan dan vibe-code aplikasi secara aman."
         },
         {
-          "h": "Sumber",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Setiap repositori, secara terbuka. Baca, fork, buka issue — atau pasang dengan schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Konsultasi dan perkakas pentest untuk situs web."
         }
       ]
     }

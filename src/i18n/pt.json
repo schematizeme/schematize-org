@@ -85,31 +85,30 @@
       "button": "Ver no GitHub"
     },
     "platforms": {
-      "kicker": "O ecossistema",
-      "title": "Onde o trabalho vive",
-      "p": "Tudo que a schematize constrói de forma aberta, organizado por todo o ecossistema.",
+      "kicker": "Produtos",
+      "title": "O que construímos",
+      "p": "A linha de produtos schematize — o app que constrói software com IA, a academia que ensina e o parceiro de segurança ofensiva que blinda.",
       "items": [
         {
-          "h": "O app",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "O app",
           "key": "software",
           "icon": "terminal",
-          "p": "O app de linha de comando em Rust (app de desktop incluído) que instala e versiona skills e roda o overdev — instale no Linux com um comando."
+          "p": "O app para otimizar e automatizar como você constrói software com IA."
         },
         {
-          "h": "Pesquisa",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Artigos, notas e achados da nossa pesquisa em tecnologia — publicados conforme aprendemos."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Aprenda a desenvolver e vibecodar aplicações com segurança."
         },
         {
-          "h": "Código",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Todos os repositórios, de forma aberta. Leia, forke, abra uma issue — ou instale com a CLI schematize."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Consultoria e ferramentas de pentest para sites."
         }
       ]
     }

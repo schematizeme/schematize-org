@@ -85,31 +85,30 @@
       "button": "Voir sur GitHub"
     },
     "platforms": {
-      "kicker": "L'écosystème",
-      "title": "Où vivent les travaux",
-      "p": "Tout ce que schematize construit à ciel ouvert, organisé à travers l'écosystème.",
+      "kicker": "Produits",
+      "title": "Ce que nous construisons",
+      "p": "La ligne de produits schematize — l'application qui construit des logiciels avec l'IA, l'académie qui l'enseigne et le partenaire en sécurité offensive qui le renforce.",
       "items": [
         {
-          "h": "L'application",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "L'application",
           "key": "software",
           "icon": "terminal",
-          "p": "L'application en ligne de commande en Rust (application de bureau incluse) qui installe et versionne les skills et exécute overdev — installez-la sous Linux en une seule commande."
+          "p": "L'application pour optimiser et automatiser la façon dont vous construisez des logiciels avec l'IA."
         },
         {
-          "h": "Recherche",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Articles, notes et résultats de notre recherche technologique — publiés au fil de nos apprentissages."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Apprenez à développer et à vibe-coder des applications en toute sécurité."
         },
         {
-          "h": "Code source",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Chaque dépôt, à ciel ouvert. Lisez-le, forkez-le, ouvrez un ticket — ou installez-le avec le CLI schematize."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Conseil et outils de pentest pour les sites web."
         }
       ]
     }

@@ -85,31 +85,30 @@
       "button": "Xem trên GitHub"
     },
     "platforms": {
-      "kicker": "Hệ sinh thái",
-      "title": "Nơi công việc tồn tại",
-      "p": "Mọi thứ schematize xây dựng công khai, được tổ chức trong toàn hệ sinh thái.",
+      "kicker": "Sản phẩm",
+      "title": "Những gì chúng tôi xây dựng",
+      "p": "Dòng sản phẩm schematize — ứng dụng xây dựng phần mềm bằng AI, Academy dạy điều đó, và đối tác an ninh tấn công giúp củng cố nó.",
       "items": [
         {
-          "h": "Ứng dụng",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "Ứng dụng",
           "key": "software",
           "icon": "terminal",
-          "p": "Ứng dụng dòng lệnh Rust (kèm ứng dụng máy tính để bàn) cài đặt và quản lý phiên bản skills và chạy overdev — cài trên Linux bằng một lệnh."
+          "p": "Ứng dụng để tối ưu hóa và tự động hóa cách bạn xây dựng phần mềm bằng AI."
         },
         {
-          "h": "Nghiên cứu",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Bài viết, ghi chú và phát hiện từ nghiên cứu công nghệ của chúng tôi — công bố khi chúng tôi học được."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Học cách phát triển và vibe-code ứng dụng một cách an toàn."
         },
         {
-          "h": "Mã nguồn",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Mọi kho lưu trữ, công khai. Đọc nó, fork nó, mở một issue — hoặc cài đặt bằng schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Tư vấn và công cụ pentest cho các trang web."
         }
       ]
     }

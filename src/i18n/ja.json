@@ -85,31 +85,30 @@
       "button": "GitHub で見る"
     },
     "platforms": {
-      "kicker": "エコシステム",
-      "title": "取り組みが息づく場所",
-      "p": "schematize がオープンに構築するすべてを、エコシステム全体にわたって整理しています。",
+      "kicker": "プロダクト",
+      "title": "私たちがつくるもの",
+      "p": "schematize のプロダクトライン——AI でソフトウェアを構築するアプリ、それを教える Academy、そしてそれを堅牢にする攻撃的セキュリティのパートナー。",
       "items": [
         {
-          "h": "アプリ",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "アプリ",
           "key": "software",
           "icon": "terminal",
-          "p": "スキルのインストールとバージョン管理を行い、overdev を実行する Rust 製コマンドラインアプリ(デスクトップアプリ同梱)——Linux ではワンコマンドでインストール。"
+          "p": "AI でのソフトウェア構築を最適化・自動化するためのアプリ。"
         },
         {
-          "h": "リサーチ",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "私たちの技術研究による論文・ノート・発見——学びながら公開します。"
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "アプリケーションを安全に開発し、vibe-code する方法を学びます。"
         },
         {
-          "h": "ソース",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "すべてのリポジトリを、オープンに。読み、フォークし、issue を立てる——あるいは schematize CLI でインストールする。"
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "ウェブサイト向けの pentest コンサルティングとツール。"
         }
       ]
     }

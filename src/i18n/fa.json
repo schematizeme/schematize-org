@@ -85,31 +85,30 @@
       "button": "مشاهده در GitHub"
     },
     "platforms": {
-      "kicker": "زیست‌بوم",
-      "title": "کار کجا زندگی می‌کند",
-      "p": "هرچه schematize در فضای باز می‌سازد، سازمان‌یافته در سراسر زیست‌بوم.",
+      "kicker": "محصولات",
+      "title": "آنچه می‌سازیم",
+      "p": "خط محصولات schematize — برنامه‌ای که نرم‌افزار را با هوش مصنوعی می‌سازد، Academy که آن را آموزش می‌دهد، و شریک امنیت تهاجمی که آن را مقاوم می‌کند.",
       "items": [
         {
-          "h": "برنامه",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "برنامه",
           "key": "software",
           "icon": "terminal",
-          "p": "برنامهٔ خط‌فرمان نوشته‌شده با Rust (به‌همراه برنامهٔ دسکتاپ) که مهارت‌ها را نصب و نسخه‌گذاری می‌کند و overdev را اجرا می‌کند — روی Linux با یک فرمان نصب کنید."
+          "p": "برنامه‌ای برای بهینه‌سازی و خودکارسازی شیوهٔ ساخت نرم‌افزار با هوش مصنوعی."
         },
         {
-          "h": "پژوهش",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "مقاله‌ها، یادداشت‌ها و یافته‌ها از پژوهش فناوری ما — همان‌طور که می‌آموزیم منتشر می‌شوند."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "توسعه و vibe-code کردن برنامه‌ها را به‌صورت ایمن بیاموزید."
         },
         {
-          "h": "منبع",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "هر مخزن، در فضای باز. آن را بخوانید، فورک کنید، مسئله‌ای باز کنید — یا با schematize CLI نصبش کنید."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "مشاوره و ابزار pentest برای وب‌سایت‌ها."
         }
       ]
     }

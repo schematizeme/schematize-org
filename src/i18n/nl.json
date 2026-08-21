@@ -85,31 +85,30 @@
       "button": "Bekijk op GitHub"
     },
     "platforms": {
-      "kicker": "Het ecosysteem",
-      "title": "Waar het werk leeft",
-      "p": "Alles wat schematize in de openbaarheid bouwt, geordend over het ecosysteem.",
+      "kicker": "Producten",
+      "title": "Wat we bouwen",
+      "p": "De schematize-productlijn — de app die software bouwt met AI, de academy die het onderwijst en de offensive-securitypartner die het verstevigt.",
       "items": [
         {
-          "h": "De app",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "De app",
           "key": "software",
           "icon": "terminal",
-          "p": "De opdrachtregel-app in Rust (desktop-app inbegrepen) die skills installeert en versiebeheert en overdev uitvoert — installeer op Linux met één commando."
+          "p": "De app om te optimaliseren en automatiseren hoe je software bouwt met AI."
         },
         {
-          "h": "Onderzoek",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Papers, notities en bevindingen uit ons technologieonderzoek — gepubliceerd terwijl we leren."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Leer applicaties veilig te ontwikkelen en te vibe-coden."
         },
         {
-          "h": "Broncode",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Elke repository, in de openbaarheid. Lees het, fork het, open een issue — of installeer het met de schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Pentestadvies en -tooling voor websites."
         }
       ]
     }

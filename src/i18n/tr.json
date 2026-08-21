@@ -85,31 +85,30 @@
       "button": "GitHub'da görüntüle"
     },
     "platforms": {
-      "kicker": "Ekosistem",
-      "title": "Çalışmanın yaşadığı yer",
-      "p": "schematize'ın açıkça inşa ettiği her şey, ekosistem boyunca düzenlenmiş halde.",
+      "kicker": "Ürünler",
+      "title": "Ne inşa ediyoruz",
+      "p": "schematize ürün hattı — yazılımı AI ile inşa eden uygulama, bunu öğreten Academy ve onu sağlamlaştıran saldırgan güvenlik ortağı.",
       "items": [
         {
-          "h": "Uygulama",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "Uygulama",
           "key": "software",
           "icon": "terminal",
-          "p": "Becerileri kuran ve sürümleyen, overdev'i çalıştıran Rust komut satırı uygulaması (masaüstü uygulaması dahil) — Linux'a tek komutla kurun."
+          "p": "Yazılımı AI ile inşa etme şeklinizi optimize eden ve otomatikleştiren uygulama."
         },
         {
-          "h": "Araştırma",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Teknoloji araştırmamızdan makaleler, notlar ve bulgular — öğrendikçe yayımlanır."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Uygulamaları güvenli biçimde geliştirmeyi ve vibe-code yapmayı öğrenin."
         },
         {
-          "h": "Kaynak",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Her depo, açıkça. Okuyun, çatallayın, bir sorun açın — ya da schematize CLI ile kurun."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Web siteleri için pentest danışmanlığı ve araçları."
         }
       ]
     }

@@ -85,31 +85,30 @@
       "button": "Zobacz na GitHubie"
     },
     "platforms": {
-      "kicker": "Ekosystem",
-      "title": "Gdzie żyje praca",
-      "p": "Wszystko, co schematize tworzy otwarcie, uporządkowane w całym ekosystemie.",
+      "kicker": "Produkty",
+      "title": "Co tworzymy",
+      "p": "Linia produktów schematize — aplikacja, która buduje oprogramowanie z AI, Academy, która tego uczy, oraz partner ds. bezpieczeństwa ofensywnego, który je wzmacnia.",
       "items": [
         {
-          "h": "Aplikacja",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "Aplikacja",
           "key": "software",
           "icon": "terminal",
-          "p": "Aplikacja wiersza poleceń w Rust (z aplikacją desktopową w zestawie), która instaluje i wersjonuje umiejętności oraz uruchamia overdev — instalacja w systemie Linux jednym poleceniem."
+          "p": "Aplikacja do optymalizacji i automatyzacji tego, jak budujesz oprogramowanie z AI."
         },
         {
-          "h": "Badania",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Artykuły, notatki i wyniki naszych badań technologicznych — publikowane w miarę uczenia się."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Naucz się bezpiecznie tworzyć i vibe-code'ować aplikacje."
         },
         {
-          "h": "Kod źródłowy",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Każde repozytorium, otwarcie. Przeczytaj je, sforkuj, otwórz zgłoszenie — albo zainstaluj za pomocą schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Konsulting i narzędzia pentest dla stron internetowych."
         }
       ]
     }

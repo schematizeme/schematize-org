@@ -85,31 +85,30 @@
       "button": "Смотреть на GitHub"
     },
     "platforms": {
-      "kicker": "Экосистема",
-      "title": "Где живёт работа",
-      "p": "Всё, что schematize создаёт открыто, организовано по всей экосистеме.",
+      "kicker": "Продукты",
+      "title": "Что мы создаём",
+      "p": "Продуктовая линейка schematize — приложение, которое создаёт софт с помощью ИИ, Academy, которая этому учит, и партнёр по наступательной безопасности, который его укрепляет.",
       "items": [
         {
-          "h": "Приложение",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "Приложение",
           "key": "software",
           "icon": "terminal",
-          "p": "Приложение командной строки на Rust (с настольным приложением в комплекте), которое устанавливает и версионирует навыки и запускает overdev — установка на Linux одной командой."
+          "p": "Приложение для оптимизации и автоматизации того, как вы создаёте софт с помощью ИИ."
         },
         {
-          "h": "Исследования",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Статьи, заметки и результаты наших технологических исследований — публикуются по мере того, как мы их получаем."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Научитесь безопасно разрабатывать и vibe-code приложения."
         },
         {
-          "h": "Исходный код",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Каждый репозиторий, открыто. Читайте его, форкайте, открывайте issue — или установите с помощью schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "pentest-консалтинг и инструменты для сайтов."
         }
       ]
     }
