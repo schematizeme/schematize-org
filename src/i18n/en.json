@@ -85,31 +85,30 @@
       "button": "View on GitHub"
     },
     "platforms": {
-      "kicker": "The ecosystem",
-      "title": "Where the work lives",
-      "p": "Everything schematize builds in the open, organized across the ecosystem.",
+      "kicker": "Products",
+      "title": "What we build",
+      "p": "The schematize product line — the app that builds software with AI, the academy that teaches it, and the offensive-security partner that hardens it.",
       "items": [
         {
-          "h": "The app",
-          "tag": "schematize CLI",
+          "h": "schematize",
+          "tag": "The app",
           "key": "software",
           "icon": "terminal",
-          "p": "The Rust command-line app (desktop app included) that installs and versions skills and runs overdev — install on Linux with one command."
+          "p": "The app for optimizing and automating how you build software with AI."
         },
         {
-          "h": "Research",
-          "tag": "schematize.org/research",
-          "key": "research",
-          "icon": "flask-conical",
-          "p": "Papers, notes and findings from our technology research — published as we learn."
+          "h": "Academy",
+          "tag": "learn.schematize.org",
+          "url": "https://learn.schematize.org",
+          "icon": "graduation-cap",
+          "p": "Learn to develop and vibe-code applications securely."
         },
         {
-          "h": "Source",
-          "tag": "github.com/schematizeme",
-          "url": "https://github.com/schematizeme",
-          "icon": "github",
-          "brand": true,
-          "p": "Every repository, in the open. Read it, fork it, open an issue — or install it with the schematize CLI."
+          "h": "Basilisk Offsec",
+          "tag": "basiliskoffsec.com",
+          "url": "https://basiliskoffsec.com",
+          "icon": "shield-alert",
+          "p": "Pentest consulting and tooling for websites."
         }
       ]
     }
