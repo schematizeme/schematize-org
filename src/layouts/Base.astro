@@ -16,7 +16,7 @@ interface Props {
   /** Rótulo do último nó do breadcrumb (usa nav.<slug> por padrão). */
   crumb?: string;
 }
-const { locale, slug = "", title, description, jsonld = [], crumb } = Astro.props;
+const { locale, slug = "", title, description, jsonld = [], crumb }: Props = Astro.props;
 const site = Astro.site ?? new URL("https://schematize.org");
 const canonical = new URL(`/${locale}/${slug ? slug + "/" : ""}`, site).href;
 const alts = alternates(slug);
