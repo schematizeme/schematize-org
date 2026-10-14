@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "一款以 Linux 为先的命令行应用,为 Claude Code 安装并管理工程技能的版本,并运行 overdev——持续、无人值守的开发,直到清单完成才停止。",
+          "p": "schematize 生态系统的中枢（Rust，Linux 和 FreeBSD）：为 Claude Code 安装并管理工程类 skills 的版本，通过 market 安装应用和 AI 工具，并运行 overdev——持续、无人值守的开发，直到清单完成才会停止。",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "应用程序 — schematize CLI — schematize.org",
-      "desc": "schematize 是一款 Rust 命令行应用(含桌面应用),为 Claude Code 安装并管理工程技能的版本,并运行 overdev。在 Linux 上一条命令即可安装,或为 macOS 下载。"
+      "desc": "schematize 是一个用 Rust 编写的命令行中枢（附带桌面窗口），为 Claude Code 安装并管理工程类 skills 的版本，安装生态系统应用和 AI 编程工具，并运行 overdev。一条命令即可在 Linux 和 FreeBSD 上安装完整套件。"
     },
     "hero": {
       "kicker": "应用程序",
       "h1": "一款 CLI,贯穿整个工作流。",
-      "sub": "schematize 是一款 Rust 命令行应用——含桌面应用——从实时目录安装并管理技能版本,并运行 overdev:持续、无人值守的开发,直到清单完成才停止。"
+      "sub": "schematize 是一个用 Rust 编写的命令行中枢——包含桌面窗口——从实时目录中安装并管理工程类 skills 的版本，安装生态系统应用和 AI 编程工具，并运行 overdev：持续、无人值守的开发，直到清单完成才会停止。"
     },
     "install": {
-      "title": "在 Linux 上安装",
-      "sub": "一条命令。Debian、Ubuntu 与 Linux Mint(.deb);openSUSE、Fedora 与 RHEL(.rpm);或一个静态二进制文件。它在机器上从源代码构建——开源,始终与 main 保持一致。",
-      "terminal": "在终端中:"
+      "title": "安装完整套件",
+      "sub": "一条命令即可安装中枢、market、每个应用及其窗口、skills——并运行 doctor。预编译二进制文件安装到 ~/.cargo/bin：无需 sudo，无需编译器。",
+      "linux": "Linux (x86_64) — 在终端中：",
+      "freebsd": "FreeBSD (x86_64) — 在终端中：",
+      "note": "Linux：Debian、Ubuntu 和 Mint、Fedora、openSUSE、Arch 及其衍生版（CachyOS、Manjaro、EndeavourOS）。FreeBSD：CLI 可用；桌面窗口暂不可用。目前安装程序仅支持 Linux 和 FreeBSD。"
     },
     "features": {
       "title": "这款应用能做什么",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "下载",
-      "sub": "在 macOS 或 Linux 上安装 schematize——桌面应用随附其中。",
-      "mac": "macOS · Apple Silicon(.app)。下载、解压,然后右键 → 打开。",
-      "deb": "Debian、Ubuntu、Linux Mint——.deb(CLI + 桌面应用)。",
-      "rpm": "openSUSE、Fedora、RHEL——.rpm(CLI + 桌面应用)。",
-      "download": "下载",
-      "releases": "所有版本",
-      "unsigned": "macOS 应用尚未进行代码签名——系统在首次启动时会显示一次性的“未验证”警告(右键 → 打开)。"
+    "apps": {
+      "title": "生态系统",
+      "sub": "每个应用都能独立运行，既有 CLI 也有桌面窗口，所有界面支持 20 种语言。",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "中枢：安装并管理 skills 的版本，诊断你的环境（doctor），自我更新，并让一切一目了然。"
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "整个套件的安装和更新工具。随每个应用一同提供，还会安装 AI 工具：Claude Code、Codex CLI 和 Cursor CLI。"
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "持续开发。在“代理”选项卡中配置代理层级：Opus 负责编排，Haiku 处理简单任务，Sonnet 编写代码；失败时依次升级到 Codex、Cursor，最后是 Opus。视觉工作和图像交给 Codex。"
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "SSH 密钥、VPS 和可审计的远程访问——凭据始终在代理触及范围之外。"
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "让开发机器可预测：测量环境，并限制构建、浏览器和容器的资源上限。"
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "在应用的第一行代码之前先设计 schema：建模关系型 schema，读取现有数据库，并生成 SQL 和可回滚的迁移。"
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "谁来 push、从哪里 push、使用哪个身份：在一台机器上使用多个 git 账号，不会用错账号提交。"
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "Claude Code 的 skill 目录：本机已安装的内容，以及编辑功能。"
+        }
+      ]
+    },
+    "platforms": {
+      "title": "平台",
+      "sub": "完整套件安装程序目前可运行的平台。",
+      "linux": "Linux x86_64 — CLI 和桌面窗口。安装程序：上方的命令。",
+      "freebsd": "FreeBSD x86_64 — CLI。桌面窗口暂不可用。安装程序：上方的命令。",
+      "other": "macOS 和 Windows — 发布页提供预编译二进制文件，但暂无自动安装程序：请手动下载并安装。",
+      "releases": "所有发布版本",
+      "unsigned": "macOS 二进制文件和应用尚未进行代码签名——首次启动时系统会弹出一次“未经验证”的警告（右键点击 → 打开）。"
     },
     "how": {
       "title": "它如何运作",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "安装应用",
-          "p": "一条命令即可在 Linux 上安装 schematize CLI 及其桌面应用(.deb / .rpm / 二进制文件),或获取 macOS 构建版本。"
+          "p": "一条命令即可在 Linux 或 FreeBSD 上安装整套工具——中枢、market、带窗口的应用和 skills——使用预编译二进制文件，无需 sudo。"
         },
         {
           "icon": "blocks",
           "h": "安装技能",
-          "p": "运行 schematize install --all 将每个技能拉取到 .claude/ 中,或按 slug 安装单个技能——在 skills.schematize.org 浏览目录。"
+          "p": "运行 schematize skills install --all 将所有 skills 拉取到 .claude/，或按 slug 安装单个 skill——在 skills.schematize.org 浏览目录。"
         },
         {
           "icon": "refresh-cw",
           "h": "保持最新",
-          "p": "常驻智能体会在技能或应用更新时通知你;schematize upgrade 会自我更新。"
+          "p": "常驻代理会在 skill 或应用有更新时通知你；schematize-market update 会更新应用、AI 工具以及它自身。"
         }
       ]
     },

@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Aplikacja wiersza poleceń dla Linuksa, która instaluje i wersjonuje umiejętności inżynierskie dla Claude Code oraz uruchamia overdev — ciągły, bezobsługowy rozwój, który nie zatrzymuje się, dopóki lista kontrolna nie zostanie ukończona.",
+          "p": "Hub ekosystemu schematize (Rust, Linux i FreeBSD): instaluje i wersjonuje skille inżynierskie dla Claude Code, instaluje aplikacje i narzędzia AI przez market oraz uruchamia overdev — ciągłe, autonomiczne programowanie, które nie przestaje, dopóki checklista nie zostanie wykonana.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "Aplikacja — schematize CLI — schematize.org",
-      "desc": "schematize to aplikacja wiersza poleceń w Rust (z aplikacją desktopową w zestawie), która instaluje i wersjonuje umiejętności inżynierskie dla Claude Code oraz uruchamia overdev. Instalacja w systemie Linux jednym poleceniem albo pobranie dla macOS."
+      "desc": "schematize to napisany w Rust hub wiersza poleceń (z oknami desktopowymi), który instaluje i wersjonuje skille inżynierskie dla Claude Code, instaluje aplikacje ekosystemu oraz narzędzia AI do kodowania i uruchamia overdev. Jedno polecenie instaluje pełny zestaw na Linuksie i FreeBSD."
     },
     "hero": {
       "kicker": "Aplikacja",
       "h1": "Jedno CLI dla całego przepływu pracy.",
-      "sub": "schematize to aplikacja wiersza poleceń w Rust — z aplikacją desktopową w zestawie — która instaluje i wersjonuje umiejętności inżynierskie z żywego katalogu oraz uruchamia overdev: ciągły, bezobsługowy rozwój, który nie zatrzymuje się, dopóki lista kontrolna nie zostanie ukończona."
+      "sub": "schematize to napisany w Rust hub wiersza poleceń — z oknami desktopowymi — który instaluje i wersjonuje skille inżynierskie z aktualnego katalogu, instaluje aplikacje ekosystemu oraz narzędzia AI do kodowania i uruchamia overdev: ciągłe, autonomiczne programowanie, które nie przestaje, dopóki checklista nie zostanie wykonana."
     },
     "install": {
-      "title": "Instalacja w systemie Linux",
-      "sub": "Jedno polecenie. Debian, Ubuntu i Linux Mint (.deb); openSUSE, Fedora i RHEL (.rpm); albo statyczny plik binarny. Buduje się z kodu źródłowego na maszynie — open source, zawsze zgodny z main.",
-      "terminal": "W terminalu:"
+      "title": "Zainstaluj pełny zestaw",
+      "sub": "Jedno polecenie instaluje hub, market, każdą aplikację wraz z jej oknem, skille — i uruchamia doctor. Gotowe binarki trafiają do ~/.cargo/bin: bez sudo, bez kompilatora.",
+      "linux": "Linux (x86_64) — w terminalu:",
+      "freebsd": "FreeBSD (x86_64) — w terminalu:",
+      "note": "Linux: Debian, Ubuntu i Mint, Fedora, openSUSE, Arch oraz pochodne (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI działa; okna desktopowe nie są jeszcze dostępne. Instalator obsługuje na razie tylko Linux i FreeBSD."
     },
     "features": {
       "title": "Co robi aplikacja",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "Pobieranie",
-      "sub": "Zainstaluj schematize na macOS lub Linux — aplikacja desktopowa jest w zestawie.",
-      "mac": "macOS · Apple Silicon (.app). Pobierz, rozpakuj i kliknij prawym przyciskiem → Otwórz.",
-      "deb": "Debian, Ubuntu, Linux Mint — plik .deb (CLI + aplikacja desktopowa).",
-      "rpm": "openSUSE, Fedora, RHEL — plik .rpm (CLI + aplikacja desktopowa).",
-      "download": "Pobierz",
+    "apps": {
+      "title": "Ekosystem",
+      "sub": "Każda aplikacja działa samodzielnie, ma CLI i okno desktopowe, a każdy interfejs mówi w 20 językach.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "Hub: instaluje i wersjonuje skille, diagnozuje Twoje środowisko (doctor), aktualizuje się samodzielnie i pokazuje wszystko na jednym ekranie."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "Instalator i aktualizator całego zestawu. Jest dołączony do każdej aplikacji, a także instaluje narzędzia AI: Claude Code, Codex CLI i Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Ciągłe programowanie. Skonfiguruj hierarchię agentów w zakładce Agenci: Opus orkiestruje, Haiku robi rzeczy trywialne, Sonnet koduje; w razie porażki eskaluje do Codex, potem Cursor, potem Opus. Praca wizualna i obrazy trafiają do Codex."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "Klucze SSH, VPS i audytowany zdalny dostęp — z poświadczeniami poza zasięgiem agenta."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Czyni maszynę deweloperską przewidywalną: mierzy środowisko i ogranicza zasoby dla buildów, przeglądarki i kontenerów."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Projektuje schemat przed pierwszą linią aplikacji: modeluje schematy relacyjne, odczytuje istniejące bazy oraz generuje SQL i odwracalne migracje."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Kto pushuje, skąd i z jaką tożsamością: wiele kont git na jednej maszynie bez commitowania z niewłaściwego."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "Katalog skilli Claude Code: co jest zainstalowane na tej maszynie, oraz edycja."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Platformy",
+      "sub": "Gdzie instalator pełnego zestawu działa dziś.",
+      "linux": "Linux x86_64 — CLI i okna desktopowe. Instalator: polecenie powyżej.",
+      "freebsd": "FreeBSD x86_64 — CLI. Okna desktopowe nie są jeszcze dostępne. Instalator: polecenie powyżej.",
+      "other": "macOS i Windows — gotowe binarki są publikowane w wydaniach, ale nie ma jeszcze automatycznego instalatora: pobierz i zainstaluj ręcznie.",
       "releases": "Wszystkie wydania",
-      "unsigned": "Aplikacja dla macOS nie jest jeszcze podpisana kodem — system przy pierwszym uruchomieniu pokazuje jednorazowe ostrzeżenie o „niezweryfikowanym” wydawcy (kliknij prawym przyciskiem → Otwórz)."
+      "unsigned": "Binarki i aplikacja na macOS nie są jeszcze podpisane — system pokaże jednorazowe ostrzeżenie „niezweryfikowane” przy pierwszym uruchomieniu (kliknij prawym przyciskiem → Otwórz)."
     },
     "how": {
       "title": "Jak to działa",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Zainstaluj aplikację",
-          "p": "Jedno polecenie instaluje schematize CLI i jego aplikację desktopową w systemie Linux (.deb / .rpm / plik binarny) albo pobierz build dla macOS."
+          "p": "Jedno polecenie instaluje cały zestaw — hub, market, aplikacje z oknami i skille — na Linuksie lub FreeBSD, z gotowymi binarkami i bez sudo."
         },
         {
           "icon": "blocks",
           "h": "Zainstaluj umiejętności",
-          "p": "Uruchom schematize install --all, aby pobrać wszystkie umiejętności do .claude/, albo zainstaluj jedną po slug — przeglądaj katalog na skills.schematize.org."
+          "p": "Uruchom schematize skills install --all, aby pobrać wszystkie skille do .claude/, albo zainstaluj wybrany po slugu — przeglądaj katalog na skills.schematize.org."
         },
         {
           "icon": "refresh-cw",
           "h": "Bądź na bieżąco",
-          "p": "Agent rezydentny powiadamia Cię, gdy zaktualizuje się umiejętność lub aplikacja; schematize upgrade aktualizuje się sam."
+          "p": "Rezydentny agent powiadamia, gdy skill lub aplikacja się zaktualizuje; schematize-market update odświeża aplikacje, narzędzia AI i samego siebie."
         }
       ]
     },

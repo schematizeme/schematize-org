@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Một ứng dụng dòng lệnh ưu tiên Linux, cài đặt và quản lý phiên bản các skill kỹ thuật cho Claude Code và chạy overdev — phát triển liên tục, không cần giám sát, không dừng cho đến khi danh sách kiểm tra hoàn thành.",
+          "p": "Hub của hệ sinh thái schematize (Rust, Linux và FreeBSD): cài đặt và quản lý phiên bản các skills kỹ thuật cho Claude Code, cài các ứng dụng và công cụ AI qua market, và chạy overdev — phát triển liên tục, tự động, không dừng cho đến khi checklist hoàn tất.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "Ứng dụng — schematize CLI — schematize.org",
-      "desc": "schematize là một ứng dụng dòng lệnh Rust (kèm ứng dụng máy tính để bàn) cài đặt và quản lý phiên bản các skill kỹ thuật cho Claude Code và chạy overdev. Cài trên Linux bằng một lệnh, hoặc tải về cho macOS."
+      "desc": "schematize là một hub dòng lệnh viết bằng Rust (kèm cửa sổ desktop) giúp cài đặt và quản lý phiên bản các skills kỹ thuật cho Claude Code, cài các ứng dụng trong hệ sinh thái cùng công cụ lập trình AI, và chạy overdev. Một lệnh cài toàn bộ bộ công cụ trên Linux và FreeBSD."
     },
     "hero": {
       "kicker": "Ứng dụng",
       "h1": "Một CLI cho toàn bộ quy trình.",
-      "sub": "schematize là một ứng dụng dòng lệnh Rust — kèm ứng dụng máy tính để bàn — cài đặt và quản lý phiên bản các skill kỹ thuật từ một danh mục trực tiếp và chạy overdev: phát triển liên tục, không cần giám sát, không dừng cho đến khi danh sách kiểm tra hoàn thành."
+      "sub": "schematize là một hub dòng lệnh viết bằng Rust — gồm cả cửa sổ desktop — cài đặt và quản lý phiên bản các skills kỹ thuật từ một danh mục trực tuyến, cài các ứng dụng trong hệ sinh thái cùng công cụ lập trình AI, và chạy overdev: phát triển liên tục, tự động, không dừng cho đến khi checklist hoàn tất."
     },
     "install": {
-      "title": "Cài đặt trên Linux",
-      "sub": "Một lệnh. Debian, Ubuntu và Linux Mint (.deb); openSUSE, Fedora và RHEL (.rpm); hoặc một tệp nhị phân tĩnh. Nó build từ mã nguồn trên máy — mã nguồn mở, luôn khớp với main.",
-      "terminal": "Trong một terminal:"
+      "title": "Cài đặt bộ công cụ đầy đủ",
+      "sub": "Một lệnh cài hub, market, mọi ứng dụng cùng cửa sổ của chúng, các skills — và chạy doctor. Tệp nhị phân dựng sẵn được đặt vào ~/.cargo/bin: không cần sudo, không cần trình biên dịch.",
+      "linux": "Linux (x86_64) — trong terminal:",
+      "freebsd": "FreeBSD (x86_64) — trong terminal:",
+      "note": "Linux: Debian, Ubuntu và Mint, Fedora, openSUSE, Arch và các bản phái sinh (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI hoạt động; cửa sổ desktop chưa khả dụng. Hiện trình cài đặt chỉ hỗ trợ Linux và FreeBSD."
     },
     "features": {
       "title": "Ứng dụng làm gì",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "Tải về",
-      "sub": "Cài đặt schematize trên macOS hoặc Linux — ứng dụng máy tính để bàn đi kèm.",
-      "mac": "macOS · Apple Silicon (.app). Tải về, giải nén và nhấp chuột phải → Open.",
-      "deb": "Debian, Ubuntu, Linux Mint — tệp .deb (CLI + ứng dụng máy tính để bàn).",
-      "rpm": "openSUSE, Fedora, RHEL — tệp .rpm (CLI + ứng dụng máy tính để bàn).",
-      "download": "Tải về",
-      "releases": "Tất cả các bản phát hành",
-      "unsigned": "Ứng dụng macOS chưa được ký mã — hệ điều hành hiển thị cảnh báo \"unverified\" một lần khi khởi chạy lần đầu (nhấp chuột phải → Open)."
+    "apps": {
+      "title": "Hệ sinh thái",
+      "sub": "Mỗi ứng dụng tự chạy độc lập, có CLI và cửa sổ desktop, và mọi giao diện đều hỗ trợ 20 ngôn ngữ.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "Hub: cài đặt và quản lý phiên bản các skills, chẩn đoán môi trường của bạn (doctor), tự cập nhật và hiển thị mọi thứ trong một cái nhìn."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "Trình cài đặt và cập nhật cho cả bộ công cụ. Đi kèm mọi ứng dụng, và cũng cài các công cụ AI: Claude Code, Codex CLI và Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Phát triển liên tục. Cấu hình phân cấp tác nhân trong tab Tác nhân: Opus điều phối, Haiku làm việc đơn giản, Sonnet viết code; nếu thất bại sẽ chuyển lên Codex, rồi Cursor, rồi Opus. Công việc hình ảnh được giao cho Codex."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "Khóa SSH, VPS và truy cập từ xa có kiểm toán — với thông tin xác thực nằm ngoài tầm với của tác nhân."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Giúp máy phát triển có thể dự đoán được: đo môi trường và giới hạn tài nguyên cho build, trình duyệt và container."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Thiết kế schema trước dòng code ứng dụng đầu tiên: mô hình hóa schema quan hệ, đọc cơ sở dữ liệu hiện có và sinh SQL cùng migration có thể hoàn tác."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Ai push, từ đâu và bằng danh tính nào: nhiều tài khoản git trên một máy mà không commit nhầm tài khoản."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "Danh mục skill của Claude Code: những gì đã cài trên máy này, và chỉnh sửa."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Nền tảng",
+      "sub": "Nơi trình cài đặt bộ đầy đủ chạy được hiện nay.",
+      "linux": "Linux x86_64 — CLI và cửa sổ desktop. Trình cài đặt: lệnh ở trên.",
+      "freebsd": "FreeBSD x86_64 — CLI. Cửa sổ desktop chưa khả dụng. Trình cài đặt: lệnh ở trên.",
+      "other": "macOS và Windows — tệp nhị phân dựng sẵn được phát hành trong các bản release, nhưng chưa có trình cài đặt tự động: hãy tải về và cài thủ công.",
+      "releases": "Tất cả bản phát hành",
+      "unsigned": "Tệp nhị phân và ứng dụng macOS chưa được ký mã — hệ điều hành sẽ hiện cảnh báo “chưa được xác minh” một lần ở lần mở đầu tiên (nhấp chuột phải → Mở)."
     },
     "how": {
       "title": "Cách nó hoạt động",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Cài đặt ứng dụng",
-          "p": "Một lệnh cài đặt schematize CLI và ứng dụng máy tính để bàn của nó trên Linux (.deb / .rpm / nhị phân), hoặc lấy bản build macOS."
+          "p": "Một lệnh cài toàn bộ bộ công cụ — hub, market, các ứng dụng cùng cửa sổ và skills — trên Linux hoặc FreeBSD, với tệp nhị phân dựng sẵn và không cần sudo."
         },
         {
           "icon": "blocks",
           "h": "Cài đặt skills",
-          "p": "Chạy schematize install --all để kéo mọi skill vào .claude/, hoặc cài từng cái theo slug — duyệt danh mục tại skills.schematize.org."
+          "p": "Chạy schematize skills install --all để kéo mọi skill vào .claude/, hoặc cài từng skill theo slug — duyệt danh mục tại skills.schematize.org."
         },
         {
           "icon": "refresh-cw",
           "h": "Luôn cập nhật",
-          "p": "Tác nhân thường trú thông báo cho bạn khi một skill hoặc ứng dụng cập nhật; schematize upgrade tự cập nhật."
+          "p": "Tác nhân thường trú sẽ báo cho bạn khi một skill hoặc ứng dụng có bản cập nhật; schematize-market update làm mới các ứng dụng, công cụ AI và chính nó."
         }
       ]
     },

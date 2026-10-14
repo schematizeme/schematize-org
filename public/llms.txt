@@ -10,8 +10,16 @@ schematize.org is informational and institutional: it documents our open-source
 projects, technology research and the company behind them. It is not a store.
 
 ## Open-source projects
-- schematize CLI — installs/versions engineering skills for Claude Code and runs
-  overdev (continuous, unattended development). https://github.com/schematizeme/schematize-cli
+- schematize — the hub CLI (Rust; Linux and FreeBSD x86_64): installs/versions engineering
+  skills for Claude Code and runs overdev (continuous, unattended development).
+  https://github.com/schematizeme/schematize-cli
+- Ecosystem apps (each with a CLI and a desktop window, 20 interface languages):
+  schematize-market (installer/updater; also installs Claude Code, Codex CLI, Cursor CLI),
+  overdev, deployer, optimizer, database, git, skills.
+- Full-kit install (Linux): curl -fsSL https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | bash -s -- --completo
+  FreeBSD: fetch -o - https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | sh -s -- --completo
+  Installs to ~/.cargo/bin, no sudo, prebuilt binaries. macOS/Windows binaries are in the
+  releases; the installer supports only Linux and FreeBSD.
 - schematize skills — normative engineering playbooks (engineering, go, rust, web,
   seo, node, pentest) for Claude Code. https://github.com/schematizeme
 

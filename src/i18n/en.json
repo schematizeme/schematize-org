@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "A Linux-first command-line app that installs and versions engineering skills for Claude Code and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.",
+          "p": "The hub of the schematize ecosystem (Rust, Linux and FreeBSD): installs and versions engineering skills for Claude Code, installs the apps and AI tools via the market, and runs overdev — continuous, unattended development that doesn't stop until the checklist is done.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "The app — the schematize CLI — schematize.org",
-      "desc": "schematize is a Rust command-line app (desktop app included) that installs and versions engineering skills for Claude Code and runs overdev. Install on Linux with one command, or download for macOS."
+      "desc": "schematize is a Rust command-line hub (with desktop windows) that installs and versions engineering skills for Claude Code, installs the ecosystem apps and AI coding tools, and runs overdev. One command installs the full kit on Linux and FreeBSD."
     },
     "hero": {
       "kicker": "The app",
       "h1": "One CLI for the whole workflow.",
-      "sub": "schematize is a Rust command-line app — desktop app included — that installs and versions engineering skills from a live catalog and runs overdev: continuous, unattended development that doesn't stop until the checklist is done."
+      "sub": "schematize is a Rust command-line hub — desktop windows included — that installs and versions engineering skills from a live catalog, installs the ecosystem apps and AI coding tools, and runs overdev: continuous, unattended development that doesn't stop until the checklist is done."
     },
     "install": {
-      "title": "Install on Linux",
-      "sub": "One command. Debian, Ubuntu and Linux Mint (.deb); openSUSE, Fedora and RHEL (.rpm); or a static binary. It builds from source on the machine — open-source, always matching main.",
-      "terminal": "In a terminal:"
+      "title": "Install the full kit",
+      "sub": "One command installs the hub, the market, every app with its window, the skills — and runs doctor. Prebuilt binaries into ~/.cargo/bin: no sudo, no compiler.",
+      "linux": "Linux (x86_64) — in a terminal:",
+      "freebsd": "FreeBSD (x86_64) — in a terminal:",
+      "note": "Linux: Debian, Ubuntu and Mint, Fedora, openSUSE, Arch and derivatives (CachyOS, Manjaro, EndeavourOS). FreeBSD: the CLI works; the desktop windows are not available yet. The installer supports only Linux and FreeBSD for now."
     },
     "features": {
       "title": "What the app does",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "Downloads",
-      "sub": "Install schematize on macOS or Linux — the desktop app ships with it.",
-      "mac": "macOS · Apple Silicon (.app). Download, unzip and right-click → Open.",
-      "deb": "Debian, Ubuntu, Linux Mint — the .deb (CLI + desktop app).",
-      "rpm": "openSUSE, Fedora, RHEL — the .rpm (CLI + desktop app).",
-      "download": "Download",
+    "apps": {
+      "title": "The ecosystem",
+      "sub": "Each app works on its own, has a CLI and a desktop window, and every interface speaks 20 languages.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "The hub: installs and versions skills, diagnoses your setup (doctor), self-updates and shows everything at a glance."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "The installer and updater of the whole kit. It ships with every app, and also installs the AI tools: Claude Code, Codex CLI and Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Continuous development. Configure the agent hierarchy in the Agents tab: Opus orchestrates, Haiku does the trivial, Sonnet codes; on failure it escalates to Codex, then Cursor, then Opus. Visual work and images go to Codex."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "SSH keys, VPS and audited remote access — with the credential kept out of the agent's reach."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Makes the dev machine predictable: measures the environment and caps resources for builds, browser and containers."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Designs the schema before the first line of application: models relational schemas, reads existing databases and generates SQL and reversible migrations."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Who pushes, from where and with which identity: several git accounts on one machine without committing with the wrong one."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "The Claude Code skill catalog: what is installed on this machine, and editing."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Platforms",
+      "sub": "Where the full-kit installer runs today.",
+      "linux": "Linux x86_64 — CLI and desktop windows. Installer: the command above.",
+      "freebsd": "FreeBSD x86_64 — CLI. Desktop windows are not available yet. Installer: the command above.",
+      "other": "macOS and Windows — prebuilt binaries are published in the releases, but there is no automatic installer yet: download and install by hand.",
       "releases": "All releases",
-      "unsigned": "The macOS app is not code-signed yet — the OS shows a one-time “unverified” warning on first launch (right-click → Open)."
+      "unsigned": "The macOS binaries and app are not code-signed yet — the OS shows a one-time “unverified” warning on first launch (right-click → Open)."
     },
     "how": {
       "title": "How it works",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Install the app",
-          "p": "One command installs the schematize CLI and its desktop app on Linux (.deb / .rpm / binary), or grab the macOS build."
+          "p": "One command installs the whole kit — hub, market, apps with their windows and skills — on Linux or FreeBSD, with prebuilt binaries and no sudo."
         },
         {
           "icon": "blocks",
           "h": "Install skills",
-          "p": "Run schematize install --all to pull every skill into .claude/, or install one by slug — browse the catalog at skills.schematize.org."
+          "p": "Run schematize skills install --all to pull every skill into .claude/, or install one by slug — browse the catalog at skills.schematize.org."
         },
         {
           "icon": "refresh-cw",
           "h": "Stay current",
-          "p": "The resident agent notifies you when a skill or the app updates; schematize upgrade self-updates."
+          "p": "The resident agent notifies you when a skill or the app updates; schematize-market update refreshes the apps, the AI tools and itself."
         }
       ]
     },

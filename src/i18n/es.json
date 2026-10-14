@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Una app de línea de comandos Linux-first que instala y versiona skills de ingeniería para Claude Code y ejecuta el overdev — desarrollo continuo y autónomo que no se detiene hasta que el checklist está completo.",
+          "p": "El hub del ecosistema schematize (Rust, Linux y FreeBSD): instala y versiona skills de ingeniería para Claude Code, instala las apps y las herramientas de IA mediante el market, y ejecuta overdev — desarrollo continuo y desatendido que no se detiene hasta completar el checklist.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "La app — la CLI schematize — schematize.org",
-      "desc": "schematize es una app de línea de comandos en Rust (app de escritorio incluida) que instala y versiona skills de ingeniería para Claude Code y ejecuta el overdev. Instálala en Linux con un comando, o descárgala para macOS."
+      "desc": "schematize es un hub de línea de comandos en Rust (con ventanas de escritorio) que instala y versiona skills de ingeniería para Claude Code, instala las apps del ecosistema y las herramientas de IA para programar, y ejecuta overdev. Un solo comando instala el kit completo en Linux y FreeBSD."
     },
     "hero": {
       "kicker": "La app",
       "h1": "Una CLI para todo el flujo.",
-      "sub": "schematize es una app de línea de comandos en Rust — app de escritorio incluida — que instala y versiona skills de ingeniería desde un catálogo en vivo y ejecuta el overdev: desarrollo continuo y autónomo que no se detiene hasta que el checklist está completo."
+      "sub": "schematize es un hub de línea de comandos en Rust —con ventanas de escritorio incluidas— que instala y versiona skills de ingeniería desde un catálogo en vivo, instala las apps del ecosistema y las herramientas de IA para programar, y ejecuta overdev: desarrollo continuo y desatendido que no se detiene hasta completar el checklist."
     },
     "install": {
-      "title": "Instálala en Linux",
-      "sub": "Un comando. Debian, Ubuntu y Linux Mint (.deb); openSUSE, Fedora y RHEL (.rpm); o un binario estático. Compila desde el código en la máquina — código abierto, siempre en sincronía con main.",
-      "terminal": "En una terminal:"
+      "title": "Instala el kit completo",
+      "sub": "Un solo comando instala el hub, el market, cada app con su ventana, las skills — y ejecuta doctor. Binarios precompilados en ~/.cargo/bin: sin sudo, sin compilador.",
+      "linux": "Linux (x86_64) — en una terminal:",
+      "freebsd": "FreeBSD (x86_64) — en una terminal:",
+      "note": "Linux: Debian, Ubuntu y Mint, Fedora, openSUSE, Arch y derivadas (CachyOS, Manjaro, EndeavourOS). FreeBSD: la CLI funciona; las ventanas de escritorio aún no están disponibles. Por ahora el instalador solo es compatible con Linux y FreeBSD."
     },
     "features": {
       "title": "Qué hace la app",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "Descargas",
-      "sub": "Instala schematize en macOS o Linux — la app de escritorio viene con ella.",
-      "mac": "macOS · Apple Silicon (.app). Descarga, descomprime y haz clic derecho → Abrir.",
-      "deb": "Debian, Ubuntu, Linux Mint — el .deb (CLI + app de escritorio).",
-      "rpm": "openSUSE, Fedora, RHEL — el .rpm (CLI + app de escritorio).",
-      "download": "Descargar",
+    "apps": {
+      "title": "El ecosistema",
+      "sub": "Cada app funciona por sí sola, tiene CLI y ventana de escritorio, y todas las interfaces hablan 20 idiomas.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "El hub: instala y versiona skills, diagnostica tu entorno (doctor), se actualiza solo y muestra todo de un vistazo."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "El instalador y actualizador de todo el kit. Viene con cada app y también instala las herramientas de IA: Claude Code, Codex CLI y Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Desarrollo continuo. Configura la jerarquía de agentes en la pestaña Agentes: Opus orquesta, Haiku hace lo trivial, Sonnet programa; si falla, escala a Codex, luego a Cursor y después a Opus. El trabajo visual y las imágenes van a Codex."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "Claves SSH, VPS y acceso remoto auditado — con la credencial fuera del alcance del agente."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Hace predecible la máquina de desarrollo: mide el entorno y limita los recursos para compilaciones, navegador y contenedores."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Diseña el esquema antes de la primera línea de la aplicación: modela esquemas relacionales, lee bases de datos existentes y genera SQL y migraciones reversibles."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Quién hace push, desde dónde y con qué identidad: varias cuentas de git en una misma máquina sin hacer commits con la equivocada."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "El catálogo de skills de Claude Code: qué hay instalado en esta máquina, y edición."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Plataformas",
+      "sub": "Dónde funciona hoy el instalador del kit completo.",
+      "linux": "Linux x86_64 — CLI y ventanas de escritorio. Instalador: el comando de arriba.",
+      "freebsd": "FreeBSD x86_64 — CLI. Las ventanas de escritorio aún no están disponibles. Instalador: el comando de arriba.",
+      "other": "macOS y Windows — los binarios precompilados se publican en las releases, pero todavía no hay instalador automático: descarga e instala a mano.",
       "releases": "Todas las releases",
-      "unsigned": "La app de macOS todavía no está firmada — el sistema muestra una advertencia única de “no verificada” en el primer arranque (clic derecho → Abrir)."
+      "unsigned": "Los binarios y la app de macOS aún no están firmados — el sistema muestra una única advertencia de «no verificado» en el primer inicio (clic derecho → Abrir)."
     },
     "how": {
       "title": "Cómo funciona",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Instala la app",
-          "p": "Un comando instala la CLI schematize y su app de escritorio en Linux (.deb / .rpm / binario), o toma el build de macOS."
+          "p": "Un solo comando instala todo el kit — hub, market, apps con sus ventanas y skills — en Linux o FreeBSD, con binarios precompilados y sin sudo."
         },
         {
           "icon": "blocks",
           "h": "Instala skills",
-          "p": "Ejecuta schematize install --all para traer todas las skills a .claude/, o instala una por slug — navega el catálogo en skills.schematize.org."
+          "p": "Ejecuta schematize skills install --all para traer todas las skills a .claude/, o instala una por su slug — explora el catálogo en skills.schematize.org."
         },
         {
           "icon": "refresh-cw",
           "h": "Mantente al día",
-          "p": "El agente residente te avisa cuando una skill o la app se actualiza; schematize upgrade se actualiza solo."
+          "p": "El agente residente te avisa cuando se actualiza una skill o la app; schematize-market update actualiza las apps, las herramientas de IA y a sí mismo."
         }
       ]
     },

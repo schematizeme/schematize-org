@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Claude Code için mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran Linux öncelikli bir komut satırı uygulaması — kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme.",
+          "p": "schematize ekosisteminin merkezi (Rust, Linux ve FreeBSD): Claude Code için mühendislik skills'lerini kurar ve sürümler, uygulamaları ve yapay zekâ araçlarını market üzerinden yükler ve overdev'i çalıştırır — kontrol listesi bitene kadar durmayan, sürekli ve gözetimsiz geliştirme.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "Uygulama — schematize CLI — schematize.org",
-      "desc": "schematize, Claude Code için mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran bir Rust komut satırı uygulamasıdır (masaüstü uygulaması dahil). Linux'a tek komutla kurun ya da macOS için indirin."
+      "desc": "schematize, Claude Code için mühendislik skills'lerini kuran ve sürümleyen, ekosistem uygulamalarını ve yapay zekâ kodlama araçlarını yükleyen ve overdev'i çalıştıran, Rust ile yazılmış bir komut satırı merkezidir (masaüstü pencereleriyle birlikte). Tek komut Linux ve FreeBSD'de tam kiti kurar."
     },
     "hero": {
       "kicker": "Uygulama",
       "h1": "Tüm iş akışı için tek bir CLI.",
-      "sub": "schematize, canlı bir katalogdan mühendislik becerilerini kuran ve sürümleyen, overdev'i çalıştıran bir Rust komut satırı uygulamasıdır — masaüstü uygulaması dahil: kontrol listesi tamamlanana kadar durmayan sürekli, gözetimsiz geliştirme."
+      "sub": "schematize, Rust ile yazılmış bir komut satırı merkezidir — masaüstü pencereleri dahil — canlı bir katalogdan mühendislik skills'lerini kurar ve sürümler, ekosistem uygulamalarını ve yapay zekâ kodlama araçlarını yükler ve overdev'i çalıştırır: kontrol listesi bitene kadar durmayan, sürekli ve gözetimsiz geliştirme."
     },
     "install": {
-      "title": "Linux'a kurulum",
-      "sub": "Tek komut. Debian, Ubuntu ve Linux Mint (.deb); openSUSE, Fedora ve RHEL (.rpm); ya da statik bir ikili dosya. Makinede kaynaktan derlenir — açık kaynak, her zaman main ile eşleşir.",
-      "terminal": "Bir terminalde:"
+      "title": "Tam kiti kurun",
+      "sub": "Tek komut merkezi, market'i, her uygulamayı penceresiyle, skills'leri kurar — ve doctor'u çalıştırır. Derlenmiş ikili dosyalar ~/.cargo/bin içine gider: sudo yok, derleyici yok.",
+      "linux": "Linux (x86_64) — bir terminalde:",
+      "freebsd": "FreeBSD (x86_64) — bir terminalde:",
+      "note": "Linux: Debian, Ubuntu ve Mint, Fedora, openSUSE, Arch ve türevleri (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI çalışır; masaüstü pencereleri henüz mevcut değil. Kurulum aracı şimdilik yalnızca Linux ve FreeBSD'yi destekler."
     },
     "features": {
       "title": "Uygulama neler yapar",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "İndirmeler",
-      "sub": "schematize'ı macOS veya Linux'a kurun — masaüstü uygulaması onunla birlikte gelir.",
-      "mac": "macOS · Apple Silicon (.app). İndirin, açın ve sağ tıklayın → Aç.",
-      "deb": "Debian, Ubuntu, Linux Mint — .deb (CLI + masaüstü uygulaması).",
-      "rpm": "openSUSE, Fedora, RHEL — .rpm (CLI + masaüstü uygulaması).",
-      "download": "İndir",
+    "apps": {
+      "title": "Ekosistem",
+      "sub": "Her uygulama tek başına çalışır, bir CLI'ya ve bir masaüstü penceresine sahiptir ve her arayüz 20 dil konuşur.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "Merkez: skills'leri kurar ve sürümler, ortamınızı teşhis eder (doctor), kendini günceller ve her şeyi tek bakışta gösterir."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "Tüm kitin kurulum ve güncelleme aracı. Her uygulamayla birlikte gelir ve yapay zekâ araçlarını da kurar: Claude Code, Codex CLI ve Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Sürekli geliştirme. Ajan hiyerarşisini Ajanlar sekmesinde yapılandırın: Opus yönetir, Haiku basit işleri yapar, Sonnet kod yazar; başarısız olursa önce Codex'e, sonra Cursor'a, sonra Opus'a yükseltir. Görsel işler ve resimler Codex'e gider."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "SSH anahtarları, VPS ve denetlenebilir uzaktan erişim — kimlik bilgisi ajanın erişiminden uzak tutularak."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Geliştirme makinesini öngörülebilir kılar: ortamı ölçer ve derlemeler, tarayıcı ve konteynerler için kaynakları sınırlar."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Şemayı uygulamanın ilk satırından önce tasarlar: ilişkisel şemaları modeller, mevcut veritabanlarını okur ve SQL ile geri alınabilir migration'lar üretir."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Kim, nereden ve hangi kimlikle push eder: tek makinede birden çok git hesabı, yanlış hesapla commit yapmadan."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "Claude Code skill kataloğu: bu makinede nelerin kurulu olduğu ve düzenleme."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Platformlar",
+      "sub": "Tam kit kurulum aracının bugün çalıştığı yerler.",
+      "linux": "Linux x86_64 — CLI ve masaüstü pencereleri. Kurulum: yukarıdaki komut.",
+      "freebsd": "FreeBSD x86_64 — CLI. Masaüstü pencereleri henüz mevcut değil. Kurulum: yukarıdaki komut.",
+      "other": "macOS ve Windows — derlenmiş ikili dosyalar sürümlerde yayımlanıyor, ancak henüz otomatik bir kurulum aracı yok: elle indirip kurun.",
       "releases": "Tüm sürümler",
-      "unsigned": "macOS uygulaması henüz kod imzalı değil — işletim sistemi ilk açılışta tek seferlik bir “doğrulanmamış” uyarısı gösterir (sağ tıklayın → Aç)."
+      "unsigned": "macOS ikili dosyaları ve uygulaması henüz kod imzalı değil — işletim sistemi ilk açılışta bir kereye mahsus “doğrulanmamış” uyarısı gösterir (sağ tık → Aç)."
     },
     "how": {
       "title": "Nasıl çalışır",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Uygulamayı kur",
-          "p": "Tek komut, schematize CLI'ı ve masaüstü uygulamasını Linux'a kurar (.deb / .rpm / ikili dosya) ya da macOS derlemesini alın."
+          "p": "Tek komut tüm kiti kurar — merkez, market, pencereli uygulamalar ve skills — Linux veya FreeBSD'de, derlenmiş ikili dosyalarla ve sudo olmadan."
         },
         {
           "icon": "blocks",
           "h": "Becerileri kur",
-          "p": "Her beceriyi .claude/ dizinine çekmek için schematize install --all çalıştırın ya da slug ile birini kurun — kataloğa skills.schematize.org adresinden göz atın."
+          "p": "Tüm skills'leri .claude/ içine çekmek için schematize skills install --all komutunu çalıştırın ya da tek tek slug ile kurun — kataloğa skills.schematize.org adresinden göz atın."
         },
         {
           "icon": "refresh-cw",
           "h": "Güncel kal",
-          "p": "Yerleşik ajan, bir beceri veya uygulama güncellendiğinde sizi bilgilendirir; schematize upgrade kendini günceller."
+          "p": "Yerleşik ajan, bir skill veya uygulama güncellendiğinde sizi bilgilendirir; schematize-market update uygulamaları, yapay zekâ araçlarını ve kendisini yeniler."
         }
       ]
     },

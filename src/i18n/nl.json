@@ -130,7 +130,7 @@
           "tag": "CLI · Rust",
           "icon": "terminal",
           "h": "schematize",
-          "p": "Een Linux-first opdrachtregel-app die engineering-skills voor Claude Code installeert en versiebeheert en overdev uitvoert — continue, onbeheerde ontwikkeling die niet stopt totdat de checklist klaar is.",
+          "p": "De hub van het schematize-ecosysteem (Rust, Linux en FreeBSD): installeert en versioneert engineering-skills voor Claude Code, installeert de apps en AI-tools via de market, en voert overdev uit — continue, onbeheerde ontwikkeling die niet stopt voordat de checklist af is.",
           "href": "https://github.com/schematizeme/schematize-cli"
         },
         {
@@ -282,17 +282,19 @@
   "software": {
     "meta": {
       "title": "De app — de schematize CLI — schematize.org",
-      "desc": "schematize is een opdrachtregel-app in Rust (desktop-app inbegrepen) die engineering-skills voor Claude Code installeert en versiebeheert en overdev uitvoert. Installeer op Linux met één commando, of download voor macOS."
+      "desc": "schematize is een Rust-commandoregelhub (met desktopvensters) die engineering-skills voor Claude Code installeert en van versies voorziet, de apps van het ecosysteem en AI-codeertools installeert, en overdev uitvoert. Eén commando installeert de volledige kit op Linux en FreeBSD."
     },
     "hero": {
       "kicker": "De app",
       "h1": "Eén CLI voor de hele workflow.",
-      "sub": "schematize is een opdrachtregel-app in Rust — desktop-app inbegrepen — die engineering-skills installeert en versiebeheert vanuit een live catalogus en overdev uitvoert: continue, onbeheerde ontwikkeling die niet stopt totdat de checklist klaar is."
+      "sub": "schematize is een Rust-commandoregelhub — inclusief desktopvensters — die engineering-skills uit een live catalogus installeert en van versies voorziet, de apps van het ecosysteem en AI-codeertools installeert, en overdev uitvoert: continue, onbeheerde ontwikkeling die niet stopt voordat de checklist af is."
     },
     "install": {
-      "title": "Installeren op Linux",
-      "sub": "Één commando. Debian, Ubuntu en Linux Mint (.deb); openSUSE, Fedora en RHEL (.rpm); of een statisch binair bestand. Het bouwt vanuit de broncode op de machine — opensource, altijd in lijn met main.",
-      "terminal": "In een terminal:"
+      "title": "Installeer de volledige kit",
+      "sub": "Eén commando installeert de hub, de market, elke app met zijn venster en de skills — en voert doctor uit. Vooraf gebouwde binaries in ~/.cargo/bin: geen sudo, geen compiler.",
+      "linux": "Linux (x86_64) — in een terminal:",
+      "freebsd": "FreeBSD (x86_64) — in een terminal:",
+      "note": "Linux: Debian, Ubuntu en Mint, Fedora, openSUSE, Arch en afgeleiden (CachyOS, Manjaro, EndeavourOS). FreeBSD: de CLI werkt; de desktopvensters zijn nog niet beschikbaar. De installer ondersteunt voorlopig alleen Linux en FreeBSD."
     },
     "features": {
       "title": "Wat de app doet",
@@ -319,15 +321,60 @@
         }
       ]
     },
-    "downloads": {
-      "title": "Downloads",
-      "sub": "Installeer schematize op macOS of Linux — de desktop-app wordt meegeleverd.",
-      "mac": "macOS · Apple Silicon (.app). Download, pak uit en rechtsklik → Openen.",
-      "deb": "Debian, Ubuntu, Linux Mint — de .deb (CLI + desktop-app).",
-      "rpm": "openSUSE, Fedora, RHEL — de .rpm (CLI + desktop-app).",
-      "download": "Downloaden",
+    "apps": {
+      "title": "Het ecosysteem",
+      "sub": "Elke app werkt op zichzelf, heeft een CLI en een desktopvenster, en elke interface spreekt 20 talen.",
+      "items": [
+        {
+          "icon": "terminal",
+          "h": "schematize",
+          "p": "De hub: installeert en versioneert skills, diagnosticeert je setup (doctor), werkt zichzelf bij en toont alles in één oogopslag."
+        },
+        {
+          "icon": "store",
+          "h": "schematize-market",
+          "p": "De installer en updater van de hele kit. Hij zit in elke app en installeert ook de AI-tools: Claude Code, Codex CLI en Cursor CLI."
+        },
+        {
+          "icon": "infinity",
+          "h": "overdev",
+          "p": "Continue ontwikkeling. Stel de agenthiërarchie in op het tabblad Agents: Opus orkestreert, Haiku doet het triviale, Sonnet schrijft de code; bij falen schaalt het op naar Codex, dan Cursor, dan Opus. Visueel werk en afbeeldingen gaan naar Codex."
+        },
+        {
+          "icon": "rocket",
+          "h": "deployer",
+          "p": "SSH-sleutels, VPS en geauditeerde externe toegang — met de inloggegevens buiten het bereik van de agent."
+        },
+        {
+          "icon": "gauge",
+          "h": "optimizer",
+          "p": "Maakt de dev-machine voorspelbaar: meet de omgeving en begrenst de resources voor builds, browser en containers."
+        },
+        {
+          "icon": "database",
+          "h": "database",
+          "p": "Ontwerpt het schema vóór de eerste regel van de applicatie: modelleert relationele schema's, leest bestaande databases en genereert SQL en omkeerbare migraties."
+        },
+        {
+          "icon": "git-branch",
+          "h": "git",
+          "p": "Wie pusht, vanaf waar en met welke identiteit: meerdere git-accounts op één machine zonder met het verkeerde te committen."
+        },
+        {
+          "icon": "blocks",
+          "h": "skills",
+          "p": "De Claude Code-skillscatalogus: wat er op deze machine is geïnstalleerd, en bewerken."
+        }
+      ]
+    },
+    "platforms": {
+      "title": "Platforms",
+      "sub": "Waar de installer van de volledige kit vandaag draait.",
+      "linux": "Linux x86_64 — CLI en desktopvensters. Installer: het commando hierboven.",
+      "freebsd": "FreeBSD x86_64 — CLI. Desktopvensters zijn nog niet beschikbaar. Installer: het commando hierboven.",
+      "other": "macOS en Windows — vooraf gebouwde binaries staan in de releases, maar er is nog geen automatische installer: download en installeer handmatig.",
       "releases": "Alle releases",
-      "unsigned": "De macOS-app is nog niet gecodesigneerd — het besturingssysteem toont bij de eerste start eenmalig een waarschuwing 'niet-geverifieerd' (rechtsklik → Openen)."
+      "unsigned": "De macOS-binaries en -app zijn nog niet code-signed — het besturingssysteem toont bij de eerste start eenmalig een “unverified”-waarschuwing (klik met de rechtermuisknop → Open)."
     },
     "how": {
       "title": "Hoe het werkt",
@@ -336,17 +383,17 @@
         {
           "icon": "download",
           "h": "Installeer de app",
-          "p": "Eén commando installeert de schematize CLI en de bijbehorende desktop-app op Linux (.deb / .rpm / binair bestand), of pak de macOS-build."
+          "p": "Eén commando installeert de hele kit — hub, market, apps met hun vensters en skills — op Linux of FreeBSD, met vooraf gebouwde binaries en zonder sudo."
         },
         {
           "icon": "blocks",
           "h": "Installeer skills",
-          "p": "Voer schematize install --all uit om elke skill in .claude/ op te halen, of installeer er één op slug — blader door de catalogus op skills.schematize.org."
+          "p": "Voer schematize skills install --all uit om elke skill in .claude/ te halen, of installeer er één via de slug — blader door de catalogus op skills.schematize.org."
         },
         {
           "icon": "refresh-cw",
           "h": "Blijf actueel",
-          "p": "De residente agent waarschuwt je wanneer een skill of de app wordt bijgewerkt; schematize upgrade werkt zichzelf bij."
+          "p": "De resident agent waarschuwt je wanneer een skill of de app een update heeft; schematize-market update ververst de apps, de AI-tools en zichzelf."
         }
       ]
     },
