@@ -294,7 +294,13 @@
       "sub": "Eén commando installeert de hub, de market, elke app met zijn venster en de skills — en voert doctor uit. Vooraf gebouwde binaries in ~/.cargo/bin: geen sudo, geen compiler.",
       "linux": "Linux (x86_64) — in een terminal:",
       "freebsd": "FreeBSD (x86_64) — in een terminal:",
-      "note": "Linux: Debian, Ubuntu en Mint, Fedora, openSUSE, Arch en afgeleiden (CachyOS, Manjaro, EndeavourOS). FreeBSD: de CLI werkt; de desktopvensters zijn nog niet beschikbaar. De installer ondersteunt voorlopig alleen Linux en FreeBSD."
+      "note": "Linux: Debian, Ubuntu en Mint, Fedora, openSUSE, Arch en afgeleiden (CachyOS, Manjaro, EndeavourOS). FreeBSD: de CLI werkt; de desktopvensters zijn nog niet beschikbaar. De Linux/FreeBSD-installer draait niet op Windows — zie het Windows-commando hieronder.",
+      "windows": "Windows (x86_64) — in PowerShell:",
+      "windows_full": "Volledige kit — installeert ook talen en tools via winget:",
+      "windows_note": "Installeert in %USERPROFILE%\\.cargo\\bin, controleert de SHA-256 van elk binary en voegt het toe aan het PATH van de gebruiker — geen beheerder nodig. Open daarna een nieuwe terminal. Werkt met Windows PowerShell 5.1 of 7; x86_64 (ARM64 draait via emulatie).",
+      "windows_scope": "Op Windows nu: schematize-market en overdev (CLI en vensters). Nog niet: de schematize-hub, optimizer, deployer, git, database en skills — die zijn alleen voor Linux en FreeBSD.",
+      "windows_git": "overdev vereist Git for Windows (Git Bash), net als Claude Code:",
+      "windows_dl": "Handmatig downloaden (binaries + SHA256SUMS)"
     },
     "features": {
       "title": "Wat de app doet",
@@ -372,7 +378,8 @@
       "sub": "Waar de installer van de volledige kit vandaag draait.",
       "linux": "Linux x86_64 — CLI en desktopvensters. Installer: het commando hierboven.",
       "freebsd": "FreeBSD x86_64 — CLI. Desktopvensters zijn nog niet beschikbaar. Installer: het commando hierboven.",
-      "other": "macOS en Windows — vooraf gebouwde binaries staan in de releases, maar er is nog geen automatische installer: download en installeer handmatig.",
+      "windows": "Windows x86_64 — market en overdev (CLI en vensters). Installer: het PowerShell-commando hierboven. De hub en de andere apps zijn nog niet beschikbaar.",
+      "other": "macOS — vooraf gebouwde binaries staan in de releases, maar er is nog geen automatische installer: download en installeer handmatig.",
       "releases": "Alle releases",
       "unsigned": "De macOS-binaries en -app zijn nog niet code-signed — het besturingssysteem toont bij de eerste start eenmalig een “unverified”-waarschuwing (klik met de rechtermuisknop → Open)."
     },

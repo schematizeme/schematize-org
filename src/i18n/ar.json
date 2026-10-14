@@ -294,7 +294,13 @@
       "sub": "أمر واحد يثبّت المركز والـ market وكل تطبيق مع نافذته والمهارات — ثم يشغّل doctor. ملفات تنفيذية مبنية مسبقًا في ‎~/.cargo/bin: بلا sudo وبلا مترجم.",
       "linux": "‏Linux (x86_64) — في الطرفية:",
       "freebsd": "‏FreeBSD (x86_64) — في الطرفية:",
-      "note": "‏Linux: ‏Debian وUbuntu وMint وFedora وopenSUSE وArch ومشتقاتها (CachyOS وManjaro وEndeavourOS). ‏FreeBSD: واجهة CLI تعمل؛ نوافذ سطح المكتب غير متاحة بعد. المثبّت يدعم Linux وFreeBSD فقط حاليًا."
+      "note": "‏Linux: ‏Debian وUbuntu وMint وFedora وopenSUSE وArch ومشتقاتها (CachyOS وManjaro وEndeavourOS). ‏FreeBSD: واجهة CLI تعمل؛ نوافذ سطح المكتب غير متاحة بعد. مثبّت Linux/FreeBSD لا يعمل على Windows — راجع أمر Windows أدناه.",
+      "windows": "‏Windows (x86_64) — في PowerShell:",
+      "windows_full": "الحزمة الكاملة — تثبّت أيضًا اللغات والأدوات عبر winget:",
+      "windows_note": "يثبّت في %USERPROFILE%\\.cargo\\bin، ويتحقق من SHA-256 لكل ملف تنفيذي، ويضيفه إلى PATH الخاص بالمستخدم — دون الحاجة إلى صلاحيات المسؤول. افتح طرفية جديدة بعد ذلك. يعمل على Windows PowerShell 5.1 أو 7؛ وx86_64 (يعمل ARM64 بالمحاكاة).",
+      "windows_scope": "على Windows حاليًا: schematize-market وoverdev (CLI والنوافذ). ليس بعد: مركز schematize وoptimizer وdeployer وgit وdatabase وskills — هذه متاحة على Linux وFreeBSD فقط.",
+      "windows_git": "يتطلب overdev وجود Git for Windows (Git Bash)، مثل Claude Code:",
+      "windows_dl": "تنزيل يدوي (ملفات تنفيذية + SHA256SUMS)"
     },
     "features": {
       "title": "ماذا يفعل التطبيق",
@@ -372,7 +378,8 @@
       "sub": "الأنظمة التي يعمل عليها مثبّت الحزمة الكاملة اليوم.",
       "linux": "‏Linux x86_64 — واجهة CLI ونوافذ سطح المكتب. المثبّت: الأمر أعلاه.",
       "freebsd": "‏FreeBSD x86_64 — واجهة CLI. نوافذ سطح المكتب غير متاحة بعد. المثبّت: الأمر أعلاه.",
-      "other": "‏macOS وWindows — الملفات التنفيذية المبنية مسبقًا منشورة في الإصدارات، لكن لا يوجد مثبّت تلقائي بعد: نزّل وثبّت يدويًا.",
+      "windows": "‏Windows x86_64 — market وoverdev (CLI والنوافذ). المثبّت: أمر PowerShell أعلاه. المركز وبقية التطبيقات غير متاحة بعد.",
+      "other": "‏macOS — الملفات التنفيذية المبنية مسبقًا منشورة في الإصدارات، لكن لا يوجد مثبّت تلقائي بعد: نزّلها وثبّتها يدويًا.",
       "releases": "كل الإصدارات",
       "unsigned": "ملفات macOS التنفيذية والتطبيق غير موقّعة رقميًا بعد — يعرض النظام تحذير «غير موثَّق» مرة واحدة عند أول تشغيل (انقر بزر الماوس الأيمن ← فتح)."
     },

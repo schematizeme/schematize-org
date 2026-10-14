@@ -294,7 +294,13 @@
       "sub": "一条命令即可安装中枢、market、每个应用及其窗口、skills——并运行 doctor。预编译二进制文件安装到 ~/.cargo/bin：无需 sudo，无需编译器。",
       "linux": "Linux (x86_64) — 在终端中：",
       "freebsd": "FreeBSD (x86_64) — 在终端中：",
-      "note": "Linux：Debian、Ubuntu 和 Mint、Fedora、openSUSE、Arch 及其衍生版（CachyOS、Manjaro、EndeavourOS）。FreeBSD：CLI 可用；桌面窗口暂不可用。目前安装程序仅支持 Linux 和 FreeBSD。"
+      "note": "Linux：Debian、Ubuntu 和 Mint、Fedora、openSUSE、Arch 及其衍生版（CachyOS、Manjaro、EndeavourOS）。FreeBSD：CLI 可用；桌面窗口暂不可用。Linux/FreeBSD 安装程序无法在 Windows 上运行 — 请见下方的 Windows 命令。",
+      "windows": "Windows (x86_64) — 在 PowerShell 中运行：",
+      "windows_full": "完整套件 — 还会通过 winget 安装编程语言和工具：",
+      "windows_note": "安装到 %USERPROFILE%\\.cargo\\bin，校验每个二进制文件的 SHA-256，并加入用户 PATH — 无需管理员权限。完成后请打开新的终端。支持 Windows PowerShell 5.1 或 7；x86_64（ARM64 通过模拟运行）。",
+      "windows_scope": "目前 Windows 上提供：schematize-market 和 overdev（CLI 与窗口）。暂未提供：schematize 中枢、optimizer、deployer、git、database 和 skills — 这些仅支持 Linux 和 FreeBSD。",
+      "windows_git": "overdev 需要 Git for Windows（Git Bash），与 Claude Code 的要求相同：",
+      "windows_dl": "手动下载（二进制文件 + SHA256SUMS）"
     },
     "features": {
       "title": "这款应用能做什么",
@@ -372,7 +378,8 @@
       "sub": "完整套件安装程序目前可运行的平台。",
       "linux": "Linux x86_64 — CLI 和桌面窗口。安装程序：上方的命令。",
       "freebsd": "FreeBSD x86_64 — CLI。桌面窗口暂不可用。安装程序：上方的命令。",
-      "other": "macOS 和 Windows — 发布页提供预编译二进制文件，但暂无自动安装程序：请手动下载并安装。",
+      "windows": "Windows x86_64 — market 和 overdev（CLI 与窗口）。安装程序：上方的 PowerShell 命令。中枢和其他应用暂不可用。",
+      "other": "macOS — 发布页提供预编译二进制文件，但暂无自动安装程序：请手动下载并安装。",
       "releases": "所有发布版本",
       "unsigned": "macOS 二进制文件和应用尚未进行代码签名——首次启动时系统会弹出一次“未经验证”的警告（右键点击 → 打开）。"
     },

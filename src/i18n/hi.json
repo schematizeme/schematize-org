@@ -294,7 +294,13 @@
       "sub": "एक कमांड हब, market, हर ऐप को उसकी विंडो के साथ, और skills इंस्टॉल करता है — और doctor चलाता है। ~/.cargo/bin में पहले से बने बाइनरी: न sudo, न कंपाइलर।",
       "linux": "Linux (x86_64) — टर्मिनल में:",
       "freebsd": "FreeBSD (x86_64) — टर्मिनल में:",
-      "note": "Linux: Debian, Ubuntu और Mint, Fedora, openSUSE, Arch और उसके डेरिवेटिव (CachyOS, Manjaro, EndeavourOS)। FreeBSD: CLI काम करता है; डेस्कटॉप विंडो अभी उपलब्ध नहीं हैं। फ़िलहाल इंस्टॉलर सिर्फ़ Linux और FreeBSD को सपोर्ट करता है।"
+      "note": "Linux: Debian, Ubuntu और Mint, Fedora, openSUSE, Arch और उसके डेरिवेटिव (CachyOS, Manjaro, EndeavourOS)। FreeBSD: CLI काम करता है; डेस्कटॉप विंडो अभी उपलब्ध नहीं हैं। Linux/FreeBSD इंस्टॉलर Windows पर नहीं चलता — नीचे Windows का कमांड देखें।",
+      "windows": "Windows (x86_64) — PowerShell में:",
+      "windows_full": "पूरा किट — winget से भाषाएँ और टूल भी इंस्टॉल करता है:",
+      "windows_note": "%USERPROFILE%\\.cargo\\bin में इंस्टॉल करता है, हर बाइनरी का SHA-256 जाँचता है और उसे उपयोगकर्ता के PATH में जोड़ता है — एडमिन की ज़रूरत नहीं। इसके बाद नया टर्मिनल खोलें। Windows PowerShell 5.1 या 7 पर चलता है; x86_64 (ARM64 एमुलेशन से चलता है)।",
+      "windows_scope": "आज Windows पर: schematize-market और overdev (CLI और विंडो)। अभी नहीं: schematize हब, optimizer, deployer, git, database और skills — ये केवल Linux और FreeBSD पर हैं।",
+      "windows_git": "overdev के लिए Git for Windows (Git Bash) चाहिए, जैसा Claude Code को चाहिए:",
+      "windows_dl": "मैन्युअल डाउनलोड (बाइनरी + SHA256SUMS)"
     },
     "features": {
       "title": "ऐप क्या करता है",
@@ -372,7 +378,8 @@
       "sub": "पूरे किट का इंस्टॉलर आज जहाँ चलता है।",
       "linux": "Linux x86_64 — CLI और डेस्कटॉप विंडो। इंस्टॉलर: ऊपर दिया गया कमांड।",
       "freebsd": "FreeBSD x86_64 — CLI। डेस्कटॉप विंडो अभी उपलब्ध नहीं हैं। इंस्टॉलर: ऊपर दिया गया कमांड।",
-      "other": "macOS और Windows — पहले से बने बाइनरी रिलीज़ में प्रकाशित हैं, लेकिन अभी कोई स्वचालित इंस्टॉलर नहीं है: हाथ से डाउनलोड करके इंस्टॉल करें।",
+      "windows": "Windows x86_64 — market और overdev (CLI और विंडो)। इंस्टॉलर: ऊपर का PowerShell कमांड। हब और बाकी ऐप अभी उपलब्ध नहीं हैं।",
+      "other": "macOS — पहले से बने बाइनरी रिलीज़ में प्रकाशित हैं, लेकिन अभी स्वचालित इंस्टॉलर नहीं है: हाथ से डाउनलोड करके इंस्टॉल करें।",
       "releases": "सभी रिलीज़",
       "unsigned": "macOS के बाइनरी और ऐप पर अभी कोड-साइनिंग नहीं है — पहली बार खोलने पर सिस्टम एक बार “unverified” चेतावनी दिखाता है (राइट-क्लिक → खोलें)।"
     },

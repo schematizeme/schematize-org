@@ -294,7 +294,13 @@
       "sub": "Tek komut merkezi, market'i, her uygulamayı penceresiyle, skills'leri kurar — ve doctor'u çalıştırır. Derlenmiş ikili dosyalar ~/.cargo/bin içine gider: sudo yok, derleyici yok.",
       "linux": "Linux (x86_64) — bir terminalde:",
       "freebsd": "FreeBSD (x86_64) — bir terminalde:",
-      "note": "Linux: Debian, Ubuntu ve Mint, Fedora, openSUSE, Arch ve türevleri (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI çalışır; masaüstü pencereleri henüz mevcut değil. Kurulum aracı şimdilik yalnızca Linux ve FreeBSD'yi destekler."
+      "note": "Linux: Debian, Ubuntu ve Mint, Fedora, openSUSE, Arch ve türevleri (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI çalışır; masaüstü pencereleri henüz mevcut değil. Linux/FreeBSD yükleyicisi Windows'ta çalışmaz — aşağıdaki Windows komutuna bakın.",
+      "windows": "Windows (x86_64) — PowerShell'de:",
+      "windows_full": "Tam set — ayrıca winget ile diller ve araçlar kurar:",
+      "windows_note": "%USERPROFILE%\\.cargo\\bin dizinine kurar, her ikili dosyanın SHA-256 değerini doğrular ve kullanıcı PATH'ine ekler — yönetici gerekmez. Ardından yeni bir terminal açın. Windows PowerShell 5.1 veya 7 ile çalışır; x86_64 (ARM64 öykünmeyle çalışır).",
+      "windows_scope": "Bugün Windows'ta: schematize-market ve overdev (CLI ve pencereler). Henüz yok: schematize hub'ı, optimizer, deployer, git, database ve skills — bunlar yalnızca Linux ve FreeBSD içindir.",
+      "windows_git": "overdev, Claude Code gibi Git for Windows (Git Bash) gerektirir:",
+      "windows_dl": "Elle indirme (ikili dosyalar + SHA256SUMS)"
     },
     "features": {
       "title": "Uygulama neler yapar",
@@ -372,7 +378,8 @@
       "sub": "Tam kit kurulum aracının bugün çalıştığı yerler.",
       "linux": "Linux x86_64 — CLI ve masaüstü pencereleri. Kurulum: yukarıdaki komut.",
       "freebsd": "FreeBSD x86_64 — CLI. Masaüstü pencereleri henüz mevcut değil. Kurulum: yukarıdaki komut.",
-      "other": "macOS ve Windows — derlenmiş ikili dosyalar sürümlerde yayımlanıyor, ancak henüz otomatik bir kurulum aracı yok: elle indirip kurun.",
+      "windows": "Windows x86_64 — market ve overdev (CLI ve pencereler). Yükleyici: yukarıdaki PowerShell komutu. Hub ve diğer uygulamalar henüz mevcut değil.",
+      "other": "macOS — derlenmiş ikili dosyalar sürümlerde yayımlanıyor ama henüz otomatik yükleyici yok: elle indirip kurun.",
       "releases": "Tüm sürümler",
       "unsigned": "macOS ikili dosyaları ve uygulaması henüz kod imzalı değil — işletim sistemi ilk açılışta bir kereye mahsus “doğrulanmamış” uyarısı gösterir (sağ tık → Aç)."
     },

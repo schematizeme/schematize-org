@@ -294,7 +294,13 @@
       "sub": "Jedno polecenie instaluje hub, market, każdą aplikację wraz z jej oknem, skille — i uruchamia doctor. Gotowe binarki trafiają do ~/.cargo/bin: bez sudo, bez kompilatora.",
       "linux": "Linux (x86_64) — w terminalu:",
       "freebsd": "FreeBSD (x86_64) — w terminalu:",
-      "note": "Linux: Debian, Ubuntu i Mint, Fedora, openSUSE, Arch oraz pochodne (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI działa; okna desktopowe nie są jeszcze dostępne. Instalator obsługuje na razie tylko Linux i FreeBSD."
+      "note": "Linux: Debian, Ubuntu i Mint, Fedora, openSUSE, Arch oraz pochodne (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI działa; okna desktopowe nie są jeszcze dostępne. Instalator Linux/FreeBSD nie działa w Windows — zobacz polecenie dla Windows poniżej.",
+      "windows": "Windows (x86_64) — w PowerShell:",
+      "windows_full": "Pełny zestaw — instaluje też języki i narzędzia przez winget:",
+      "windows_note": "Instaluje w %USERPROFILE%\\.cargo\\bin, weryfikuje SHA-256 każdego pliku binarnego i dodaje go do PATH użytkownika — bez uprawnień administratora. Potem otwórz nowy terminal. Działa w Windows PowerShell 5.1 lub 7; x86_64 (ARM64 działa przez emulację).",
+      "windows_scope": "W Windows dziś: schematize-market i overdev (CLI i okna). Jeszcze nie: hub schematize, optimizer, deployer, git, database i skills — te są tylko na Linux i FreeBSD.",
+      "windows_git": "overdev wymaga Git for Windows (Git Bash), tak jak Claude Code:",
+      "windows_dl": "Pobieranie ręczne (pliki binarne + SHA256SUMS)"
     },
     "features": {
       "title": "Co robi aplikacja",
@@ -372,7 +378,8 @@
       "sub": "Gdzie instalator pełnego zestawu działa dziś.",
       "linux": "Linux x86_64 — CLI i okna desktopowe. Instalator: polecenie powyżej.",
       "freebsd": "FreeBSD x86_64 — CLI. Okna desktopowe nie są jeszcze dostępne. Instalator: polecenie powyżej.",
-      "other": "macOS i Windows — gotowe binarki są publikowane w wydaniach, ale nie ma jeszcze automatycznego instalatora: pobierz i zainstaluj ręcznie.",
+      "windows": "Windows x86_64 — market i overdev (CLI i okna). Instalator: polecenie PowerShell powyżej. Hub i pozostałe aplikacje nie są jeszcze dostępne.",
+      "other": "macOS — gotowe binarki są publikowane w wydaniach, ale nie ma jeszcze automatycznego instalatora: pobierz i zainstaluj ręcznie.",
       "releases": "Wszystkie wydania",
       "unsigned": "Binarki i aplikacja na macOS nie są jeszcze podpisane — system pokaże jednorazowe ostrzeżenie „niezweryfikowane” przy pierwszym uruchomieniu (kliknij prawym przyciskiem → Otwórz)."
     },

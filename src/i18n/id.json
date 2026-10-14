@@ -294,7 +294,13 @@
       "sub": "Satu perintah menginstal hub, market, setiap aplikasi beserta jendelanya, dan skills — lalu menjalankan doctor. Binary siap pakai ke ~/.cargo/bin: tanpa sudo, tanpa compiler.",
       "linux": "Linux (x86_64) — di terminal:",
       "freebsd": "FreeBSD (x86_64) — di terminal:",
-      "note": "Linux: Debian, Ubuntu dan Mint, Fedora, openSUSE, Arch dan turunannya (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI berfungsi; jendela desktop belum tersedia. Untuk saat ini installer hanya mendukung Linux dan FreeBSD."
+      "note": "Linux: Debian, Ubuntu dan Mint, Fedora, openSUSE, Arch dan turunannya (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI berfungsi; jendela desktop belum tersedia. Installer Linux/FreeBSD tidak berjalan di Windows — lihat perintah Windows di bawah.",
+      "windows": "Windows (x86_64) — di PowerShell:",
+      "windows_full": "Kit lengkap — juga memasang bahasa dan alat lewat winget:",
+      "windows_note": "Memasang ke %USERPROFILE%\\.cargo\\bin, memverifikasi SHA-256 setiap binary, dan menambahkannya ke PATH pengguna — tanpa perlu admin. Setelah itu buka terminal baru. Berjalan di Windows PowerShell 5.1 atau 7; x86_64 (ARM64 berjalan lewat emulasi).",
+      "windows_scope": "Di Windows saat ini: schematize-market dan overdev (CLI dan jendela). Belum ada: hub schematize, optimizer, deployer, git, database, dan skills — itu hanya untuk Linux dan FreeBSD.",
+      "windows_git": "overdev memerlukan Git for Windows (Git Bash), sama seperti Claude Code:",
+      "windows_dl": "Unduh manual (binary + SHA256SUMS)"
     },
     "features": {
       "title": "Apa yang aplikasi lakukan",
@@ -372,7 +378,8 @@
       "sub": "Tempat installer kit lengkap berjalan saat ini.",
       "linux": "Linux x86_64 — CLI dan jendela desktop. Installer: perintah di atas.",
       "freebsd": "FreeBSD x86_64 — CLI. Jendela desktop belum tersedia. Installer: perintah di atas.",
-      "other": "macOS dan Windows — binary siap pakai dipublikasikan di rilis, tetapi belum ada installer otomatis: unduh dan instal secara manual.",
+      "windows": "Windows x86_64 — market dan overdev (CLI dan jendela). Installer: perintah PowerShell di atas. Hub dan aplikasi lainnya belum tersedia.",
+      "other": "macOS — binary siap pakai dipublikasikan di rilis, tetapi belum ada installer otomatis: unduh dan pasang secara manual.",
       "releases": "Semua rilis",
       "unsigned": "Binary dan aplikasi macOS belum ditandatangani kode — sistem menampilkan peringatan “unverified” satu kali saat peluncuran pertama (klik kanan → Buka)."
     },

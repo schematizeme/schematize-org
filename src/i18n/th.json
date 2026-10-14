@@ -294,7 +294,13 @@
       "sub": "คำสั่งเดียวติดตั้งฮับ market แอปทุกตัวพร้อมหน้าต่าง skills — และรัน doctor ไบนารีสำเร็จรูปลงใน ~/.cargo/bin: ไม่ต้องใช้ sudo ไม่ต้องมีคอมไพเลอร์",
       "linux": "Linux (x86_64) — ในเทอร์มินัล:",
       "freebsd": "FreeBSD (x86_64) — ในเทอร์มินัล:",
-      "note": "Linux: Debian, Ubuntu และ Mint, Fedora, openSUSE, Arch และดิสโทรที่สืบทอด (CachyOS, Manjaro, EndeavourOS) FreeBSD: ใช้ CLI ได้ หน้าต่างเดสก์ท็อปยังไม่พร้อมใช้งาน ขณะนี้ตัวติดตั้งรองรับเฉพาะ Linux และ FreeBSD"
+      "note": "Linux: Debian, Ubuntu และ Mint, Fedora, openSUSE, Arch และดิสโทรที่สืบทอด (CachyOS, Manjaro, EndeavourOS) FreeBSD: ใช้ CLI ได้ หน้าต่างเดสก์ท็อปยังไม่พร้อมใช้งาน ตัวติดตั้งของ Linux/FreeBSD ใช้บน Windows ไม่ได้ — ดูคำสั่งสำหรับ Windows ด้านล่าง",
+      "windows": "Windows (x86_64) — ใน PowerShell:",
+      "windows_full": "ชุดเต็ม — ติดตั้งภาษาและเครื่องมือผ่าน winget ด้วย:",
+      "windows_note": "ติดตั้งลงใน %USERPROFILE%\\.cargo\\bin ตรวจสอบ SHA-256 ของไบนารีทุกตัว และเพิ่มลงใน PATH ของผู้ใช้ — ไม่ต้องใช้สิทธิ์แอดมิน จากนั้นเปิดเทอร์มินัลใหม่ ใช้ได้กับ Windows PowerShell 5.1 หรือ 7; x86_64 (ARM64 ทำงานผ่านการจำลอง)",
+      "windows_scope": "บน Windows ตอนนี้: schematize-market และ overdev (CLI และหน้าต่าง) ยังไม่มี: ฮับ schematize, optimizer, deployer, git, database และ skills — เหล่านี้ใช้ได้เฉพาะ Linux และ FreeBSD",
+      "windows_git": "overdev ต้องใช้ Git for Windows (Git Bash) เช่นเดียวกับ Claude Code:",
+      "windows_dl": "ดาวน์โหลดด้วยตนเอง (ไบนารี + SHA256SUMS)"
     },
     "features": {
       "title": "สิ่งที่แอปทำ",
@@ -372,7 +378,8 @@
       "sub": "ที่ที่ตัวติดตั้งชุดเต็มทำงานได้ในวันนี้",
       "linux": "Linux x86_64 — CLI และหน้าต่างเดสก์ท็อป ตัวติดตั้ง: คำสั่งด้านบน",
       "freebsd": "FreeBSD x86_64 — CLI หน้าต่างเดสก์ท็อปยังไม่พร้อมใช้งาน ตัวติดตั้ง: คำสั่งด้านบน",
-      "other": "macOS และ Windows — เผยแพร่ไบนารีสำเร็จรูปในรุ่นที่ปล่อย (releases) แต่ยังไม่มีตัวติดตั้งอัตโนมัติ: ดาวน์โหลดแล้วติดตั้งเอง",
+      "windows": "Windows x86_64 — market และ overdev (CLI และหน้าต่าง) ตัวติดตั้ง: คำสั่ง PowerShell ด้านบน ฮับและแอปอื่น ๆ ยังไม่พร้อมใช้งาน",
+      "other": "macOS — เผยแพร่ไบนารีสำเร็จรูปในรุ่นที่ปล่อย (releases) แต่ยังไม่มีตัวติดตั้งอัตโนมัติ: ดาวน์โหลดและติดตั้งด้วยตนเอง",
       "releases": "รุ่นที่ปล่อยทั้งหมด",
       "unsigned": "ไบนารีและแอปบน macOS ยังไม่ได้ลงนามโค้ด — ระบบจะแสดงคำเตือน “ไม่ได้รับการยืนยัน” หนึ่งครั้งเมื่อเปิดครั้งแรก (คลิกขวา → เปิด)"
     },

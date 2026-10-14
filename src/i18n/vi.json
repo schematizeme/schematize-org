@@ -294,7 +294,13 @@
       "sub": "Một lệnh cài hub, market, mọi ứng dụng cùng cửa sổ của chúng, các skills — và chạy doctor. Tệp nhị phân dựng sẵn được đặt vào ~/.cargo/bin: không cần sudo, không cần trình biên dịch.",
       "linux": "Linux (x86_64) — trong terminal:",
       "freebsd": "FreeBSD (x86_64) — trong terminal:",
-      "note": "Linux: Debian, Ubuntu và Mint, Fedora, openSUSE, Arch và các bản phái sinh (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI hoạt động; cửa sổ desktop chưa khả dụng. Hiện trình cài đặt chỉ hỗ trợ Linux và FreeBSD."
+      "note": "Linux: Debian, Ubuntu và Mint, Fedora, openSUSE, Arch và các bản phái sinh (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI hoạt động; cửa sổ desktop chưa khả dụng. Trình cài đặt Linux/FreeBSD không chạy trên Windows — xem lệnh Windows bên dưới.",
+      "windows": "Windows (x86_64) — trong PowerShell:",
+      "windows_full": "Bộ đầy đủ — cài thêm ngôn ngữ và công cụ qua winget:",
+      "windows_note": "Cài vào %USERPROFILE%\\.cargo\\bin, kiểm tra SHA-256 của từng tệp nhị phân và thêm vào PATH của người dùng — không cần quyền admin. Sau đó hãy mở terminal mới. Chạy trên Windows PowerShell 5.1 hoặc 7; x86_64 (ARM64 chạy qua giả lập).",
+      "windows_scope": "Hiện trên Windows: schematize-market và overdev (CLI và cửa sổ). Chưa có: hub schematize, optimizer, deployer, git, database và skills — những thứ này chỉ có trên Linux và FreeBSD.",
+      "windows_git": "overdev yêu cầu Git for Windows (Git Bash), giống như Claude Code:",
+      "windows_dl": "Tải thủ công (tệp nhị phân + SHA256SUMS)"
     },
     "features": {
       "title": "Ứng dụng làm gì",
@@ -372,7 +378,8 @@
       "sub": "Nơi trình cài đặt bộ đầy đủ chạy được hiện nay.",
       "linux": "Linux x86_64 — CLI và cửa sổ desktop. Trình cài đặt: lệnh ở trên.",
       "freebsd": "FreeBSD x86_64 — CLI. Cửa sổ desktop chưa khả dụng. Trình cài đặt: lệnh ở trên.",
-      "other": "macOS và Windows — tệp nhị phân dựng sẵn được phát hành trong các bản release, nhưng chưa có trình cài đặt tự động: hãy tải về và cài thủ công.",
+      "windows": "Windows x86_64 — market và overdev (CLI và cửa sổ). Trình cài đặt: lệnh PowerShell ở trên. Hub và các ứng dụng khác chưa có.",
+      "other": "macOS — tệp nhị phân dựng sẵn được phát hành trong releases, nhưng chưa có trình cài đặt tự động: hãy tải và cài thủ công.",
       "releases": "Tất cả bản phát hành",
       "unsigned": "Tệp nhị phân và ứng dụng macOS chưa được ký mã — hệ điều hành sẽ hiện cảnh báo “chưa được xác minh” một lần ở lần mở đầu tiên (nhấp chuột phải → Mở)."
     },

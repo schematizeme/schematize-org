@@ -12,12 +12,20 @@ const steps = tx<{ icon?: string; h: string; p: string }[]>(lang, "software.how.
 
 // URLs do app (não-traduzíveis). One-liners do KIT COMPLETO (ADR-0022/0025): servem o
 // install.sh da main no GitHub; binários pré-compilados em ~/.cargo/bin, sem sudo.
-// Linux usa bash; FreeBSD usa sh + fetch da base. O instalador só aceita Linux e FreeBSD.
+// Linux usa bash; FreeBSD usa sh + fetch da base. O install.sh só aceita Linux e FreeBSD.
+// Windows tem instalador próprio (PowerShell, sem admin) no repo schematize_windows_rs:
+// só market + overdev por enquanto. Comandos e URLs nunca são traduzidos.
 const REPO = "https://github.com/schematizeme/schematize-cli";
 const RAW = "https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh";
 const INSTALL = `curl -fsSL ${RAW} | bash -s -- --completo`;
 const INSTALL_BSD = `fetch -o - ${RAW} | sh -s -- --completo`;
 const RELEASES = `${REPO}/releases/latest`;
+const WIN_REPO = "https://github.com/schematizeme/schematize_windows_rs";
+const WIN_RAW = "https://raw.githubusercontent.com/schematizeme/schematize_windows_rs/main/install.ps1";
+const INSTALL_WIN = `irm ${WIN_RAW} | iex`;
+const INSTALL_WIN_FULL = `& ([scriptblock]::Create((irm ${WIN_RAW}))) -Completo`;
+const GIT_WIN = "winget install --id Git.Git -e";
+const WIN_RELEASES = `${WIN_REPO}/releases/latest`;
 const apps = tx<{ icon?: string; h: string; p: string }[]>(lang, "software.apps.items");
 const ctaUrl = t(lang, "software.cta.url");
 ---
@@ -54,6 +62,30 @@ const ctaUrl = t(lang, "software.cta.url");
         </button>
       </div>
       <p class="muted unsigned">{t(lang, "software.install.note")}</p>
+      <p class="step-label">{t(lang, "software.install.windows")}</p>
+      <div class="cmd">
+        <pre><code>{INSTALL_WIN}</code></pre>
+        <button class="copy" type="button" data-copy={INSTALL_WIN} aria-label="Copy">
+          <Icon name="lucide:copy" />
+        </button>
+      </div>
+      <p class="step-label">{t(lang, "software.install.windows_full")}</p>
+      <div class="cmd">
+        <pre><code>{INSTALL_WIN_FULL}</code></pre>
+        <button class="copy" type="button" data-copy={INSTALL_WIN_FULL} aria-label="Copy">
+          <Icon name="lucide:copy" />
+        </button>
+      </div>
+      <p class="muted unsigned">{t(lang, "software.install.windows_note")}</p>
+      <p class="muted unsigned">{t(lang, "software.install.windows_scope")}</p>
+      <p class="step-label">{t(lang, "software.install.windows_git")}</p>
+      <div class="cmd">
+        <pre><code>{GIT_WIN}</code></pre>
+        <button class="copy" type="button" data-copy={GIT_WIN} aria-label="Copy">
+          <Icon name="lucide:copy" />
+        </button>
+      </div>
+      <p class="unsigned"><a class="btn" href={WIN_RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "software.install.windows_dl")}</a></p>
     </div>
   </section>
 
@@ -90,7 +122,7 @@ const ctaUrl = t(lang, "software.cta.url");
     <div class="wrap">
       <h2>{t(lang, "software.platforms.title")}</h2>
       <p class="lede">{t(lang, "software.platforms.sub")}</p>
-      <div class="grid cols-3" style="margin-top:1.8rem">
+      <div class="grid cols-2" style="margin-top:1.8rem">
         <div class="card dl">
           <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:linux" /></span>
           <h3>Linux</h3><p class="muted">{t(lang, "software.platforms.linux")}</p>
@@ -100,8 +132,13 @@ const ctaUrl = t(lang, "software.cta.url");
           <h3>FreeBSD</h3><p class="muted">{t(lang, "software.platforms.freebsd")}</p>
         </div>
         <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:windows" /></span>
+          <h3>Windows</h3><p class="muted">{t(lang, "software.platforms.windows")}</p>
+          <a class="btn" href={WIN_RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "software.install.windows_dl")}</a>
+        </div>
+        <div class="card dl">
           <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:apple" /></span>
-          <h3>macOS · Windows</h3><p class="muted">{t(lang, "software.platforms.other")}</p>
+          <h3>macOS</h3><p class="muted">{t(lang, "software.platforms.other")}</p>
           <a class="btn" href={RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "software.platforms.releases")}</a>
         </div>
       </div>

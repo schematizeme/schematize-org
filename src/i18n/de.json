@@ -294,7 +294,13 @@
       "sub": "Ein Befehl installiert den Hub, den Market, jede App mit ihrem Fenster, die Skills — und führt doctor aus. Vorkompilierte Binärdateien nach ~/.cargo/bin: kein sudo, kein Compiler.",
       "linux": "Linux (x86_64) — im Terminal:",
       "freebsd": "FreeBSD (x86_64) — im Terminal:",
-      "note": "Linux: Debian, Ubuntu und Mint, Fedora, openSUSE, Arch und Derivate (CachyOS, Manjaro, EndeavourOS). FreeBSD: Die CLI funktioniert; die Desktop-Fenster sind noch nicht verfügbar. Der Installer unterstützt vorerst nur Linux und FreeBSD."
+      "note": "Linux: Debian, Ubuntu und Mint, Fedora, openSUSE, Arch und Derivate (CachyOS, Manjaro, EndeavourOS). FreeBSD: Die CLI funktioniert; die Desktop-Fenster sind noch nicht verfügbar. Der Linux/FreeBSD-Installer läuft nicht unter Windows — siehe den Windows-Befehl unten.",
+      "windows": "Windows (x86_64) — in PowerShell:",
+      "windows_full": "Komplettkit — installiert zusätzlich Sprachen und Werkzeuge per winget:",
+      "windows_note": "Installiert nach %USERPROFILE%\\.cargo\\bin, prüft den SHA-256 jedes Binärprogramms und trägt es in den PATH des Benutzers ein — ohne Admin-Rechte. Danach ein neues Terminal öffnen. Läuft mit Windows PowerShell 5.1 oder 7; x86_64 (ARM64 läuft per Emulation).",
+      "windows_scope": "Unter Windows derzeit: schematize-market und overdev (CLI und Fenster). Noch nicht: der schematize-Hub, optimizer, deployer, git, database und skills — diese gibt es nur für Linux und FreeBSD.",
+      "windows_git": "overdev benötigt Git for Windows (Git Bash), genau wie Claude Code:",
+      "windows_dl": "Manueller Download (Binärdateien + SHA256SUMS)"
     },
     "features": {
       "title": "Was die App tut",
@@ -372,7 +378,8 @@
       "sub": "Wo der Installer für das komplette Kit heute läuft.",
       "linux": "Linux x86_64 — CLI und Desktop-Fenster. Installer: der Befehl oben.",
       "freebsd": "FreeBSD x86_64 — CLI. Desktop-Fenster sind noch nicht verfügbar. Installer: der Befehl oben.",
-      "other": "macOS und Windows — vorkompilierte Binärdateien werden in den Releases veröffentlicht, aber es gibt noch keinen automatischen Installer: manuell herunterladen und installieren.",
+      "windows": "Windows x86_64 — market und overdev (CLI und Fenster). Installer: der PowerShell-Befehl oben. Der Hub und die übrigen Apps sind noch nicht verfügbar.",
+      "other": "macOS — vorkompilierte Binärdateien werden in den Releases veröffentlicht, aber es gibt noch keinen automatischen Installer: manuell herunterladen und installieren.",
       "releases": "Alle Releases",
       "unsigned": "Die macOS-Binärdateien und die App sind noch nicht codesigniert — das System zeigt beim ersten Start einmalig eine Warnung „nicht verifiziert“ an (Rechtsklick → Öffnen)."
     },

@@ -294,7 +294,13 @@
       "sub": "One command installs the hub, the market, every app with its window, the skills — and runs doctor. Prebuilt binaries into ~/.cargo/bin: no sudo, no compiler.",
       "linux": "Linux (x86_64) — in a terminal:",
       "freebsd": "FreeBSD (x86_64) — in a terminal:",
-      "note": "Linux: Debian, Ubuntu and Mint, Fedora, openSUSE, Arch and derivatives (CachyOS, Manjaro, EndeavourOS). FreeBSD: the CLI works; the desktop windows are not available yet. The installer supports only Linux and FreeBSD for now."
+      "note": "Linux: Debian, Ubuntu and Mint, Fedora, openSUSE, Arch and derivatives (CachyOS, Manjaro, EndeavourOS). FreeBSD: the CLI works; the desktop windows are not available yet. The Linux/FreeBSD installer does not run on Windows — see the Windows command below.",
+      "windows": "Windows (x86_64) — in PowerShell:",
+      "windows_full": "Full kit — also installs languages and tools via winget:",
+      "windows_note": "Installs into %USERPROFILE%\\.cargo\\bin, verifies the SHA-256 of every binary and adds it to your user PATH — no admin needed. Open a new terminal afterwards. Works on Windows PowerShell 5.1 or 7; x86_64 (ARM64 runs through emulation).",
+      "windows_scope": "On Windows today: schematize-market and overdev (CLI and windows). Not yet: the schematize hub, optimizer, deployer, git, database and skills — those are Linux and FreeBSD only.",
+      "windows_git": "overdev requires Git for Windows (Git Bash), the same as Claude Code:",
+      "windows_dl": "Manual download (binaries + SHA256SUMS)"
     },
     "features": {
       "title": "What the app does",
@@ -372,7 +378,8 @@
       "sub": "Where the full-kit installer runs today.",
       "linux": "Linux x86_64 — CLI and desktop windows. Installer: the command above.",
       "freebsd": "FreeBSD x86_64 — CLI. Desktop windows are not available yet. Installer: the command above.",
-      "other": "macOS and Windows — prebuilt binaries are published in the releases, but there is no automatic installer yet: download and install by hand.",
+      "windows": "Windows x86_64 — market and overdev (CLI and windows). Installer: the PowerShell command above. The hub and the other apps are not available yet.",
+      "other": "macOS — prebuilt binaries are published in the releases, but there is no automatic installer yet: download and install by hand.",
       "releases": "All releases",
       "unsigned": "The macOS binaries and app are not code-signed yet — the OS shows a one-time “unverified” warning on first launch (right-click → Open)."
     },

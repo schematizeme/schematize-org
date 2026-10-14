@@ -18,8 +18,13 @@ projects, technology research and the company behind them. It is not a store.
   overdev, deployer, optimizer, database, git, skills.
 - Full-kit install (Linux): curl -fsSL https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | bash -s -- --completo
   FreeBSD: fetch -o - https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | sh -s -- --completo
-  Installs to ~/.cargo/bin, no sudo, prebuilt binaries. macOS/Windows binaries are in the
-  releases; the installer supports only Linux and FreeBSD.
+  Installs to ~/.cargo/bin, no sudo, prebuilt binaries. The install.sh supports only Linux
+  and FreeBSD; macOS binaries are in the releases (no automatic installer).
+- Windows (x86_64; PowerShell 5.1/7, no admin): irm https://raw.githubusercontent.com/schematizeme/schematize_windows_rs/main/install.ps1 | iex
+  Full kit (also languages/tools via winget): & ([scriptblock]::Create((irm https://raw.githubusercontent.com/schematizeme/schematize_windows_rs/main/install.ps1))) -Completo
+  Windows has schematize-market and overdev only (CLI + windows); the hub, optimizer, deployer,
+  git, database and skills are Linux/FreeBSD only. overdev needs Git for Windows
+  (winget install --id Git.Git -e). Manual download: https://github.com/schematizeme/schematize_windows_rs/releases/latest
 - schematize skills — normative engineering playbooks (engineering, go, rust, web,
   seo, node, pentest) for Claude Code. https://github.com/schematizeme
 

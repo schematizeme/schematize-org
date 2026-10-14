@@ -294,7 +294,13 @@
       "sub": "1 つのコマンドで、ハブ、market、ウィンドウ付きのすべてのアプリ、skills をインストールし、doctor を実行します。ビルド済みバイナリを ~/.cargo/bin に配置:sudo もコンパイラも不要です。",
       "linux": "Linux (x86_64) — ターミナルで:",
       "freebsd": "FreeBSD (x86_64) — ターミナルで:",
-      "note": "Linux:Debian、Ubuntu と Mint、Fedora、openSUSE、Arch とその派生(CachyOS、Manjaro、EndeavourOS)。FreeBSD:CLI は動作しますが、デスクトップウィンドウはまだ利用できません。現時点でインストーラーが対応するのは Linux と FreeBSD のみです。"
+      "note": "Linux:Debian、Ubuntu と Mint、Fedora、openSUSE、Arch とその派生(CachyOS、Manjaro、EndeavourOS)。FreeBSD:CLI は動作しますが、デスクトップウィンドウはまだ利用できません。Linux/FreeBSD 用インストーラーは Windows では動作しません — 下の Windows 用コマンドをご覧ください。",
+      "windows": "Windows (x86_64) — PowerShell で：",
+      "windows_full": "フルキット — winget で言語とツールも一緒にインストールします：",
+      "windows_note": "%USERPROFILE%\\.cargo\\bin にインストールし、各バイナリの SHA-256 を検証して、ユーザーの PATH に追加します — 管理者権限は不要です。完了後は新しいターミナルを開いてください。Windows PowerShell 5.1 または 7 に対応。x86_64（ARM64 はエミュレーションで動作）。",
+      "windows_scope": "現在 Windows で使えるもの：schematize-market と overdev（CLI とウィンドウ）。まだ使えないもの：schematize ハブ、optimizer、deployer、git、database、skills — これらは Linux と FreeBSD のみです。",
+      "windows_git": "overdev には Git for Windows（Git Bash）が必要です。Claude Code と同じ要件です：",
+      "windows_dl": "手動ダウンロード（バイナリ + SHA256SUMS）"
     },
     "features": {
       "title": "アプリができること",
@@ -372,7 +378,8 @@
       "sub": "フルキットのインストーラーが現在動作する環境です。",
       "linux": "Linux x86_64 — CLI とデスクトップウィンドウ。インストーラー:上記のコマンド。",
       "freebsd": "FreeBSD x86_64 — CLI。デスクトップウィンドウはまだ利用できません。インストーラー:上記のコマンド。",
-      "other": "macOS と Windows — ビルド済みバイナリはリリースで公開されていますが、自動インストーラーはまだありません。手動でダウンロードしてインストールしてください。",
+      "windows": "Windows x86_64 — market と overdev（CLI とウィンドウ）。インストーラー：上の PowerShell コマンド。ハブとその他のアプリはまだ利用できません。",
+      "other": "macOS — ビルド済みバイナリはリリースで公開されていますが、自動インストーラーはまだありません。手動でダウンロードしてインストールしてください。",
       "releases": "すべてのリリース",
       "unsigned": "macOS のバイナリとアプリはまだコード署名されていません。初回起動時に OS が一度だけ「unverified」の警告を表示します(右クリック → 開く)。"
     },

@@ -294,7 +294,13 @@
       "sub": "یک فرمان، هاب، market، همه‌ی برنامه‌ها با پنجره‌هایشان و skills را نصب می‌کند — و doctor را اجرا می‌کند. باینری‌های از پیش ساخته‌شده در ‎~/.cargo/bin: بدون sudo و بدون کامپایلر.",
       "linux": "Linux (x86_64) — در ترمینال:",
       "freebsd": "FreeBSD (x86_64) — در ترمینال:",
-      "note": "Linux: ‏Debian، Ubuntu و Mint، Fedora، openSUSE، Arch و مشتقات آن (CachyOS، Manjaro، EndeavourOS). FreeBSD: ‏CLI کار می‌کند؛ پنجره‌های دسکتاپ هنوز در دسترس نیستند. فعلاً نصب‌کننده فقط از Linux و FreeBSD پشتیبانی می‌کند."
+      "note": "‏Linux: ‏Debian، Ubuntu و Mint، Fedora، openSUSE، Arch و مشتقات آن (CachyOS، Manjaro، EndeavourOS). FreeBSD: ‏CLI کار می‌کند؛ پنجره‌های دسکتاپ هنوز در دسترس نیستند. نصب‌کننده Linux/FreeBSD روی Windows اجرا نمی‌شود — فرمان Windows را پایین ببینید.",
+      "windows": "‏Windows (x86_64) — در PowerShell:",
+      "windows_full": "کیت کامل — زبان‌ها و ابزارها را هم با winget نصب می‌کند:",
+      "windows_note": "در %USERPROFILE%\\.cargo\\bin نصب می‌کند، SHA-256 هر باینری را بررسی می‌کند و آن را به PATH کاربر اضافه می‌کند — بدون نیاز به ادمین. پس از آن یک ترمینال جدید باز کنید. روی Windows PowerShell 5.1 یا 7 کار می‌کند؛ x86_64 (ARM64 با شبیه‌سازی اجرا می‌شود).",
+      "windows_scope": "امروز روی Windows: schematize-market و overdev (CLI و پنجره‌ها). هنوز نه: هاب schematize، optimizer، deployer، git، database و skills — این‌ها فقط برای Linux و FreeBSD هستند.",
+      "windows_git": "‏overdev به Git for Windows (Git Bash) نیاز دارد، مثل Claude Code:",
+      "windows_dl": "دانلود دستی (باینری‌ها + SHA256SUMS)"
     },
     "features": {
       "title": "برنامه چه می‌کند",
@@ -372,7 +378,8 @@
       "sub": "جایی که نصب‌کننده‌ی کیت کامل امروز اجرا می‌شود.",
       "linux": "Linux x86_64 — ‏CLI و پنجره‌های دسکتاپ. نصب‌کننده: فرمان بالا.",
       "freebsd": "FreeBSD x86_64 — ‏CLI. پنجره‌های دسکتاپ هنوز در دسترس نیستند. نصب‌کننده: فرمان بالا.",
-      "other": "macOS و Windows — باینری‌های از پیش ساخته‌شده در releaseها منتشر می‌شوند، اما هنوز نصب‌کننده‌ی خودکار وجود ندارد: به‌صورت دستی دانلود و نصب کنید.",
+      "windows": "‏Windows x86_64 — market و overdev (CLI و پنجره‌ها). نصب‌کننده: فرمان PowerShell بالا. هاب و بقیه برنامه‌ها هنوز در دسترس نیستند.",
+      "other": "‏macOS — باینری‌های از پیش ساخته‌شده در releaseها منتشر می‌شوند، اما هنوز نصب‌کننده خودکار وجود ندارد: دانلود و نصب دستی.",
       "releases": "همه‌ی releaseها",
       "unsigned": "باینری‌ها و برنامه‌ی macOS هنوز امضای کد ندارند — سیستم‌عامل در اولین اجرا یک‌بار هشدار «تأییدنشده» نشان می‌دهد (کلیک راست ← Open)."
     },

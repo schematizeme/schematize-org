@@ -294,7 +294,13 @@
       "sub": "Одна команда устанавливает хаб, market, каждое приложение с его окном, skills — и запускает doctor. Готовые бинарные файлы в ~/.cargo/bin: без sudo, без компилятора.",
       "linux": "Linux (x86_64) — в терминале:",
       "freebsd": "FreeBSD (x86_64) — в терминале:",
-      "note": "Linux: Debian, Ubuntu и Mint, Fedora, openSUSE, Arch и производные (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI работает; окна для рабочего стола пока недоступны. Пока установщик поддерживает только Linux и FreeBSD."
+      "note": "Linux: Debian, Ubuntu и Mint, Fedora, openSUSE, Arch и производные (CachyOS, Manjaro, EndeavourOS). FreeBSD: CLI работает; окна для рабочего стола пока недоступны. Установщик для Linux/FreeBSD не работает в Windows — см. команду для Windows ниже.",
+      "windows": "Windows (x86_64) — в PowerShell:",
+      "windows_full": "Полный комплект — дополнительно ставит языки и инструменты через winget:",
+      "windows_note": "Устанавливает в %USERPROFILE%\\.cargo\\bin, проверяет SHA-256 каждого бинарного файла и добавляет его в PATH пользователя — права администратора не нужны. После этого откройте новый терминал. Работает в Windows PowerShell 5.1 или 7; x86_64 (ARM64 работает через эмуляцию).",
+      "windows_scope": "В Windows сейчас: schematize-market и overdev (CLI и окна). Пока нет: хаб schematize, optimizer, deployer, git, database и skills — они только для Linux и FreeBSD.",
+      "windows_git": "overdev требует Git for Windows (Git Bash), как и Claude Code:",
+      "windows_dl": "Ручная загрузка (бинарные файлы + SHA256SUMS)"
     },
     "features": {
       "title": "Что делает приложение",
@@ -372,7 +378,8 @@
       "sub": "Где сегодня работает установщик полного набора.",
       "linux": "Linux x86_64 — CLI и окна для рабочего стола. Установщик: команда выше.",
       "freebsd": "FreeBSD x86_64 — CLI. Окна для рабочего стола пока недоступны. Установщик: команда выше.",
-      "other": "macOS и Windows — готовые бинарные файлы публикуются в релизах, но автоматического установщика пока нет: скачайте и установите вручную.",
+      "windows": "Windows x86_64 — market и overdev (CLI и окна). Установщик: команда PowerShell выше. Хаб и остальные приложения пока недоступны.",
+      "other": "macOS — готовые бинарные файлы публикуются в релизах, но автоматического установщика пока нет: скачайте и установите вручную.",
       "releases": "Все релизы",
       "unsigned": "Бинарные файлы и приложение для macOS пока не подписаны — при первом запуске система один раз покажет предупреждение о «непроверенном» разработчике (щелчок правой кнопкой → Открыть)."
     },

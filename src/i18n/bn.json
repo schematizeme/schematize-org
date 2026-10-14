@@ -294,7 +294,13 @@
       "sub": "একটি কমান্ড হাব, market, প্রতিটি অ্যাপ তার উইন্ডোসহ এবং skills ইনস্টল করে — তারপর doctor চালায়। ~/.cargo/bin-এ প্রি-বিল্ট বাইনারি: sudo লাগে না, কম্পাইলারও লাগে না।",
       "linux": "Linux (x86_64) — টার্মিনালে:",
       "freebsd": "FreeBSD (x86_64) — টার্মিনালে:",
-      "note": "Linux: Debian, Ubuntu ও Mint, Fedora, openSUSE, Arch এবং এর ডেরিভেটিভ (CachyOS, Manjaro, EndeavourOS)। FreeBSD: CLI কাজ করে; ডেস্কটপ উইন্ডো এখনো পাওয়া যায় না। ইনস্টলার আপাতত শুধু Linux ও FreeBSD সমর্থন করে।"
+      "note": "Linux: Debian, Ubuntu ও Mint, Fedora, openSUSE, Arch এবং এর ডেরিভেটিভ (CachyOS, Manjaro, EndeavourOS)। FreeBSD: CLI কাজ করে; ডেস্কটপ উইন্ডো এখনো পাওয়া যায় না। Linux/FreeBSD ইনস্টলার Windows-এ চলে না — নিচে Windows-এর কমান্ড দেখুন।",
+      "windows": "Windows (x86_64) — PowerShell-এ:",
+      "windows_full": "পূর্ণ কিট — winget দিয়ে ভাষা ও টুলও ইনস্টল করে:",
+      "windows_note": "%USERPROFILE%\\.cargo\\bin-এ ইনস্টল করে, প্রতিটি বাইনারির SHA-256 যাচাই করে এবং ব্যবহারকারীর PATH-এ যোগ করে — অ্যাডমিন লাগে না। এরপর নতুন টার্মিনাল খুলুন। Windows PowerShell 5.1 বা 7-এ চলে; x86_64 (ARM64 এমুলেশনে চলে)।",
+      "windows_scope": "আজ Windows-এ আছে: schematize-market ও overdev (CLI ও উইন্ডো)। এখনো নেই: schematize হাব, optimizer, deployer, git, database ও skills — এগুলো শুধু Linux ও FreeBSD-তে।",
+      "windows_git": "overdev-এর জন্য Git for Windows (Git Bash) লাগে, Claude Code-এর মতোই:",
+      "windows_dl": "ম্যানুয়াল ডাউনলোড (বাইনারি + SHA256SUMS)"
     },
     "features": {
       "title": "অ্যাপটি যা করে",
@@ -372,7 +378,8 @@
       "sub": "পূর্ণ-কিট ইনস্টলার আজ যেখানে চলে।",
       "linux": "Linux x86_64 — CLI ও ডেস্কটপ উইন্ডো। ইনস্টলার: উপরের কমান্ড।",
       "freebsd": "FreeBSD x86_64 — CLI। ডেস্কটপ উইন্ডো এখনো পাওয়া যায় না। ইনস্টলার: উপরের কমান্ড।",
-      "other": "macOS ও Windows — প্রি-বিল্ট বাইনারি releases-এ প্রকাশিত, কিন্তু এখনো স্বয়ংক্রিয় ইনস্টলার নেই: নিজে ডাউনলোড করে ইনস্টল করুন।",
+      "windows": "Windows x86_64 — market ও overdev (CLI ও উইন্ডো)। ইনস্টলার: ওপরের PowerShell কমান্ড। হাব ও অন্য অ্যাপগুলো এখনো পাওয়া যায় না।",
+      "other": "macOS — প্রি-বিল্ট বাইনারি releases-এ প্রকাশিত, কিন্তু এখনো স্বয়ংক্রিয় ইনস্টলার নেই: নিজে ডাউনলোড করে ইনস্টল করুন।",
       "releases": "সব releases",
       "unsigned": "macOS-এর বাইনারি ও অ্যাপ এখনো কোড-সাইন করা হয়নি — প্রথমবার চালু করলে OS একবার “যাচাই-না-করা” সতর্কতা দেখায় (রাইট-ক্লিক → Open)।"
     },
