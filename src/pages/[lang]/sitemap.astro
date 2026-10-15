@@ -1,11 +1,19 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { LOCALES, t, tx, path, type Locale } from "../../lib/i18n";
+import { APPS } from "../../lib/apps";
 export function getStaticPaths() {
   return LOCALES.map((l) => ({ params: { lang: l } }));
 }
 const lang = Astro.params.lang as Locale;
-const groups = tx<{ h: string; links: { slug: string; label: string }[] }[]>(lang, "sitemapPage.groups");
+const appItems = tx<{ h: string }[]>(lang, "apps.items");
+// Cada aplicação ganha a sua página: entra logo abaixo do link /apps.
+const groups = tx<{ h: string; links: { slug: string; label: string }[] }[]>(lang, "sitemapPage.groups").map((g) => ({
+  ...g,
+  links: g.links.flatMap((l) =>
+    l.slug === "apps" ? [l, ...APPS.map((a, i) => ({ slug: `apps/${a.slug}`, label: appItems[i].h }))] : [l],
+  ),
+}));
 ---
 <Base
   locale={lang}

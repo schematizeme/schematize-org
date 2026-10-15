@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "Aplikasi",
     "projects": "Proyek",
     "research": "Riset",
     "principles": "Prinsip",
     "about": "Tentang",
     "contact": "Kontak",
     "legal": "Legal",
-    "catalog": "Katalog Skills",
-    "academy": "Academy",
-    "login": "Masuk / Daftar",
-    "cta": "Lihat sumber",
-    "menu": "Menu"
+    "menu": "Menu",
+    "apps": "Aplikasi",
+    "content": "Konten",
+    "contentRead": "Baca dan pelajari",
+    "contentBuild": "Bangun",
+    "contentItems": {
+      "blog": {
+        "h": "Blog",
+        "p": "Artikel dan kabar dari lab."
+      },
+      "research": {
+        "h": "Riset",
+        "p": "Makalah dan studi tentang rekayasa dengan agen AI."
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "Dokumentasi referensi yang selalu mutakhir."
+      },
+      "academy": {
+        "h": "Academy",
+        "p": "Kursus dan jalur belajar."
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "Katalog terbuka skills rekayasa untuk Claude Code."
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "Cetak biru sistem untuk manusia dan mesin."
+      }
+    },
+    "signin": "Masuk",
+    "signup": "Daftar",
+    "legalAll": "Semua dokumen",
+    "social": "Jejaring sosial"
   },
   "footer": {
     "tagline": "Lab open-source dan riset teknologi di balik schematize.",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "Aplikasi — schematize CLI — schematize.org",
-      "desc": "schematize adalah hub command-line berbasis Rust (dengan jendela desktop) yang menginstal dan mengelola versi skills rekayasa untuk Claude Code, menginstal aplikasi ekosistem dan alat coding AI, serta menjalankan overdev. Satu perintah menginstal kit lengkap di Linux dan FreeBSD."
+      "title": "Aplikasi — schematize.org",
+      "desc": "Setiap aplikasi schematize beserta installer-nya: hub, market, overdev, deployer, optimizer, database, git, dan skills. Satu perintah menginstal kit lengkap di Linux dan FreeBSD."
     },
     "hero": {
       "kicker": "Aplikasi",
-      "h1": "Satu CLI untuk seluruh alur kerja.",
-      "sub": "schematize adalah hub command-line berbasis Rust — termasuk jendela desktop — yang menginstal dan mengelola versi skills rekayasa dari katalog langsung, menginstal aplikasi ekosistem dan alat coding AI, serta menjalankan overdev: pengembangan berkelanjutan tanpa pengawasan yang tidak berhenti sampai checklist selesai."
+      "h1": "Setiap aplikasi, dan cara menginstalnya.",
+      "sub": "schematize adalah keluarga aplikasi command-line berbasis Rust, masing-masing dengan jendela desktopnya sendiri. Instal hanya yang Anda butuhkan, atau kit lengkap dengan satu perintah."
     },
+    "list": {
+      "title": "Ekosistem",
+      "sub": "Setiap aplikasi berjalan sendiri, punya CLI dan jendela desktop, dan setiap antarmuka berbicara dalam 20 bahasa."
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "Hub-nya: menginstal dan mengelola versi skills, mendiagnosis setup Anda (doctor), memperbarui dirinya sendiri, dan menampilkan semuanya sekilas."
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "Installer dan updater seluruh kit. Disertakan di setiap aplikasi, dan juga menginstal alat AI: Claude Code, Codex CLI, dan Cursor CLI."
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "Pengembangan berkelanjutan. Atur hierarki agen di tab Agen: Opus mengorkestrasi, Haiku mengerjakan yang sepele, Sonnet menulis kode; bila gagal, eskalasi ke Codex, lalu Cursor, lalu Opus. Pekerjaan visual dan gambar diserahkan ke Codex."
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "Kunci SSH, VPS, dan akses jarak jauh yang diaudit — dengan kredensial yang tetap di luar jangkauan agen."
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "Membuat mesin dev lebih terprediksi: mengukur lingkungan dan membatasi sumber daya untuk build, browser, dan container."
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "Merancang skema sebelum baris pertama aplikasi: memodelkan skema relasional, membaca database yang ada, dan menghasilkan SQL serta migrasi yang dapat dibalik."
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "Siapa yang melakukan push, dari mana, dan dengan identitas apa: beberapa akun git di satu mesin tanpa salah melakukan commit dengan akun yang keliru."
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "Katalog skills Claude Code: apa yang terinstal di mesin ini, dan penyuntingannya."
+      }
+    ],
     "install": {
       "title": "Instal kit lengkap",
       "sub": "Satu perintah menginstal hub, market, setiap aplikasi beserta jendelanya, dan skills — lalu menjalankan doctor. Binary siap pakai ke ~/.cargo/bin: tanpa sudo, tanpa compiler.",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "Agen residen",
           "p": "Mengawasi versi skill baru dan pos blog dan memberi tahu Anda secara native di desktop."
-        }
-      ]
-    },
-    "apps": {
-      "title": "Ekosistem",
-      "sub": "Setiap aplikasi berjalan sendiri, punya CLI dan jendela desktop, dan setiap antarmuka berbicara dalam 20 bahasa.",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "Hub-nya: menginstal dan mengelola versi skills, mendiagnosis setup Anda (doctor), memperbarui dirinya sendiri, dan menampilkan semuanya sekilas."
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "Installer dan updater seluruh kit. Disertakan di setiap aplikasi, dan juga menginstal alat AI: Claude Code, Codex CLI, dan Cursor CLI."
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "Pengembangan berkelanjutan. Atur hierarki agen di tab Agen: Opus mengorkestrasi, Haiku mengerjakan yang sepele, Sonnet menulis kode; bila gagal, eskalasi ke Codex, lalu Cursor, lalu Opus. Pekerjaan visual dan gambar diserahkan ke Codex."
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "Kunci SSH, VPS, dan akses jarak jauh yang diaudit — dengan kredensial yang tetap di luar jangkauan agen."
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "Membuat mesin dev lebih terprediksi: mengukur lingkungan dan membatasi sumber daya untuk build, browser, dan container."
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "Merancang skema sebelum baris pertama aplikasi: memodelkan skema relasional, membaca database yang ada, dan menghasilkan SQL serta migrasi yang dapat dibalik."
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "Siapa yang melakukan push, dari mana, dan dengan identitas apa: beberapa akun git di satu mesin tanpa salah melakukan commit dengan akun yang keliru."
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "Katalog skills Claude Code: apa yang terinstal di mesin ini, dan penyuntingannya."
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "Aplikasi memasang skills dari katalog terbuka — jelajahi dan pilih yang dibutuhkan proyek Anda.",
       "button": "Buka katalog",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "Lihat detail",
+      "back": "Semua aplikasi",
+      "kicker": "Aplikasi",
+      "whatItDoes": "Fungsinya",
+      "install": "Instal",
+      "inKit": "Aplikasi ini tidak punya installer sendiri: disertakan dalam kit lengkap.",
+      "baseNote": "Hub dan market disertakan di setiap instalasi.",
+      "noWindows": "Belum tersedia di Windows.",
+      "winCovers": "Di Windows, installer ini mencakup schematize-market dan overdev.",
+      "macos": "Belum ada installer otomatis: unduh binary pra-kompilasi dari halaman release lalu instal secara manual.",
+      "repo": "Kode sumber",
+      "repoWindows": "Repositori installer Windows",
+      "copy": "Salin"
+    },
+    "detail": {
+      "schematize": [
+        "Menginstal dan mengelola versi skills rekayasa dari katalog langsung: schematize skills install --all menarik seluruh set.",
+        "doctor mendiagnosis penyiapan Anda.",
+        "Memperbarui dirinya sendiri dan menampilkan semuanya sekilas."
+      ],
+      "market": [
+        "Menginstal dan memperbarui seluruh kit: schematize-market update memperbarui aplikasi, alat AI, dan dirinya sendiri.",
+        "Juga menginstal alat AI: Claude Code, Codex CLI, dan Cursor CLI.",
+        "Disertakan di setiap aplikasi lain."
+      ],
+      "overdev": [
+        "Pengembangan berkelanjutan yang tidak berhenti sampai checklist selesai.",
+        "Atur hierarki agen di tab Agen: Opus mengorkestrasi, Haiku mengerjakan yang sepele, Sonnet menulis kode; bila gagal, eskalasi ke Codex, lalu Cursor, lalu Opus.",
+        "Pekerjaan visual dan gambar diserahkan ke Codex."
+      ],
+      "deployer": [
+        "Kunci SSH, VPS, dan akses jarak jauh yang diaudit.",
+        "Kredensial tetap di luar jangkauan agen.",
+        "CLI dan jendela desktop."
+      ],
+      "optimizer": [
+        "Mengukur lingkungan.",
+        "Menempatkan build, browser, dan container masing-masing di bawah batas sumber dayanya sendiri.",
+        "Menjaga mesin pengembangan tetap dapat diprediksi."
+      ],
+      "database": [
+        "Merancang database sebelum baris pertama kode aplikasi, dengan memodelkan skema relasional.",
+        "Membaca database yang sudah ada.",
+        "Menghasilkan SQL dan migrasi yang dapat dibatalkan."
+      ],
+      "git": [
+        "Beberapa akun git di mesin yang sama.",
+        "Mengontrol siapa yang melakukan push, dari mana, dan dengan identitas apa.",
+        "Mencegah Anda melakukan commit dengan akun yang salah."
+      ],
+      "skills": [
+        "Katalog skills Claude Code.",
+        "Menampilkan apa yang terinstal di mesin ini.",
+        "Memungkinkan Anda mengedit skills."
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "Ketentuan Penggunaan",
         "sub": "Aturan penggunaan situs schematize.org.",
         "sections": [
-          { "h": "1. Penerimaan", "p": "Dengan mengakses schematize.org Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju, mohon jangan gunakan situs." },
-          { "h": "2. Apa yang ditawarkan situs", "p": "schematize.org adalah situs informasi dan institusional yang menampilkan proyek open-source dan riset teknologi kami. Ini bukan toko." },
-          { "h": "3. Kekayaan intelektual", "p": "Merek schematize dan konten situs dilindungi. Proyek open-source kami dilisensikan di bawah ketentuan yang dinyatakan di setiap repositori di GitHub." },
-          { "h": "4. Penggunaan yang dapat diterima", "p": "Anda setuju untuk tidak menyalahgunakan situs, tidak mencoba mengganggunya, atau menggunakannya untuk tujuan melawan hukum." },
-          { "h": "5. Tautan pihak ketiga", "p": "Situs menautkan ke tujuan pihak ketiga (misalnya, GitHub). Kami tidak bertanggung jawab atas konten pihak ketiga." },
-          { "h": "6. Penafian dan pembatasan tanggung jawab", "p": "Situs disediakan \"sebagaimana adanya\", tanpa jaminan. [REVISAR: advogado]" },
-          { "h": "7. Perubahan", "p": "Kami dapat memperbarui ketentuan ini; tanggal berlaku di atas mencerminkan versi saat ini." },
-          { "h": "8. Hukum yang berlaku dan yurisdiksi", "p": "Ketentuan ini diatur oleh hukum Brasil. [REVISAR: advogado]" }
+          {
+            "h": "1. Penerimaan",
+            "p": "Dengan mengakses schematize.org Anda menyetujui Ketentuan Penggunaan ini. Jika Anda tidak setuju, mohon jangan gunakan situs."
+          },
+          {
+            "h": "2. Apa yang ditawarkan situs",
+            "p": "schematize.org adalah situs informasi dan institusional yang menampilkan proyek open-source dan riset teknologi kami. Ini bukan toko."
+          },
+          {
+            "h": "3. Kekayaan intelektual",
+            "p": "Merek schematize dan konten situs dilindungi. Proyek open-source kami dilisensikan di bawah ketentuan yang dinyatakan di setiap repositori di GitHub."
+          },
+          {
+            "h": "4. Penggunaan yang dapat diterima",
+            "p": "Anda setuju untuk tidak menyalahgunakan situs, tidak mencoba mengganggunya, atau menggunakannya untuk tujuan melawan hukum."
+          },
+          {
+            "h": "5. Tautan pihak ketiga",
+            "p": "Situs menautkan ke tujuan pihak ketiga (misalnya, GitHub). Kami tidak bertanggung jawab atas konten pihak ketiga."
+          },
+          {
+            "h": "6. Penafian dan pembatasan tanggung jawab",
+            "p": "Situs disediakan \"sebagaimana adanya\", tanpa jaminan. [REVISAR: advogado]"
+          },
+          {
+            "h": "7. Perubahan",
+            "p": "Kami dapat memperbarui ketentuan ini; tanggal berlaku di atas mencerminkan versi saat ini."
+          },
+          {
+            "h": "8. Hukum yang berlaku dan yurisdiksi",
+            "p": "Ketentuan ini diatur oleh hukum Brasil. [REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "Ketentuan Layanan",
         "sub": "Perjanjian yang mencakup perkakas dan layanan kami.",
         "sections": [
-          { "h": "1. Pihak dan definisi", "p": "Ketentuan ini mengatur hubungan antara Schematize dan pengguna perkakas dan layanan kami." },
-          { "h": "2. Lingkup", "p": "Perkakas open-source kami (seperti schematize CLI dan skill rekayasa) disediakan di bawah lisensi open-source masing-masing di GitHub." },
-          { "h": "3. Akun", "p": "Di mana sebuah layanan memerlukan autentikasi, ia disediakan melalui auth.schematize.org. Anda bertanggung jawab menjaga kredensial Anda tetap aman." },
-          { "h": "4. Biaya", "p": "Perkakas open-source gratis. Setiap layanan berbayar dijelaskan pada saat kontrak. [REVISAR: advogado]" },
-          { "h": "5. Kewajiban para pihak", "p": "Anda setuju menggunakan layanan secara sah; kami setuju menyediakannya dengan kehati-hatian yang wajar." },
-          { "h": "6. Penangguhan dan pengakhiran", "p": "Kami dapat menangguhkan akses jika terjadi penyalahgunaan atau risiko keamanan." },
-          { "h": "7. Jaminan dan pembatasan tanggung jawab", "p": "Layanan disediakan \"sebagaimana adanya\" sejauh diizinkan oleh hukum. [REVISAR: advogado]" },
-          { "h": "8. Privasi", "p": "Data pribadi diproses di bawah Kebijakan Privasi kami." },
-          { "h": "9. Hukum yang berlaku dan yurisdiksi", "p": "Diatur oleh hukum Brasil. [REVISAR: advogado]" }
+          {
+            "h": "1. Pihak dan definisi",
+            "p": "Ketentuan ini mengatur hubungan antara Schematize dan pengguna perkakas dan layanan kami."
+          },
+          {
+            "h": "2. Lingkup",
+            "p": "Perkakas open-source kami (seperti schematize CLI dan skill rekayasa) disediakan di bawah lisensi open-source masing-masing di GitHub."
+          },
+          {
+            "h": "3. Akun",
+            "p": "Di mana sebuah layanan memerlukan autentikasi, ia disediakan melalui auth.schematize.org. Anda bertanggung jawab menjaga kredensial Anda tetap aman."
+          },
+          {
+            "h": "4. Biaya",
+            "p": "Perkakas open-source gratis. Setiap layanan berbayar dijelaskan pada saat kontrak. [REVISAR: advogado]"
+          },
+          {
+            "h": "5. Kewajiban para pihak",
+            "p": "Anda setuju menggunakan layanan secara sah; kami setuju menyediakannya dengan kehati-hatian yang wajar."
+          },
+          {
+            "h": "6. Penangguhan dan pengakhiran",
+            "p": "Kami dapat menangguhkan akses jika terjadi penyalahgunaan atau risiko keamanan."
+          },
+          {
+            "h": "7. Jaminan dan pembatasan tanggung jawab",
+            "p": "Layanan disediakan \"sebagaimana adanya\" sejauh diizinkan oleh hukum. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Privasi",
+            "p": "Data pribadi diproses di bawah Kebijakan Privasi kami."
+          },
+          {
+            "h": "9. Hukum yang berlaku dan yurisdiksi",
+            "p": "Diatur oleh hukum Brasil. [REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "Kebijakan Privasi",
         "sub": "Cara kami menangani data pribadi, di bawah Undang-Undang Perlindungan Data Umum Brasil (LGPD).",
         "sections": [
-          { "h": "1. Pengendali", "p": "Pengendali data adalah Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasil." },
-          { "h": "2. Petugas Perlindungan Data (DPO)", "p": "Untuk urusan privasi dan menggunakan hak Anda, hubungi contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Data yang kami kumpulkan", "p": "Ini adalah situs informasi tanpa login atau formulir; kami hanya mengumpulkan data teknis minimal yang diperlukan untuk menyajikan halaman dan menjaga situs tetap aman. Jika Anda mengirim email kepada kami, kami memproses data yang Anda kirim." },
-          { "h": "4. Tujuan", "p": "Untuk menyampaikan dan mengamankan situs, dan untuk menanggapi pesan yang Anda kirim kepada kami." },
-          { "h": "5. Dasar hukum", "p": "Kepentingan sah untuk mengoperasikan dan mengamankan situs; persetujuan atau pelaksanaan sebuah permintaan saat Anda menghubungi kami (LGPD art. 7). [REVISAR: advogado]" },
-          { "h": "6. Berbagi", "p": "Kami menggunakan penyedia infrastruktur dan hosting yang bertindak sebagai operator; kami tidak menjual data pribadi." },
-          { "h": "7. Transfer internasional", "p": "Beberapa penyedia mungkin memproses data di luar Brasil, dengan pengamanan. [REVISAR: advogado]" },
-          { "h": "8. Retensi", "p": "Kami menyimpan data hanya selama diperlukan untuk tujuan di atas atau sebagaimana diwajibkan oleh hukum." },
-          { "h": "9. Keamanan", "p": "Kami menerapkan langkah-langkah teknis dan organisasional yang wajar untuk melindungi data." },
-          { "h": "10. Hak Anda", "p": "Di bawah LGPD art. 18 Anda dapat meminta konfirmasi, akses, koreksi, anonimisasi, portabilitas, penghapusan, dan informasi tentang berbagi, serta mencabut persetujuan — dengan mengirim email ke contabil@schematize.me." },
-          { "h": "11. Cookie", "p": "Lihat Kebijakan Cookie kami untuk detail tentang cookie dan teknologi serupa." },
-          { "h": "12. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini." }
+          {
+            "h": "1. Pengendali",
+            "p": "Pengendali data adalah Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasil."
+          },
+          {
+            "h": "2. Petugas Perlindungan Data (DPO)",
+            "p": "Untuk urusan privasi dan menggunakan hak Anda, hubungi contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. Data yang kami kumpulkan",
+            "p": "Ini adalah situs informasi tanpa login atau formulir; kami hanya mengumpulkan data teknis minimal yang diperlukan untuk menyajikan halaman dan menjaga situs tetap aman. Jika Anda mengirim email kepada kami, kami memproses data yang Anda kirim."
+          },
+          {
+            "h": "4. Tujuan",
+            "p": "Untuk menyampaikan dan mengamankan situs, dan untuk menanggapi pesan yang Anda kirim kepada kami."
+          },
+          {
+            "h": "5. Dasar hukum",
+            "p": "Kepentingan sah untuk mengoperasikan dan mengamankan situs; persetujuan atau pelaksanaan sebuah permintaan saat Anda menghubungi kami (LGPD art. 7). [REVISAR: advogado]"
+          },
+          {
+            "h": "6. Berbagi",
+            "p": "Kami menggunakan penyedia infrastruktur dan hosting yang bertindak sebagai operator; kami tidak menjual data pribadi."
+          },
+          {
+            "h": "7. Transfer internasional",
+            "p": "Beberapa penyedia mungkin memproses data di luar Brasil, dengan pengamanan. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Retensi",
+            "p": "Kami menyimpan data hanya selama diperlukan untuk tujuan di atas atau sebagaimana diwajibkan oleh hukum."
+          },
+          {
+            "h": "9. Keamanan",
+            "p": "Kami menerapkan langkah-langkah teknis dan organisasional yang wajar untuk melindungi data."
+          },
+          {
+            "h": "10. Hak Anda",
+            "p": "Di bawah LGPD art. 18 Anda dapat meminta konfirmasi, akses, koreksi, anonimisasi, portabilitas, penghapusan, dan informasi tentang berbagi, serta mencabut persetujuan — dengan mengirim email ke contabil@schematize.me."
+          },
+          {
+            "h": "11. Cookie",
+            "p": "Lihat Kebijakan Cookie kami untuk detail tentang cookie dan teknologi serupa."
+          },
+          {
+            "h": "12. Perubahan",
+            "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini."
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Kebijakan Cookie",
         "sub": "Cookie dan teknologi serupa yang digunakan situs ini.",
         "sections": [
-          { "h": "1. Apa itu cookie", "p": "Cookie adalah berkas kecil yang disimpan di perangkat Anda yang membantu situs bekerja dan mengingat preferensi." },
-          { "h": "2. Kategori", "p": "Esensial: diperlukan agar situs berfungsi (misalnya, mengingat bahasa Anda). Cookie kinerja/analitik, fungsional, dan pemasaran hanya digunakan dengan persetujuan opt-in Anda." },
-          { "h": "3. Apa yang kami gunakan", "p": "Situs ini menyimpan preferensi bahasa secara lokal untuk mempertahankan bahasa pilihan Anda. Ia tidak menjalankan cookie analitik atau pemasaran non-esensial tanpa persetujuan. [REVISAR: negócio]" },
-          { "h": "4. Persetujuan", "p": "Cookie non-esensial memerlukan persetujuan opt-in; cookie esensial berjalan tanpa persetujuan." },
-          { "h": "5. Mengelola cookie", "p": "Anda dapat menghapus atau memblokir cookie di pengaturan peramban Anda; memblokir penyimpanan esensial dapat memengaruhi situs." },
-          { "h": "6. Perubahan", "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini." }
+          {
+            "h": "1. Apa itu cookie",
+            "p": "Cookie adalah berkas kecil yang disimpan di perangkat Anda yang membantu situs bekerja dan mengingat preferensi."
+          },
+          {
+            "h": "2. Kategori",
+            "p": "Esensial: diperlukan agar situs berfungsi (misalnya, mengingat bahasa Anda). Cookie kinerja/analitik, fungsional, dan pemasaran hanya digunakan dengan persetujuan opt-in Anda."
+          },
+          {
+            "h": "3. Apa yang kami gunakan",
+            "p": "Situs ini menyimpan preferensi bahasa secara lokal untuk mempertahankan bahasa pilihan Anda. Ia tidak menjalankan cookie analitik atau pemasaran non-esensial tanpa persetujuan. [REVISAR: negócio]"
+          },
+          {
+            "h": "4. Persetujuan",
+            "p": "Cookie non-esensial memerlukan persetujuan opt-in; cookie esensial berjalan tanpa persetujuan."
+          },
+          {
+            "h": "5. Mengelola cookie",
+            "p": "Anda dapat menghapus atau memblokir cookie di pengaturan peramban Anda; memblokir penyimpanan esensial dapat memengaruhi situs."
+          },
+          {
+            "h": "6. Perubahan",
+            "p": "Kami dapat memperbarui kebijakan ini; tanggal berlaku di atas mencerminkan versi saat ini."
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "Institusional",
         "links": [
-          { "slug": "", "label": "Beranda" },
-          { "slug": "about", "label": "Tentang" },
-          { "slug": "contact", "label": "Kontak" }
+          {
+            "slug": "",
+            "label": "Beranda"
+          },
+          {
+            "slug": "about",
+            "label": "Tentang"
+          },
+          {
+            "slug": "contact",
+            "label": "Kontak"
+          }
         ]
       },
       {
         "h": "Karya",
         "links": [
-          { "slug": "software", "label": "Aplikasi" },
-          { "slug": "projects", "label": "Proyek" },
-          { "slug": "research", "label": "Riset" },
-          { "slug": "principles", "label": "Prinsip" }
+          {
+            "slug": "apps",
+            "label": "Aplikasi"
+          },
+          {
+            "slug": "projects",
+            "label": "Proyek"
+          },
+          {
+            "slug": "research",
+            "label": "Riset"
+          },
+          {
+            "slug": "principles",
+            "label": "Prinsip"
+          }
         ]
       },
       {
         "h": "Legal",
         "links": [
-          { "slug": "legal", "label": "Pusat legal" },
-          { "slug": "legal/terms-of-use", "label": "Ketentuan Penggunaan" },
-          { "slug": "legal/terms-of-service", "label": "Ketentuan Layanan" },
-          { "slug": "legal/privacy", "label": "Kebijakan Privasi" },
-          { "slug": "legal/cookies", "label": "Kebijakan Cookie" }
+          {
+            "slug": "legal",
+            "label": "Pusat legal"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "Ketentuan Penggunaan"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "Ketentuan Layanan"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "Kebijakan Privasi"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Kebijakan Cookie"
+          }
         ]
       }
     ]

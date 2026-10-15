@@ -2,14 +2,16 @@
 // Footer institucional (.org) — navegação interna + recursos .org válidos + legal +
 // dados fiscais da empresa. Tudo consolidado no schematize.org: sem links cruzados
 // para .net/.me/.com.br (esses domínios agora redirecionam 301 para cá). Sem emoji.
+import Social from "./Social.astro";
 import { t, path, type Locale } from "../lib/i18n";
+import { CONTENT_GROUPS } from "../lib/nav";
 interface Props { locale: Locale; }
 const { locale } = Astro.props;
 const year = new Date().getFullYear();
 
 // Colunas de navegação — apenas destinos .org válidos e páginas internas.
 const explore = [
-  { href: path(locale, "software"), label: t(locale, "nav.software") },
+  { href: path(locale, "apps"), label: t(locale, "nav.apps") },
   { href: path(locale, "projects"), label: t(locale, "nav.projects") },
   { href: path(locale, "research"), label: t(locale, "nav.research") },
   { href: path(locale, "principles"), label: t(locale, "nav.principles") },
@@ -18,10 +20,10 @@ const company = [
   { href: path(locale, "about"), label: t(locale, "nav.about") },
   { href: path(locale, "contact"), label: t(locale, "nav.contact") },
 ];
-const resources = [
-  { href: "https://skills.schematize.org", label: "skills.schematize.org" },
-  { href: "https://learn.schematize.org", label: "learn.schematize.org" },
-];
+const resources = CONTENT_GROUPS.flatMap((g) => g.items).map((i) => ({
+  href: i.href,
+  label: t(locale, `nav.contentItems.${i.key}.h`),
+}));
 const legal = [
   { href: path(locale, "legal"), label: t(locale, "nav.legal") },
   { href: path(locale, "legal/privacy"), label: t(locale, "legal.docs.privacy.h1") },
@@ -43,9 +45,7 @@ const email = t(locale, "company.email");
     <div class="brand-col">
       <div class="brand">schematize<span>.org</span></div>
       <p class="muted">{t(locale, "footer.tagline")}</p>
-      <ul class="eco" role="list">
-        <li><a href="https://github.com/schematizeme">GitHub</a></li>
-      </ul>
+      <Social class="eco" label={t(locale, "nav.social")} />
     </div>
     <nav aria-label={t(locale, "footer.explore")}>
       <h3>{t(locale, "footer.explore")}</h3>
@@ -88,8 +88,7 @@ const email = t(locale, "company.email");
   .brand { font-family: var(--font-disp); font-weight: 600; font-size: 1.12rem; letter-spacing: -0.03em; }
   .brand span { color: var(--faint); font-weight: 500; }
   .brand-col .muted { margin-top: 0.6rem; max-width: 34ch; }
-  .eco { list-style: none; padding: 0; margin: 1.1rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
-  .eco a { color: var(--muted); font-size: var(--step-1); }
+  :global(.eco) { margin-top: 1rem; margin-inline-start: -0.4rem; }
   .site-footer h3 { font-size: var(--step-1); letter-spacing: -0.01em; color: var(--muted); font-family: var(--font-sans); font-weight: 600; margin: 0 0 0.9rem; }
   .site-footer nav ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
   .site-footer nav a { color: var(--ink-2); font-size: var(--step-1); }

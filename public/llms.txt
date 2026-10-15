@@ -10,12 +10,16 @@ schematize.org is informational and institutional: it documents our open-source
 projects, technology research and the company behind them. It is not a store.
 
 ## Open-source projects
+- Applications page: https://schematize.org/en/apps/ (one page per app: /en/apps/schematize, market,
+  overdev, deployer, optimizer, database, git, skills; /software redirects there).
 - schematize — the hub CLI (Rust; Linux and FreeBSD x86_64): installs/versions engineering
   skills for Claude Code and runs overdev (continuous, unattended development).
   https://github.com/schematizeme/schematize-cli
 - Ecosystem apps (each with a CLI and a desktop window, 20 interface languages):
   schematize-market (installer/updater; also installs Claude Code, Codex CLI, Cursor CLI),
-  overdev, deployer, optimizer, database, git, skills.
+  overdev, deployer, optimizer, database, git, skills. Linux/FreeBSD installer flags:
+  --deployer, --optimizer, --database, --git, --skills (additive), --completo (full kit,
+  includes overdev). The hub and the market always come with any install.
 - Full-kit install (Linux): curl -fsSL https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | bash -s -- --completo
   FreeBSD: fetch -o - https://raw.githubusercontent.com/schematizeme/schematize-cli/main/install.sh | sh -s -- --completo
   Installs to ~/.cargo/bin, no sudo, prebuilt binaries. The install.sh supports only Linux
@@ -35,7 +39,11 @@ projects, technology research and the company behind them. It is not a store.
 
 ## Ecosystem
 - skills.schematize.org — the engineering skills catalog
-- learn.schematize.org — the academy
+- blog.schematize.org — the blog
+- research.schematize.org — research
+- wiki.schematize.org — the wiki
+- schematize.educe.me — the academy
+- blueprint.schematize.org — system blueprints (human and machine readable)
 - github.com/schematizeme — source code
 
 ## Company

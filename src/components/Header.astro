@@ -1,58 +1,137 @@
 ---
-// Header (.org) — logo + navegação institucional + troca de idioma + link pro código.
-// Inerte e idêntico entre páginas (só o aria-current muda). Abaixo de 720px o menu
-// vira um drawer (<details>) com hambúrguer — antes a nav simplesmente sumia.
+// Header (.org) — marca | Aplicações | Conteúdo (megamenu) | Sobre | Legal (dropdown)
+// | redes sociais | idioma | Entrar | Cadastrar. Menus são <details> (teclado e
+// leitor de tela nativos); um script mínimo só fecha ao clicar fora/Esc e espelha
+// aria-expanded. Abaixo de 1000px tudo vira um drawer (<details>) com grupos expansíveis.
 import LangModal from "./LangModal.astro";
+import Social from "./Social.astro";
 import { Icon } from "astro-icon/components";
 import { t, path, type Locale } from "../lib/i18n";
+import { CONTENT_GROUPS, LEGAL_LINKS, SIGNIN_URL, SIGNUP_URL } from "../lib/nav";
 interface Props { locale: Locale; slug?: string; }
 const { locale, slug = "" } = Astro.props;
-// Nav interno (páginas .org) + ecossistema do produto (subdomínios externos).
-const nav = [
-  { key: "software", label: t(locale, "nav.software") },
-  { key: "projects", label: t(locale, "nav.projects") },
-  { key: "research", label: t(locale, "nav.research") },
-  { key: "principles", label: t(locale, "nav.principles") },
-  { key: "about", label: t(locale, "nav.about") },
+const onApps = slug === "apps" || slug.startsWith("apps/");
+const legalItems = [
+  ...LEGAL_LINKS.map((l) => ({ href: path(locale, l.slug), label: t(locale, l.key), current: slug === l.slug })),
+  { href: path(locale, "legal"), label: t(locale, "nav.legalAll"), current: slug === "legal" },
 ];
-const product = [
-  { href: "https://skills.schematize.org", label: t(locale, "nav.catalog") },
-  { href: "https://learn.schematize.org", label: t(locale, "nav.academy") },
-];
+const inLegal = slug === "legal" || slug.startsWith("legal/");
 ---
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href={path(locale, "")}>schematize<span aria-hidden="true">.org</span></a>
     <nav class="nav" aria-label="Primary">
-      {nav.map((n) => (
-        <a href={path(locale, n.key)} aria-current={slug === n.key ? "page" : undefined}>{n.label}</a>
-      ))}
-      {product.map((n) => (
-        <a href={n.href} target="_blank" rel="noopener noreferrer">{n.label}</a>
-      ))}
+      <a href={path(locale, "apps")} aria-current={onApps ? "page" : undefined}>{t(locale, "nav.apps")}</a>
+
+      <details class="dd" data-dd>
+        <summary aria-expanded="false" aria-haspopup="true">
+          <span>{t(locale, "nav.content")}</span><Icon name="lucide:chevron-down" class="chev" aria-hidden="true" />
+        </summary>
+        <div class="panel mega">
+          {CONTENT_GROUPS.map((g) => (
+            <div class="mega-col">
+              <p class="mega-h">{t(locale, g.labelKey)}</p>
+              <ul role="list">
+                {g.items.map((i) => (
+                  <li>
+                    <a class="mega-item" href={i.href}>
+                      <span class="mega-ico" aria-hidden="true"><Icon name={`lucide:${i.icon}`} /></span>
+                      <span class="mega-txt">
+                        <strong>{t(locale, `nav.contentItems.${i.key}.h`)}</strong>
+                        <small>{t(locale, `nav.contentItems.${i.key}.p`)}</small>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </details>
+
+      <a href={path(locale, "about")} aria-current={slug === "about" ? "page" : undefined}>{t(locale, "nav.about")}</a>
+
+      <details class="dd" data-dd>
+        <summary aria-expanded="false" aria-haspopup="true" class:list={{ cur: inLegal }}>
+          <span>{t(locale, "nav.legal")}</span><Icon name="lucide:chevron-down" class="chev" aria-hidden="true" />
+        </summary>
+        <div class="panel simple">
+          <ul role="list">
+            {legalItems.map((l) => (
+              <li><a href={l.href} aria-current={l.current ? "page" : undefined}>{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      </details>
     </nav>
     <div class="actions">
+      <Social class="soc-bar" label={t(locale, "nav.social")} />
       <LangModal locale={locale} slug={slug} />
-      <a class="btn btn-ghost login" href="https://auth.schematize.org" target="_blank" rel="noopener noreferrer">{t(locale, "nav.login")}</a>
-      <a class="btn btn-primary cta" href="https://github.com/schematizeme">{t(locale, "nav.cta")}</a>
-      <details class="drawer">
-        <summary aria-label={t(locale, "nav.menu")}>
+      <a class="btn btn-ghost login" href={SIGNIN_URL}>{t(locale, "nav.signin")}</a>
+      <a class="btn btn-primary cta" href={SIGNUP_URL}>{t(locale, "nav.signup")}</a>
+      <details class="drawer" data-dd>
+        <summary aria-label={t(locale, "nav.menu")} aria-expanded="false">
           <Icon name="lucide:menu" class="i-open" />
           <Icon name="lucide:x" class="i-close" />
         </summary>
         <div class="drawer-panel">
-          {nav.map((n) => (
-            <a href={path(locale, n.key)} aria-current={slug === n.key ? "page" : undefined}>{n.label}</a>
-          ))}
-          {product.map((n) => (
-            <a href={n.href} target="_blank" rel="noopener noreferrer">{n.label}</a>
-          ))}
-          <a href="https://auth.schematize.org" target="_blank" rel="noopener noreferrer">{t(locale, "nav.login")}</a>
+          <a class="d-link" href={path(locale, "apps")} aria-current={onApps ? "page" : undefined}>{t(locale, "nav.apps")}</a>
+          <details class="d-sub">
+            <summary>{t(locale, "nav.content")}<Icon name="lucide:chevron-down" class="chev" aria-hidden="true" /></summary>
+            <div class="d-sub-body">
+              {CONTENT_GROUPS.map((g) => (
+                <div>
+                  <p class="mega-h">{t(locale, g.labelKey)}</p>
+                  {g.items.map((i) => (
+                    <a class="d-item" href={i.href}>
+                      <Icon name={`lucide:${i.icon}`} aria-hidden="true" />
+                      <span>{t(locale, `nav.contentItems.${i.key}.h`)}</span>
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </details>
+          <a class="d-link" href={path(locale, "about")} aria-current={slug === "about" ? "page" : undefined}>{t(locale, "nav.about")}</a>
+          <details class="d-sub" open={inLegal}>
+            <summary>{t(locale, "nav.legal")}<Icon name="lucide:chevron-down" class="chev" aria-hidden="true" /></summary>
+            <div class="d-sub-body">
+              {legalItems.map((l) => (
+                <a class="d-item" href={l.href} aria-current={l.current ? "page" : undefined}><span>{l.label}</span></a>
+              ))}
+            </div>
+          </details>
+          <Social class="soc-drawer" label={t(locale, "nav.social")} />
+          <div class="d-cta">
+            <a class="btn btn-ghost" href={SIGNIN_URL}>{t(locale, "nav.signin")}</a>
+            <a class="btn btn-primary" href={SIGNUP_URL}>{t(locale, "nav.signup")}</a>
+          </div>
         </div>
       </details>
     </div>
   </div>
 </header>
+<script is:inline>
+  (function () {
+    var dds = document.querySelectorAll(".site-header details[data-dd]");
+    function sync(d) { var s = d.querySelector(":scope > summary"); if (s) s.setAttribute("aria-expanded", d.open ? "true" : "false"); }
+    dds.forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        sync(d);
+        if (d.open) dds.forEach(function (o) { if (o !== d && o.open && !o.contains(d)) { o.open = false; } });
+      });
+    });
+    document.addEventListener("click", function (e) {
+      dds.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape") return;
+      dds.forEach(function (d) {
+        if (d.open) { d.open = false; var s = d.querySelector(":scope > summary"); if (s && d.contains(document.activeElement)) s.focus(); }
+      });
+    });
+  })();
+</script>
 <style>
   .site-header {
     position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 78%, transparent);
@@ -63,40 +142,78 @@ const product = [
   .brand { font-family: var(--font-disp); font-weight: 600; font-size: 1.14rem; color: var(--ink); letter-spacing: -0.03em; }
   .brand span { color: var(--faint); font-weight: 500; }
   .brand:hover { text-decoration: none; }
-  .nav { display: flex; gap: 1.6rem; margin-inline: auto; }
-  .nav a { color: var(--muted); font-size: var(--step0); font-weight: 450; letter-spacing: -0.01em; }
-  .nav a:hover, .nav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
-  .actions { display: flex; align-items: center; gap: 0.7rem; }
-  .cta { padding: 0.52rem 1.05rem; font-size: var(--step-1); }
-  .login { padding: 0.52rem 1.05rem; font-size: var(--step-1); }
+  .nav { display: flex; align-items: center; gap: 1.4rem; margin-inline: auto; }
+  .nav > a, .dd > summary { color: var(--muted); font-size: var(--step0); font-weight: 450; letter-spacing: -0.01em; }
+  .nav > a:hover, .nav > a[aria-current="page"], .dd > summary:hover, .dd[open] > summary, .dd > summary.cur { color: var(--ink); text-decoration: none; }
+  .nav a:focus-visible, .dd > summary:focus-visible, .drawer summary:focus-visible, .d-sub > summary:focus-visible, .drawer-panel a:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px;
+  }
+  .actions { display: flex; align-items: center; gap: 0.6rem; }
+  .cta, .login { padding: 0.52rem 1.05rem; font-size: var(--step-1); white-space: nowrap; }
 
-  /* Drawer mobile — escondido no desktop. */
+  /* Menus: <details> sem marcador nativo; painel flutuante. */
+  .dd { position: relative; }
+  .dd > summary, .d-sub > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem; }
+  .dd > summary::-webkit-details-marker, .d-sub > summary::-webkit-details-marker, .drawer > summary::-webkit-details-marker { display: none; }
+  .panel {
+    position: absolute; top: calc(100% + 0.9rem); inset-inline-start: 50%; transform: translateX(-50%);
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    box-shadow: var(--shadow-md); padding: 0.6rem; z-index: 50;
+  }
+  [dir="rtl"] .panel { transform: translateX(50%); }
+  .panel ul { list-style: none; margin: 0; padding: 0; }
+  .panel.simple { min-width: 230px; }
+  .panel.simple a { display: block; color: var(--ink-2); font-size: var(--step0); padding: 0.55rem 0.7rem; border-radius: 10px; white-space: nowrap; }
+  .panel.simple a:hover { background: var(--surface); text-decoration: none; }
+  .panel.simple a[aria-current="page"] { color: var(--accent-ink); }
+  .panel.simple li:last-child { border-top: 1px solid var(--line-2); margin-top: 0.3rem; padding-top: 0.3rem; }
+  .mega { display: grid; grid-template-columns: repeat(2, minmax(15rem, 1fr)); gap: 0.4rem 1.2rem; width: min(40rem, calc(100vw - 32px)); padding: 0.9rem; }
+  .mega-h { margin: 0 0 0.35rem; padding-inline: 0.7rem; font-size: var(--step-1); font-weight: 600; color: var(--faint); letter-spacing: 0.02em; text-transform: uppercase; }
+  .mega-item { display: flex; gap: 0.75rem; align-items: flex-start; padding: 0.6rem 0.7rem; border-radius: 12px; color: var(--ink); }
+  .mega-item:hover { background: var(--surface); text-decoration: none; }
+  .mega-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .mega-ico { flex: none; display: inline-flex; width: 34px; height: 34px; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 10px; color: var(--accent-ink); }
+  .mega-txt { display: grid; gap: 0.1rem; }
+  .mega-txt strong { font-weight: 550; font-size: var(--step0); letter-spacing: -0.01em; }
+  .mega-txt small { color: var(--muted); font-size: var(--step-1); line-height: 1.35; }
+
+  /* Drawer — escondido no desktop. */
   .drawer { display: none; position: relative; }
-  .drawer summary {
+  .drawer > summary {
     list-style: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
     width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--line); color: var(--ink);
   }
-  .drawer summary::-webkit-details-marker { display: none; }
-  .drawer summary [data-icon] { width: 20px; height: 20px; }
-  .drawer summary .i-close { display: none; }
-  .drawer[open] summary .i-open { display: none; }
-  .drawer[open] summary .i-close { display: inline-flex; }
   .drawer-panel {
-    position: absolute; right: 0; top: calc(100% + 0.55rem); min-width: 220px;
-    display: flex; flex-direction: column; gap: 0.15rem; padding: 0.5rem;
-    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-    box-shadow: var(--shadow-md);
+    position: absolute; inset-inline-end: 0; top: calc(100% + 0.55rem); width: min(22rem, calc(100vw - 32px));
+    max-height: calc(100dvh - 90px); overflow-y: auto; overscroll-behavior: contain;
+    display: flex; flex-direction: column; gap: 0.1rem; padding: 0.5rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-md);
   }
-  .drawer-panel a { color: var(--ink-2); font-size: var(--step0); padding: 0.55rem 0.7rem; border-radius: 10px; }
-  .drawer-panel a:hover { background: var(--surface); text-decoration: none; }
-  .drawer-panel a[aria-current="page"] { color: var(--accent-ink); }
+  .d-link, .d-sub > summary { display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box; color: var(--ink-2); font-size: var(--step0); padding: 0.65rem 0.7rem; border-radius: 10px; }
+  .d-link:hover, .d-sub > summary:hover { background: var(--surface); text-decoration: none; }
+  .d-link[aria-current="page"] { color: var(--accent-ink); }
+  .d-sub-body { padding: 0 0.3rem 0.4rem; display: grid; gap: 0.3rem; }
+  .d-sub-body .mega-h { margin-top: 0.4rem; }
+  .d-item { display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0.7rem; border-radius: 10px; color: var(--ink-2); font-size: var(--step-1); }
+  .d-item:hover { background: var(--surface); text-decoration: none; }
+  .d-item[aria-current="page"] { color: var(--accent-ink); }
+  :global(.soc-drawer) { padding: 0.6rem 0.4rem 0.2rem; border-top: 1px solid var(--line-2); margin-top: 0.3rem; }
+  .d-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; padding: 0.6rem 0.2rem 0.2rem; }
+  .d-cta .btn { justify-content: center; text-align: center; }
 
-  @media (max-width: 860px) {
-    .login { display: none; }
-  }
-  @media (max-width: 720px) {
-    .nav { display: none; }
-    .cta { display: none; }
+  @media (max-width: 1000px) {
+    .nav, .login, .cta, :global(.soc-bar) { display: none; }
     .drawer { display: inline-flex; }
+    .actions { margin-inline-start: auto; }
   }
+</style>
+<style is:global>
+  .site-header .chev { width: 14px; height: 14px; transition: transform 0.18s ease; }
+  .site-header .dd[open] > summary .chev, .site-header .d-sub[open] > summary .chev { transform: rotate(180deg); }
+  .site-header .mega-ico [data-icon] { width: 17px; height: 17px; }
+  .site-header .drawer summary [data-icon] { width: 20px; height: 20px; }
+  .site-header .drawer > summary .i-close { display: none; }
+  .site-header .drawer[open] > summary .i-open { display: none; }
+  .site-header .drawer[open] > summary .i-close { display: inline-flex; }
+  .site-header .d-item [data-icon] { width: 16px; height: 16px; color: var(--accent-ink); flex: none; }
 </style>

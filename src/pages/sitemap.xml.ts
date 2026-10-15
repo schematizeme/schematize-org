@@ -1,11 +1,13 @@
 // sitemap.xml — gerado sem dependência externa. Lista todas as páginas × locales,
 // cada URL com os alternates hreflang (i18n correto). x-default aponta pro en.
 import type { APIRoute } from "astro";
+import { APPS } from "../lib/apps";
 import { LOCALES, LOCALE_META, DEFAULT_LOCALE, path } from "../lib/i18n";
 
 const SLUGS = [
   "",
-  "software",
+  "apps",
+  ...APPS.map((a) => `apps/${a.slug}`),
   "projects",
   "research",
   "principles",

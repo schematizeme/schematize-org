@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "Die App",
     "projects": "Projekte",
     "research": "Forschung",
     "principles": "Prinzipien",
     "about": "Über uns",
     "contact": "Kontakt",
     "legal": "Rechtliches",
-    "catalog": "Skills-Katalog",
-    "academy": "Academy",
-    "login": "Anmelden / Registrieren",
-    "cta": "Quellcode ansehen",
-    "menu": "Menü"
+    "menu": "Menü",
+    "apps": "Anwendungen",
+    "content": "Inhalte",
+    "contentRead": "Lesen und lernen",
+    "contentBuild": "Bauen",
+    "contentItems": {
+      "blog": {
+        "h": "Blog",
+        "p": "Artikel und Neuigkeiten aus dem Labor."
+      },
+      "research": {
+        "h": "Forschung",
+        "p": "Paper und Studien zu Engineering mit KI-Agenten."
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "Referenzdokumentation, immer aktuell."
+      },
+      "academy": {
+        "h": "Akademie",
+        "p": "Kurse und Lernpfade."
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "Der offene Katalog von Engineering-Skills für Claude Code."
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "Systemblueprints für Menschen und Maschinen."
+      }
+    },
+    "signin": "Anmelden",
+    "signup": "Registrieren",
+    "legalAll": "Alle Dokumente",
+    "social": "Soziale Netzwerke"
   },
   "footer": {
     "tagline": "Das Open-Source- und Technologieforschungslabor hinter schematize.",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "Die App — die schematize-CLI — schematize.org",
-      "desc": "schematize ist ein Kommandozeilen-Hub in Rust (mit Desktop-Fenstern), der Engineering-Skills für Claude Code installiert und versioniert, die Apps des Ökosystems und KI-Coding-Tools installiert und overdev ausführt. Ein einziger Befehl installiert das komplette Kit unter Linux und FreeBSD."
+      "title": "Anwendungen — schematize.org",
+      "desc": "Alle schematize-Anwendungen und ihr Installer: der Hub, der Market, overdev, deployer, optimizer, database, git und skills. Ein einziger Befehl installiert das komplette Kit unter Linux und FreeBSD."
     },
     "hero": {
-      "kicker": "Die App",
-      "h1": "Eine CLI für den gesamten Workflow.",
-      "sub": "schematize ist ein Kommandozeilen-Hub in Rust — Desktop-Fenster inklusive —, der Engineering-Skills aus einem Live-Katalog installiert und versioniert, die Apps des Ökosystems und KI-Coding-Tools installiert und overdev ausführt: kontinuierliche, unbeaufsichtigte Entwicklung, die erst stoppt, wenn die Checkliste abgearbeitet ist."
+      "kicker": "Anwendungen",
+      "h1": "Alle Anwendungen und wie man sie installiert.",
+      "sub": "schematize ist eine Familie von Kommandozeilen-Apps in Rust, jede mit einem eigenen Desktop-Fenster. Installiere nur, was du brauchst, oder das komplette Kit mit einem Befehl."
     },
+    "list": {
+      "title": "Das Ökosystem",
+      "sub": "Jede App funktioniert eigenständig, hat eine CLI und ein Desktop-Fenster, und jede Oberfläche spricht 20 Sprachen."
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "Der Hub: installiert und versioniert Skills, diagnostiziert dein Setup (doctor), aktualisiert sich selbst und zeigt alles auf einen Blick."
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "Der Installer und Updater des gesamten Kits. Er wird mit jeder App ausgeliefert und installiert auch die KI-Tools: Claude Code, Codex CLI und Cursor CLI."
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "Kontinuierliche Entwicklung. Konfiguriere die Agenten-Hierarchie im Tab „Agenten“: Opus orchestriert, Haiku erledigt das Triviale, Sonnet programmiert; bei Fehlern eskaliert es zu Codex, dann Cursor, dann Opus. Visuelle Arbeit und Bilder gehen an Codex."
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "SSH-Schlüssel, VPS und auditierter Fernzugriff — die Zugangsdaten bleiben außerhalb der Reichweite des Agenten."
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "Macht die Entwicklungsmaschine berechenbar: misst die Umgebung und begrenzt die Ressourcen für Builds, Browser und Container."
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "Entwirft das Schema vor der ersten Zeile der Anwendung: modelliert relationale Schemas, liest bestehende Datenbanken und erzeugt SQL und umkehrbare Migrationen."
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "Wer pusht, von wo und mit welcher Identität: mehrere git-Konten auf einer Maschine, ohne mit dem falschen zu committen."
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "Der Skill-Katalog für Claude Code: was auf diesem Rechner installiert ist, und das Bearbeiten."
+      }
+    ],
     "install": {
       "title": "Das komplette Kit installieren",
       "sub": "Ein Befehl installiert den Hub, den Market, jede App mit ihrem Fenster, die Skills — und führt doctor aus. Vorkompilierte Binärdateien nach ~/.cargo/bin: kein sudo, kein Compiler.",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "Residenter Agent",
           "p": "Achtet auf neue Skill-Versionen und Blog-Beiträge und benachrichtigt dich nativ auf dem Desktop."
-        }
-      ]
-    },
-    "apps": {
-      "title": "Das Ökosystem",
-      "sub": "Jede App funktioniert eigenständig, hat eine CLI und ein Desktop-Fenster, und jede Oberfläche spricht 20 Sprachen.",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "Der Hub: installiert und versioniert Skills, diagnostiziert dein Setup (doctor), aktualisiert sich selbst und zeigt alles auf einen Blick."
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "Der Installer und Updater des gesamten Kits. Er wird mit jeder App ausgeliefert und installiert auch die KI-Tools: Claude Code, Codex CLI und Cursor CLI."
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "Kontinuierliche Entwicklung. Konfiguriere die Agenten-Hierarchie im Tab „Agenten“: Opus orchestriert, Haiku erledigt das Triviale, Sonnet programmiert; bei Fehlern eskaliert es zu Codex, dann Cursor, dann Opus. Visuelle Arbeit und Bilder gehen an Codex."
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "SSH-Schlüssel, VPS und auditierter Fernzugriff — die Zugangsdaten bleiben außerhalb der Reichweite des Agenten."
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "Macht die Entwicklungsmaschine berechenbar: misst die Umgebung und begrenzt die Ressourcen für Builds, Browser und Container."
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "Entwirft das Schema vor der ersten Zeile der Anwendung: modelliert relationale Schemas, liest bestehende Datenbanken und erzeugt SQL und umkehrbare Migrationen."
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "Wer pusht, von wo und mit welcher Identität: mehrere git-Konten auf einer Maschine, ohne mit dem falschen zu committen."
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "Der Skill-Katalog für Claude Code: was auf diesem Rechner installiert ist, und das Bearbeiten."
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "Die App installiert Skills aus dem offenen Katalog — durchsuche ihn und wähle, was dein Projekt braucht.",
       "button": "Den Katalog öffnen",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "Details ansehen",
+      "back": "Alle Anwendungen",
+      "kicker": "Anwendung",
+      "whatItDoes": "Was sie tut",
+      "install": "Installieren",
+      "inKit": "Diese App hat keinen eigenen Installer: Sie ist im kompletten Kit enthalten.",
+      "baseNote": "Der Hub und der Market sind bei jeder Installation dabei.",
+      "noWindows": "Unter Windows noch nicht verfügbar.",
+      "winCovers": "Unter Windows deckt dieser Installer schematize-market und overdev ab.",
+      "macos": "Noch kein automatischer Installer: Lade die vorkompilierten Binärdateien aus den Releases herunter und installiere sie manuell.",
+      "repo": "Quellcode",
+      "repoWindows": "Repository des Windows-Installers",
+      "copy": "Kopieren"
+    },
+    "detail": {
+      "schematize": [
+        "Installiert und versioniert Engineering-Skills aus einem Live-Katalog: schematize skills install --all holt das ganze Set.",
+        "doctor diagnostiziert dein Setup.",
+        "Aktualisiert sich selbst und zeigt alles auf einen Blick."
+      ],
+      "market": [
+        "Installiert und aktualisiert das gesamte Kit: schematize-market update aktualisiert die Apps, die KI-Tools und sich selbst.",
+        "Installiert auch die KI-Tools: Claude Code, Codex CLI und Cursor CLI.",
+        "Ist bei jeder anderen App dabei."
+      ],
+      "overdev": [
+        "Kontinuierliche Entwicklung, die erst stoppt, wenn die Checkliste abgearbeitet ist.",
+        "Lege die Agentenhierarchie im Tab Agenten fest: Opus orchestriert, Haiku erledigt das Triviale, Sonnet programmiert; bei einem Fehlschlag eskaliert es an Codex, dann an Cursor und danach an Opus.",
+        "Visuelles und Bilder gehen an Codex."
+      ],
+      "deployer": [
+        "SSH-Schlüssel, VPS und auditierter Fernzugriff.",
+        "Die Zugangsdaten bleiben außerhalb der Reichweite des Agenten.",
+        "CLI und Desktop-Fenster."
+      ],
+      "optimizer": [
+        "Misst die Umgebung.",
+        "Stellt Build, Browser und Container jeweils unter eine eigene Ressourcengrenze.",
+        "Hält die Entwicklungsmaschine vorhersehbar."
+      ],
+      "database": [
+        "Entwirft die Datenbank vor der ersten Zeile Anwendungscode und modelliert das relationale Schema.",
+        "Liest eine bestehende Datenbank.",
+        "Erzeugt SQL und umkehrbare Migrationen."
+      ],
+      "git": [
+        "Mehrere git-Konten auf demselben Rechner.",
+        "Steuert, wer von wo und mit welcher Identität pusht.",
+        "Verhindert, dass du mit dem falschen Konto committest."
+      ],
+      "skills": [
+        "Der Skill-Katalog für Claude Code.",
+        "Zeigt, was auf diesem Rechner installiert ist.",
+        "Ermöglicht das Bearbeiten der Skills."
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "Nutzungsbedingungen",
         "sub": "Regeln zur Nutzung der Website schematize.org.",
         "sections": [
-          { "h": "1. Annahme", "p": "Mit dem Zugriff auf schematize.org stimmst du diesen Nutzungsbedingungen zu. Wenn du nicht zustimmst, nutze die Website bitte nicht." },
-          { "h": "2. Was die Website bietet", "p": "schematize.org ist eine informative und institutionelle Website, die unsere Open-Source-Projekte und Technologieforschung vorstellt. Es ist kein Shop." },
-          { "h": "3. Geistiges Eigentum", "p": "Die Marke schematize und der Inhalt der Website sind geschützt. Unsere Open-Source-Projekte sind zu den in jedem Repository auf GitHub angegebenen Bedingungen lizenziert." },
-          { "h": "4. Zulässige Nutzung", "p": "Du stimmst zu, die Website nicht zu missbrauchen, nicht zu versuchen, sie zu stören, und sie nicht für rechtswidrige Zwecke zu nutzen." },
-          { "h": "5. Links Dritter", "p": "Die Website verlinkt auf Ziele Dritter (zum Beispiel GitHub). Für Inhalte Dritter sind wir nicht verantwortlich." },
-          { "h": "6. Haftungsausschluss und Haftungsbeschränkung", "p": "Die Website wird \"wie besehen\" bereitgestellt, ohne Gewährleistungen. [REVISAR: advogado]" },
-          { "h": "7. Änderungen", "p": "Wir können diese Bedingungen aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." },
-          { "h": "8. Anwendbares Recht und Gerichtsstand", "p": "Diese Bedingungen unterliegen den Gesetzen Brasiliens. [REVISAR: advogado]" }
+          {
+            "h": "1. Annahme",
+            "p": "Mit dem Zugriff auf schematize.org stimmst du diesen Nutzungsbedingungen zu. Wenn du nicht zustimmst, nutze die Website bitte nicht."
+          },
+          {
+            "h": "2. Was die Website bietet",
+            "p": "schematize.org ist eine informative und institutionelle Website, die unsere Open-Source-Projekte und Technologieforschung vorstellt. Es ist kein Shop."
+          },
+          {
+            "h": "3. Geistiges Eigentum",
+            "p": "Die Marke schematize und der Inhalt der Website sind geschützt. Unsere Open-Source-Projekte sind zu den in jedem Repository auf GitHub angegebenen Bedingungen lizenziert."
+          },
+          {
+            "h": "4. Zulässige Nutzung",
+            "p": "Du stimmst zu, die Website nicht zu missbrauchen, nicht zu versuchen, sie zu stören, und sie nicht für rechtswidrige Zwecke zu nutzen."
+          },
+          {
+            "h": "5. Links Dritter",
+            "p": "Die Website verlinkt auf Ziele Dritter (zum Beispiel GitHub). Für Inhalte Dritter sind wir nicht verantwortlich."
+          },
+          {
+            "h": "6. Haftungsausschluss und Haftungsbeschränkung",
+            "p": "Die Website wird \"wie besehen\" bereitgestellt, ohne Gewährleistungen. [REVISAR: advogado]"
+          },
+          {
+            "h": "7. Änderungen",
+            "p": "Wir können diese Bedingungen aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider."
+          },
+          {
+            "h": "8. Anwendbares Recht und Gerichtsstand",
+            "p": "Diese Bedingungen unterliegen den Gesetzen Brasiliens. [REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "Servicebedingungen",
         "sub": "Die Vereinbarung über unsere Werkzeuge und Dienste.",
         "sections": [
-          { "h": "1. Parteien und Definitionen", "p": "Diese Bedingungen regeln das Verhältnis zwischen Schematize und den Nutzern unserer Werkzeuge und Dienste." },
-          { "h": "2. Umfang", "p": "Unsere Open-Source-Werkzeuge (wie die schematize-CLI und die Engineering-Skills) werden unter ihren jeweiligen Open-Source-Lizenzen auf GitHub bereitgestellt." },
-          { "h": "3. Konten", "p": "Wo ein Dienst Authentifizierung erfordert, wird sie über auth.schematize.org bereitgestellt. Du bist dafür verantwortlich, deine Zugangsdaten sicher zu halten." },
-          { "h": "4. Entgelte", "p": "Open-Source-Werkzeuge sind kostenlos. Jeder kostenpflichtige Dienst wird zum Zeitpunkt der Beauftragung beschrieben. [REVISAR: advogado]" },
-          { "h": "5. Pflichten der Parteien", "p": "Du stimmst zu, die Dienste rechtmäßig zu nutzen; wir stimmen zu, sie mit angemessener Sorgfalt bereitzustellen." },
-          { "h": "6. Sperrung und Kündigung", "p": "Wir können den Zugang bei Missbrauch oder Sicherheitsrisiko sperren." },
-          { "h": "7. Gewährleistungen und Haftungsbeschränkung", "p": "Die Dienste werden im gesetzlich zulässigen Umfang \"wie besehen\" bereitgestellt. [REVISAR: advogado]" },
-          { "h": "8. Datenschutz", "p": "Personenbezogene Daten werden gemäß unserer Datenschutzerklärung verarbeitet." },
-          { "h": "9. Anwendbares Recht und Gerichtsstand", "p": "Es gelten die Gesetze Brasiliens. [REVISAR: advogado]" }
+          {
+            "h": "1. Parteien und Definitionen",
+            "p": "Diese Bedingungen regeln das Verhältnis zwischen Schematize und den Nutzern unserer Werkzeuge und Dienste."
+          },
+          {
+            "h": "2. Umfang",
+            "p": "Unsere Open-Source-Werkzeuge (wie die schematize-CLI und die Engineering-Skills) werden unter ihren jeweiligen Open-Source-Lizenzen auf GitHub bereitgestellt."
+          },
+          {
+            "h": "3. Konten",
+            "p": "Wo ein Dienst Authentifizierung erfordert, wird sie über auth.schematize.org bereitgestellt. Du bist dafür verantwortlich, deine Zugangsdaten sicher zu halten."
+          },
+          {
+            "h": "4. Entgelte",
+            "p": "Open-Source-Werkzeuge sind kostenlos. Jeder kostenpflichtige Dienst wird zum Zeitpunkt der Beauftragung beschrieben. [REVISAR: advogado]"
+          },
+          {
+            "h": "5. Pflichten der Parteien",
+            "p": "Du stimmst zu, die Dienste rechtmäßig zu nutzen; wir stimmen zu, sie mit angemessener Sorgfalt bereitzustellen."
+          },
+          {
+            "h": "6. Sperrung und Kündigung",
+            "p": "Wir können den Zugang bei Missbrauch oder Sicherheitsrisiko sperren."
+          },
+          {
+            "h": "7. Gewährleistungen und Haftungsbeschränkung",
+            "p": "Die Dienste werden im gesetzlich zulässigen Umfang \"wie besehen\" bereitgestellt. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Datenschutz",
+            "p": "Personenbezogene Daten werden gemäß unserer Datenschutzerklärung verarbeitet."
+          },
+          {
+            "h": "9. Anwendbares Recht und Gerichtsstand",
+            "p": "Es gelten die Gesetze Brasiliens. [REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "Datenschutzerklärung",
         "sub": "Wie wir personenbezogene Daten behandeln, nach Brasiliens Allgemeinem Datenschutzgesetz (LGPD).",
         "sections": [
-          { "h": "1. Verantwortlicher", "p": "Der für die Datenverarbeitung Verantwortliche ist Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasilien." },
-          { "h": "2. Datenschutzbeauftragter (DPO)", "p": "Für Datenschutzangelegenheiten und zur Ausübung deiner Rechte kontaktiere contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Daten, die wir erheben", "p": "Dies ist eine informative Website ohne Login oder Formulare; wir erheben nur die minimalen technischen Daten, die nötig sind, um Seiten auszuliefern und die Website sicher zu halten. Wenn du uns eine E-Mail schreibst, verarbeiten wir die von dir gesendeten Daten." },
-          { "h": "4. Zweck", "p": "Um die Website auszuliefern und abzusichern und um auf Nachrichten zu antworten, die du uns sendest." },
-          { "h": "5. Rechtsgrundlage", "p": "Berechtigtes Interesse am Betrieb und der Absicherung der Website; Einwilligung oder Erfüllung einer Anfrage, wenn du uns kontaktierst (LGPD Art. 7). [REVISAR: advogado]" },
-          { "h": "6. Weitergabe", "p": "Wir nutzen Infrastruktur- und Hosting-Anbieter, die als Auftragsverarbeiter handeln; wir verkaufen keine personenbezogenen Daten." },
-          { "h": "7. Internationale Übermittlung", "p": "Einige Anbieter können Daten außerhalb Brasiliens verarbeiten, mit Schutzmaßnahmen. [REVISAR: advogado]" },
-          { "h": "8. Aufbewahrung", "p": "Wir bewahren Daten nur so lange auf, wie es für die oben genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben." },
-          { "h": "9. Sicherheit", "p": "Wir wenden angemessene technische und organisatorische Maßnahmen an, um Daten zu schützen." },
-          { "h": "10. Deine Rechte", "p": "Nach LGPD Art. 18 kannst du Bestätigung, Auskunft, Berichtigung, Anonymisierung, Portabilität, Löschung und Informationen über die Weitergabe verlangen und die Einwilligung widerrufen — per E-Mail an contabil@schematize.me." },
-          { "h": "11. Cookies", "p": "Siehe unsere Cookie-Richtlinie für Details zu Cookies und ähnlichen Technologien." },
-          { "h": "12. Änderungen", "p": "Wir können diese Erklärung aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." }
+          {
+            "h": "1. Verantwortlicher",
+            "p": "Der für die Datenverarbeitung Verantwortliche ist Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brasilien."
+          },
+          {
+            "h": "2. Datenschutzbeauftragter (DPO)",
+            "p": "Für Datenschutzangelegenheiten und zur Ausübung deiner Rechte kontaktiere contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. Daten, die wir erheben",
+            "p": "Dies ist eine informative Website ohne Login oder Formulare; wir erheben nur die minimalen technischen Daten, die nötig sind, um Seiten auszuliefern und die Website sicher zu halten. Wenn du uns eine E-Mail schreibst, verarbeiten wir die von dir gesendeten Daten."
+          },
+          {
+            "h": "4. Zweck",
+            "p": "Um die Website auszuliefern und abzusichern und um auf Nachrichten zu antworten, die du uns sendest."
+          },
+          {
+            "h": "5. Rechtsgrundlage",
+            "p": "Berechtigtes Interesse am Betrieb und der Absicherung der Website; Einwilligung oder Erfüllung einer Anfrage, wenn du uns kontaktierst (LGPD Art. 7). [REVISAR: advogado]"
+          },
+          {
+            "h": "6. Weitergabe",
+            "p": "Wir nutzen Infrastruktur- und Hosting-Anbieter, die als Auftragsverarbeiter handeln; wir verkaufen keine personenbezogenen Daten."
+          },
+          {
+            "h": "7. Internationale Übermittlung",
+            "p": "Einige Anbieter können Daten außerhalb Brasiliens verarbeiten, mit Schutzmaßnahmen. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Aufbewahrung",
+            "p": "Wir bewahren Daten nur so lange auf, wie es für die oben genannten Zwecke erforderlich ist oder gesetzlich vorgeschrieben."
+          },
+          {
+            "h": "9. Sicherheit",
+            "p": "Wir wenden angemessene technische und organisatorische Maßnahmen an, um Daten zu schützen."
+          },
+          {
+            "h": "10. Deine Rechte",
+            "p": "Nach LGPD Art. 18 kannst du Bestätigung, Auskunft, Berichtigung, Anonymisierung, Portabilität, Löschung und Informationen über die Weitergabe verlangen und die Einwilligung widerrufen — per E-Mail an contabil@schematize.me."
+          },
+          {
+            "h": "11. Cookies",
+            "p": "Siehe unsere Cookie-Richtlinie für Details zu Cookies und ähnlichen Technologien."
+          },
+          {
+            "h": "12. Änderungen",
+            "p": "Wir können diese Erklärung aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider."
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Cookie-Richtlinie",
         "sub": "Die Cookies und ähnlichen Technologien, die diese Website nutzt.",
         "sections": [
-          { "h": "1. Was Cookies sind", "p": "Cookies sind kleine Dateien, die auf deinem Gerät gespeichert werden und einer Website helfen, zu funktionieren und Einstellungen zu merken." },
-          { "h": "2. Kategorien", "p": "Essenziell: erforderlich, damit die Website funktioniert (zum Beispiel deine Sprache zu merken). Performance-/Analyse-, funktionale und Marketing-Cookies werden nur mit deiner Opt-in-Einwilligung verwendet." },
-          { "h": "3. Was wir verwenden", "p": "Diese Website speichert eine Spracheinstellung lokal, um deine gewählte Sprache beizubehalten. Sie führt ohne Einwilligung keine nicht-essenziellen Analyse- oder Marketing-Cookies aus. [REVISAR: negócio]" },
-          { "h": "4. Einwilligung", "p": "Nicht-essenzielle Cookies erfordern eine Opt-in-Einwilligung; essenzielle Cookies laufen ohne Einwilligung." },
-          { "h": "5. Cookies verwalten", "p": "Du kannst Cookies in deinen Browser-Einstellungen löschen oder blockieren; das Blockieren essenziellen Speichers kann die Website beeinträchtigen." },
-          { "h": "6. Änderungen", "p": "Wir können diese Richtlinie aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider." }
+          {
+            "h": "1. Was Cookies sind",
+            "p": "Cookies sind kleine Dateien, die auf deinem Gerät gespeichert werden und einer Website helfen, zu funktionieren und Einstellungen zu merken."
+          },
+          {
+            "h": "2. Kategorien",
+            "p": "Essenziell: erforderlich, damit die Website funktioniert (zum Beispiel deine Sprache zu merken). Performance-/Analyse-, funktionale und Marketing-Cookies werden nur mit deiner Opt-in-Einwilligung verwendet."
+          },
+          {
+            "h": "3. Was wir verwenden",
+            "p": "Diese Website speichert eine Spracheinstellung lokal, um deine gewählte Sprache beizubehalten. Sie führt ohne Einwilligung keine nicht-essenziellen Analyse- oder Marketing-Cookies aus. [REVISAR: negócio]"
+          },
+          {
+            "h": "4. Einwilligung",
+            "p": "Nicht-essenzielle Cookies erfordern eine Opt-in-Einwilligung; essenzielle Cookies laufen ohne Einwilligung."
+          },
+          {
+            "h": "5. Cookies verwalten",
+            "p": "Du kannst Cookies in deinen Browser-Einstellungen löschen oder blockieren; das Blockieren essenziellen Speichers kann die Website beeinträchtigen."
+          },
+          {
+            "h": "6. Änderungen",
+            "p": "Wir können diese Richtlinie aktualisieren; das Gültigkeitsdatum oben spiegelt die aktuelle Version wider."
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "Institutionell",
         "links": [
-          { "slug": "", "label": "Startseite" },
-          { "slug": "about", "label": "Über uns" },
-          { "slug": "contact", "label": "Kontakt" }
+          {
+            "slug": "",
+            "label": "Startseite"
+          },
+          {
+            "slug": "about",
+            "label": "Über uns"
+          },
+          {
+            "slug": "contact",
+            "label": "Kontakt"
+          }
         ]
       },
       {
         "h": "Arbeit",
         "links": [
-          { "slug": "software", "label": "Die App" },
-          { "slug": "projects", "label": "Projekte" },
-          { "slug": "research", "label": "Forschung" },
-          { "slug": "principles", "label": "Prinzipien" }
+          {
+            "slug": "apps",
+            "label": "Anwendungen"
+          },
+          {
+            "slug": "projects",
+            "label": "Projekte"
+          },
+          {
+            "slug": "research",
+            "label": "Forschung"
+          },
+          {
+            "slug": "principles",
+            "label": "Prinzipien"
+          }
         ]
       },
       {
         "h": "Rechtliches",
         "links": [
-          { "slug": "legal", "label": "Rechtszentrum" },
-          { "slug": "legal/terms-of-use", "label": "Nutzungsbedingungen" },
-          { "slug": "legal/terms-of-service", "label": "Servicebedingungen" },
-          { "slug": "legal/privacy", "label": "Datenschutzerklärung" },
-          { "slug": "legal/cookies", "label": "Cookie-Richtlinie" }
+          {
+            "slug": "legal",
+            "label": "Rechtszentrum"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "Nutzungsbedingungen"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "Servicebedingungen"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "Datenschutzerklärung"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Cookie-Richtlinie"
+          }
         ]
       }
     ]

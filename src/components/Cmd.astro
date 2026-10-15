@@ -1,0 +1,36 @@
+---
+// Bloco de comando com botão de copiar (script empacotado e deduplicado pelo Astro).
+import { Icon } from "astro-icon/components";
+interface Props { cmd: string; copy: string; }
+const { cmd, copy } = Astro.props;
+---
+<div class="cmd">
+  <pre><code>{cmd}</code></pre>
+  <button class="copy" type="button" data-copy={cmd} aria-label={copy} title={copy}>
+    <Icon name="lucide:copy" />
+  </button>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>("[data-copy]").forEach((b) => {
+    b.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(b.getAttribute("data-copy") ?? "");
+        b.classList.add("ok");
+        setTimeout(() => b.classList.remove("ok"), 1200);
+      } catch {}
+    });
+  });
+</script>
+<style>
+  .cmd { position: relative; }
+  .cmd pre { margin: 0; padding-right: 3.2rem; }
+  .copy {
+    position: absolute; top: 0.8rem; inset-inline-end: 0.8rem; display: inline-flex; padding: 0.4rem;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;
+    color: #e8ecf4; cursor: pointer;
+  }
+  .copy:hover { background: rgba(255,255,255,0.16); }
+  .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .copy.ok { color: var(--ok); }
+  .copy [data-icon] { width: 16px; height: 16px; }
+</style>

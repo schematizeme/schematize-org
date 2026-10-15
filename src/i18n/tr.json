@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "Uygulama",
     "projects": "Projeler",
     "research": "Araştırma",
     "principles": "İlkeler",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "legal": "Yasal",
-    "catalog": "Beceri kataloğu",
-    "academy": "Akademi",
-    "login": "Giriş yap / Kayıt ol",
-    "cta": "Kaynağı görüntüle",
-    "menu": "Menü"
+    "menu": "Menü",
+    "apps": "Uygulamalar",
+    "content": "İçerik",
+    "contentRead": "Oku ve öğren",
+    "contentBuild": "İnşa et",
+    "contentItems": {
+      "blog": {
+        "h": "Blog",
+        "p": "Laboratuvardan makaleler ve haberler."
+      },
+      "research": {
+        "h": "Araştırma",
+        "p": "Yapay zekâ ajanlarıyla mühendislik üzerine makaleler ve çalışmalar."
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "Her zaman güncel başvuru dokümantasyonu."
+      },
+      "academy": {
+        "h": "Akademi",
+        "p": "Kurslar ve öğrenme yolları."
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "Claude Code için açık mühendislik skills kataloğu."
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "İnsanlar ve makineler için sistem planları."
+      }
+    },
+    "signin": "Giriş yap",
+    "signup": "Kaydol",
+    "legalAll": "Tüm belgeler",
+    "social": "Sosyal ağlar"
   },
   "footer": {
     "tagline": "schematize'ın arkasındaki açık kaynak ve teknoloji araştırma laboratuvarı.",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "Uygulama — schematize CLI — schematize.org",
-      "desc": "schematize, Claude Code için mühendislik skills'lerini kuran ve sürümleyen, ekosistem uygulamalarını ve yapay zekâ kodlama araçlarını yükleyen ve overdev'i çalıştıran, Rust ile yazılmış bir komut satırı merkezidir (masaüstü pencereleriyle birlikte). Tek komut Linux ve FreeBSD'de tam kiti kurar."
+      "title": "Uygulamalar — schematize.org",
+      "desc": "Her schematize uygulaması ve yükleyicisi: merkez, market, overdev, deployer, optimizer, database, git ve skills. Tek komut Linux ve FreeBSD'de tam kiti kurar."
     },
     "hero": {
-      "kicker": "Uygulama",
-      "h1": "Tüm iş akışı için tek bir CLI.",
-      "sub": "schematize, Rust ile yazılmış bir komut satırı merkezidir — masaüstü pencereleri dahil — canlı bir katalogdan mühendislik skills'lerini kurar ve sürümler, ekosistem uygulamalarını ve yapay zekâ kodlama araçlarını yükler ve overdev'i çalıştırır: kontrol listesi bitene kadar durmayan, sürekli ve gözetimsiz geliştirme."
+      "kicker": "Uygulamalar",
+      "h1": "Her uygulama ve nasıl kurulacağı.",
+      "sub": "schematize, Rust ile yazılmış komut satırı uygulamalarından oluşan bir ailedir; her birinin kendi masaüstü penceresi vardır. Yalnızca ihtiyacınız olanı ya da tam kiti tek komutla kurun."
     },
+    "list": {
+      "title": "Ekosistem",
+      "sub": "Her uygulama tek başına çalışır, bir CLI'ya ve bir masaüstü penceresine sahiptir ve her arayüz 20 dil konuşur."
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "Merkez: skills'leri kurar ve sürümler, ortamınızı teşhis eder (doctor), kendini günceller ve her şeyi tek bakışta gösterir."
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "Tüm kitin kurulum ve güncelleme aracı. Her uygulamayla birlikte gelir ve yapay zekâ araçlarını da kurar: Claude Code, Codex CLI ve Cursor CLI."
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "Sürekli geliştirme. Ajan hiyerarşisini Ajanlar sekmesinde yapılandırın: Opus yönetir, Haiku basit işleri yapar, Sonnet kod yazar; başarısız olursa önce Codex'e, sonra Cursor'a, sonra Opus'a yükseltir. Görsel işler ve resimler Codex'e gider."
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "SSH anahtarları, VPS ve denetlenebilir uzaktan erişim — kimlik bilgisi ajanın erişiminden uzak tutularak."
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "Geliştirme makinesini öngörülebilir kılar: ortamı ölçer ve derlemeler, tarayıcı ve konteynerler için kaynakları sınırlar."
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "Şemayı uygulamanın ilk satırından önce tasarlar: ilişkisel şemaları modeller, mevcut veritabanlarını okur ve SQL ile geri alınabilir migration'lar üretir."
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "Kim, nereden ve hangi kimlikle push eder: tek makinede birden çok git hesabı, yanlış hesapla commit yapmadan."
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "Claude Code skill kataloğu: bu makinede nelerin kurulu olduğu ve düzenleme."
+      }
+    ],
     "install": {
       "title": "Tam kiti kurun",
       "sub": "Tek komut merkezi, market'i, her uygulamayı penceresiyle, skills'leri kurar — ve doctor'u çalıştırır. Derlenmiş ikili dosyalar ~/.cargo/bin içine gider: sudo yok, derleyici yok.",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "Yerleşik ajan",
           "p": "Yeni beceri sürümlerini ve blog gönderilerini izler ve sizi masaüstünde yerel olarak bilgilendirir."
-        }
-      ]
-    },
-    "apps": {
-      "title": "Ekosistem",
-      "sub": "Her uygulama tek başına çalışır, bir CLI'ya ve bir masaüstü penceresine sahiptir ve her arayüz 20 dil konuşur.",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "Merkez: skills'leri kurar ve sürümler, ortamınızı teşhis eder (doctor), kendini günceller ve her şeyi tek bakışta gösterir."
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "Tüm kitin kurulum ve güncelleme aracı. Her uygulamayla birlikte gelir ve yapay zekâ araçlarını da kurar: Claude Code, Codex CLI ve Cursor CLI."
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "Sürekli geliştirme. Ajan hiyerarşisini Ajanlar sekmesinde yapılandırın: Opus yönetir, Haiku basit işleri yapar, Sonnet kod yazar; başarısız olursa önce Codex'e, sonra Cursor'a, sonra Opus'a yükseltir. Görsel işler ve resimler Codex'e gider."
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "SSH anahtarları, VPS ve denetlenebilir uzaktan erişim — kimlik bilgisi ajanın erişiminden uzak tutularak."
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "Geliştirme makinesini öngörülebilir kılar: ortamı ölçer ve derlemeler, tarayıcı ve konteynerler için kaynakları sınırlar."
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "Şemayı uygulamanın ilk satırından önce tasarlar: ilişkisel şemaları modeller, mevcut veritabanlarını okur ve SQL ile geri alınabilir migration'lar üretir."
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "Kim, nereden ve hangi kimlikle push eder: tek makinede birden çok git hesabı, yanlış hesapla commit yapmadan."
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "Claude Code skill kataloğu: bu makinede nelerin kurulu olduğu ve düzenleme."
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "Uygulama becerileri açık katalogdan kurar — göz atın ve projenizin ihtiyacı olanı seçin.",
       "button": "Kataloğu aç",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "Ayrıntılar",
+      "back": "Tüm uygulamalar",
+      "kicker": "Uygulama",
+      "whatItDoes": "Ne yapar",
+      "install": "Kurulum",
+      "inKit": "Bu uygulamanın kendi yükleyicisi yoktur: tam kitle birlikte gelir.",
+      "baseNote": "Merkez ve market her kurulumla birlikte gelir.",
+      "noWindows": "Windows'ta henüz mevcut değil.",
+      "winCovers": "Windows'ta bu yükleyici schematize-market ve overdev'i kapsar.",
+      "macos": "Henüz otomatik yükleyici yok: release sayfasından derlenmiş ikili dosyaları indirin ve elle kurun.",
+      "repo": "Kaynak kod",
+      "repoWindows": "Windows yükleyici deposu",
+      "copy": "Kopyala"
+    },
+    "detail": {
+      "schematize": [
+        "Mühendislik skills'lerini canlı bir katalogdan kurar ve sürümler: schematize skills install --all tüm seti çeker.",
+        "doctor kurulumunuzu teşhis eder.",
+        "Kendini günceller ve her şeyi tek bakışta gösterir."
+      ],
+      "market": [
+        "Tüm kiti kurar ve günceller: schematize-market update uygulamaları, yapay zekâ araçlarını ve kendisini günceller.",
+        "Yapay zekâ araçlarını da kurar: Claude Code, Codex CLI ve Cursor CLI.",
+        "Diğer her uygulamayla birlikte gelir."
+      ],
+      "overdev": [
+        "Kontrol listesi bitene kadar durmayan sürekli geliştirme.",
+        "Ajan hiyerarşisini Ajanlar sekmesinde belirleyin: Opus yönetir, Haiku basit işleri yapar, Sonnet kodlar; başarısızlıkta önce Codex'e, sonra Cursor'a, sonra Opus'a yükseltir.",
+        "Görseller ve resimler Codex'e gider."
+      ],
+      "deployer": [
+        "SSH anahtarları, VPS ve denetlenebilir uzaktan erişim.",
+        "Kimlik bilgisi ajanın erişiminin dışında kalır.",
+        "CLI ve masaüstü penceresi."
+      ],
+      "optimizer": [
+        "Ortamı ölçer.",
+        "Derlemeyi, tarayıcıyı ve konteyneri ayrı ayrı kendi kaynak sınırı altına alır.",
+        "Geliştirme makinesini öngörülebilir tutar."
+      ],
+      "database": [
+        "Uygulama kodunun ilk satırından önce veritabanını tasarlar, ilişkisel şemayı modeller.",
+        "Mevcut bir veritabanını okur.",
+        "SQL ve geri alınabilir migration'lar üretir."
+      ],
+      "git": [
+        "Aynı makinede birden fazla git hesabı.",
+        "Kimin, nereden ve hangi kimlikle push yapacağını denetler.",
+        "Yanlış hesapla commit atmanızı engeller."
+      ],
+      "skills": [
+        "Claude Code skills kataloğu.",
+        "Bu makinede nelerin kurulu olduğunu gösterir.",
+        "Skills'leri düzenlemenizi sağlar."
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "Kullanım Koşulları",
         "sub": "schematize.org web sitesini kullanma kuralları.",
         "sections": [
-          { "h": "1. Kabul", "p": "schematize.org'a erişerek bu Kullanım Koşulları'nı kabul edersiniz. Kabul etmiyorsanız lütfen siteyi kullanmayın." },
-          { "h": "2. Sitenin sunduğu", "p": "schematize.org, açık kaynak projelerimizi ve teknoloji araştırmamızı sunan bilgilendirici ve kurumsal bir sitedir. Bir mağaza değildir." },
-          { "h": "3. Fikri mülkiyet", "p": "schematize markası ve site içeriği korunmaktadır. Açık kaynak projelerimiz, GitHub'daki her depoda belirtilen koşullar altında lisanslanmıştır." },
-          { "h": "4. Kabul edilebilir kullanım", "p": "Siteyi kötüye kullanmamayı, işleyişini bozmaya çalışmamayı ya da hukuka aykırı amaçlarla kullanmamayı kabul edersiniz." },
-          { "h": "5. Üçüncü taraf bağlantıları", "p": "Site, üçüncü taraf hedeflere (örneğin GitHub) bağlantı verir. Üçüncü taraf içeriğinden sorumlu değiliz." },
-          { "h": "6. Sorumluluk reddi ve sınırlandırılması", "p": "Site, garanti olmaksızın \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
-          { "h": "7. Değişiklikler", "p": "Bu koşulları güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." },
-          { "h": "8. Uygulanacak hukuk ve yetkili mahkeme", "p": "Bu koşullar Brezilya yasalarına tabidir. [REVISAR: advogado]" }
+          {
+            "h": "1. Kabul",
+            "p": "schematize.org'a erişerek bu Kullanım Koşulları'nı kabul edersiniz. Kabul etmiyorsanız lütfen siteyi kullanmayın."
+          },
+          {
+            "h": "2. Sitenin sunduğu",
+            "p": "schematize.org, açık kaynak projelerimizi ve teknoloji araştırmamızı sunan bilgilendirici ve kurumsal bir sitedir. Bir mağaza değildir."
+          },
+          {
+            "h": "3. Fikri mülkiyet",
+            "p": "schematize markası ve site içeriği korunmaktadır. Açık kaynak projelerimiz, GitHub'daki her depoda belirtilen koşullar altında lisanslanmıştır."
+          },
+          {
+            "h": "4. Kabul edilebilir kullanım",
+            "p": "Siteyi kötüye kullanmamayı, işleyişini bozmaya çalışmamayı ya da hukuka aykırı amaçlarla kullanmamayı kabul edersiniz."
+          },
+          {
+            "h": "5. Üçüncü taraf bağlantıları",
+            "p": "Site, üçüncü taraf hedeflere (örneğin GitHub) bağlantı verir. Üçüncü taraf içeriğinden sorumlu değiliz."
+          },
+          {
+            "h": "6. Sorumluluk reddi ve sınırlandırılması",
+            "p": "Site, garanti olmaksızın \"olduğu gibi\" sunulur. [REVISAR: advogado]"
+          },
+          {
+            "h": "7. Değişiklikler",
+            "p": "Bu koşulları güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır."
+          },
+          {
+            "h": "8. Uygulanacak hukuk ve yetkili mahkeme",
+            "p": "Bu koşullar Brezilya yasalarına tabidir. [REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "Hizmet Koşulları",
         "sub": "Araçlarımızı ve hizmetlerimizi kapsayan sözleşme.",
         "sections": [
-          { "h": "1. Taraflar ve tanımlar", "p": "Bu koşullar, Schematize ile araçlarımızın ve hizmetlerimizin kullanıcıları arasındaki ilişkiyi yönetir." },
-          { "h": "2. Kapsam", "p": "Açık kaynak araçlarımız (schematize CLI ve mühendislik becerileri gibi), GitHub'daki ilgili açık kaynak lisansları altında sunulur." },
-          { "h": "3. Hesaplar", "p": "Bir hizmet kimlik doğrulama gerektirdiğinde, bu auth.schematize.org aracılığıyla sağlanır. Kimlik bilgilerinizi güvende tutmaktan siz sorumlusunuz." },
-          { "h": "4. Ücretler", "p": "Açık kaynak araçlar ücretsizdir. Herhangi bir ücretli hizmet, sözleşme yapılırken açıklanır. [REVISAR: advogado]" },
-          { "h": "5. Tarafların yükümlülükleri", "p": "Hizmetleri hukuka uygun kullanmayı kabul edersiniz; biz de bunları makul özenle sunmayı kabul ederiz." },
-          { "h": "6. Askıya alma ve fesih", "p": "Kötüye kullanım veya güvenlik riski durumunda erişimi askıya alabiliriz." },
-          { "h": "7. Garantiler ve sorumluluk sınırlandırması", "p": "Hizmetler, yasaların izin verdiği ölçüde \"olduğu gibi\" sunulur. [REVISAR: advogado]" },
-          { "h": "8. Gizlilik", "p": "Kişisel veriler Gizlilik Politikamız kapsamında işlenir." },
-          { "h": "9. Uygulanacak hukuk ve yetkili mahkeme", "p": "Brezilya yasalarına tabidir. [REVISAR: advogado]" }
+          {
+            "h": "1. Taraflar ve tanımlar",
+            "p": "Bu koşullar, Schematize ile araçlarımızın ve hizmetlerimizin kullanıcıları arasındaki ilişkiyi yönetir."
+          },
+          {
+            "h": "2. Kapsam",
+            "p": "Açık kaynak araçlarımız (schematize CLI ve mühendislik becerileri gibi), GitHub'daki ilgili açık kaynak lisansları altında sunulur."
+          },
+          {
+            "h": "3. Hesaplar",
+            "p": "Bir hizmet kimlik doğrulama gerektirdiğinde, bu auth.schematize.org aracılığıyla sağlanır. Kimlik bilgilerinizi güvende tutmaktan siz sorumlusunuz."
+          },
+          {
+            "h": "4. Ücretler",
+            "p": "Açık kaynak araçlar ücretsizdir. Herhangi bir ücretli hizmet, sözleşme yapılırken açıklanır. [REVISAR: advogado]"
+          },
+          {
+            "h": "5. Tarafların yükümlülükleri",
+            "p": "Hizmetleri hukuka uygun kullanmayı kabul edersiniz; biz de bunları makul özenle sunmayı kabul ederiz."
+          },
+          {
+            "h": "6. Askıya alma ve fesih",
+            "p": "Kötüye kullanım veya güvenlik riski durumunda erişimi askıya alabiliriz."
+          },
+          {
+            "h": "7. Garantiler ve sorumluluk sınırlandırması",
+            "p": "Hizmetler, yasaların izin verdiği ölçüde \"olduğu gibi\" sunulur. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Gizlilik",
+            "p": "Kişisel veriler Gizlilik Politikamız kapsamında işlenir."
+          },
+          {
+            "h": "9. Uygulanacak hukuk ve yetkili mahkeme",
+            "p": "Brezilya yasalarına tabidir. [REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "Gizlilik Politikası",
         "sub": "Kişisel verileri Brezilya'nın Genel Veri Koruma Yasası (LGPD) kapsamında nasıl işlediğimiz.",
         "sections": [
-          { "h": "1. Veri sorumlusu", "p": "Veri sorumlusu Schematize Ltda - EPP'dir (CNPJ 53.942.996/0001-10), São Paulo, SP, Brezilya." },
-          { "h": "2. Veri Koruma Görevlisi (DPO)", "p": "Gizlilik konuları ve haklarınızı kullanmak için contabil@schematize.me ile iletişime geçin. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Topladığımız veriler", "p": "Bu, girişi veya formu olmayan bilgilendirici bir sitedir; yalnızca sayfaları sunmak ve siteyi güvende tutmak için gereken asgari teknik verileri toplarız. Bize e-posta gönderirseniz, gönderdiğiniz verileri işleriz." },
-          { "h": "4. Amaç", "p": "Web sitesini sunmak ve güvence altına almak ve gönderdiğiniz mesajlara yanıt vermek." },
-          { "h": "5. Hukuki dayanak", "p": "Siteyi işletmek ve güvence altına almak için meşru menfaat; bizimle iletişime geçtiğinizde onay veya talebin ifası (LGPD md. 7). [REVISAR: advogado]" },
-          { "h": "6. Paylaşım", "p": "İşleyen olarak hareket eden altyapı ve barındırma sağlayıcıları kullanırız; kişisel verileri satmayız." },
-          { "h": "7. Uluslararası aktarım", "p": "Bazı sağlayıcılar verileri, güvencelerle birlikte Brezilya dışında işleyebilir. [REVISAR: advogado]" },
-          { "h": "8. Saklama", "p": "Verileri yalnızca yukarıdaki amaçlar için gerekli olduğu sürece ya da yasanın gerektirdiği ölçüde saklarız." },
-          { "h": "9. Güvenlik", "p": "Verileri korumak için makul teknik ve organizasyonel önlemler uygularız." },
-          { "h": "10. Haklarınız", "p": "LGPD md. 18 kapsamında; onay, erişim, düzeltme, anonimleştirme, taşınabilirlik, silme ve paylaşım hakkında bilgi talep edebilir ve onayı geri çekebilirsiniz — contabil@schematize.me adresine e-posta göndererek." },
-          { "h": "11. Çerezler", "p": "Çerezler ve benzer teknolojilerle ilgili ayrıntılar için Çerez Politikamıza bakın." },
-          { "h": "12. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." }
+          {
+            "h": "1. Veri sorumlusu",
+            "p": "Veri sorumlusu Schematize Ltda - EPP'dir (CNPJ 53.942.996/0001-10), São Paulo, SP, Brezilya."
+          },
+          {
+            "h": "2. Veri Koruma Görevlisi (DPO)",
+            "p": "Gizlilik konuları ve haklarınızı kullanmak için contabil@schematize.me ile iletişime geçin. [REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. Topladığımız veriler",
+            "p": "Bu, girişi veya formu olmayan bilgilendirici bir sitedir; yalnızca sayfaları sunmak ve siteyi güvende tutmak için gereken asgari teknik verileri toplarız. Bize e-posta gönderirseniz, gönderdiğiniz verileri işleriz."
+          },
+          {
+            "h": "4. Amaç",
+            "p": "Web sitesini sunmak ve güvence altına almak ve gönderdiğiniz mesajlara yanıt vermek."
+          },
+          {
+            "h": "5. Hukuki dayanak",
+            "p": "Siteyi işletmek ve güvence altına almak için meşru menfaat; bizimle iletişime geçtiğinizde onay veya talebin ifası (LGPD md. 7). [REVISAR: advogado]"
+          },
+          {
+            "h": "6. Paylaşım",
+            "p": "İşleyen olarak hareket eden altyapı ve barındırma sağlayıcıları kullanırız; kişisel verileri satmayız."
+          },
+          {
+            "h": "7. Uluslararası aktarım",
+            "p": "Bazı sağlayıcılar verileri, güvencelerle birlikte Brezilya dışında işleyebilir. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Saklama",
+            "p": "Verileri yalnızca yukarıdaki amaçlar için gerekli olduğu sürece ya da yasanın gerektirdiği ölçüde saklarız."
+          },
+          {
+            "h": "9. Güvenlik",
+            "p": "Verileri korumak için makul teknik ve organizasyonel önlemler uygularız."
+          },
+          {
+            "h": "10. Haklarınız",
+            "p": "LGPD md. 18 kapsamında; onay, erişim, düzeltme, anonimleştirme, taşınabilirlik, silme ve paylaşım hakkında bilgi talep edebilir ve onayı geri çekebilirsiniz — contabil@schematize.me adresine e-posta göndererek."
+          },
+          {
+            "h": "11. Çerezler",
+            "p": "Çerezler ve benzer teknolojilerle ilgili ayrıntılar için Çerez Politikamıza bakın."
+          },
+          {
+            "h": "12. Değişiklikler",
+            "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır."
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Çerez Politikası",
         "sub": "Bu sitenin kullandığı çerezler ve benzer teknolojiler.",
         "sections": [
-          { "h": "1. Çerezler nedir", "p": "Çerezler, bir sitenin çalışmasına ve tercihleri hatırlamasına yardımcı olan, cihazınızda saklanan küçük dosyalardır." },
-          { "h": "2. Kategoriler", "p": "Zorunlu: sitenin çalışması için gereklidir (örneğin dilinizi hatırlamak). Performans/analitik, işlevsel ve pazarlama çerezleri yalnızca opt-in onayınızla kullanılır." },
-          { "h": "3. Neyi kullanıyoruz", "p": "Bu site, seçtiğiniz dili korumak için bir dil tercihini yerel olarak saklar. Onay olmadan zorunlu olmayan analitik veya pazarlama çerezleri çalıştırmaz. [REVISAR: negócio]" },
-          { "h": "4. Onay", "p": "Zorunlu olmayan çerezler opt-in onayı gerektirir; zorunlu çerezler onay olmadan çalışır." },
-          { "h": "5. Çerezleri yönetme", "p": "Çerezleri tarayıcı ayarlarınızdan temizleyebilir veya engelleyebilirsiniz; zorunlu depolamayı engellemek siteyi etkileyebilir." },
-          { "h": "6. Değişiklikler", "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır." }
+          {
+            "h": "1. Çerezler nedir",
+            "p": "Çerezler, bir sitenin çalışmasına ve tercihleri hatırlamasına yardımcı olan, cihazınızda saklanan küçük dosyalardır."
+          },
+          {
+            "h": "2. Kategoriler",
+            "p": "Zorunlu: sitenin çalışması için gereklidir (örneğin dilinizi hatırlamak). Performans/analitik, işlevsel ve pazarlama çerezleri yalnızca opt-in onayınızla kullanılır."
+          },
+          {
+            "h": "3. Neyi kullanıyoruz",
+            "p": "Bu site, seçtiğiniz dili korumak için bir dil tercihini yerel olarak saklar. Onay olmadan zorunlu olmayan analitik veya pazarlama çerezleri çalıştırmaz. [REVISAR: negócio]"
+          },
+          {
+            "h": "4. Onay",
+            "p": "Zorunlu olmayan çerezler opt-in onayı gerektirir; zorunlu çerezler onay olmadan çalışır."
+          },
+          {
+            "h": "5. Çerezleri yönetme",
+            "p": "Çerezleri tarayıcı ayarlarınızdan temizleyebilir veya engelleyebilirsiniz; zorunlu depolamayı engellemek siteyi etkileyebilir."
+          },
+          {
+            "h": "6. Değişiklikler",
+            "p": "Bu politikayı güncelleyebiliriz; yukarıdaki yürürlük tarihi geçerli sürümü yansıtır."
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "Kurumsal",
         "links": [
-          { "slug": "", "label": "Ana sayfa" },
-          { "slug": "about", "label": "Hakkımızda" },
-          { "slug": "contact", "label": "İletişim" }
+          {
+            "slug": "",
+            "label": "Ana sayfa"
+          },
+          {
+            "slug": "about",
+            "label": "Hakkımızda"
+          },
+          {
+            "slug": "contact",
+            "label": "İletişim"
+          }
         ]
       },
       {
         "h": "Çalışma",
         "links": [
-          { "slug": "software", "label": "Uygulama" },
-          { "slug": "projects", "label": "Projeler" },
-          { "slug": "research", "label": "Araştırma" },
-          { "slug": "principles", "label": "İlkeler" }
+          {
+            "slug": "apps",
+            "label": "Uygulamalar"
+          },
+          {
+            "slug": "projects",
+            "label": "Projeler"
+          },
+          {
+            "slug": "research",
+            "label": "Araştırma"
+          },
+          {
+            "slug": "principles",
+            "label": "İlkeler"
+          }
         ]
       },
       {
         "h": "Yasal",
         "links": [
-          { "slug": "legal", "label": "Yasal merkez" },
-          { "slug": "legal/terms-of-use", "label": "Kullanım Koşulları" },
-          { "slug": "legal/terms-of-service", "label": "Hizmet Koşulları" },
-          { "slug": "legal/privacy", "label": "Gizlilik Politikası" },
-          { "slug": "legal/cookies", "label": "Çerez Politikası" }
+          {
+            "slug": "legal",
+            "label": "Yasal merkez"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "Kullanım Koşulları"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "Hizmet Koşulları"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "Gizlilik Politikası"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Çerez Politikası"
+          }
         ]
       }
     ]

@@ -1,0 +1,166 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Cmd from "../../../components/Cmd.astro";
+import { Icon } from "astro-icon/components";
+import { LOCALES, t, tx, path, type Locale } from "../../../lib/i18n";
+import {
+  APPS, REPO, RELEASES, WIN_RELEASES, INSTALL_WIN, INSTALL_WIN_FULL, GIT_WIN, cmds, linux, freebsd,
+} from "../../../lib/apps";
+
+export function getStaticPaths() {
+  return LOCALES.map((l) => ({ params: { lang: l } }));
+}
+const lang = Astro.params.lang as Locale;
+const features = tx<{ icon?: string; h: string; p: string }[]>(lang, "apps.features.items");
+const steps = tx<{ icon?: string; h: string; p: string }[]>(lang, "apps.how.items");
+const items = tx<{ h: string; p: string }[]>(lang, "apps.items");
+const ctaUrl = t(lang, "apps.cta.url");
+const copy = t(lang, "apps.ui.copy");
+const KIT_LINUX = linux("--completo");
+const KIT_BSD = freebsd("--completo");
+---
+<Base
+  locale={lang}
+  slug="apps"
+  title={t(lang, "apps.meta.title")}
+  description={t(lang, "apps.meta.desc")}
+>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">{t(lang, "apps.hero.kicker")}</p>
+      <h1>{t(lang, "apps.hero.h1")}</h1>
+      <p class="lede">{t(lang, "apps.hero.sub")}</p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap">
+      <h2>{t(lang, "apps.list.title")}</h2>
+      <p class="lede">{t(lang, "apps.list.sub")}</p>
+      <div class="grid cols-2 apps-grid">
+        {APPS.map((a, i) => {
+          const c = cmds(a);
+          return (
+            <article class="card app">
+              <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${a.icon}`} /></span>
+              <h3><a href={path(lang, `apps/${a.slug}`)}>{items[i].h}</a></h3>
+              <p class="muted">{items[i].p}</p>
+              <p class="step-label">{t(lang, "apps.install.linux")}</p>
+              {c.inKit && <p class="muted note">{t(lang, "apps.ui.inKit")}</p>}
+              <Cmd cmd={c.linux} copy={copy} />
+              <p class="more"><a class="btn btn-plain" href={path(lang, `apps/${a.slug}`)}>{t(lang, "apps.ui.details")}</a></p>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "apps.install.title")}</h2>
+      <p class="lede">{t(lang, "apps.install.sub")}</p>
+      <p class="step-label">{t(lang, "apps.install.linux")}</p>
+      <Cmd cmd={KIT_LINUX} copy={copy} />
+      <p class="step-label">{t(lang, "apps.install.freebsd")}</p>
+      <Cmd cmd={KIT_BSD} copy={copy} />
+      <p class="muted unsigned">{t(lang, "apps.install.note")}</p>
+      <p class="step-label">{t(lang, "apps.install.windows")}</p>
+      <Cmd cmd={INSTALL_WIN} copy={copy} />
+      <p class="step-label">{t(lang, "apps.install.windows_full")}</p>
+      <Cmd cmd={INSTALL_WIN_FULL} copy={copy} />
+      <p class="muted unsigned">{t(lang, "apps.install.windows_note")}</p>
+      <p class="muted unsigned">{t(lang, "apps.install.windows_scope")}</p>
+      <p class="step-label">{t(lang, "apps.install.windows_git")}</p>
+      <Cmd cmd={GIT_WIN} copy={copy} />
+      <p class="unsigned"><a class="btn" href={WIN_RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "apps.install.windows_dl")}</a></p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap">
+      <h2>{t(lang, "apps.features.title")}</h2>
+      <div class="grid cols-2" style="margin-top:1.8rem">
+        {features.map((f) => (
+          <div class="card">
+            <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${f.icon ?? "circle"}`} /></span>
+            <h3>{f.h}</h3><p class="muted">{f.p}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>{t(lang, "apps.platforms.title")}</h2>
+      <p class="lede">{t(lang, "apps.platforms.sub")}</p>
+      <div class="grid cols-2" style="margin-top:1.8rem">
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:linux" /></span>
+          <h3>Linux</h3><p class="muted">{t(lang, "apps.platforms.linux")}</p>
+        </div>
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:freebsd" /></span>
+          <h3>FreeBSD</h3><p class="muted">{t(lang, "apps.platforms.freebsd")}</p>
+        </div>
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:windows" /></span>
+          <h3>Windows</h3><p class="muted">{t(lang, "apps.platforms.windows")}</p>
+          <a class="btn" href={WIN_RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "apps.install.windows_dl")}</a>
+        </div>
+        <div class="card dl">
+          <span class="card-ico" aria-hidden="true"><Icon name="simple-icons:apple" /></span>
+          <h3>macOS</h3><p class="muted">{t(lang, "apps.platforms.other")}</p>
+          <a class="btn" href={RELEASES} target="_blank" rel="noopener noreferrer">{t(lang, "apps.platforms.releases")}</a>
+        </div>
+      </div>
+      <p class="muted unsigned">{t(lang, "apps.platforms.unsigned")}</p>
+    </div>
+  </section>
+
+  <section class="surface hair">
+    <div class="wrap">
+      <h2>{t(lang, "apps.how.title")}</h2>
+      <p class="lede">{t(lang, "apps.how.sub")}</p>
+      <div class="grid cols-3" style="margin-top:1.8rem">
+        {steps.map((s) => (
+          <div class="card">
+            <span class="card-ico" aria-hidden="true"><Icon name={`lucide:${s.icon ?? "circle"}`} /></span>
+            <h3>{s.h}</h3><p class="muted">{s.p}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap band">
+      <h2>{t(lang, "apps.cta.title")}</h2>
+      <p class="lede">{t(lang, "apps.cta.p")}</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href={ctaUrl}>{t(lang, "apps.cta.button")}</a>
+        <a class="btn btn-ghost" href={REPO} target="_blank" rel="noopener noreferrer">{t(lang, "apps.ui.repo")}</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(3rem, 8vw, 6rem); }
+  .apps-grid { margin-top: 1.8rem; }
+  .app { display: flex; flex-direction: column; min-width: 0; }
+  .app h3 a { color: inherit; }
+  .app h3 a:hover { text-decoration: underline; }
+  .app .more { margin: 1rem 0 0; }
+  .app .note { font-size: var(--step-1); margin: 0 0 0.5rem; }
+  .step-label { font-family: var(--font-mono); font-size: var(--step-1); color: var(--muted); margin: 1.4rem 0 0.5rem; }
+  .app .step-label { margin-top: auto; padding-top: 1.2rem; }
+  .unsigned { margin-top: 1.4rem; font-size: var(--step-1); max-width: 66ch; }
+  .dl { display: flex; flex-direction: column; }
+  .dl .btn { margin-top: auto; align-self: flex-start; }
+  .dl h3 { margin-bottom: 0.4rem; }
+  .band { text-align: center; }
+  .band .lede { margin-inline: auto; }
+  .band .cta-row { justify-content: center; }
+</style>

@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "应用程序",
     "projects": "项目",
     "research": "研究",
     "principles": "原则",
     "about": "关于",
     "contact": "联系",
     "legal": "法律",
-    "catalog": "技能目录",
-    "academy": "学院",
-    "login": "登录 / 注册",
-    "cta": "查看源代码",
-    "menu": "菜单"
+    "menu": "菜单",
+    "apps": "应用程序",
+    "content": "内容",
+    "contentRead": "阅读与学习",
+    "contentBuild": "构建",
+    "contentItems": {
+      "blog": {
+        "h": "博客",
+        "p": "来自实验室的文章与动态。"
+      },
+      "research": {
+        "h": "研究",
+        "p": "关于 AI 智能体工程的论文与研究。"
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "参考文档，始终保持最新。"
+      },
+      "academy": {
+        "h": "Academy",
+        "p": "课程与学习路径。"
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "面向 Claude Code 的开放工程 skills 目录。"
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "面向人和机器的系统蓝图。"
+      }
+    },
+    "signin": "登录",
+    "signup": "注册",
+    "legalAll": "所有文档",
+    "social": "社交网络"
   },
   "footer": {
     "tagline": "schematize 背后的开源与技术研究实验室。",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "应用程序 — schematize CLI — schematize.org",
-      "desc": "schematize 是一个用 Rust 编写的命令行中枢（附带桌面窗口），为 Claude Code 安装并管理工程类 skills 的版本，安装生态系统应用和 AI 编程工具，并运行 overdev。一条命令即可在 Linux 和 FreeBSD 上安装完整套件。"
+      "title": "应用程序 — schematize.org",
+      "desc": "每个 schematize 应用程序及其安装程序：中枢、market、overdev、deployer、optimizer、database、git 和 skills。一条命令即可在 Linux 和 FreeBSD 上安装完整套件。"
     },
     "hero": {
       "kicker": "应用程序",
-      "h1": "一款 CLI,贯穿整个工作流。",
-      "sub": "schematize 是一个用 Rust 编写的命令行中枢——包含桌面窗口——从实时目录中安装并管理工程类 skills 的版本，安装生态系统应用和 AI 编程工具，并运行 overdev：持续、无人值守的开发，直到清单完成才会停止。"
+      "h1": "每个应用程序，以及如何安装。",
+      "sub": "schematize 是一组用 Rust 编写的命令行应用，每个都有自己的桌面窗口。只安装你需要的，或用一条命令安装完整套件。"
     },
+    "list": {
+      "title": "生态系统",
+      "sub": "每个应用都能独立运行，既有 CLI 也有桌面窗口，所有界面支持 20 种语言。"
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "中枢：安装并管理 skills 的版本，诊断你的环境（doctor），自我更新，并让一切一目了然。"
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "整个套件的安装和更新工具。随每个应用一同提供，还会安装 AI 工具：Claude Code、Codex CLI 和 Cursor CLI。"
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "持续开发。在“代理”选项卡中配置代理层级：Opus 负责编排，Haiku 处理简单任务，Sonnet 编写代码；失败时依次升级到 Codex、Cursor，最后是 Opus。视觉工作和图像交给 Codex。"
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "SSH 密钥、VPS 和可审计的远程访问——凭据始终在代理触及范围之外。"
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "让开发机器可预测：测量环境，并限制构建、浏览器和容器的资源上限。"
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "在应用的第一行代码之前先设计 schema：建模关系型 schema，读取现有数据库，并生成 SQL 和可回滚的迁移。"
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "谁来 push、从哪里 push、使用哪个身份：在一台机器上使用多个 git 账号，不会用错账号提交。"
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "Claude Code 的 skill 目录：本机已安装的内容，以及编辑功能。"
+      }
+    ],
     "install": {
       "title": "安装完整套件",
       "sub": "一条命令即可安装中枢、market、每个应用及其窗口、skills——并运行 doctor。预编译二进制文件安装到 ~/.cargo/bin：无需 sudo，无需编译器。",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "常驻智能体",
           "p": "监视新的技能版本与博客文章,并在桌面上以原生方式通知你。"
-        }
-      ]
-    },
-    "apps": {
-      "title": "生态系统",
-      "sub": "每个应用都能独立运行，既有 CLI 也有桌面窗口，所有界面支持 20 种语言。",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "中枢：安装并管理 skills 的版本，诊断你的环境（doctor），自我更新，并让一切一目了然。"
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "整个套件的安装和更新工具。随每个应用一同提供，还会安装 AI 工具：Claude Code、Codex CLI 和 Cursor CLI。"
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "持续开发。在“代理”选项卡中配置代理层级：Opus 负责编排，Haiku 处理简单任务，Sonnet 编写代码；失败时依次升级到 Codex、Cursor，最后是 Opus。视觉工作和图像交给 Codex。"
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "SSH 密钥、VPS 和可审计的远程访问——凭据始终在代理触及范围之外。"
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "让开发机器可预测：测量环境，并限制构建、浏览器和容器的资源上限。"
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "在应用的第一行代码之前先设计 schema：建模关系型 schema，读取现有数据库，并生成 SQL 和可回滚的迁移。"
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "谁来 push、从哪里 push、使用哪个身份：在一台机器上使用多个 git 账号，不会用错账号提交。"
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "Claude Code 的 skill 目录：本机已安装的内容，以及编辑功能。"
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "该应用从开放目录安装技能——浏览并挑选你的项目所需。",
       "button": "打开目录",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "查看详情",
+      "back": "所有应用程序",
+      "kicker": "应用程序",
+      "whatItDoes": "功能",
+      "install": "安装",
+      "inKit": "此应用没有单独的安装程序：它随完整套件一同提供。",
+      "baseNote": "中枢和 market 随每次安装一同提供。",
+      "noWindows": "暂不支持 Windows。",
+      "winCovers": "在 Windows 上，此安装程序涵盖 schematize-market 和 overdev。",
+      "macos": "暂无自动安装程序：请从发布页下载预编译二进制文件并手动安装。",
+      "repo": "源代码",
+      "repoWindows": "Windows 安装程序仓库",
+      "copy": "复制"
+    },
+    "detail": {
+      "schematize": [
+        "从实时目录安装并管理工程类 skills 的版本：schematize skills install --all 会拉取整套。",
+        "doctor 会诊断你的环境。",
+        "可自我更新，并让一切一目了然。"
+      ],
+      "market": [
+        "安装并更新整个套件：schematize-market update 会更新各个应用、AI 工具以及它自身。",
+        "同时安装 AI 工具：Claude Code、Codex CLI 和 Cursor CLI。",
+        "随其他每个应用一同提供。"
+      ],
+      "overdev": [
+        "持续开发，清单未完成就不会停止。",
+        "在“代理”选项卡中设置代理层级：Opus 负责编排，Haiku 处理简单任务，Sonnet 编写代码；失败时依次升级到 Codex、Cursor，最后是 Opus。",
+        "视觉工作和图像交给 Codex。"
+      ],
+      "deployer": [
+        "SSH 密钥、VPS 和可审计的远程访问。",
+        "凭据始终在代理触及范围之外。",
+        "CLI 和桌面窗口。"
+      ],
+      "optimizer": [
+        "测量运行环境。",
+        "让构建、浏览器和容器各自处于独立的资源上限之下。",
+        "让开发机器保持可预测。"
+      ],
+      "database": [
+        "在编写第一行应用代码之前先设计数据库，对关系型 schema 建模。",
+        "读取现有数据库。",
+        "生成 SQL 和可回滚的迁移。"
+      ],
+      "git": [
+        "在同一台机器上使用多个 git 账号。",
+        "控制谁来 push、从哪里 push、使用哪个身份。",
+        "避免你用错账号提交。"
+      ],
+      "skills": [
+        "Claude Code 的 skills 目录。",
+        "显示本机已安装的内容。",
+        "支持编辑这些 skills。"
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "使用条款",
         "sub": "使用 schematize.org 网站的规则。",
         "sections": [
-          { "h": "1. 接受", "p": "访问 schematize.org 即表示你同意这些使用条款。若你不同意,请勿使用本站。" },
-          { "h": "2. 本站提供什么", "p": "schematize.org 是一个信息性与机构性网站,展示我们的开源项目与技术研究。它不是商店。" },
-          { "h": "3. 知识产权", "p": "schematize 品牌与本站内容受保护。我们的开源项目依据 GitHub 上各代码库所述条款授权。" },
-          { "h": "4. 可接受的使用", "p": "你同意不滥用本站、不试图扰乱它,也不将其用于非法目的。" },
-          { "h": "5. 第三方链接", "p": "本站链接至第三方目的地(例如 GitHub)。我们不对第三方内容负责。" },
-          { "h": "6. 免责声明与责任限制", "p": "本站按“原样”提供,不作任何保证。[REVISAR: advogado]" },
-          { "h": "7. 变更", "p": "我们可能更新这些条款;上方生效日期反映当前版本。" },
-          { "h": "8. 管辖法律与管辖地", "p": "这些条款受巴西法律管辖。[REVISAR: advogado]" }
+          {
+            "h": "1. 接受",
+            "p": "访问 schematize.org 即表示你同意这些使用条款。若你不同意,请勿使用本站。"
+          },
+          {
+            "h": "2. 本站提供什么",
+            "p": "schematize.org 是一个信息性与机构性网站,展示我们的开源项目与技术研究。它不是商店。"
+          },
+          {
+            "h": "3. 知识产权",
+            "p": "schematize 品牌与本站内容受保护。我们的开源项目依据 GitHub 上各代码库所述条款授权。"
+          },
+          {
+            "h": "4. 可接受的使用",
+            "p": "你同意不滥用本站、不试图扰乱它,也不将其用于非法目的。"
+          },
+          {
+            "h": "5. 第三方链接",
+            "p": "本站链接至第三方目的地(例如 GitHub)。我们不对第三方内容负责。"
+          },
+          {
+            "h": "6. 免责声明与责任限制",
+            "p": "本站按“原样”提供,不作任何保证。[REVISAR: advogado]"
+          },
+          {
+            "h": "7. 变更",
+            "p": "我们可能更新这些条款;上方生效日期反映当前版本。"
+          },
+          {
+            "h": "8. 管辖法律与管辖地",
+            "p": "这些条款受巴西法律管辖。[REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "服务条款",
         "sub": "涵盖我们工具与服务的协议。",
         "sections": [
-          { "h": "1. 各方与定义", "p": "这些条款管辖 Schematize 与我们工具及服务用户之间的关系。" },
-          { "h": "2. 范围", "p": "我们的开源工具(例如 schematize CLI 与工程技能)依据 GitHub 上各自的开源许可提供。" },
-          { "h": "3. 账户", "p": "当某项服务需要身份验证时,通过 auth.schematize.org 提供。你有责任妥善保管你的凭据。" },
-          { "h": "4. 费用", "p": "开源工具免费。任何付费服务在签约时说明。[REVISAR: advogado]" },
-          { "h": "5. 各方义务", "p": "你同意合法使用服务;我们同意以合理的注意提供服务。" },
-          { "h": "6. 暂停与终止", "p": "在滥用或安全风险的情况下,我们可能暂停访问。" },
-          { "h": "7. 保证与责任限制", "p": "在法律允许的范围内,服务按“原样”提供。[REVISAR: advogado]" },
-          { "h": "8. 隐私", "p": "个人数据依据我们的隐私政策处理。" },
-          { "h": "9. 管辖法律与管辖地", "p": "受巴西法律管辖。[REVISAR: advogado]" }
+          {
+            "h": "1. 各方与定义",
+            "p": "这些条款管辖 Schematize 与我们工具及服务用户之间的关系。"
+          },
+          {
+            "h": "2. 范围",
+            "p": "我们的开源工具(例如 schematize CLI 与工程技能)依据 GitHub 上各自的开源许可提供。"
+          },
+          {
+            "h": "3. 账户",
+            "p": "当某项服务需要身份验证时,通过 auth.schematize.org 提供。你有责任妥善保管你的凭据。"
+          },
+          {
+            "h": "4. 费用",
+            "p": "开源工具免费。任何付费服务在签约时说明。[REVISAR: advogado]"
+          },
+          {
+            "h": "5. 各方义务",
+            "p": "你同意合法使用服务;我们同意以合理的注意提供服务。"
+          },
+          {
+            "h": "6. 暂停与终止",
+            "p": "在滥用或安全风险的情况下,我们可能暂停访问。"
+          },
+          {
+            "h": "7. 保证与责任限制",
+            "p": "在法律允许的范围内,服务按“原样”提供。[REVISAR: advogado]"
+          },
+          {
+            "h": "8. 隐私",
+            "p": "个人数据依据我们的隐私政策处理。"
+          },
+          {
+            "h": "9. 管辖法律与管辖地",
+            "p": "受巴西法律管辖。[REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "隐私政策",
         "sub": "我们如何依据巴西《通用数据保护法》(LGPD)处理个人数据。",
         "sections": [
-          { "h": "1. 控制者", "p": "数据控制者为 Schematize Ltda - EPP(CNPJ 53.942.996/0001-10),巴西圣保罗州圣保罗市。" },
-          { "h": "2. 数据保护官(DPO)", "p": "有关隐私事务及行使你的权利,请联系 contabil@schematize.me。[REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. 我们收集的数据", "p": "这是一个没有登录或表单的信息性网站;我们仅收集为提供页面并保持网站安全所需的最少技术数据。若你给我们发邮件,我们会处理你发送的数据。" },
-          { "h": "4. 目的", "p": "交付并保护网站,以及回应你发给我们的消息。" },
-          { "h": "5. 法律依据", "p": "运营并保护网站的正当利益;当你联系我们时的同意或请求的执行(LGPD 第 7 条)。[REVISAR: advogado]" },
-          { "h": "6. 共享", "p": "我们使用作为操作者的基础设施与托管提供商;我们不出售个人数据。" },
-          { "h": "7. 国际传输", "p": "某些提供商可能在巴西境外处理数据,并采取保障措施。[REVISAR: advogado]" },
-          { "h": "8. 留存", "p": "我们仅在上述目的所必需或法律要求的期间内保留数据。" },
-          { "h": "9. 安全", "p": "我们采取合理的技术与组织措施来保护数据。" },
-          { "h": "10. 你的权利", "p": "依据 LGPD 第 18 条,你可以请求确认、访问、更正、匿名化、可携、删除以及有关共享的信息,并撤回同意——通过发邮件至 contabil@schematize.me。" },
-          { "h": "11. Cookie", "p": "有关 Cookie 与类似技术的详情,请参见我们的 Cookie 政策。" },
-          { "h": "12. 变更", "p": "我们可能更新本政策;上方生效日期反映当前版本。" }
+          {
+            "h": "1. 控制者",
+            "p": "数据控制者为 Schematize Ltda - EPP(CNPJ 53.942.996/0001-10),巴西圣保罗州圣保罗市。"
+          },
+          {
+            "h": "2. 数据保护官(DPO)",
+            "p": "有关隐私事务及行使你的权利,请联系 contabil@schematize.me。[REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. 我们收集的数据",
+            "p": "这是一个没有登录或表单的信息性网站;我们仅收集为提供页面并保持网站安全所需的最少技术数据。若你给我们发邮件,我们会处理你发送的数据。"
+          },
+          {
+            "h": "4. 目的",
+            "p": "交付并保护网站,以及回应你发给我们的消息。"
+          },
+          {
+            "h": "5. 法律依据",
+            "p": "运营并保护网站的正当利益;当你联系我们时的同意或请求的执行(LGPD 第 7 条)。[REVISAR: advogado]"
+          },
+          {
+            "h": "6. 共享",
+            "p": "我们使用作为操作者的基础设施与托管提供商;我们不出售个人数据。"
+          },
+          {
+            "h": "7. 国际传输",
+            "p": "某些提供商可能在巴西境外处理数据,并采取保障措施。[REVISAR: advogado]"
+          },
+          {
+            "h": "8. 留存",
+            "p": "我们仅在上述目的所必需或法律要求的期间内保留数据。"
+          },
+          {
+            "h": "9. 安全",
+            "p": "我们采取合理的技术与组织措施来保护数据。"
+          },
+          {
+            "h": "10. 你的权利",
+            "p": "依据 LGPD 第 18 条,你可以请求确认、访问、更正、匿名化、可携、删除以及有关共享的信息,并撤回同意——通过发邮件至 contabil@schematize.me。"
+          },
+          {
+            "h": "11. Cookie",
+            "p": "有关 Cookie 与类似技术的详情,请参见我们的 Cookie 政策。"
+          },
+          {
+            "h": "12. 变更",
+            "p": "我们可能更新本政策;上方生效日期反映当前版本。"
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Cookie 政策",
         "sub": "本站使用的 Cookie 与类似技术。",
         "sections": [
-          { "h": "1. 什么是 Cookie", "p": "Cookie 是存储在你设备上的小文件,帮助网站运作并记住偏好。" },
-          { "h": "2. 类别", "p": "必要:网站运作所需(例如记住你的语言)。性能/分析、功能与营销 Cookie 仅在你选择加入的同意下使用。" },
-          { "h": "3. 我们使用什么", "p": "本站在本地存储一项语言偏好以保持你所选的语言。未经同意,它不运行非必要的分析或营销 Cookie。[REVISAR: negócio]" },
-          { "h": "4. 同意", "p": "非必要 Cookie 需要选择加入的同意;必要 Cookie 无需同意即运行。" },
-          { "h": "5. 管理 Cookie", "p": "你可以在浏览器设置中清除或阻止 Cookie;阻止必要存储可能影响网站。" },
-          { "h": "6. 变更", "p": "我们可能更新本政策;上方生效日期反映当前版本。" }
+          {
+            "h": "1. 什么是 Cookie",
+            "p": "Cookie 是存储在你设备上的小文件,帮助网站运作并记住偏好。"
+          },
+          {
+            "h": "2. 类别",
+            "p": "必要:网站运作所需(例如记住你的语言)。性能/分析、功能与营销 Cookie 仅在你选择加入的同意下使用。"
+          },
+          {
+            "h": "3. 我们使用什么",
+            "p": "本站在本地存储一项语言偏好以保持你所选的语言。未经同意,它不运行非必要的分析或营销 Cookie。[REVISAR: negócio]"
+          },
+          {
+            "h": "4. 同意",
+            "p": "非必要 Cookie 需要选择加入的同意;必要 Cookie 无需同意即运行。"
+          },
+          {
+            "h": "5. 管理 Cookie",
+            "p": "你可以在浏览器设置中清除或阻止 Cookie;阻止必要存储可能影响网站。"
+          },
+          {
+            "h": "6. 变更",
+            "p": "我们可能更新本政策;上方生效日期反映当前版本。"
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "机构",
         "links": [
-          { "slug": "", "label": "首页" },
-          { "slug": "about", "label": "关于" },
-          { "slug": "contact", "label": "联系" }
+          {
+            "slug": "",
+            "label": "首页"
+          },
+          {
+            "slug": "about",
+            "label": "关于"
+          },
+          {
+            "slug": "contact",
+            "label": "联系"
+          }
         ]
       },
       {
         "h": "工作",
         "links": [
-          { "slug": "software", "label": "应用程序" },
-          { "slug": "projects", "label": "项目" },
-          { "slug": "research", "label": "研究" },
-          { "slug": "principles", "label": "原则" }
+          {
+            "slug": "apps",
+            "label": "应用程序"
+          },
+          {
+            "slug": "projects",
+            "label": "项目"
+          },
+          {
+            "slug": "research",
+            "label": "研究"
+          },
+          {
+            "slug": "principles",
+            "label": "原则"
+          }
         ]
       },
       {
         "h": "法律",
         "links": [
-          { "slug": "legal", "label": "法律中心" },
-          { "slug": "legal/terms-of-use", "label": "使用条款" },
-          { "slug": "legal/terms-of-service", "label": "服务条款" },
-          { "slug": "legal/privacy", "label": "隐私政策" },
-          { "slug": "legal/cookies", "label": "Cookie 政策" }
+          {
+            "slug": "legal",
+            "label": "法律中心"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "使用条款"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "服务条款"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "隐私政策"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Cookie 政策"
+          }
         ]
       }
     ]

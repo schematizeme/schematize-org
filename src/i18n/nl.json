@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "De app",
     "projects": "Projecten",
     "research": "Onderzoek",
     "principles": "Principes",
     "about": "Over ons",
     "contact": "Contact",
     "legal": "Juridisch",
-    "catalog": "Skills-catalogus",
-    "academy": "Academy",
-    "login": "Inloggen / Registreren",
-    "cta": "Broncode bekijken",
-    "menu": "Menu"
+    "menu": "Menu",
+    "apps": "Applicaties",
+    "content": "Content",
+    "contentRead": "Lezen en leren",
+    "contentBuild": "Bouwen",
+    "contentItems": {
+      "blog": {
+        "h": "Blog",
+        "p": "Artikelen en nieuws uit het lab."
+      },
+      "research": {
+        "h": "Onderzoek",
+        "p": "Papers en studies over engineering met AI-agents."
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "Referentiedocumentatie, altijd actueel."
+      },
+      "academy": {
+        "h": "Academy",
+        "p": "Cursussen en leerpaden."
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "De open catalogus van engineering-skills voor Claude Code."
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "Systeemblauwdrukken voor mensen en machines."
+      }
+    },
+    "signin": "Inloggen",
+    "signup": "Registreren",
+    "legalAll": "Alle documenten",
+    "social": "Sociale netwerken"
   },
   "footer": {
     "tagline": "Het opensource- en technologieonderzoekslab achter schematize.",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "De app — de schematize CLI — schematize.org",
-      "desc": "schematize is een Rust-commandoregelhub (met desktopvensters) die engineering-skills voor Claude Code installeert en van versies voorziet, de apps van het ecosysteem en AI-codeertools installeert, en overdev uitvoert. Eén commando installeert de volledige kit op Linux en FreeBSD."
+      "title": "Applicaties — schematize.org",
+      "desc": "Elke schematize-applicatie en de bijbehorende installer: de hub, de market, overdev, deployer, optimizer, database, git en skills. Eén commando installeert de volledige kit op Linux en FreeBSD."
     },
     "hero": {
-      "kicker": "De app",
-      "h1": "Eén CLI voor de hele workflow.",
-      "sub": "schematize is een Rust-commandoregelhub — inclusief desktopvensters — die engineering-skills uit een live catalogus installeert en van versies voorziet, de apps van het ecosysteem en AI-codeertools installeert, en overdev uitvoert: continue, onbeheerde ontwikkeling die niet stopt voordat de checklist af is."
+      "kicker": "Applicaties",
+      "h1": "Elke applicatie, en hoe je hem installeert.",
+      "sub": "schematize is een familie van commandoregel-apps in Rust, elk met een eigen desktopvenster. Installeer alleen wat je nodig hebt, of de volledige kit met één commando."
     },
+    "list": {
+      "title": "Het ecosysteem",
+      "sub": "Elke app werkt op zichzelf, heeft een CLI en een desktopvenster, en elke interface spreekt 20 talen."
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "De hub: installeert en versioneert skills, diagnosticeert je setup (doctor), werkt zichzelf bij en toont alles in één oogopslag."
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "De installer en updater van de hele kit. Hij zit in elke app en installeert ook de AI-tools: Claude Code, Codex CLI en Cursor CLI."
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "Continue ontwikkeling. Stel de agenthiërarchie in op het tabblad Agents: Opus orkestreert, Haiku doet het triviale, Sonnet schrijft de code; bij falen schaalt het op naar Codex, dan Cursor, dan Opus. Visueel werk en afbeeldingen gaan naar Codex."
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "SSH-sleutels, VPS en geauditeerde externe toegang — met de inloggegevens buiten het bereik van de agent."
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "Maakt de dev-machine voorspelbaar: meet de omgeving en begrenst de resources voor builds, browser en containers."
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "Ontwerpt het schema vóór de eerste regel van de applicatie: modelleert relationele schema's, leest bestaande databases en genereert SQL en omkeerbare migraties."
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "Wie pusht, vanaf waar en met welke identiteit: meerdere git-accounts op één machine zonder met het verkeerde te committen."
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "De Claude Code-skillscatalogus: wat er op deze machine is geïnstalleerd, en bewerken."
+      }
+    ],
     "install": {
       "title": "Installeer de volledige kit",
       "sub": "Eén commando installeert de hub, de market, elke app met zijn venster en de skills — en voert doctor uit. Vooraf gebouwde binaries in ~/.cargo/bin: geen sudo, geen compiler.",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "Residente agent",
           "p": "Houdt nieuwe skill-versies en blogberichten in de gaten en waarschuwt je native op de desktop."
-        }
-      ]
-    },
-    "apps": {
-      "title": "Het ecosysteem",
-      "sub": "Elke app werkt op zichzelf, heeft een CLI en een desktopvenster, en elke interface spreekt 20 talen.",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "De hub: installeert en versioneert skills, diagnosticeert je setup (doctor), werkt zichzelf bij en toont alles in één oogopslag."
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "De installer en updater van de hele kit. Hij zit in elke app en installeert ook de AI-tools: Claude Code, Codex CLI en Cursor CLI."
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "Continue ontwikkeling. Stel de agenthiërarchie in op het tabblad Agents: Opus orkestreert, Haiku doet het triviale, Sonnet schrijft de code; bij falen schaalt het op naar Codex, dan Cursor, dan Opus. Visueel werk en afbeeldingen gaan naar Codex."
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "SSH-sleutels, VPS en geauditeerde externe toegang — met de inloggegevens buiten het bereik van de agent."
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "Maakt de dev-machine voorspelbaar: meet de omgeving en begrenst de resources voor builds, browser en containers."
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "Ontwerpt het schema vóór de eerste regel van de applicatie: modelleert relationele schema's, leest bestaande databases en genereert SQL en omkeerbare migraties."
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "Wie pusht, vanaf waar en met welke identiteit: meerdere git-accounts op één machine zonder met het verkeerde te committen."
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "De Claude Code-skillscatalogus: wat er op deze machine is geïnstalleerd, en bewerken."
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "De app installeert skills vanuit de open catalogus — blader en kies wat je project nodig heeft.",
       "button": "Open de catalogus",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "Details bekijken",
+      "back": "Alle applicaties",
+      "kicker": "Applicatie",
+      "whatItDoes": "Wat het doet",
+      "install": "Installeren",
+      "inKit": "Deze app heeft geen eigen installer: hij zit in de volledige kit.",
+      "baseNote": "De hub en de market zitten bij elke installatie.",
+      "noWindows": "Nog niet beschikbaar op Windows.",
+      "winCovers": "Op Windows dekt deze installer schematize-market en overdev.",
+      "macos": "Nog geen automatische installer: download de vooraf gebouwde binaries uit de releases en installeer ze handmatig.",
+      "repo": "Broncode",
+      "repoWindows": "Repository van de Windows-installer",
+      "copy": "Kopiëren"
+    },
+    "detail": {
+      "schematize": [
+        "Installeert en versioneert engineering-skills uit een live catalogus: schematize skills install --all haalt de hele set op.",
+        "doctor diagnosticeert je setup.",
+        "Werkt zichzelf bij en toont alles in één oogopslag."
+      ],
+      "market": [
+        "Installeert en werkt de hele kit bij: schematize-market update werkt de apps, de AI-tools en zichzelf bij.",
+        "Installeert ook de AI-tools: Claude Code, Codex CLI en Cursor CLI.",
+        "Zit bij elke andere app."
+      ],
+      "overdev": [
+        "Continue ontwikkeling die niet stopt voordat de checklist af is.",
+        "Stel de agenthiërarchie in op het tabblad Agents: Opus orkestreert, Haiku doet het triviale, Sonnet schrijft de code; bij falen schaalt het op naar Codex, dan Cursor, dan Opus.",
+        "Visueel werk en afbeeldingen gaan naar Codex."
+      ],
+      "deployer": [
+        "SSH-sleutels, VPS en geauditeerde toegang op afstand.",
+        "De inloggegevens blijven buiten het bereik van de agent.",
+        "CLI en desktopvenster."
+      ],
+      "optimizer": [
+        "Meet de omgeving.",
+        "Zet build, browser en container elk onder een eigen resourceplafond.",
+        "Houdt de ontwikkelmachine voorspelbaar."
+      ],
+      "database": [
+        "Ontwerpt de database vóór de eerste regel applicatiecode, door het relationele schema te modelleren.",
+        "Leest een bestaande database.",
+        "Genereert SQL en omkeerbare migraties."
+      ],
+      "git": [
+        "Meerdere git-accounts op dezelfde machine.",
+        "Bepaalt wie pusht, vanwaar en met welke identiteit.",
+        "Voorkomt dat je met het verkeerde account commit."
+      ],
+      "skills": [
+        "De catalogus van Claude Code-skills.",
+        "Toont wat er op deze machine is geïnstalleerd.",
+        "Laat je de skills bewerken."
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "Gebruiksvoorwaarden",
         "sub": "Regels voor het gebruik van de website schematize.org.",
         "sections": [
-          { "h": "1. Aanvaarding", "p": "Door schematize.org te bezoeken ga je akkoord met deze gebruiksvoorwaarden. Als je niet akkoord gaat, gebruik de site dan niet." },
-          { "h": "2. Wat de site biedt", "p": "schematize.org is een informatieve en institutionele site die onze opensourceprojecten en technologieonderzoek presenteert. Het is geen winkel." },
-          { "h": "3. Intellectueel eigendom", "p": "Het merk schematize en de inhoud van de site zijn beschermd. Onze opensourceprojecten worden in licentie gegeven onder de voorwaarden die in elke repository op GitHub staan vermeld." },
-          { "h": "4. Aanvaardbaar gebruik", "p": "Je gaat ermee akkoord de site niet te misbruiken, niet te proberen te verstoren, noch te gebruiken voor onwettige doeleinden." },
-          { "h": "5. Links naar derden", "p": "De site linkt naar bestemmingen van derden (bijvoorbeeld GitHub). Wij zijn niet verantwoordelijk voor inhoud van derden." },
-          { "h": "6. Vrijwaring en beperking van aansprakelijkheid", "p": "De site wordt geleverd \"zoals hij is\", zonder garanties. [REVISAR: advogado]" },
-          { "h": "7. Wijzigingen", "p": "We kunnen deze voorwaarden bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." },
-          { "h": "8. Toepasselijk recht en bevoegde rechtbank", "p": "Deze voorwaarden worden beheerst door het recht van Brazilië. [REVISAR: advogado]" }
+          {
+            "h": "1. Aanvaarding",
+            "p": "Door schematize.org te bezoeken ga je akkoord met deze gebruiksvoorwaarden. Als je niet akkoord gaat, gebruik de site dan niet."
+          },
+          {
+            "h": "2. Wat de site biedt",
+            "p": "schematize.org is een informatieve en institutionele site die onze opensourceprojecten en technologieonderzoek presenteert. Het is geen winkel."
+          },
+          {
+            "h": "3. Intellectueel eigendom",
+            "p": "Het merk schematize en de inhoud van de site zijn beschermd. Onze opensourceprojecten worden in licentie gegeven onder de voorwaarden die in elke repository op GitHub staan vermeld."
+          },
+          {
+            "h": "4. Aanvaardbaar gebruik",
+            "p": "Je gaat ermee akkoord de site niet te misbruiken, niet te proberen te verstoren, noch te gebruiken voor onwettige doeleinden."
+          },
+          {
+            "h": "5. Links naar derden",
+            "p": "De site linkt naar bestemmingen van derden (bijvoorbeeld GitHub). Wij zijn niet verantwoordelijk voor inhoud van derden."
+          },
+          {
+            "h": "6. Vrijwaring en beperking van aansprakelijkheid",
+            "p": "De site wordt geleverd \"zoals hij is\", zonder garanties. [REVISAR: advogado]"
+          },
+          {
+            "h": "7. Wijzigingen",
+            "p": "We kunnen deze voorwaarden bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie."
+          },
+          {
+            "h": "8. Toepasselijk recht en bevoegde rechtbank",
+            "p": "Deze voorwaarden worden beheerst door het recht van Brazilië. [REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "Servicevoorwaarden",
         "sub": "De overeenkomst die onze tools en diensten dekt.",
         "sections": [
-          { "h": "1. Partijen en definities", "p": "Deze voorwaarden regelen de relatie tussen Schematize en gebruikers van onze tools en diensten." },
-          { "h": "2. Reikwijdte", "p": "Onze opensourcetools (zoals de schematize CLI en de engineering-skills) worden geleverd onder hun respectieve opensourcelicenties op GitHub." },
-          { "h": "3. Accounts", "p": "Wanneer een dienst authenticatie vereist, wordt deze geleverd via auth.schematize.org. Je bent verantwoordelijk voor het veilig houden van je inloggegevens." },
-          { "h": "4. Kosten", "p": "Opensourcetools zijn gratis. Elke betaalde dienst wordt beschreven op het moment van contractering. [REVISAR: advogado]" },
-          { "h": "5. Verplichtingen van de partijen", "p": "Je gaat ermee akkoord de diensten rechtmatig te gebruiken; wij gaan ermee akkoord ze met redelijke zorg te leveren." },
-          { "h": "6. Opschorting en beëindiging", "p": "We kunnen de toegang opschorten bij misbruik of een beveiligingsrisico." },
-          { "h": "7. Garanties en beperking van aansprakelijkheid", "p": "Diensten worden geleverd \"zoals ze zijn\", voor zover toegestaan door de wet. [REVISAR: advogado]" },
-          { "h": "8. Privacy", "p": "Persoonsgegevens worden verwerkt volgens ons Privacybeleid." },
-          { "h": "9. Toepasselijk recht en bevoegde rechtbank", "p": "Beheerst door het recht van Brazilië. [REVISAR: advogado]" }
+          {
+            "h": "1. Partijen en definities",
+            "p": "Deze voorwaarden regelen de relatie tussen Schematize en gebruikers van onze tools en diensten."
+          },
+          {
+            "h": "2. Reikwijdte",
+            "p": "Onze opensourcetools (zoals de schematize CLI en de engineering-skills) worden geleverd onder hun respectieve opensourcelicenties op GitHub."
+          },
+          {
+            "h": "3. Accounts",
+            "p": "Wanneer een dienst authenticatie vereist, wordt deze geleverd via auth.schematize.org. Je bent verantwoordelijk voor het veilig houden van je inloggegevens."
+          },
+          {
+            "h": "4. Kosten",
+            "p": "Opensourcetools zijn gratis. Elke betaalde dienst wordt beschreven op het moment van contractering. [REVISAR: advogado]"
+          },
+          {
+            "h": "5. Verplichtingen van de partijen",
+            "p": "Je gaat ermee akkoord de diensten rechtmatig te gebruiken; wij gaan ermee akkoord ze met redelijke zorg te leveren."
+          },
+          {
+            "h": "6. Opschorting en beëindiging",
+            "p": "We kunnen de toegang opschorten bij misbruik of een beveiligingsrisico."
+          },
+          {
+            "h": "7. Garanties en beperking van aansprakelijkheid",
+            "p": "Diensten worden geleverd \"zoals ze zijn\", voor zover toegestaan door de wet. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Privacy",
+            "p": "Persoonsgegevens worden verwerkt volgens ons Privacybeleid."
+          },
+          {
+            "h": "9. Toepasselijk recht en bevoegde rechtbank",
+            "p": "Beheerst door het recht van Brazilië. [REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "Privacybeleid",
         "sub": "Hoe we omgaan met persoonsgegevens, onder de Braziliaanse algemene wet gegevensbescherming (LGPD).",
         "sections": [
-          { "h": "1. Verwerkingsverantwoordelijke", "p": "De verwerkingsverantwoordelijke is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazilië." },
-          { "h": "2. Functionaris voor gegevensbescherming (DPO)", "p": "Voor privacyzaken en om je rechten uit te oefenen, neem contact op via contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Gegevens die we verzamelen", "p": "Dit is een informatieve site zonder login of formulieren; we verzamelen alleen de minimale technische gegevens die nodig zijn om pagina's te serveren en de site veilig te houden. Als je ons mailt, verwerken we de gegevens die je verstuurt." },
-          { "h": "4. Doel", "p": "De website leveren en beveiligen, en reageren op berichten die je ons stuurt." },
-          { "h": "5. Rechtsgrond", "p": "Gerechtvaardigd belang om de site te exploiteren en te beveiligen; toestemming of uitvoering van een verzoek wanneer je contact met ons opneemt (LGPD art. 7). [REVISAR: advogado]" },
-          { "h": "6. Delen", "p": "We maken gebruik van infrastructuur- en hostingproviders die als verwerkers optreden; we verkopen geen persoonsgegevens." },
-          { "h": "7. Internationale doorgifte", "p": "Sommige providers kunnen gegevens buiten Brazilië verwerken, met waarborgen. [REVISAR: advogado]" },
-          { "h": "8. Bewaring", "p": "We bewaren gegevens alleen zolang als nodig is voor de bovenstaande doeleinden of zoals wettelijk vereist." },
-          { "h": "9. Beveiliging", "p": "We passen redelijke technische en organisatorische maatregelen toe om gegevens te beschermen." },
-          { "h": "10. Je rechten", "p": "Onder LGPD art. 18 kun je bevestiging, toegang, correctie, anonimisering, overdraagbaarheid, verwijdering en informatie over delen aanvragen, en toestemming intrekken — door te mailen naar contabil@schematize.me." },
-          { "h": "11. Cookies", "p": "Zie ons Cookiebeleid voor details over cookies en soortgelijke technologieën." },
-          { "h": "12. Wijzigingen", "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." }
+          {
+            "h": "1. Verwerkingsverantwoordelijke",
+            "p": "De verwerkingsverantwoordelijke is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazilië."
+          },
+          {
+            "h": "2. Functionaris voor gegevensbescherming (DPO)",
+            "p": "Voor privacyzaken en om je rechten uit te oefenen, neem contact op via contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. Gegevens die we verzamelen",
+            "p": "Dit is een informatieve site zonder login of formulieren; we verzamelen alleen de minimale technische gegevens die nodig zijn om pagina's te serveren en de site veilig te houden. Als je ons mailt, verwerken we de gegevens die je verstuurt."
+          },
+          {
+            "h": "4. Doel",
+            "p": "De website leveren en beveiligen, en reageren op berichten die je ons stuurt."
+          },
+          {
+            "h": "5. Rechtsgrond",
+            "p": "Gerechtvaardigd belang om de site te exploiteren en te beveiligen; toestemming of uitvoering van een verzoek wanneer je contact met ons opneemt (LGPD art. 7). [REVISAR: advogado]"
+          },
+          {
+            "h": "6. Delen",
+            "p": "We maken gebruik van infrastructuur- en hostingproviders die als verwerkers optreden; we verkopen geen persoonsgegevens."
+          },
+          {
+            "h": "7. Internationale doorgifte",
+            "p": "Sommige providers kunnen gegevens buiten Brazilië verwerken, met waarborgen. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Bewaring",
+            "p": "We bewaren gegevens alleen zolang als nodig is voor de bovenstaande doeleinden of zoals wettelijk vereist."
+          },
+          {
+            "h": "9. Beveiliging",
+            "p": "We passen redelijke technische en organisatorische maatregelen toe om gegevens te beschermen."
+          },
+          {
+            "h": "10. Je rechten",
+            "p": "Onder LGPD art. 18 kun je bevestiging, toegang, correctie, anonimisering, overdraagbaarheid, verwijdering en informatie over delen aanvragen, en toestemming intrekken — door te mailen naar contabil@schematize.me."
+          },
+          {
+            "h": "11. Cookies",
+            "p": "Zie ons Cookiebeleid voor details over cookies en soortgelijke technologieën."
+          },
+          {
+            "h": "12. Wijzigingen",
+            "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie."
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Cookiebeleid",
         "sub": "De cookies en soortgelijke technologieën die deze site gebruikt.",
         "sections": [
-          { "h": "1. Wat cookies zijn", "p": "Cookies zijn kleine bestanden die op je apparaat worden opgeslagen en die een site helpen werken en voorkeuren onthouden." },
-          { "h": "2. Categorieën", "p": "Essentieel: vereist om de site te laten functioneren (bijvoorbeeld het onthouden van je taal). Prestatie-/analyse-, functionele en marketingcookies worden alleen gebruikt met jouw opt-in toestemming." },
-          { "h": "3. Wat we gebruiken", "p": "Deze site slaat een taalvoorkeur lokaal op om je gekozen taal te behouden. Hij voert geen niet-essentiële analyse- of marketingcookies uit zonder toestemming. [REVISAR: negócio]" },
-          { "h": "4. Toestemming", "p": "Niet-essentiële cookies vereisen opt-in toestemming; essentiële cookies draaien zonder toestemming." },
-          { "h": "5. Cookies beheren", "p": "Je kunt cookies wissen of blokkeren in de instellingen van je browser; het blokkeren van essentiële opslag kan de site beïnvloeden." },
-          { "h": "6. Wijzigingen", "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie." }
+          {
+            "h": "1. Wat cookies zijn",
+            "p": "Cookies zijn kleine bestanden die op je apparaat worden opgeslagen en die een site helpen werken en voorkeuren onthouden."
+          },
+          {
+            "h": "2. Categorieën",
+            "p": "Essentieel: vereist om de site te laten functioneren (bijvoorbeeld het onthouden van je taal). Prestatie-/analyse-, functionele en marketingcookies worden alleen gebruikt met jouw opt-in toestemming."
+          },
+          {
+            "h": "3. Wat we gebruiken",
+            "p": "Deze site slaat een taalvoorkeur lokaal op om je gekozen taal te behouden. Hij voert geen niet-essentiële analyse- of marketingcookies uit zonder toestemming. [REVISAR: negócio]"
+          },
+          {
+            "h": "4. Toestemming",
+            "p": "Niet-essentiële cookies vereisen opt-in toestemming; essentiële cookies draaien zonder toestemming."
+          },
+          {
+            "h": "5. Cookies beheren",
+            "p": "Je kunt cookies wissen of blokkeren in de instellingen van je browser; het blokkeren van essentiële opslag kan de site beïnvloeden."
+          },
+          {
+            "h": "6. Wijzigingen",
+            "p": "We kunnen dit beleid bijwerken; de ingangsdatum hierboven weerspiegelt de huidige versie."
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "Institutioneel",
         "links": [
-          { "slug": "", "label": "Home" },
-          { "slug": "about", "label": "Over ons" },
-          { "slug": "contact", "label": "Contact" }
+          {
+            "slug": "",
+            "label": "Home"
+          },
+          {
+            "slug": "about",
+            "label": "Over ons"
+          },
+          {
+            "slug": "contact",
+            "label": "Contact"
+          }
         ]
       },
       {
         "h": "Werk",
         "links": [
-          { "slug": "software", "label": "De app" },
-          { "slug": "projects", "label": "Projecten" },
-          { "slug": "research", "label": "Onderzoek" },
-          { "slug": "principles", "label": "Principes" }
+          {
+            "slug": "apps",
+            "label": "Applicaties"
+          },
+          {
+            "slug": "projects",
+            "label": "Projecten"
+          },
+          {
+            "slug": "research",
+            "label": "Onderzoek"
+          },
+          {
+            "slug": "principles",
+            "label": "Principes"
+          }
         ]
       },
       {
         "h": "Juridisch",
         "links": [
-          { "slug": "legal", "label": "Juridisch centrum" },
-          { "slug": "legal/terms-of-use", "label": "Gebruiksvoorwaarden" },
-          { "slug": "legal/terms-of-service", "label": "Servicevoorwaarden" },
-          { "slug": "legal/privacy", "label": "Privacybeleid" },
-          { "slug": "legal/cookies", "label": "Cookiebeleid" }
+          {
+            "slug": "legal",
+            "label": "Juridisch centrum"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "Gebruiksvoorwaarden"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "Servicevoorwaarden"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "Privacybeleid"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Cookiebeleid"
+          }
         ]
       }
     ]

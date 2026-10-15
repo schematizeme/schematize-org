@@ -1,17 +1,46 @@
 {
   "nav": {
-    "software": "The app",
     "projects": "Projects",
     "research": "Research",
     "principles": "Principles",
     "about": "About",
     "contact": "Contact",
     "legal": "Legal",
-    "catalog": "Skills catalog",
-    "academy": "Academy",
-    "login": "Sign in / Sign up",
-    "cta": "View source",
-    "menu": "Menu"
+    "menu": "Menu",
+    "apps": "Applications",
+    "content": "Content",
+    "contentRead": "Read and learn",
+    "contentBuild": "Build",
+    "contentItems": {
+      "blog": {
+        "h": "Blog",
+        "p": "Articles and news from the lab."
+      },
+      "research": {
+        "h": "Research",
+        "p": "Papers and studies on engineering with AI agents."
+      },
+      "wiki": {
+        "h": "Wiki",
+        "p": "Reference documentation, always up to date."
+      },
+      "academy": {
+        "h": "Academy",
+        "p": "Courses and learning paths."
+      },
+      "skills": {
+        "h": "Skills",
+        "p": "The open catalog of engineering skills for Claude Code."
+      },
+      "blueprints": {
+        "h": "Blueprints",
+        "p": "System blueprints for people and machines."
+      }
+    },
+    "signin": "Sign in",
+    "signup": "Sign up",
+    "legalAll": "All documents",
+    "social": "Social networks"
   },
   "footer": {
     "tagline": "The open-source and technology-research lab behind schematize.",
@@ -279,16 +308,62 @@
       "url": "https://skills.schematize.org"
     }
   },
-  "software": {
+  "apps": {
     "meta": {
-      "title": "The app — the schematize CLI — schematize.org",
-      "desc": "schematize is a Rust command-line hub (with desktop windows) that installs and versions engineering skills for Claude Code, installs the ecosystem apps and AI coding tools, and runs overdev. One command installs the full kit on Linux and FreeBSD."
+      "title": "Applications — schematize.org",
+      "desc": "Every schematize application and its installer: the hub, the market, overdev, deployer, optimizer, database, git and skills. One command installs the full kit on Linux and FreeBSD."
     },
     "hero": {
-      "kicker": "The app",
-      "h1": "One CLI for the whole workflow.",
-      "sub": "schematize is a Rust command-line hub — desktop windows included — that installs and versions engineering skills from a live catalog, installs the ecosystem apps and AI coding tools, and runs overdev: continuous, unattended development that doesn't stop until the checklist is done."
+      "kicker": "Applications",
+      "h1": "Every application, and how to install it.",
+      "sub": "schematize is a family of command-line apps in Rust, each with its own desktop window. Install only what you need, or the full kit in one command."
     },
+    "list": {
+      "title": "The ecosystem",
+      "sub": "Each app works on its own, has a CLI and a desktop window, and every interface speaks 20 languages."
+    },
+    "items": [
+      {
+        "icon": "terminal",
+        "h": "schematize",
+        "p": "The hub: installs and versions skills, diagnoses your setup (doctor), self-updates and shows everything at a glance."
+      },
+      {
+        "icon": "store",
+        "h": "schematize-market",
+        "p": "The installer and updater of the whole kit. It ships with every app, and also installs the AI tools: Claude Code, Codex CLI and Cursor CLI."
+      },
+      {
+        "icon": "infinity",
+        "h": "overdev",
+        "p": "Continuous development. Configure the agent hierarchy in the Agents tab: Opus orchestrates, Haiku does the trivial, Sonnet codes; on failure it escalates to Codex, then Cursor, then Opus. Visual work and images go to Codex."
+      },
+      {
+        "icon": "rocket",
+        "h": "deployer",
+        "p": "SSH keys, VPS and audited remote access — with the credential kept out of the agent's reach."
+      },
+      {
+        "icon": "gauge",
+        "h": "optimizer",
+        "p": "Makes the dev machine predictable: measures the environment and caps resources for builds, browser and containers."
+      },
+      {
+        "icon": "database",
+        "h": "database",
+        "p": "Designs the schema before the first line of application: models relational schemas, reads existing databases and generates SQL and reversible migrations."
+      },
+      {
+        "icon": "git-branch",
+        "h": "git",
+        "p": "Who pushes, from where and with which identity: several git accounts on one machine without committing with the wrong one."
+      },
+      {
+        "icon": "blocks",
+        "h": "skills",
+        "p": "The Claude Code skill catalog: what is installed on this machine, and editing."
+      }
+    ],
     "install": {
       "title": "Install the full kit",
       "sub": "One command installs the hub, the market, every app with its window, the skills — and runs doctor. Prebuilt binaries into ~/.cargo/bin: no sudo, no compiler.",
@@ -324,52 +399,6 @@
           "icon": "radar",
           "h": "Resident agent",
           "p": "Watches for new skill versions and blog posts and notifies you natively on the desktop."
-        }
-      ]
-    },
-    "apps": {
-      "title": "The ecosystem",
-      "sub": "Each app works on its own, has a CLI and a desktop window, and every interface speaks 20 languages.",
-      "items": [
-        {
-          "icon": "terminal",
-          "h": "schematize",
-          "p": "The hub: installs and versions skills, diagnoses your setup (doctor), self-updates and shows everything at a glance."
-        },
-        {
-          "icon": "store",
-          "h": "schematize-market",
-          "p": "The installer and updater of the whole kit. It ships with every app, and also installs the AI tools: Claude Code, Codex CLI and Cursor CLI."
-        },
-        {
-          "icon": "infinity",
-          "h": "overdev",
-          "p": "Continuous development. Configure the agent hierarchy in the Agents tab: Opus orchestrates, Haiku does the trivial, Sonnet codes; on failure it escalates to Codex, then Cursor, then Opus. Visual work and images go to Codex."
-        },
-        {
-          "icon": "rocket",
-          "h": "deployer",
-          "p": "SSH keys, VPS and audited remote access — with the credential kept out of the agent's reach."
-        },
-        {
-          "icon": "gauge",
-          "h": "optimizer",
-          "p": "Makes the dev machine predictable: measures the environment and caps resources for builds, browser and containers."
-        },
-        {
-          "icon": "database",
-          "h": "database",
-          "p": "Designs the schema before the first line of application: models relational schemas, reads existing databases and generates SQL and reversible migrations."
-        },
-        {
-          "icon": "git-branch",
-          "h": "git",
-          "p": "Who pushes, from where and with which identity: several git accounts on one machine without committing with the wrong one."
-        },
-        {
-          "icon": "blocks",
-          "h": "skills",
-          "p": "The Claude Code skill catalog: what is installed on this machine, and editing."
         }
       ]
     },
@@ -409,6 +438,63 @@
       "p": "The app installs skills from the open catalog — browse and pick what your project needs.",
       "button": "Open the catalog",
       "url": "https://skills.schematize.org"
+    },
+    "ui": {
+      "details": "View details",
+      "back": "All applications",
+      "kicker": "Application",
+      "whatItDoes": "What it does",
+      "install": "Install",
+      "inKit": "This app has no installer of its own: it comes with the full kit.",
+      "baseNote": "The hub and the market come with every install.",
+      "noWindows": "Not available on Windows yet.",
+      "winCovers": "On Windows this installer covers schematize-market and overdev.",
+      "macos": "No automatic installer yet: download the pre-built binaries from the releases and install by hand.",
+      "repo": "Source code",
+      "repoWindows": "Windows installer repository",
+      "copy": "Copy"
+    },
+    "detail": {
+      "schematize": [
+        "Installs and versions engineering skills from a live catalog: schematize skills install --all pulls the whole set.",
+        "doctor diagnoses your setup.",
+        "Updates itself and shows everything at a glance."
+      ],
+      "market": [
+        "Installs and updates the whole kit: schematize-market update updates the apps, the AI tools and itself.",
+        "Also installs the AI tools: Claude Code, Codex CLI and Cursor CLI.",
+        "Comes with every other app."
+      ],
+      "overdev": [
+        "Continuous development that does not stop until the checklist is done.",
+        "Set the agent hierarchy in the Agents tab: Opus orchestrates, Haiku does the trivial, Sonnet codes; on failure it escalates to Codex, then Cursor, then Opus.",
+        "Visuals and images go to Codex."
+      ],
+      "deployer": [
+        "SSH keys, VPS and audited remote access.",
+        "The credential stays out of the agent's reach.",
+        "CLI and desktop window."
+      ],
+      "optimizer": [
+        "Measures the environment.",
+        "Puts build, browser and container each under its own resource ceiling.",
+        "Keeps the dev machine predictable."
+      ],
+      "database": [
+        "Designs the database before the first line of application code, modeling the relational schema.",
+        "Reads an existing database.",
+        "Generates SQL and reversible migrations."
+      ],
+      "git": [
+        "Several git accounts on the same machine.",
+        "Controls who pushes, from where and with which identity.",
+        "Keeps you from committing with the wrong one."
+      ],
+      "skills": [
+        "The Claude Code skills catalog.",
+        "Shows what is installed on this machine.",
+        "Lets you edit the skills."
+      ]
     }
   },
   "common": {
@@ -564,14 +650,38 @@
         "h1": "Terms of Use",
         "sub": "Rules for using the schematize.org website.",
         "sections": [
-          { "h": "1. Acceptance", "p": "By accessing schematize.org you agree to these Terms of Use. If you do not agree, please do not use the site." },
-          { "h": "2. What the site offers", "p": "schematize.org is an informational and institutional site that presents our open-source projects and technology research. It is not a store." },
-          { "h": "3. Intellectual property", "p": "The schematize brand and the site content are protected. Our open-source projects are licensed under the terms stated in each repository on GitHub." },
-          { "h": "4. Acceptable use", "p": "You agree not to misuse the site, attempt to disrupt it, or use it for unlawful purposes." },
-          { "h": "5. Third-party links", "p": "The site links to third-party destinations (for example, GitHub). We are not responsible for third-party content." },
-          { "h": "6. Disclaimer and limitation of liability", "p": "The site is provided \"as is\", without warranties. [REVISAR: advogado]" },
-          { "h": "7. Changes", "p": "We may update these terms; the effective date above reflects the current version." },
-          { "h": "8. Governing law and venue", "p": "These terms are governed by the laws of Brazil. [REVISAR: advogado]" }
+          {
+            "h": "1. Acceptance",
+            "p": "By accessing schematize.org you agree to these Terms of Use. If you do not agree, please do not use the site."
+          },
+          {
+            "h": "2. What the site offers",
+            "p": "schematize.org is an informational and institutional site that presents our open-source projects and technology research. It is not a store."
+          },
+          {
+            "h": "3. Intellectual property",
+            "p": "The schematize brand and the site content are protected. Our open-source projects are licensed under the terms stated in each repository on GitHub."
+          },
+          {
+            "h": "4. Acceptable use",
+            "p": "You agree not to misuse the site, attempt to disrupt it, or use it for unlawful purposes."
+          },
+          {
+            "h": "5. Third-party links",
+            "p": "The site links to third-party destinations (for example, GitHub). We are not responsible for third-party content."
+          },
+          {
+            "h": "6. Disclaimer and limitation of liability",
+            "p": "The site is provided \"as is\", without warranties. [REVISAR: advogado]"
+          },
+          {
+            "h": "7. Changes",
+            "p": "We may update these terms; the effective date above reflects the current version."
+          },
+          {
+            "h": "8. Governing law and venue",
+            "p": "These terms are governed by the laws of Brazil. [REVISAR: advogado]"
+          }
         ]
       },
       "termsService": {
@@ -582,15 +692,42 @@
         "h1": "Terms of Service",
         "sub": "The agreement covering our tools and services.",
         "sections": [
-          { "h": "1. Parties and definitions", "p": "These terms govern the relationship between Schematize and users of our tools and services." },
-          { "h": "2. Scope", "p": "Our open-source tools (such as the schematize CLI and the engineering skills) are provided under their respective open-source licenses on GitHub." },
-          { "h": "3. Accounts", "p": "Where a service requires authentication, it is provided through auth.schematize.org. You are responsible for keeping your credentials secure." },
-          { "h": "4. Fees", "p": "Open-source tools are free. Any paid service is described at the point of contracting. [REVISAR: advogado]" },
-          { "h": "5. Obligations of the parties", "p": "You agree to use the services lawfully; we agree to provide them with reasonable care." },
-          { "h": "6. Suspension and termination", "p": "We may suspend access in case of misuse or security risk." },
-          { "h": "7. Warranties and limitation of liability", "p": "Services are provided \"as is\" to the extent permitted by law. [REVISAR: advogado]" },
-          { "h": "8. Privacy", "p": "Personal data is processed under our Privacy Policy." },
-          { "h": "9. Governing law and venue", "p": "Governed by the laws of Brazil. [REVISAR: advogado]" }
+          {
+            "h": "1. Parties and definitions",
+            "p": "These terms govern the relationship between Schematize and users of our tools and services."
+          },
+          {
+            "h": "2. Scope",
+            "p": "Our open-source tools (such as the schematize CLI and the engineering skills) are provided under their respective open-source licenses on GitHub."
+          },
+          {
+            "h": "3. Accounts",
+            "p": "Where a service requires authentication, it is provided through auth.schematize.org. You are responsible for keeping your credentials secure."
+          },
+          {
+            "h": "4. Fees",
+            "p": "Open-source tools are free. Any paid service is described at the point of contracting. [REVISAR: advogado]"
+          },
+          {
+            "h": "5. Obligations of the parties",
+            "p": "You agree to use the services lawfully; we agree to provide them with reasonable care."
+          },
+          {
+            "h": "6. Suspension and termination",
+            "p": "We may suspend access in case of misuse or security risk."
+          },
+          {
+            "h": "7. Warranties and limitation of liability",
+            "p": "Services are provided \"as is\" to the extent permitted by law. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Privacy",
+            "p": "Personal data is processed under our Privacy Policy."
+          },
+          {
+            "h": "9. Governing law and venue",
+            "p": "Governed by the laws of Brazil. [REVISAR: advogado]"
+          }
         ]
       },
       "privacy": {
@@ -601,18 +738,54 @@
         "h1": "Privacy Policy",
         "sub": "How we handle personal data, under Brazil's General Data Protection Law (LGPD).",
         "sections": [
-          { "h": "1. Controller", "p": "The data controller is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazil." },
-          { "h": "2. Data Protection Officer (DPO)", "p": "For privacy matters and to exercise your rights, contact contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]" },
-          { "h": "3. Data we collect", "p": "This is an informational site with no login or forms; we collect only minimal technical data needed to serve pages and keep the site secure. If you email us, we process the data you send." },
-          { "h": "4. Purpose", "p": "To deliver and secure the website, and to respond to messages you send us." },
-          { "h": "5. Legal basis", "p": "Legitimate interest to operate and secure the site; consent or execution of a request when you contact us (LGPD art. 7). [REVISAR: advogado]" },
-          { "h": "6. Sharing", "p": "We use infrastructure and hosting providers acting as operators; we do not sell personal data." },
-          { "h": "7. International transfer", "p": "Some providers may process data outside Brazil, with safeguards. [REVISAR: advogado]" },
-          { "h": "8. Retention", "p": "We keep data only for as long as necessary for the purposes above or as required by law." },
-          { "h": "9. Security", "p": "We apply reasonable technical and organizational measures to protect data." },
-          { "h": "10. Your rights", "p": "Under LGPD art. 18 you may request confirmation, access, correction, anonymization, portability, deletion and information on sharing, and revoke consent — by emailing contabil@schematize.me." },
-          { "h": "11. Cookies", "p": "See our Cookie Policy for details on cookies and similar technologies." },
-          { "h": "12. Changes", "p": "We may update this policy; the effective date above reflects the current version." }
+          {
+            "h": "1. Controller",
+            "p": "The data controller is Schematize Ltda - EPP (CNPJ 53.942.996/0001-10), São Paulo, SP, Brazil."
+          },
+          {
+            "h": "2. Data Protection Officer (DPO)",
+            "p": "For privacy matters and to exercise your rights, contact contabil@schematize.me. [REVISAR: advogado — indicar encarregado formal]"
+          },
+          {
+            "h": "3. Data we collect",
+            "p": "This is an informational site with no login or forms; we collect only minimal technical data needed to serve pages and keep the site secure. If you email us, we process the data you send."
+          },
+          {
+            "h": "4. Purpose",
+            "p": "To deliver and secure the website, and to respond to messages you send us."
+          },
+          {
+            "h": "5. Legal basis",
+            "p": "Legitimate interest to operate and secure the site; consent or execution of a request when you contact us (LGPD art. 7). [REVISAR: advogado]"
+          },
+          {
+            "h": "6. Sharing",
+            "p": "We use infrastructure and hosting providers acting as operators; we do not sell personal data."
+          },
+          {
+            "h": "7. International transfer",
+            "p": "Some providers may process data outside Brazil, with safeguards. [REVISAR: advogado]"
+          },
+          {
+            "h": "8. Retention",
+            "p": "We keep data only for as long as necessary for the purposes above or as required by law."
+          },
+          {
+            "h": "9. Security",
+            "p": "We apply reasonable technical and organizational measures to protect data."
+          },
+          {
+            "h": "10. Your rights",
+            "p": "Under LGPD art. 18 you may request confirmation, access, correction, anonymization, portability, deletion and information on sharing, and revoke consent — by emailing contabil@schematize.me."
+          },
+          {
+            "h": "11. Cookies",
+            "p": "See our Cookie Policy for details on cookies and similar technologies."
+          },
+          {
+            "h": "12. Changes",
+            "p": "We may update this policy; the effective date above reflects the current version."
+          }
         ]
       },
       "cookies": {
@@ -623,12 +796,30 @@
         "h1": "Cookie Policy",
         "sub": "The cookies and similar technologies this site uses.",
         "sections": [
-          { "h": "1. What cookies are", "p": "Cookies are small files stored on your device that help a site work and remember preferences." },
-          { "h": "2. Categories", "p": "Essential: required for the site to function (for example, remembering your language). Performance/analytics, functional and marketing cookies are only used with your opt-in consent." },
-          { "h": "3. What we use", "p": "This site stores a language preference locally to keep your chosen language. It does not run non-essential analytics or marketing cookies without consent. [REVISAR: negócio]" },
-          { "h": "4. Consent", "p": "Non-essential cookies require opt-in consent; essential cookies run without consent." },
-          { "h": "5. Managing cookies", "p": "You can clear or block cookies in your browser settings; blocking essential storage may affect the site." },
-          { "h": "6. Changes", "p": "We may update this policy; the effective date above reflects the current version." }
+          {
+            "h": "1. What cookies are",
+            "p": "Cookies are small files stored on your device that help a site work and remember preferences."
+          },
+          {
+            "h": "2. Categories",
+            "p": "Essential: required for the site to function (for example, remembering your language). Performance/analytics, functional and marketing cookies are only used with your opt-in consent."
+          },
+          {
+            "h": "3. What we use",
+            "p": "This site stores a language preference locally to keep your chosen language. It does not run non-essential analytics or marketing cookies without consent. [REVISAR: negócio]"
+          },
+          {
+            "h": "4. Consent",
+            "p": "Non-essential cookies require opt-in consent; essential cookies run without consent."
+          },
+          {
+            "h": "5. Managing cookies",
+            "p": "You can clear or block cookies in your browser settings; blocking essential storage may affect the site."
+          },
+          {
+            "h": "6. Changes",
+            "p": "We may update this policy; the effective date above reflects the current version."
+          }
         ]
       }
     }
@@ -647,28 +838,64 @@
       {
         "h": "Institutional",
         "links": [
-          { "slug": "", "label": "Home" },
-          { "slug": "about", "label": "About" },
-          { "slug": "contact", "label": "Contact" }
+          {
+            "slug": "",
+            "label": "Home"
+          },
+          {
+            "slug": "about",
+            "label": "About"
+          },
+          {
+            "slug": "contact",
+            "label": "Contact"
+          }
         ]
       },
       {
         "h": "Work",
         "links": [
-          { "slug": "software", "label": "The app" },
-          { "slug": "projects", "label": "Projects" },
-          { "slug": "research", "label": "Research" },
-          { "slug": "principles", "label": "Principles" }
+          {
+            "slug": "apps",
+            "label": "Applications"
+          },
+          {
+            "slug": "projects",
+            "label": "Projects"
+          },
+          {
+            "slug": "research",
+            "label": "Research"
+          },
+          {
+            "slug": "principles",
+            "label": "Principles"
+          }
         ]
       },
       {
         "h": "Legal",
         "links": [
-          { "slug": "legal", "label": "Legal center" },
-          { "slug": "legal/terms-of-use", "label": "Terms of Use" },
-          { "slug": "legal/terms-of-service", "label": "Terms of Service" },
-          { "slug": "legal/privacy", "label": "Privacy Policy" },
-          { "slug": "legal/cookies", "label": "Cookie Policy" }
+          {
+            "slug": "legal",
+            "label": "Legal center"
+          },
+          {
+            "slug": "legal/terms-of-use",
+            "label": "Terms of Use"
+          },
+          {
+            "slug": "legal/terms-of-service",
+            "label": "Terms of Service"
+          },
+          {
+            "slug": "legal/privacy",
+            "label": "Privacy Policy"
+          },
+          {
+            "slug": "legal/cookies",
+            "label": "Cookie Policy"
+          }
         ]
       }
     ]

@@ -3,6 +3,7 @@
 // O quê: <head> completo (title/description, self-canonical, hreflang recíproco dos 6
 // locales + x-default, OG/Twitter, JSON-LD Organization+WebSite com sameAs cross-domain)
 // e o design system (tokens, dark/light, sem emoji). Onde: envolve todas as páginas.
+import { sameAs } from "../lib/social";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { alternates, LOCALE_META, DEFAULT_LOCALE, isRtl, t, path, type Locale } from "../lib/i18n";
@@ -50,7 +51,7 @@ const org = {
       areaServed: "BR",
     },
   ],
-  sameAs: ["https://github.com/schematizeme"],
+  sameAs,
 };
 const website = {
   "@context": "https://schema.org",
@@ -66,6 +67,7 @@ const website = {
 // por Organization+WebSite). Tipo por slug — sem inventar dado (research/projects
 // são páginas de coleção institucional). Nome do breadcrumb vem do nav i18n.
 const PAGE_TYPES: Record<string, string> = {
+  apps: "CollectionPage",
   research: "CollectionPage",
   projects: "CollectionPage",
   about: "AboutPage",

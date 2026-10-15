@@ -1,0 +1,28 @@
+---
+// Ícones sociais (só as redes com URL em lib/social.ts). Nada renderiza se vazio.
+import { Icon } from "astro-icon/components";
+import { socialLinks } from "../lib/social";
+interface Props { label: string; class?: string; }
+const { label, class: cls = "" } = Astro.props;
+---
+{socialLinks.length > 0 && (
+  <ul class:list={["social", cls]} role="list" aria-label={label}>
+    {socialLinks.map((s) => (
+      <li>
+        <a href={s.url} rel="me noopener" target="_blank" aria-label={s.label} title={s.label}>
+          <Icon name={s.icon} aria-hidden="true" />
+        </a>
+      </li>
+    ))}
+  </ul>
+)}
+<style>
+  .social { list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 0.15rem; }
+  .social a {
+    display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px;
+    border-radius: 10px; color: var(--muted);
+  }
+  .social a:hover { color: var(--ink); background: var(--surface); text-decoration: none; }
+  .social a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .social [data-icon] { width: 17px; height: 17px; }
+</style>
